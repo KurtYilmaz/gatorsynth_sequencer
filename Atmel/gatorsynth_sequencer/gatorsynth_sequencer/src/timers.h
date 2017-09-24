@@ -13,6 +13,7 @@
 
 void timers_init(void);
 
+void update_timers(int bpm);
 
 
 #endif /* TIMERS_H_ */
