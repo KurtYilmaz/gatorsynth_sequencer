@@ -1,4 +1,5 @@
 #include <asf.h>
+#include "timers.h"
 #include <stdbool.h>
 
 
@@ -14,6 +15,7 @@ int main (void)
 {
 	 sysclk_init();				//initialize system clock
 	 board_init();				//board init (currently empty)
+	 timers_init();				//initiate timer for LED on PA11
 	 WDT->WDT_MR = WDT_MR_WDDIS; //disable watchdog timer
 
 	while (1)

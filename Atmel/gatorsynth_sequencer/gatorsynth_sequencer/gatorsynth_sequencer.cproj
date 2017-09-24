@@ -410,6 +410,12 @@
     <Compile Include="src\sequencer.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="src\timers.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\timers.h">
+      <SubType>compile</SubType>
+    </Compile>
     <None Include="src\ASF\common\boards\board.h">
       <SubType>compile</SubType>
     </None>

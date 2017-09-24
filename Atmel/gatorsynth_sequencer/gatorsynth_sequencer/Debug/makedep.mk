@@ -4,6 +4,8 @@
 
 src\sequencer.c
 
+src\timers.c
+
 src\ASF\common\boards\user_board\init.c
 
 src\ASF\common\services\clock\sam4n\sysclk.c
