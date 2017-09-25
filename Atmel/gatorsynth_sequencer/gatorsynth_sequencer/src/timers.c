@@ -11,6 +11,8 @@
 
  void timers_init(void) {
 
+	overflow_count = 0;
+
 	// T0 is used for stepping
 	// Enable interrupts on timer 0
 
@@ -29,12 +31,16 @@
 	// TIMER_CLOCK3 = MCK/32
 	// TIMER_CLOCK4 = MCK/128
 	// TIMER_CLOCK5 = SCLK
-	REG_TC0_CMR0 |= TC_CMR_TCCLKS_TIMER_CLOCK4 | TC_CMR_CPCTRG;
+	REG_TC0_CMR0 |= TC_CMR_TCCLKS_TIMER_CLOCK2 | TC_CMR_CPCTRG;
 	// Set interrupt on compare to RC value
 	REG_TC0_IER0 |= TC_IER_CPCS;
 
-	// 60 BPM = 1 Hz. 4M/128 = 31250 Hz. (31250 counts)(31250 Hz) = 1 Hz
-	REG_TC0_RC0 = 31250;
+// 	// 60 BPM = 1 Hz. SCK = 32 KHz. 16,000 counts per half second, 2 interrupts per cycle
+// 	REG_TC0_RC0 = 16000;
+
+	// 60 BPM = 1 Hz. MCK/8 = 12.5 MHz. 6.25 mil counts per half second, 2 interrupts per cycle
+	// Anticipating 5000 overflows (5000*1250 is 6.25 mil)
+	REG_TC0_RC0 = 1250;
 
 	// For the interrupt
 	REG_PIOA_PER |= PIO_PER_P11; //enable PIO controller on PA11
@@ -46,24 +52,29 @@
  }
 
  void update_timers(int bpm) {
-	float bps = bpm/60;
-	int RC_value = (int)(bps/31250);
-	REG_TC0_RC0 = RC_value;
+// 	// (SCK/2) / (bpm/60); SCK*60/2 = 960000
+// 	// Offset is needed, possible not with the crystals working
+// 	REG_TC0_RC0 = (uint16_t)(960000/bpm - 420);
+	
+	REG_TC0_RC0 = (uint16_t)(75000/bpm);
  }
 
  void TC0_Handler() {
 	 // Handling timer = RC
 
-	 // Test code
-	 if((REG_TC0_SR0 & TC_SR_COVFS) != 0) {
-		 if((REG_PIOA_PDSR & PIO_ODSR_P11) >= 1) {
-			 REG_PIOA_CODR |= PIO_CODR_P11;
-		 }
-		 else {
-			 REG_PIOA_SODR |= PIO_SODR_P11;
-		 }
+	 // Test code, normally trigger next step, output clock
+	 if((REG_TC0_SR0 & TC_SR_CPCS) >= 0) {
+		overflow_count += 1;
 	 }
 
-	 // Trigger next step, output clock
+	 if(overflow_count >= 5000) {
+		if((REG_PIOA_PDSR & PIO_ODSR_P11) >= 1) {
+			REG_PIOA_CODR |= PIO_CODR_P11;
+		}
+		else {
+			REG_PIOA_SODR |= PIO_SODR_P11;
+		}
+		overflow_count = 0;
+	 }
 
  }

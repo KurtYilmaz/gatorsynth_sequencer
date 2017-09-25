@@ -8,8 +8,8 @@ src/ASF/sam/drivers/pmc/sleep.d src/ASF/sam/drivers/pmc/sleep.o: \
  ../src/ASF/sam/utils/preprocessor/mrepeat.h \
  ../src/ASF/sam/utils/preprocessor/preprocessor.h \
  ../src/ASF/sam/utils/header_files/io.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/sam4n.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/sam4n16c.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/sam4n.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/sam4n16c.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gcc\arm-none-eabi\5.3.1\include\stdint.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\stdint.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\machine\_default_types.h \
@@ -21,57 +21,57 @@ src/ASF/sam/drivers/pmc/sleep.d src/ASF/sam/drivers/pmc/sleep.o: \
  C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\4.2.0\CMSIS\Include/core_cmInstr.h \
  C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\4.2.0\CMSIS\Include/core_cmFunc.h \
  C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\4.2.0\CMSIS\Include/core_cmSimd.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/system_sam4n.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/adc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/chipid.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/dacc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/efc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/gpbr.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/matrix.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/pdc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/pio.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/pmc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/pwm.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/rstc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/rtc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/rtt.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/spi.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/supc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/tc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/twi.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/uart.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/usart.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/wdt.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/spi.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/tc0.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/tc1.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/twi0.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/twi1.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/pwm.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/usart0.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/usart1.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/usart2.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/adc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/dacc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/twi2.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/uart2.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/uart3.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/matrix.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/pmc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/uart0.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/chipid.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/uart1.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/efc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/pioa.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/piob.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/pioc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/rstc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/supc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/rtt.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/wdt.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/rtc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/gpbr.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/pio/sam4n16c.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/source/templates/system_sam4n.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_adc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_chipid.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_dacc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_efc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_gpbr.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_matrix.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_pdc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_pio.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_pmc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_pwm.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_rstc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_rtc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_rtt.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_spi.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_supc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_tc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_twi.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_uart.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_usart.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/component/component_wdt.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_spi.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_tc0.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_tc1.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_twi0.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_twi1.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_pwm.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_usart0.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_usart1.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_usart2.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_adc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_dacc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_twi2.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_uart2.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_uart3.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_matrix.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_pmc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_uart0.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_chipid.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_uart1.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_efc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_pioa.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_piob.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_pioc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_rstc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_supc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_rtt.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_wdt.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_rtc.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_gpbr.h \
+ ../src/ASF/sam/utils/cmsis/sam4n/include/pio/pio_sam4n16c.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\stdio.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\_ansi.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\newlib.h \
@@ -121,9 +121,9 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gc
 
 ../src/ASF/sam/utils/header_files/io.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/sam4n.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/sam4n.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/sam4n16c.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/sam4n16c.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gcc\arm-none-eabi\5.3.1\include\stdint.h:
 
@@ -147,107 +147,107 @@ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\4.2.0\CMSIS\Include/co
 
 C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\4.2.0\CMSIS\Include/core_cmSimd.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/system_sam4n.h:
+../src/ASF/sam/utils/cmsis/sam4n/source/templates/system_sam4n.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/adc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_adc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/chipid.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_chipid.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/dacc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_dacc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/efc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_efc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/gpbr.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_gpbr.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/matrix.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_matrix.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/pdc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_pdc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/pio.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_pio.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/pmc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_pmc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/pwm.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_pwm.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/rstc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_rstc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/rtc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_rtc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/rtt.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_rtt.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/spi.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_spi.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/supc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_supc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/tc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_tc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/twi.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_twi.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/uart.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_uart.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/usart.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_usart.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/component/wdt.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/component/component_wdt.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/spi.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_spi.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/tc0.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_tc0.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/tc1.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_tc1.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/twi0.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_twi0.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/twi1.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_twi1.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/pwm.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_pwm.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/usart0.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_usart0.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/usart1.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_usart1.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/usart2.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_usart2.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/adc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_adc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/dacc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_dacc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/twi2.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_twi2.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/uart2.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_uart2.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/uart3.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_uart3.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/matrix.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_matrix.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/pmc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_pmc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/uart0.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_uart0.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/chipid.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_chipid.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/uart1.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_uart1.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/efc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_efc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/pioa.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_pioa.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/piob.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_piob.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/pioc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_pioc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/rstc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_rstc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/supc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_supc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/rtt.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_rtt.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/wdt.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_wdt.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/rtc.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_rtc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/instance/gpbr.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/instance/instance_gpbr.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include/pio/sam4n16c.h:
+../src/ASF/sam/utils/cmsis/sam4n/include/pio/pio_sam4n16c.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\stdio.h:
 

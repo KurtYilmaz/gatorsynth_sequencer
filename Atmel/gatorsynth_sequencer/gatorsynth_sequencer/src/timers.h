@@ -15,5 +15,7 @@ void timers_init(void);
 
 void update_timers(int bpm);
 
+uint16_t overflow_count;
+
 
 #endif /* TIMERS_H_ */
