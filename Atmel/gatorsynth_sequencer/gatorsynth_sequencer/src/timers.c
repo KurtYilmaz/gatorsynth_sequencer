@@ -55,8 +55,9 @@
 // 	// (SCK/2) / (bpm/60); SCK*60/2 = 960000
 // 	// Offset is needed, possible not with the crystals working
 // 	REG_TC0_RC0 = (uint16_t)(960000/bpm - 420);
-	
-	REG_TC0_RC0 = (uint16_t)(75000/bpm);
+	if(bpm > 1) {
+		REG_TC0_RC0 = (uint16_t)(75000/bpm);
+	}
  }
 
  void TC0_Handler() {

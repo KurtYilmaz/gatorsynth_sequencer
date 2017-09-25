@@ -1,6 +1,7 @@
 #include <asf.h>
 #include "timers.h"
 #include <stdbool.h>
+#include "sam.h"
 
 
 uint8_t A_seq = 0;
