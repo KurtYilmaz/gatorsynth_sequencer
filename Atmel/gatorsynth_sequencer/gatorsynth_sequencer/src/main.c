@@ -7,7 +7,7 @@ uint8_t A_seq = 0;
 uint8_t B_seq = 0;
 
 uint8_t position = 1;
-uint8_t bpm = 120;
+uint16_t bpm = 120;
 
 int main (void)
 {
