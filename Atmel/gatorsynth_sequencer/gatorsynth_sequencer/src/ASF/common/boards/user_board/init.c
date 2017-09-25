@@ -16,10 +16,10 @@ void LED_init(){
 	 //enable clock for PIOA
 	 REG_PMC_PCER0 |= PMC_PCER0_PID11;
 
-	 //Set up PA11 as LED OUTPUT
-	 REG_PIOA_PER |= PIO_PER_P11; //enable PIO controller on PA11
-	 REG_PIOA_OER |= PIO_PER_P11; //enable output on pin PA11
-	 REG_PIOA_CODR |= PIO_PER_P11; //set output low on PA11 as default
+	 //Set up PA11 as Center LED OUTPUT
+	 REG_PIOA_PER |= PIO_PER_P17; //enable PIO controller on PA17
+	 REG_PIOA_OER |= PIO_PER_P17; //enable output on pin PA17
+	 REG_PIOA_CODR |= PIO_PER_P17; //set output low on PA17 as default
 
 	  //Set up PA15 as Left LED OUTPUT
 	  REG_PIOA_PER |= PIO_PER_P15; //enable PIO controller on PA15
@@ -60,9 +60,9 @@ void Encoder_init(){
 
 	 uint32_t flag_clear = REG_PIOA_ISR;	//clear left over interrupt flags
 	 REG_PIOA_IER |= PIO_IER_P12;			//enable input level change interrupt on P12
-	 REG_PIOA_IER |= PIO_IER_P13;			//enable input level change interrupt on P13
+	 REG_PIOA_IER |= PIO_IER_P13;			//enable input rising edge interrupt on P13
 	 REG_PIOA_REHLSR |= PIO_REHLSR_P13;
-	 REG_PIOA_IER |= PIO_IER_P14;			//enable input level change interrupt on P14
+	 REG_PIOA_IER |= PIO_IER_P14;			//enable input rising edge interrupt on P14
 	 REG_PIOA_REHLSR |= PIO_REHLSR_P14;
 	 NVIC_EnableIRQ(PIOA_IRQn);				//enable PORT A interrupts
 }

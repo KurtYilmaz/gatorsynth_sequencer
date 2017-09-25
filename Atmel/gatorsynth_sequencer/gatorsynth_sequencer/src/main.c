@@ -1,32 +1,39 @@
 #include <asf.h>
 #include "timers.h"
 #include <stdbool.h>
-#include "sam.h"
 
 
 uint8_t A_seq = 0;
 uint8_t B_seq = 0;
-bool Right = false;
-bool Left = false;
 
-uint8_t count_left = 0;
-uint8_t count_right = 0;
+uint8_t position = 1;
+uint8_t bpm = 120;
 
-int bpm = 128;
-bool bpm_input = true;
-
-int main (void) {
-
+int main (void)
+{
 	sysclk_init();				//initialize system clock
 	board_init();				//board init (currently empty)
-	timers_init();				//initiate timer for LED on PA11
+	timers_init();				//initiate timer for Flashing LED on PA11
 	WDT->WDT_MR = WDT_MR_WDDIS; //disable watchdog timer
-	update_timers(bpm);
 
-	// placeholder for background task
-	int x = 0;
+	while (1)
+	{
 
-	while (1) {
+		if (position == 0){
+			REG_PIOA_CODR |= PIO_PER_P15; //turn Left LED off
+			REG_PIOA_SODR |= PIO_PER_P16; //turn Center LED on
+			REG_PIOA_CODR |= PIO_PER_P17; //turn Right LED off
+		}
+		else if (position == 1){
+			REG_PIOA_SODR |= PIO_PER_P15; //turn Left LED on
+			REG_PIOA_CODR |= PIO_PER_P16; //turn Center LED off
+			REG_PIOA_CODR |= PIO_PER_P17; //turn Right LED off
+		}
+		else if (position == 2){
+			REG_PIOA_CODR |= PIO_PER_P15; //turn Left LED off
+			REG_PIOA_CODR |= PIO_PER_P16; //turn Center LED off
+			REG_PIOA_SODR |= PIO_PER_P17; //turn Right LED on
+		}
 	}
 }
 
@@ -36,20 +43,13 @@ void PIOA_Handler(void){
 	uint32_t status = REG_PIOA_ISR;	//read PIOA interrupt status & clear interrupt flags
 
 	if ((status & PIO_ISR_P12)){	//check if Encoder Button was pressed
-		//check if PA11 is HIGH or LOW
-				if ( (REG_PIOA_PDSR & PIO_ODSR_P12) >= 1){	//if PA12 is HIGH
-					Right = false;
-					Left = false;
-				}
-				else{
-					Right = true;
-					Left = true;
-				}
+
+		position = 1;	//reset positon to center
+	    bpm = 120;
 	}
 
-	//  handle Encoder signal inputs
- 	else {	
-		bpm_input = true;
+	else {	//  handle Encoder signal inputs
+
 		//read Encoder input A
 		bool A_in = REG_PIOA_PDSR & PIO_ODSR_P13;
 		//read Encoder input B
@@ -65,50 +65,23 @@ void PIOA_Handler(void){
 		B_seq &= 0b00001111;
 
 		if ((A_seq == 0b00001001) && (B_seq == 0b00000011)){
-			Left = false;
-			Right = true;
-			count_right++;
-			bpm+=1;
-		}
 
+			if (position < 2)	//Check if not at Right-most LED
+			position++;		//Move position right
+			if(bpm < 999) {
+				bpm+=1;
+			}
+		}
 		else if ((A_seq == 0b00000011) && (B_seq == 0b00001001)){
-			Left = true;
-			Right = false;
-			count_left++;
-			bpm-=1;
-		}
 
-		if ((Right == true) && (Left == true)){
-			REG_PIOA_SODR |= PIO_PER_P15;	//turn Left LED ON
-			REG_PIOA_SODR |= PIO_PER_P16;	//turn Right LED ON
+			if (position > 0)	//Check if not at Left-most LED
+			position--;		//Move position left
+			if(bpm > 20) {
+				bpm-=1;
+			}
 		}
-		if ((Right == false) && (Left == false)){
-			REG_PIOA_CODR |= PIO_PER_P15;	//turn Left LED ON
-			REG_PIOA_CODR |= PIO_PER_P16;	//turn Right LED ON
-		}
-		else if (Left == true){
-			REG_PIOA_SODR |= PIO_PER_P15;	//turn Left LED ON
-			REG_PIOA_CODR |= PIO_PER_P16;	//turn Right LED Off
-		}
-		else if (Right == true){
-			REG_PIOA_CODR |= PIO_PER_P15;	//turn Left LED Off
-			REG_PIOA_SODR |= PIO_PER_P16;	//turn Right LED ON
-		}
-
-		update_timers(bpm);
-// 
-// 		if ((A_in == true) && (B_in == false)){
-// 			Left = false;
-// 			Right = true;
-// 			count_right++;
-// 		}
-// 
-// 		else if ((A_in == false) && (B_in == true)){
-// 			Left = true;
-// 			Right = false;
-// 			count_left++;
-// 		}
-
 	}
+
+	update_timers(bpm);
 
 }
