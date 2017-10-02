@@ -1,0 +1,305 @@
+Added Component: Designator=D1(DOIDE-1N4148)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D2(DOIDE-1N4148)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D3(DOIDE-1N4148)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D4(DOIDE-1N4148)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D5(DOIDE-1N4148)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D6(DOIDE-1N4148)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D7(DOIDE-1N4148)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D8(DOIDE-1N4148)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D9(DOIDE-1N4148)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D10(DOIDE-1N4148)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D11(DOIDE-1N4148)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D12(DOIDE-1N4148)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D13(DOIDE-1N4148)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D14(DOIDE-1N4148)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D15(DOIDE-1N4148)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D16(DOIDE-1N4148)
+Add component. Clean all parameters for all variants
+Added Component: Designator=JP1(MOLEX-1X4)
+Add component. Clean all parameters for all variants
+Added Component: Designator=JP2(MOLEX-1X4)
+Add component. Clean all parameters for all variants
+Added Component: Designator=JP3(MOLEX-1X4)
+Add component. Clean all parameters for all variants
+Added Component: Designator=JP4(MOLEX-1X4)
+Add component. Clean all parameters for all variants
+Added Component: Designator=JP5(MOLEX-1X2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=JP6(MOLEX-1X2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=JP7(MOLEX-1X2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=JP8(MOLEX-1X2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P1(BUTTONPAD-2X2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P2(BUTTONPAD-2X2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P3(BUTTONPAD-2X2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P4(BUTTONPAD-2X2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P?(BUTTONPAD-2X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "SFE"; Value = "SFE"; VariantName = "[No Variations]"
+Added Component: Designator=U$1(SFE-NEW-WEBLOGO)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "SFE"; Value = "SFE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designby"; Value = "Design by:"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "http://creativecommons.org/licenses/by-sa/3.0"; Value = "http://creativecommons.org/licenses/by-sa/3.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ReleasedundertheCreativeCommonsAttributionShare-Alike3.0License"; Value = "Released under the Creative Commons Attribution Share-Alike 3.0 License"; VariantName = "[No Variations]"
+Added Component: Designator=U$2(CREATIVE_COMMONS)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Designby"; Value = "Design by:"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "http://creativecommons.org/licenses/by-sa/3.0"; Value = "http://creativecommons.org/licenses/by-sa/3.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ReleasedundertheCreativeCommonsAttributionShare-Alike3.0License"; Value = "Released under the Creative Commons Attribution Share-Alike 3.0 License"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "MS-026-BED"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.atmel.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "SAM4S Series Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.atmel.com/dyn/resources/prod_documents/11100.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "SAM4S Series Summary"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.atmel.com/dyn/resources/prod_documents/11100S.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "revA, Oct-2011"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "100-Pin Thin Quad Flat Pack 0.5 mm Pitch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "LQFP100"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2006"; VariantName = "[No Variations]"
+Added Component: Designator=U?(LQFP100_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "MS-026-BED"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.atmel.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "SAM4S Series Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.atmel.com/dyn/resources/prod_documents/11100.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "SAM4S Series Summary"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.atmel.com/dyn/resources/prod_documents/11100S.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "revA, Oct-2011"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "100-Pin Thin Quad Flat Pack 0.5 mm Pitch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "LQFP100"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2006"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "MS-026-BED"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.atmel.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "SAM4S Series Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.atmel.com/dyn/resources/prod_documents/11100.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "SAM4S Series Summary"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.atmel.com/dyn/resources/prod_documents/11100S.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "revA, Oct-2011"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "100-Pin Thin Quad Flat Pack 0.5 mm Pitch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "LQFP100"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2006"; VariantName = "[No Variations]"
+Added Component: Designator=U?(LQFP100_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "MS-026-BED"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.atmel.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "SAM4S Series Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.atmel.com/dyn/resources/prod_documents/11100.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "SAM4S Series Summary"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.atmel.com/dyn/resources/prod_documents/11100S.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "revA, Oct-2011"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "100-Pin Thin Quad Flat Pack 0.5 mm Pitch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "LQFP100"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2006"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetD1_P$1 Pin=D1-P$1
+Added Pin To Net: NetName=SWT-GND1 Pin=D1-P$2
+Added Pin To Net: NetName=NetD2_P$1 Pin=D2-P$1
+Added Pin To Net: NetName=SWT-GND1 Pin=D2-P$2
+Added Pin To Net: NetName=NetD3_P$1 Pin=D3-P$1
+Added Pin To Net: NetName=SWT-GND1 Pin=D3-P$2
+Added Pin To Net: NetName=NetD4_P$1 Pin=D4-P$1
+Added Pin To Net: NetName=SWT-GND1 Pin=D4-P$2
+Added Pin To Net: NetName=NetD5_P$1 Pin=D5-P$1
+Added Pin To Net: NetName=SWT-GND2 Pin=D5-P$2
+Added Pin To Net: NetName=NetD6_P$1 Pin=D6-P$1
+Added Pin To Net: NetName=SWT-GND2 Pin=D6-P$2
+Added Pin To Net: NetName=NetD7_P$1 Pin=D7-P$1
+Added Pin To Net: NetName=SWT-GND2 Pin=D7-P$2
+Added Pin To Net: NetName=NetD8_P$1 Pin=D8-P$1
+Added Pin To Net: NetName=SWT-GND2 Pin=D8-P$2
+Added Pin To Net: NetName=NetD9_P$1 Pin=D9-P$1
+Added Pin To Net: NetName=SWT-GND3 Pin=D9-P$2
+Added Pin To Net: NetName=NetD10_P$1 Pin=D10-P$1
+Added Pin To Net: NetName=SWT-GND3 Pin=D10-P$2
+Added Pin To Net: NetName=NetD11_P$1 Pin=D11-P$1
+Added Pin To Net: NetName=SWT-GND3 Pin=D11-P$2
+Added Pin To Net: NetName=NetD12_P$1 Pin=D12-P$1
+Added Pin To Net: NetName=SWT-GND3 Pin=D12-P$2
+Added Pin To Net: NetName=NetD13_P$1 Pin=D13-P$1
+Added Pin To Net: NetName=SWT-GND4 Pin=D13-P$2
+Added Pin To Net: NetName=NetD14_P$1 Pin=D14-P$1
+Added Pin To Net: NetName=SWT-GND4 Pin=D14-P$2
+Added Pin To Net: NetName=NetD15_P$1 Pin=D15-P$1
+Added Pin To Net: NetName=SWT-GND4 Pin=D15-P$2
+Added Pin To Net: NetName=NetD16_P$1 Pin=D16-P$1
+Added Pin To Net: NetName=SWT-GND4 Pin=D16-P$2
+Added Pin To Net: NetName=SWITCH1 Pin=JP1-1
+Added Pin To Net: NetName=RED1 Pin=JP1-2
+Added Pin To Net: NetName=BLUE1 Pin=JP1-3
+Added Pin To Net: NetName=GREEN1 Pin=JP1-4
+Added Pin To Net: NetName=SWITCH2 Pin=JP2-1
+Added Pin To Net: NetName=RED2 Pin=JP2-2
+Added Pin To Net: NetName=BLUE2 Pin=JP2-3
+Added Pin To Net: NetName=GREEN2 Pin=JP2-4
+Added Pin To Net: NetName=SWITCH3 Pin=JP3-1
+Added Pin To Net: NetName=RED3 Pin=JP3-2
+Added Pin To Net: NetName=BLUE3 Pin=JP3-3
+Added Pin To Net: NetName=GREEN3 Pin=JP3-4
+Added Pin To Net: NetName=SWITCH4 Pin=JP4-1
+Added Pin To Net: NetName=RED4 Pin=JP4-2
+Added Pin To Net: NetName=BLUE4 Pin=JP4-3
+Added Pin To Net: NetName=GREEN4 Pin=JP4-4
+Added Pin To Net: NetName=LED-GND1 Pin=JP5-1
+Added Pin To Net: NetName=SWT-GND1 Pin=JP5-2
+Added Pin To Net: NetName=LED-GND2 Pin=JP6-1
+Added Pin To Net: NetName=SWT-GND2 Pin=JP6-2
+Added Pin To Net: NetName=LED-GND3 Pin=JP7-1
+Added Pin To Net: NetName=SWT-GND3 Pin=JP7-2
+Added Pin To Net: NetName=LED-GND4 Pin=JP8-1
+Added Pin To Net: NetName=SWT-GND4 Pin=JP8-2
+Added Pin To Net: NetName=BLUE4 Pin=P1-BLU1
+Added Pin To Net: NetName=BLUE4 Pin=P1-BLU2
+Added Pin To Net: NetName=BLUE3 Pin=P1-BLU3
+Added Pin To Net: NetName=BLUE3 Pin=P1-BLU4
+Added Pin To Net: NetName=LED-GND1 Pin=P1-GND1
+Added Pin To Net: NetName=LED-GND2 Pin=P1-GND2
+Added Pin To Net: NetName=LED-GND1 Pin=P1-GND3
+Added Pin To Net: NetName=LED-GND2 Pin=P1-GND4
+Added Pin To Net: NetName=GREEN4 Pin=P1-GRN1
+Added Pin To Net: NetName=GREEN4 Pin=P1-GRN2
+Added Pin To Net: NetName=GREEN3 Pin=P1-GRN3
+Added Pin To Net: NetName=GREEN3 Pin=P1-GRN4
+Added Pin To Net: NetName=RED4 Pin=P1-RED1
+Added Pin To Net: NetName=RED4 Pin=P1-RED2
+Added Pin To Net: NetName=RED3 Pin=P1-RED3
+Added Pin To Net: NetName=RED3 Pin=P1-RED4
+Added Pin To Net: NetName=SWITCH4 Pin=P1-SIG1
+Added Pin To Net: NetName=NetD4_P$1 Pin=P1-SIG2
+Added Pin To Net: NetName=SWITCH4 Pin=P1-SIG3
+Added Pin To Net: NetName=NetD8_P$1 Pin=P1-SIG4
+Added Pin To Net: NetName=SWITCH3 Pin=P1-SIG5
+Added Pin To Net: NetName=NetD3_P$1 Pin=P1-SIG6
+Added Pin To Net: NetName=SWITCH3 Pin=P1-SIG7
+Added Pin To Net: NetName=NetD7_P$1 Pin=P1-SIG8
+Added Pin To Net: NetName=BLUE4 Pin=P2-BLU1
+Added Pin To Net: NetName=BLUE4 Pin=P2-BLU2
+Added Pin To Net: NetName=BLUE3 Pin=P2-BLU3
+Added Pin To Net: NetName=BLUE3 Pin=P2-BLU4
+Added Pin To Net: NetName=LED-GND3 Pin=P2-GND1
+Added Pin To Net: NetName=LED-GND4 Pin=P2-GND2
+Added Pin To Net: NetName=LED-GND3 Pin=P2-GND3
+Added Pin To Net: NetName=LED-GND4 Pin=P2-GND4
+Added Pin To Net: NetName=GREEN4 Pin=P2-GRN1
+Added Pin To Net: NetName=GREEN4 Pin=P2-GRN2
+Added Pin To Net: NetName=GREEN3 Pin=P2-GRN3
+Added Pin To Net: NetName=GREEN3 Pin=P2-GRN4
+Added Pin To Net: NetName=RED4 Pin=P2-RED1
+Added Pin To Net: NetName=RED4 Pin=P2-RED2
+Added Pin To Net: NetName=RED3 Pin=P2-RED3
+Added Pin To Net: NetName=RED3 Pin=P2-RED4
+Added Pin To Net: NetName=SWITCH4 Pin=P2-SIG1
+Added Pin To Net: NetName=NetD12_P$1 Pin=P2-SIG2
+Added Pin To Net: NetName=SWITCH4 Pin=P2-SIG3
+Added Pin To Net: NetName=NetD16_P$1 Pin=P2-SIG4
+Added Pin To Net: NetName=SWITCH3 Pin=P2-SIG5
+Added Pin To Net: NetName=NetD11_P$1 Pin=P2-SIG6
+Added Pin To Net: NetName=SWITCH3 Pin=P2-SIG7
+Added Pin To Net: NetName=NetD15_P$1 Pin=P2-SIG8
+Added Pin To Net: NetName=BLUE2 Pin=P3-BLU1
+Added Pin To Net: NetName=BLUE2 Pin=P3-BLU2
+Added Pin To Net: NetName=BLUE1 Pin=P3-BLU3
+Added Pin To Net: NetName=BLUE1 Pin=P3-BLU4
+Added Pin To Net: NetName=LED-GND1 Pin=P3-GND1
+Added Pin To Net: NetName=LED-GND2 Pin=P3-GND2
+Added Pin To Net: NetName=LED-GND1 Pin=P3-GND3
+Added Pin To Net: NetName=LED-GND2 Pin=P3-GND4
+Added Pin To Net: NetName=GREEN2 Pin=P3-GRN1
+Added Pin To Net: NetName=GREEN2 Pin=P3-GRN2
+Added Pin To Net: NetName=GREEN1 Pin=P3-GRN3
+Added Pin To Net: NetName=GREEN1 Pin=P3-GRN4
+Added Pin To Net: NetName=RED2 Pin=P3-RED1
+Added Pin To Net: NetName=RED2 Pin=P3-RED2
+Added Pin To Net: NetName=RED1 Pin=P3-RED3
+Added Pin To Net: NetName=RED1 Pin=P3-RED4
+Added Pin To Net: NetName=SWITCH2 Pin=P3-SIG1
+Added Pin To Net: NetName=NetD2_P$1 Pin=P3-SIG2
+Added Pin To Net: NetName=SWITCH2 Pin=P3-SIG3
+Added Pin To Net: NetName=NetD6_P$1 Pin=P3-SIG4
+Added Pin To Net: NetName=SWITCH1 Pin=P3-SIG5
+Added Pin To Net: NetName=NetD1_P$1 Pin=P3-SIG6
+Added Pin To Net: NetName=SWITCH1 Pin=P3-SIG7
+Added Pin To Net: NetName=NetD5_P$1 Pin=P3-SIG8
+Added Pin To Net: NetName=BLUE2 Pin=P4-BLU1
+Added Pin To Net: NetName=BLUE2 Pin=P4-BLU2
+Added Pin To Net: NetName=BLUE1 Pin=P4-BLU3
+Added Pin To Net: NetName=BLUE1 Pin=P4-BLU4
+Added Pin To Net: NetName=LED-GND3 Pin=P4-GND1
+Added Pin To Net: NetName=LED-GND4 Pin=P4-GND2
+Added Pin To Net: NetName=LED-GND3 Pin=P4-GND3
+Added Pin To Net: NetName=LED-GND4 Pin=P4-GND4
+Added Pin To Net: NetName=GREEN2 Pin=P4-GRN1
+Added Pin To Net: NetName=GREEN2 Pin=P4-GRN2
+Added Pin To Net: NetName=GREEN1 Pin=P4-GRN3
+Added Pin To Net: NetName=GREEN1 Pin=P4-GRN4
+Added Pin To Net: NetName=RED2 Pin=P4-RED1
+Added Pin To Net: NetName=RED2 Pin=P4-RED2
+Added Pin To Net: NetName=RED1 Pin=P4-RED3
+Added Pin To Net: NetName=RED1 Pin=P4-RED4
+Added Pin To Net: NetName=SWITCH2 Pin=P4-SIG1
+Added Pin To Net: NetName=NetD10_P$1 Pin=P4-SIG2
+Added Pin To Net: NetName=SWITCH2 Pin=P4-SIG3
+Added Pin To Net: NetName=NetD14_P$1 Pin=P4-SIG4
+Added Pin To Net: NetName=SWITCH1 Pin=P4-SIG5
+Added Pin To Net: NetName=NetD9_P$1 Pin=P4-SIG6
+Added Pin To Net: NetName=SWITCH1 Pin=P4-SIG7
+Added Pin To Net: NetName=NetD13_P$1 Pin=P4-SIG8
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component D1 DIODE-1N4148
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component D2 DIODE-1N4148
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component D3 DIODE-1N4148
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component D4 DIODE-1N4148
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component D5 DIODE-1N4148
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component D6 DIODE-1N4148
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component D7 DIODE-1N4148
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component D8 DIODE-1N4148
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component D9 DIODE-1N4148
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component D10 DIODE-1N4148
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component D11 DIODE-1N4148
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component D12 DIODE-1N4148
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component D13 DIODE-1N4148
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component D14 DIODE-1N4148
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component D15 DIODE-1N4148
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component D16 DIODE-1N4148
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component JP1 M04POLAR
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component JP2 M04POLAR
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component JP3 M04POLAR
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component JP4 M04POLAR
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component JP5 M02POLAR
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component JP6 M02POLAR
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component JP7 M02POLAR
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component JP8 M02POLAR
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component P1 BUTTONPAD-4x4
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component P2 BUTTONPAD-4x4
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component P3 BUTTONPAD-4x4
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component P4 BUTTONPAD-4x4
+Added Member To Class: ClassName=Sheet1 Member=Component P? BUTTONPAD-4x4
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component U$1 LOGO-SFE
+Added Member To Class: ClassName=Button_Pad_Breakout-v05 Member=Component U$2 CREATIVE_COMMONS
+Added Member To Class: ClassName=Sheet1 Member=Component U? ATSAM4S16CA-AU
+Added Member To Class: ClassName=Sheet1 Member=Component U? ATSAM4S16CA-AU
+Added Room: Name=Button_Pad_Breakout-v05
+Added Room: Name=Sheet1
