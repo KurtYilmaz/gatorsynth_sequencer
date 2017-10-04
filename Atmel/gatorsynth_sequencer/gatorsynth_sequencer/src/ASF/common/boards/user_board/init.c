@@ -42,28 +42,28 @@ void Encoder_init(){
 	 REG_PIOA_IFER |= PIO_IFER_P12;	//start debounce filter
 
 	 //Set up PA13 as ENCODER INPUT A
-	 REG_PIOA_PER |= PIO_PER_P13; //enable PIO controller on PA13
-	 REG_PIOA_ODR |= PIO_ODR_P13; //disable output on pin PA13
-	 REG_PIOA_PPDDR |= PIO_PPDDR_P13; //disable pull-down resistor on PA13
-	 REG_PIOA_PUER |= PIO_PUER_P13;	//enable pull-up resistor on PA13
-	 REG_PIOA_IFSCER |= PIO_IFSCER_P13; //turn on slow clock debounce
-	 REG_PIOA_IFER |= PIO_IFER_P13;	//start debounce filter
+	 REG_PIOA_PER |= PIO_PER_P5; //enable PIO controller on PA13
+	 REG_PIOA_ODR |= PIO_ODR_P5; //disable output on pin PA13
+	 REG_PIOA_PPDDR |= PIO_PPDDR_P5; //disable pull-down resistor on PA13
+	 REG_PIOA_PUER |= PIO_PUER_P5;	//enable pull-up resistor on PA13
+	 REG_PIOA_IFSCER |= PIO_IFSCER_P5; //turn on slow clock debounce
+	 REG_PIOA_IFER |= PIO_IFER_P5;	//start debounce filter
 
 	 //Set up PA12 as ENCODER INPUT B
-	 REG_PIOA_PER |= PIO_PER_P14; //enable PIO controller on PA14
-	 REG_PIOA_ODR |= PIO_ODR_P14; //disable output on pin PA14
-	 REG_PIOA_PPDDR |= PIO_PPDDR_P14; //disable pull-down resistor on PA14
-	 REG_PIOA_PUER |= PIO_PUER_P14;	//enable pull-up resistor on PA14
-	 REG_PIOA_IFSCER |= PIO_IFSCER_P14; //turn on slow clock debounce
-	 REG_PIOA_IFER |= PIO_IFER_P14;	//start debounce filter
+	 REG_PIOA_PER |= PIO_PER_P6; //enable PIO controller on PA14
+	 REG_PIOA_ODR |= PIO_ODR_P6; //disable output on pin PA14
+	 REG_PIOA_PPDDR |= PIO_PPDDR_P6; //disable pull-down resistor on PA14
+	 REG_PIOA_PUER |= PIO_PUER_P6;	//enable pull-up resistor on PA14
+	 REG_PIOA_IFSCER |= PIO_IFSCER_P6; //turn on slow clock debounce
+	 REG_PIOA_IFER |= PIO_IFER_P6;	//start debounce filter
 	 
 
 	 uint32_t flag_clear = REG_PIOA_ISR;	//clear left over interrupt flags
 	 REG_PIOA_IER |= PIO_IER_P12;			//enable input level change interrupt on P12
-	 REG_PIOA_IER |= PIO_IER_P13;			//enable input rising edge interrupt on P13
-	 REG_PIOA_REHLSR |= PIO_REHLSR_P13;
-	 REG_PIOA_IER |= PIO_IER_P14;			//enable input rising edge interrupt on P14
-	 REG_PIOA_REHLSR |= PIO_REHLSR_P14;
+	 REG_PIOA_IER |= PIO_IER_P5;			//enable input rising edge interrupt on P5
+	 REG_PIOA_REHLSR |= PIO_REHLSR_P5;
+	 REG_PIOA_IER |= PIO_IER_P6;			//enable input rising edge interrupt on P6
+	 REG_PIOA_REHLSR |= PIO_REHLSR_P6;
 	 NVIC_EnableIRQ(PIOA_IRQn);				//enable PORT A interrupts
 }
 

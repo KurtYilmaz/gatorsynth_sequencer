@@ -1,6 +1,8 @@
 #include <asf.h>
 #include "timers.h"
+#include "spi.h"
 #include <stdbool.h>
+#include <stdlib.h>
 
 
 uint8_t A_seq = 0;
@@ -8,32 +10,62 @@ uint8_t B_seq = 0;
 
 uint8_t position = 1;
 uint16_t bpm = 120;
+uint8_t brightness = 0x01;
 
 int main (void)
 {
 	sysclk_init();				//initialize system clock
-	board_init();				//board init (currently empty)
-	timers_init();				//initiate timer for Flashing LED on PA11
 	WDT->WDT_MR = WDT_MR_WDDIS; //disable watchdog timer
+	board_init();				//board init (currently empty)
+	SPI_init();
+	timers_init();				//initiate timer for Flashing LED on PA20
+	update_timers(bpm);
+
+		//Set Write Command, Function, and BC Bits
+		SPI_byteSend(0x94);
+		SPI_byteSend(0x5F);
+		SPI_byteSend(0xFF);
+		SPI_byteSend(0x80);
+	
+		//set PWM GrayScale Bits (BITS 191-0)
+		for (int i = 0; i < 24; i++){
+			SPI_byteSend(brightness);
+		}
+	
+		//Set Write Command, Function, and BC Bits
+		SPI_byteSend(0x94);
+		SPI_byteSend(0x5F);
+		SPI_byteSend(0xFF);
+		SPI_byteSend(0xFF);
+	
+		//set PWM GrayScale Bits (BITS 191-0)
+		for (int i = 0; i < 24; i++){
+			SPI_byteSend(brightness);
+		}
+		
+		delay_ms(2.74);
 
 	while (1)
 	{
-
+  
 		if (position == 0){
-			REG_PIOA_CODR |= PIO_PER_P15; //turn Left LED off
-			REG_PIOA_SODR |= PIO_PER_P16; //turn Center LED on
+			REG_PIOA_CODR |= PIO_PER_P15; //turn Left LED on
+			REG_PIOA_SODR |= PIO_PER_P16; //turn Center LED off
 			REG_PIOA_CODR |= PIO_PER_P17; //turn Right LED off
 		}
+
 		else if (position == 1){
-			REG_PIOA_SODR |= PIO_PER_P15; //turn Left LED on
-			REG_PIOA_CODR |= PIO_PER_P16; //turn Center LED off
+			REG_PIOA_SODR |= PIO_PER_P15; //turn Left LED off
+			REG_PIOA_CODR |= PIO_PER_P16; //turn Center LED on
 			REG_PIOA_CODR |= PIO_PER_P17; //turn Right LED off
 		}
+
 		else if (position == 2){
 			REG_PIOA_CODR |= PIO_PER_P15; //turn Left LED off
 			REG_PIOA_CODR |= PIO_PER_P16; //turn Center LED off
 			REG_PIOA_SODR |= PIO_PER_P17; //turn Right LED on
 		}
+
 	}
 }
 
@@ -51,9 +83,9 @@ void PIOA_Handler(void){
 	else {	//  handle Encoder signal inputs
 
 		//read Encoder input A
-		bool A_in = REG_PIOA_PDSR & PIO_ODSR_P13;
+		bool A_in = REG_PIOA_PDSR & PIO_ODSR_P5;
 		//read Encoder input B
-		bool B_in = REG_PIOA_PDSR & PIO_ODSR_P14;
+		bool B_in = REG_PIOA_PDSR & PIO_ODSR_P6;
 
 		A_seq = A_seq << 1;
 		A_seq |= A_in;
@@ -71,7 +103,36 @@ void PIOA_Handler(void){
 			if(bpm < 999) {
 				bpm+=1;
 			}
+
+			if (brightness != 0x80){
+				brightness = brightness << 1;
+			}
+			//Set Write Command, Function, and BC Bits
+			SPI_byteSend(0x94);
+			SPI_byteSend(0x5F);
+			SPI_byteSend(0xFF);
+			SPI_byteSend(0x80);
+
+			//set PWM GrayScale Bits (BITS 191-0)
+			for (int i = 0; i < 24; i++){
+				SPI_byteSend(brightness);
+			}
+
+			//Set Write Command, Function, and BC Bits
+			SPI_byteSend(0x94);
+			SPI_byteSend(0x5F);
+			SPI_byteSend(0xFF);
+			SPI_byteSend(0xFF);
+
+			//set PWM GrayScale Bits (BITS 191-0)
+			for (int i = 0; i < 24; i++){
+				SPI_byteSend(brightness);
+			}
+	
+			delay_cycles(5*8);
 		}
+
+
 		else if ((A_seq == 0b00000011) && (B_seq == 0b00001001)){
 
 			if (position > 0)	//Check if not at Left-most LED
@@ -79,6 +140,34 @@ void PIOA_Handler(void){
 			if(bpm > 20) {
 				bpm-=1;
 			}
+
+			if (brightness != 0x01){
+				brightness = brightness >> 1;
+			}
+
+			//Set Write Command, Function, and BC Bits
+			SPI_byteSend(0x94);
+			SPI_byteSend(0x5F);
+			SPI_byteSend(0xFF);
+			SPI_byteSend(0x80);
+
+			//set PWM GrayScale Bits (BITS 191-0)
+			for (int i = 0; i < 24; i++){
+				SPI_byteSend(brightness);
+			}
+
+			//Set Write Command, Function, and BC Bits
+			SPI_byteSend(0x94);
+			SPI_byteSend(0x5F);
+			SPI_byteSend(0xFF);
+			SPI_byteSend(0xFF);
+
+			//set PWM GrayScale Bits (BITS 191-0)
+			for (int i = 0; i < 24; i++){
+				SPI_byteSend(brightness);
+			}
+	
+			delay_cycles(5*8);
 		}
 	}
 

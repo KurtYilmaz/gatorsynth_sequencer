@@ -43,8 +43,8 @@
 	REG_TC0_RC0 = 1250;
 
 	// For the interrupt
-	REG_PIOA_PER |= PIO_PER_P11; //enable PIO controller on PA11
-	REG_PIOA_OER |= PIO_PER_P11; //enable output on pin PA11
+	REG_PIOA_PER |= PIO_PER_P20; //enable PIO controller on PA11
+	REG_PIOA_OER |= PIO_PER_P20; //enable output on pin PA11
 	REG_PMC_PCER0 |= PMC_PCER0_PID11; //Enable PMC control for PA11
 
 	// TC0 control register enables timer and triggers it to start
@@ -69,11 +69,11 @@
 	 }
 
 	 if(overflow_count >= 5000) {
-		if((REG_PIOA_PDSR & PIO_ODSR_P11) >= 1) {
-			REG_PIOA_CODR |= PIO_CODR_P11;
+		if((REG_PIOA_PDSR & PIO_ODSR_P20) >= 1) {
+			REG_PIOA_CODR |= PIO_CODR_P20;
 		}
 		else {
-			REG_PIOA_SODR |= PIO_SODR_P11;
+			REG_PIOA_SODR |= PIO_SODR_P20;
 		}
 		overflow_count = 0;
 	 }
