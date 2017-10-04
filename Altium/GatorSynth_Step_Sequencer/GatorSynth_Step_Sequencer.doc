@@ -1,0 +1,1209 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+Integrated Library (Components) Report
+</title>
+</head>
+<body bgcolor="#FFFFFF">
+<font face="Arial" size="2">
+<h1>
+Integrated Library (Components) Report
+</h1>
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Library File Name
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+C:\Users\Kurt\gatorsynth_sequencer\Altium\GatorSynth_Step_Sequencer\GatorSynth_Step_Sequencer.IntLib
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Library File Date/Time
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Wednesday, October 4, 2017 2:22:43 AM
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Library File Size
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+547328
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Components
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+2
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Component List
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+ATSAM4S16CA-AU, BUTTONPAD-2X2
+</font>
+</td>
+</tr>
+</table>
+<hr>
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Part A
+</b>
+<br>
+<img src="Pro4E48.wmf" width="111" height="256">
+<br>
+<b>
+Part B
+</b>
+<br>
+<img src="Pro4F04.wmf" width="238" height="256">
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Library Reference
+</b>
+</font>
+</td>
+<td valign="top">
+<h2>
+<font face="Arial" size="2">
+ATSAM4S16CA-AU
+</font>
+</h2>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Description
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+AT91 ARM Cortex-M4 32-bit Microcontroller, 1MB Flash, 128KB SRAM, USB, 79 User I/Os, 100-Pin LQFP, Industrial Grade (-40°C to 105°C), Pb-Free
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Kind
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Standard
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Aliases
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Component has no aliases
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Designator
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+U??
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Parameters
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+12
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Pins
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+100
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Models
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+3
+</font>
+</td>
+</tr>
+</table>
+</font>
+</td>
+</tr>
+</table>
+<h5>
+Parameters
+</h5>
+<table border="1" cellspacing="0" cellpadding="2" width="100%">
+<tr>
+<td align="center" valign="top">
+<font face="Arial" size="2">
+<b>
+Name
+</b>
+</font>
+</td>
+<td align="center" valign="top">
+<font face="Arial" size="2">
+<b>
+Value
+</b>
+</font>
+</td>
+<td align="center" valign="top">
+<font face="Arial" size="2">
+<b>
+Type
+</b>
+</font>
+</td>
+<td align="center" valign="top">
+<font face="Arial" size="2">
+<b>
+Visible
+</b>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+DatasheetVersion
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+revA, Oct-2011
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+PackageVersion
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Apr-2006
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+PackageReference
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+LQFP100
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+PackageDescription
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+100-Pin Thin Quad Flat Pack 0.5 mm Pitch
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+Code_JEDEC
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+MS-026-BED
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+ComponentLink1Description
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Manufacturer URL
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+ComponentLink1URL
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+http://www.atmel.com/
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+ComponentLink2Description
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+SAM4S Series Datasheet
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+ComponentLink2URL
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+http://www.atmel.com/dyn/resources/prod_documents/11100.pdf
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+ComponentLink3Description
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+SAM4S Series Summary
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+ComponentLink3URL
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+http://www.atmel.com/dyn/resources/prod_documents/11100S.pdf
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+Comment
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+ATSAM4S16CA-AU
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+True
+</font>
+</td>
+</tr>
+</table>
+<h5>
+Models
+</h5>
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<img src="Pro4F63.wmf" width="256" height="256">
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Model Name
+</b>
+</font>
+</td>
+<td valign="top">
+<h3>
+<font face="Arial" size="2">
+LQFP100_N
+</font>
+</h3>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Model Type
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Footprint
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Description
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Thin QFP, 100-Leads, Body 14x14mm, Pitch 0.5mm, IPC Medium Density
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Height
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+62.992mil
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Dimension
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+687.008mil x 687.008mil
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Pads
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+100
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Primitives
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+118
+</font>
+</td>
+</tr>
+</table>
+</font>
+</td>
+</tr>
+</table>
+&nbsp;
+<p>
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<img src="Pro4F83.wmf" width="256" height="256">
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Model Name
+</b>
+</font>
+</td>
+<td valign="top">
+<h3>
+<font face="Arial" size="2">
+LQFP100_L
+</font>
+</h3>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Model Type
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Footprint
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Description
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Thin QFP, 100-Leads, Body 14x14mm, Pitch 0.5mm, IPC High Density
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Height
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+62.992mil
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Dimension
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+663.386mil x 663.386mil
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Pads
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+100
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Primitives
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+118
+</font>
+</td>
+</tr>
+</table>
+</font>
+</td>
+</tr>
+</table>
+&nbsp;
+<p>
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<img src="Pro4FB3.wmf" width="255" height="256">
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Model Name
+</b>
+</font>
+</td>
+<td valign="top">
+<h3>
+<font face="Arial" size="2">
+LQFP100_M
+</font>
+</h3>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Model Type
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Footprint
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Description
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Thin QFP, 100-Leads, Body 14x14mm, Pitch 0.5mm, IPC Low Density
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Height
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+62.992mil
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Dimension
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+722.441mil x 722.441mil
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Pads
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+100
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Primitives
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+118
+</font>
+</td>
+</tr>
+</table>
+</font>
+</td>
+</tr>
+</table>
+&nbsp;
+<p>
+<hr>
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Part A
+</b>
+<br>
+<img src="Pro4FD3.wmf" width="256" height="197">
+<br>
+<b>
+Part B
+</b>
+<br>
+<img src="Pro4FE4.wmf" width="256" height="197">
+<br>
+<b>
+Part C
+</b>
+<br>
+<img src="Pro5004.wmf" width="256" height="197">
+<br>
+<b>
+Part D
+</b>
+<br>
+<img src="Pro5015.wmf" width="256" height="197">
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Library Reference
+</b>
+</font>
+</td>
+<td valign="top">
+<h2>
+<font face="Arial" size="2">
+BUTTONPAD-2X2
+</font>
+</h2>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Description
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+5mm Button PadProven layout and schematic for 2x2 button pad. Panelize this device/fp to a 4x4 pad if needed. Spark Fun Electronics SKU : COM-07835. Compatible common cathode tri-color LED SKU : COM-00105
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Kind
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Standard
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Aliases
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Component has no aliases
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Designator
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+P??
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Parameters
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+1
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Pins
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+24
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Models
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+1
+</font>
+</td>
+</tr>
+</table>
+</font>
+</td>
+</tr>
+</table>
+<h5>
+Parameters
+</h5>
+<table border="1" cellspacing="0" cellpadding="2" width="100%">
+<tr>
+<td align="center" valign="top">
+<font face="Arial" size="2">
+<b>
+Name
+</b>
+</font>
+</td>
+<td align="center" valign="top">
+<font face="Arial" size="2">
+<b>
+Value
+</b>
+</font>
+</td>
+<td align="center" valign="top">
+<font face="Arial" size="2">
+<b>
+Type
+</b>
+</font>
+</td>
+<td align="center" valign="top">
+<font face="Arial" size="2">
+<b>
+Visible
+</b>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+Comment
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+BUTTONPAD-4x4
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+True
+</font>
+</td>
+</tr>
+</table>
+<h5>
+Models
+</h5>
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<img src="Pro5035.wmf" width="256" height="238">
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Model Name
+</b>
+</font>
+</td>
+<td valign="top">
+<h3>
+<font face="Arial" size="2">
+BUTTONPAD-2X2
+</font>
+</h3>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Model Type
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Footprint
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Description
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+&nbsp;
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Height
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+0mil
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Dimension
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+2190.04mil x 2032.56mil
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Pads
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+32
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Primitives
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+404
+</font>
+</td>
+</tr>
+</table>
+</font>
+</td>
+</tr>
+</table>
+&nbsp;
+<p>
+</font>
+</body>
+</html>
