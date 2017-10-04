@@ -78,6 +78,7 @@ SUBDIRS :=  \
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
 ../src/sequencer.c \
+../src/spi.c \
 ../src/timers.c \
 ../src/ASF/common/boards/user_board/init.c \
 ../src/ASF/common/services/clock/sam4n/sysclk.c \
@@ -101,6 +102,7 @@ ASM_SRCS +=
 
 OBJS +=  \
 src/sequencer.o \
+src/spi.o \
 src/timers.o \
 src/ASF/common/boards/user_board/init.o \
 src/ASF/common/services/clock/sam4n/sysclk.o \
@@ -117,6 +119,7 @@ src/main.o
 
 OBJS_AS_ARGS +=  \
 src/sequencer.o \
+src/spi.o \
 src/timers.o \
 src/ASF/common/boards/user_board/init.o \
 src/ASF/common/services/clock/sam4n/sysclk.o \
@@ -133,6 +136,7 @@ src/main.o
 
 C_DEPS +=  \
 src/sequencer.d \
+src/spi.d \
 src/timers.d \
 src/ASF/common/boards/user_board/init.d \
 src/ASF/common/services/clock/sam4n/sysclk.d \
@@ -149,6 +153,7 @@ src/main.d
 
 C_DEPS_AS_ARGS +=  \
 src/sequencer.d \
+src/spi.d \
 src/timers.d \
 src/ASF/common/boards/user_board/init.d \
 src/ASF/common/services/clock/sam4n/sysclk.d \
@@ -178,6 +183,8 @@ LINKER_SCRIPT_DEP+=  \
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 

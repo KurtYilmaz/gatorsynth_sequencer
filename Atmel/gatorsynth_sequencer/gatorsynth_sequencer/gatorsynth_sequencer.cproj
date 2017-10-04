@@ -30,12 +30,14 @@
       <framework-data>
         <options>
           <option id="common.boards" value="Add" config="" content-id="Atmel.ASF" />
+          <option id="common.services.basic.clock" value="Add" config="" content-id="Atmel.ASF" />
           <option id="common.services.delay" value="Add" config="" content-id="Atmel.ASF" />
           <option id="sam.utils.linker_scripts" value="Add" config="" content-id="Atmel.ASF" />
         </options>
         <configurations>
           <configuration key="config.compiler.armgcc.printf" value="iprintf" default="iprintf" content-id="Atmel.ASF" />
           <configuration key="config.compiler.armgcc.scanf" value="iscanf" default="iscanf" content-id="Atmel.ASF" />
+          <configuration key="config.sam.pio.pio_handler" value="yes" default="yes" content-id="Atmel.ASF" />
         </configurations>
         <files>
           <file path="src/main.c" framework="" version="" source="common/applications/user_application/main.c" changed="False" content-id="Atmel.ASF" />
@@ -408,6 +410,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\sequencer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\spi.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\spi.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\timers.c">
