@@ -2,6 +2,10 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+src\encoders.c
+
+src\leds.c
+
 src\sequencer.c
 
 src\spi.c

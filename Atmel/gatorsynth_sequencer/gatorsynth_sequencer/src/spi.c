@@ -36,7 +36,7 @@
 
 void SPI_init(){
 
-
+	//REG_PMC_PCER0 |= PMC_PCER0_PID11;
 	//enable peripheral clock
 	REG_PMC_PCER0 |= PMC_PCER0_PID21;
 	//set spi master mode

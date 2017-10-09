@@ -8,10 +8,12 @@
  #include <asf.h>
  #include <stdbool.h>
  #include "timers.h"
+ #include "leds.h"
 
  void timers_init(void) {
 
 	overflow_count = 0;
+	curr_led = 0;
 
 	// T0 is used for stepping
 	// Enable interrupts on timer 0
@@ -69,12 +71,23 @@
 	 }
 
 	 if(overflow_count >= 5000) {
-		if((REG_PIOA_PDSR & PIO_ODSR_P20) >= 1) {
-			REG_PIOA_CODR |= PIO_CODR_P20;
+// 		if((REG_PIOA_PDSR & PIO_ODSR_P20) >= 1) {
+// 			REG_PIOA_CODR |= PIO_CODR_P20;
+// 		}
+// 		else {
+// 			REG_PIOA_SODR |= PIO_SODR_P20;
+// 		}
+
+
+		leds_update_cursor(curr_led);
+
+		if (curr_led == 15){
+			curr_led = 0;
 		}
-		else {
-			REG_PIOA_SODR |= PIO_SODR_P20;
+		else{
+			curr_led++;
 		}
+
 		overflow_count = 0;
 	 }
 

@@ -1,4 +1,4 @@
-src/main.d src/main.o: ../src/main.c ../src/asf.h \
+src/encoders.d src/encoders.o: ../src/encoders.c ../src/asf.h \
  ../src/ASF/sam/utils/compiler.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gcc\arm-none-eabi\5.3.1\include\stddef.h \
  ../src/ASF/common/utils/parts.h \
@@ -110,8 +110,7 @@ src/main.d src/main.o: ../src/main.c ../src/asf.h \
  ../src/ASF/common/services/clock/sam4n/pll.h \
  ../src/ASF/common/services/delay/sam/cycle_counter.h \
  ../src/ASF/sam/drivers/pmc/sleep.h \
- ../src/ASF/sam/utils/cmsis/sam4n/source/templates/exceptions.h \
- ../src/timers.h ../src/leds.h ../src/spi.h
+ ../src/ASF/sam/utils/cmsis/sam4n/source/templates/exceptions.h
 
 ../src/asf.h:
 
@@ -344,9 +343,3 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 ../src/ASF/sam/drivers/pmc/sleep.h:
 
 ../src/ASF/sam/utils/cmsis/sam4n/source/templates/exceptions.h:
-
-../src/timers.h:
-
-../src/leds.h:
-
-../src/spi.h:
