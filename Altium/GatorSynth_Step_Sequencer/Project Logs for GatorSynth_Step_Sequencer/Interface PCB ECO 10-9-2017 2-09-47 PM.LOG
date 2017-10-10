@@ -1,0 +1,138 @@
+Added Component: Designator=P1(BUTTONPAD-2X2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P2(BUTTONPAD-2X2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P3(BUTTONPAD-2X2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P4(BUTTONPAD-2X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "MS-026-BED"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.atmel.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "SAM4S Series Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.atmel.com/dyn/resources/prod_documents/11100.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "SAM4S Series Summary"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.atmel.com/dyn/resources/prod_documents/11100S.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "revA, Oct-2011"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "100-Pin Thin Quad Flat Pack 0.5 mm Pitch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "LQFP100"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2006"; VariantName = "[No Variations]"
+Added Component: Designator=U1(LQFP100_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "MS-026-BED"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.atmel.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "SAM4S Series Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.atmel.com/dyn/resources/prod_documents/11100.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "SAM4S Series Summary"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.atmel.com/dyn/resources/prod_documents/11100S.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "revA, Oct-2011"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "100-Pin Thin Quad Flat Pack 0.5 mm Pitch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "LQFP100"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Apr-2006"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=BLU1 Pin=P1-BLU1
+Added Pin To Net: NetName=BLU2 Pin=P1-BLU2
+Added Pin To Net: NetName=BLU9 Pin=P1-BLU3
+Added Pin To Net: NetName=BLU10 Pin=P1-BLU4
+Added Pin To Net: NetName=GRN1 Pin=P1-GRN1
+Added Pin To Net: NetName=GRN2 Pin=P1-GRN2
+Added Pin To Net: NetName=GRN9 Pin=P1-GRN3
+Added Pin To Net: NetName=GRN10 Pin=P1-GRN4
+Added Pin To Net: NetName=RED1 Pin=P1-RED1
+Added Pin To Net: NetName=RED2 Pin=P1-RED2
+Added Pin To Net: NetName=RED9 Pin=P1-RED3
+Added Pin To Net: NetName=RED10 Pin=P1-RED4
+Added Pin To Net: NetName=GND Pin=P1-SIG1
+Added Pin To Net: NetName=SW1 Pin=P1-SIG2
+Added Pin To Net: NetName=GND Pin=P1-SIG3
+Added Pin To Net: NetName=SW2 Pin=P1-SIG4
+Added Pin To Net: NetName=GND Pin=P1-SIG5
+Added Pin To Net: NetName=SW9 Pin=P1-SIG6
+Added Pin To Net: NetName=GND Pin=P1-SIG7
+Added Pin To Net: NetName=SW10 Pin=P1-SIG8
+Added Pin To Net: NetName=BLU3 Pin=P2-BLU1
+Added Pin To Net: NetName=BLU4 Pin=P2-BLU2
+Added Pin To Net: NetName=BLU11 Pin=P2-BLU3
+Added Pin To Net: NetName=BLU12 Pin=P2-BLU4
+Added Pin To Net: NetName=GRN3 Pin=P2-GRN1
+Added Pin To Net: NetName=GRN4 Pin=P2-GRN2
+Added Pin To Net: NetName=GRN11 Pin=P2-GRN3
+Added Pin To Net: NetName=GRN12 Pin=P2-GRN4
+Added Pin To Net: NetName=RED3 Pin=P2-RED1
+Added Pin To Net: NetName=RED4 Pin=P2-RED2
+Added Pin To Net: NetName=RED11 Pin=P2-RED3
+Added Pin To Net: NetName=RED12 Pin=P2-RED4
+Added Pin To Net: NetName=GND Pin=P2-SIG1
+Added Pin To Net: NetName=SW3 Pin=P2-SIG2
+Added Pin To Net: NetName=GND Pin=P2-SIG3
+Added Pin To Net: NetName=SW4 Pin=P2-SIG4
+Added Pin To Net: NetName=GND Pin=P2-SIG5
+Added Pin To Net: NetName=SW11 Pin=P2-SIG6
+Added Pin To Net: NetName=GND Pin=P2-SIG7
+Added Pin To Net: NetName=SW12 Pin=P2-SIG8
+Added Pin To Net: NetName=BLU5 Pin=P3-BLU1
+Added Pin To Net: NetName=BLU6 Pin=P3-BLU2
+Added Pin To Net: NetName=BLU13 Pin=P3-BLU3
+Added Pin To Net: NetName=BLU14 Pin=P3-BLU4
+Added Pin To Net: NetName=GRN5 Pin=P3-GRN1
+Added Pin To Net: NetName=GRN6 Pin=P3-GRN2
+Added Pin To Net: NetName=GRN13 Pin=P3-GRN3
+Added Pin To Net: NetName=GRN14 Pin=P3-GRN4
+Added Pin To Net: NetName=RED5 Pin=P3-RED1
+Added Pin To Net: NetName=RED6 Pin=P3-RED2
+Added Pin To Net: NetName=RED13 Pin=P3-RED3
+Added Pin To Net: NetName=RED14 Pin=P3-RED4
+Added Pin To Net: NetName=GND Pin=P3-SIG1
+Added Pin To Net: NetName=SW5 Pin=P3-SIG2
+Added Pin To Net: NetName=GND Pin=P3-SIG3
+Added Pin To Net: NetName=SW6 Pin=P3-SIG4
+Added Pin To Net: NetName=GND Pin=P3-SIG5
+Added Pin To Net: NetName=SW13 Pin=P3-SIG6
+Added Pin To Net: NetName=GND Pin=P3-SIG7
+Added Pin To Net: NetName=SW14 Pin=P3-SIG8
+Added Pin To Net: NetName=BLU7 Pin=P4-BLU1
+Added Pin To Net: NetName=BLU8 Pin=P4-BLU2
+Added Pin To Net: NetName=BLU15 Pin=P4-BLU3
+Added Pin To Net: NetName=BLU16 Pin=P4-BLU4
+Added Pin To Net: NetName=GRN7 Pin=P4-GRN1
+Added Pin To Net: NetName=GRN8 Pin=P4-GRN2
+Added Pin To Net: NetName=GRN15 Pin=P4-GRN3
+Added Pin To Net: NetName=GRN16 Pin=P4-GRN4
+Added Pin To Net: NetName=RED7 Pin=P4-RED1
+Added Pin To Net: NetName=RED8 Pin=P4-RED2
+Added Pin To Net: NetName=RED15 Pin=P4-RED3
+Added Pin To Net: NetName=RED16 Pin=P4-RED4
+Added Pin To Net: NetName=GND Pin=P4-SIG1
+Added Pin To Net: NetName=SW7 Pin=P4-SIG2
+Added Pin To Net: NetName=GND Pin=P4-SIG3
+Added Pin To Net: NetName=SW8 Pin=P4-SIG4
+Added Pin To Net: NetName=GND Pin=P4-SIG5
+Added Pin To Net: NetName=SW15 Pin=P4-SIG6
+Added Pin To Net: NetName=GND Pin=P4-SIG7
+Added Pin To Net: NetName=SW16 Pin=P4-SIG8
+Added Pin To Net: NetName=3.3V Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U1-2
+Added Pin To Net: NetName=3.3V Pin=U1-10
+Added Pin To Net: NetName=1.27V Pin=U1-11
+Added Pin To Net: NetName=1.27V Pin=U1-16
+Added Pin To Net: NetName=GND Pin=U1-26
+Added Pin To Net: NetName=3.3V Pin=U1-27
+Added Pin To Net: NetName=SPCK Pin=U1-31
+Added Pin To Net: NetName=MOSI Pin=U1-33
+Added Pin To Net: NetName=1.27V Pin=U1-36
+Added Pin To Net: NetName=NetU1_42 Pin=U1-42
+Added Pin To Net: NetName=GND Pin=U1-45
+Added Pin To Net: NetName=3.3V Pin=U1-50
+Added Pin To Net: NetName=1.27V Pin=U1-56
+Added Pin To Net: NetName=3.3V Pin=U1-69
+Added Pin To Net: NetName=GND Pin=U1-70
+Added Pin To Net: NetName=1.27V Pin=U1-85
+Added Pin To Net: NetName=3.3V Pin=U1-91
+Added Pin To Net: NetName=GND Pin=U1-95
+Added Pin To Net: NetName=3.3V Pin=U1-98
+Added Pin To Net: NetName=1.27V Pin=U1-100
+Added Member To Class: ClassName=Interface Member=Component P1 BUTTONPAD
+Added Member To Class: ClassName=Interface Member=Component P2 BUTTONPAD
+Added Member To Class: ClassName=Interface Member=Component P3 BUTTONPAD
+Added Member To Class: ClassName=Interface Member=Component P4 BUTTONPAD
+Added Member To Class: ClassName=Processor Member=Component U1 ATSAM4N16CA-AU
