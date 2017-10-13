@@ -9,6 +9,7 @@
  #include <stdbool.h>
  #include "timers.h"
  #include "leds.h"
+ #include "spi.h"
 
  void timers_init(void) {
 
@@ -71,14 +72,8 @@
 	 }
 
 	 if(overflow_count >= 5000) {
-// 		if((REG_PIOA_PDSR & PIO_ODSR_P20) >= 1) {
-// 			REG_PIOA_CODR |= PIO_CODR_P20;
-// 		}
-// 		else {
-// 			REG_PIOA_SODR |= PIO_SODR_P20;
-// 		}
 
-
+		SPI_led_init();
 		leds_update_cursor(curr_led);
 
 		if (curr_led == 15){

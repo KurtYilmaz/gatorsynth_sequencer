@@ -77,6 +77,7 @@ SUBDIRS :=  \
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../src/dac.c \
 ../src/encoders.c \
 ../src/leds.c \
 ../src/sequencer.c \
@@ -103,6 +104,7 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+src/dac.o \
 src/encoders.o \
 src/leds.o \
 src/sequencer.o \
@@ -122,6 +124,7 @@ src/i2c.o \
 src/main.o
 
 OBJS_AS_ARGS +=  \
+src/dac.o \
 src/encoders.o \
 src/leds.o \
 src/sequencer.o \
@@ -141,6 +144,7 @@ src/i2c.o \
 src/main.o
 
 C_DEPS +=  \
+src/dac.d \
 src/encoders.d \
 src/leds.d \
 src/sequencer.d \
@@ -160,6 +164,7 @@ src/i2c.d \
 src/main.d
 
 C_DEPS_AS_ARGS +=  \
+src/dac.d \
 src/encoders.d \
 src/leds.d \
 src/sequencer.d \
@@ -193,6 +198,8 @@ LINKER_SCRIPT_DEP+=  \
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 

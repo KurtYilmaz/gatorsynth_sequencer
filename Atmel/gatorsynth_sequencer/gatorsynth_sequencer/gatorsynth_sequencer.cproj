@@ -403,6 +403,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="src\dac.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\dac.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="src\encoders.c">
       <SubType>compile</SubType>
     </Compile>

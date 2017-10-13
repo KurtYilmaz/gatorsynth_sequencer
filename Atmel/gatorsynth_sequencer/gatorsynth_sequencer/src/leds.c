@@ -35,7 +35,6 @@ uint16_t leds_prev_data[3] = {0x0000, 0x0000, 0x0fff};
 void leds_update_cursor(uint8_t curr_led);
 void leds_update_note(uint8_t led_pos);
 void leds_update_display();
-void leds_save_prev(uint8_t curr_led);
 
 
 

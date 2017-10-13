@@ -1,10 +1,10 @@
 #include <asf.h>
+#include <stdbool.h>
+#include <stdlib.h>
 #include "timers.h"
 #include "leds.h"
 #include "spi.h"
-#include <stdbool.h>
-#include <stdlib.h>
-
+#include "dac.h"
 
 uint8_t A_seq = 0;
 uint8_t B_seq = 0;
@@ -16,15 +16,20 @@ int main (void)
 {
 	sysclk_init();				//initialize system clock
 	WDT->WDT_MR = WDT_MR_WDDIS; //disable watchdog timer
+
 	board_init();				//board init (currently empty)
-	SPI_init();
+
+	SPI_led_init();
 	leds_update_display();
+
 	timers_init();				//initiate timer for Flashing LED on PA20
 	update_timers(bpm);
 
+	DAC_write(0x80);
+	
 	while (1)
 	{
-		int x = 0;
+
 	}
 }
 

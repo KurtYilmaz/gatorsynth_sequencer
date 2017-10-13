@@ -6,9 +6,11 @@
 
 void SPI_modeSelect(uint8_t mode);
 
-void SPI_init(void);
+void SPI_led_init(void);
+void SPI_dac_init(void);
 
 void SPI_byteSend(uint8_t data);
+void SPI_dac_load(void);
 
 
 #endif /* SPI_H_ */
