@@ -44,6 +44,7 @@ void SPI_led_init(){
 
 	//set fixed peripheral select(peripheral chosen in SP_MR.PCS instead of SPI_THR.PCS)
 	REG_SPI_MR &= ~SPI_MR_PS;
+	//REG_SPI_MR |= SPI_MR_PCS(0b1110);
 
 	//set polarity and clock phase to rising edge sample, falling edge shift
 	SPI_modeSelect(0);
@@ -53,7 +54,7 @@ void SPI_led_init(){
 	REG_SPI_CSR |= SPI_CSR_SCBR(5);
 
 	//chip select remains low after transfer
-	REG_SPI_CSR |= SPI_CSR_CSNAAT;
+	//REG_SPI_CSR |= SPI_CSR_CSNAAT;
 
 	//give peripheral control of pins 
 	REG_PIOA_PDR |= PIO_PDR_P11; //NPCS0
@@ -70,17 +71,6 @@ void SPI_dac_init(){
 	
 	REG_PMC_PCER0 |= PMC_PCER0_PID12; //enable peripheral clock on PORTB
 
-	//PB14 enabled as DAC LDAC Pin
-	REG_PIOB_PER |= PIO_PER_P14; //enable PIO controller on PB14
-	REG_PIOB_OER |= PIO_PER_P14; //enable output on pin PB14
-	REG_PIOB_SODR |= PIO_PER_P14; //set output high on PB14 as default
-
-	//PB15 enabled as DAC LDAC Pin
-	REG_PIOB_PER |= PIO_PER_P13; //enable PIO controller on PB13
-	REG_PIOB_OER |= PIO_PER_P13; //enable output on pin PB13
-	REG_PIOB_SODR |= PIO_PER_P13; //set output high on PB13 as default
-
-
 	//enable peripheral clock
 	REG_PMC_PCER0 |= PMC_PCER0_PID21;
 
@@ -89,19 +79,20 @@ void SPI_dac_init(){
 
 	//set fixed peripheral select(peripheral chosen in SP_MR.PCS instead of SPI_THR.PCS)
 	REG_SPI_MR &= ~SPI_MR_PS;
+	//REG_SPI_MR |= SPI_MR_PCS(0b1101);
 
 	//set polarity and clock phase to rising edge sample, falling edge shift
-	SPI_modeSelect(2);
+	SPI_modeSelect(0);
 
 	//set clock generator (1 = peripheral clock rate), otherwise a divisor
 	//SCBR = fperipheral clock / SPCK Bit Rate
 	REG_SPI_CSR |= SPI_CSR_SCBR(20);
 
 	//chip select remains low after transfer
-	REG_SPI_CSR |= SPI_CSR_CSNAAT;
+	//REG_SPI_CSR |= SPI_CSR_CSNAAT;
 
 	//give peripheral control of pins
-	REG_PIOA_PDR |= PIO_PDR_P11; //NPCS0
+	REG_PIOB_PDR |= PIO_PDR_P14; //NPCS1
 	REG_PIOA_PDR |= PIO_PDR_P13; //MOSI
 	REG_PIOA_PDR |= PIO_PDR_P14; //SSCK
 
@@ -118,19 +109,19 @@ void SPI_byteSend(uint8_t data){
 	REG_SPI_TDR |= (data);
 }
 
-void SPI_dac_load(){
-
-	//wait for transmit register to be empty
-	while (!(REG_SPI_SR & SPI_SR_TDRE));
-
-	//Pulse LOAD
-	REG_PIOB_CODR |= PIO_PER_P13; //set output low on PB14
-	delay_us(1);
-	REG_PIOB_SODR |= PIO_PER_P13; //set output high on PB14
-
-	//Pulse LDAC
-	REG_PIOB_CODR |= PIO_PER_P14; //set output low on PB14
-	delay_us(1);
-	REG_PIOB_SODR |= PIO_PER_P14; //set output high on PB14
-
-}	
+// void SPI_dac_load(){
+// 
+// 	//wait for transmit register to be empty
+// 	while (!(REG_SPI_SR & SPI_SR_TDRE));
+// 
+// 	//Pulse LOAD
+// 	REG_PIOB_CODR |= PIO_PER_P13; //set output low on PB14
+// 	delay_us(1);
+// 	REG_PIOB_SODR |= PIO_PER_P13; //set output high on PB14
+// 
+// 	//Pulse LDAC
+// 	REG_PIOB_CODR |= PIO_PER_P14; //set output low on PB14
+// 	delay_us(1);
+// 	REG_PIOB_SODR |= PIO_PER_P14; //set output high on PB14
+// 
+// }	

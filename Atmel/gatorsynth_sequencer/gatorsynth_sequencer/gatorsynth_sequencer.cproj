@@ -162,7 +162,7 @@
       </framework-data>
     </AsfFrameworkConfig>
     <avrtool>com.atmel.avrdbg.tool.atmelice</avrtool>
-    <avrtoolserialnumber>J41800037009</avrtoolserialnumber>
+    <avrtoolserialnumber>J41800006388</avrtoolserialnumber>
     <avrdeviceexpectedsignature>0x29560CE0</avrdeviceexpectedsignature>
     <com_atmel_avrdbg_tool_atmelice>
       <ToolOptions>
@@ -173,7 +173,7 @@
         <InterfaceName>JTAG</InterfaceName>
       </ToolOptions>
       <ToolType>com.atmel.avrdbg.tool.atmelice</ToolType>
-      <ToolNumber>J41800037009</ToolNumber>
+      <ToolNumber>J41800006388</ToolNumber>
       <ToolName>Atmel-ICE</ToolName>
     </com_atmel_avrdbg_tool_atmelice>
     <avrtoolinterface>JTAG</avrtoolinterface>
@@ -183,7 +183,8 @@
         <InterfaceProperties>
           <JtagDbgClock>7500000</JtagDbgClock>
         </InterfaceProperties>
-        <InterfaceName>SWD</InterfaceName>
+        <InterfaceName>
+        </InterfaceName>
       </ToolOptions>
       <ToolType>custom</ToolType>
       <ToolNumber>
@@ -424,6 +425,9 @@
     <Compile Include="src\main.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="src\notes.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="src\sequencer.c">
       <SubType>compile</SubType>
     </Compile>
@@ -434,6 +438,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\spi.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\notes.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\timers.c">

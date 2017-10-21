@@ -10,11 +10,12 @@
  #include "timers.h"
  #include "leds.h"
  #include "spi.h"
+ #include "dac.h"
 
  void timers_init(void) {
 
 	overflow_count = 0;
-	curr_led = 0;
+	curr_step = 0;
 
 	// T0 is used for stepping
 	// Enable interrupts on timer 0
@@ -69,18 +70,29 @@
 	 // Test code, normally trigger next step, output clock
 	 if((REG_TC0_SR0 & TC_SR_CPCS) >= 0) {
 		overflow_count += 1;
+
+		//base this off a ADC pot results
+		if (overflow_count == 9000){
+			/*DAC_write_gate_off();*/
+		}
 	 }
 
-	 if(overflow_count >= 5000) {
+	 if(overflow_count >= 10000) {
 
 		SPI_led_init();
-		leds_update_cursor(curr_led);
+		leds_update_cursor(curr_step);
 
-		if (curr_led == 15){
-			curr_led = 0;
+// 		DAC_write_cv(notes[curr_step]);
+// 		if (notes_status[curr_step] == 1){
+// 			DAC_write_gate_on();
+// 		}
+		
+
+		if (curr_step == 15){
+			curr_step = 0;
 		}
 		else{
-			curr_led++;
+			curr_step++;
 		}
 
 		overflow_count = 0;

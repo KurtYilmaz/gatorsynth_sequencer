@@ -9,8 +9,9 @@
 #ifndef DAC_H_
 #define DAC_H_
 
-void DAC_write(int voltage);
-
+void DAC_write_cv(float voltage);
+void DAC_write_gate_on(void);
+void DAC_write_gate_off(void);
 
 
 #endif /* DAC_H_ */

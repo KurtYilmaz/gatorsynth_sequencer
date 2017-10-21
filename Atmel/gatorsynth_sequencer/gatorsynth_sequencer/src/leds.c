@@ -32,15 +32,15 @@ uint16_t leds_prev_data[3] = {0x0000, 0x0000, 0x0fff};
 							 0x0000, 0x0000, 0x3fff};
 
 
-void leds_update_cursor(uint8_t curr_led);
+void leds_update_cursor(uint8_t curr_step);
 void leds_update_note(uint8_t led_pos);
 void leds_update_display();
 
 
 
-void leds_update_cursor(uint8_t curr_led){
+void leds_update_cursor(uint8_t curr_step){
 
-	switch(curr_led){
+	switch(curr_step){
 		case 0 : 
 			leds_data_4[9] = leds_prev_data[0];
 			leds_data_4[10] = leds_prev_data[1];

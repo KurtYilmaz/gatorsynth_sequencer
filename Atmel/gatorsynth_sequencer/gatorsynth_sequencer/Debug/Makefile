@@ -82,6 +82,7 @@ C_SRCS +=  \
 ../src/leds.c \
 ../src/sequencer.c \
 ../src/spi.c \
+../src/notes.c \
 ../src/timers.c \
 ../src/ASF/common/boards/user_board/init.c \
 ../src/ASF/common/services/clock/sam4n/sysclk.c \
@@ -109,6 +110,7 @@ src/encoders.o \
 src/leds.o \
 src/sequencer.o \
 src/spi.o \
+src/notes.o \
 src/timers.o \
 src/ASF/common/boards/user_board/init.o \
 src/ASF/common/services/clock/sam4n/sysclk.o \
@@ -129,6 +131,7 @@ src/encoders.o \
 src/leds.o \
 src/sequencer.o \
 src/spi.o \
+src/notes.o \
 src/timers.o \
 src/ASF/common/boards/user_board/init.o \
 src/ASF/common/services/clock/sam4n/sysclk.o \
@@ -149,6 +152,7 @@ src/encoders.d \
 src/leds.d \
 src/sequencer.d \
 src/spi.d \
+src/notes.d \
 src/timers.d \
 src/ASF/common/boards/user_board/init.d \
 src/ASF/common/services/clock/sam4n/sysclk.d \
@@ -169,6 +173,7 @@ src/encoders.d \
 src/leds.d \
 src/sequencer.d \
 src/spi.d \
+src/notes.d \
 src/timers.d \
 src/ASF/common/boards/user_board/init.d \
 src/ASF/common/services/clock/sam4n/sysclk.d \
@@ -198,6 +203,8 @@ LINKER_SCRIPT_DEP+=  \
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 

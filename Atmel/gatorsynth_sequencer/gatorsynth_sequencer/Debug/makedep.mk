@@ -12,6 +12,8 @@ src\sequencer.c
 
 src\spi.c
 
+src\notes.c
+
 src\timers.c
 
 src\ASF\common\boards\user_board\init.c

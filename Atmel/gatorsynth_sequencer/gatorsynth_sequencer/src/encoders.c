@@ -11,40 +11,50 @@
 #include <asf.h>
 #include <board.h>
 #include <conf_board.h>
+#include <stdbool.h>
 
-// void LED_init(){
-// 	 //enable clock for PIOA
-// 	 REG_PMC_PCER0 |= PMC_PCER0_PID11;
-// 
-// 	 //Set up PA11 as Center LED OUTPUT
-// 	 REG_PIOA_PER |= PIO_PER_P17; //enable PIO controller on PA17
-// 	 REG_PIOA_OER |= PIO_PER_P17; //enable output on pin PA17
-// 	 REG_PIOA_CODR |= PIO_PER_P17; //set output low on PA17 as default
-// 
-// 	  //Set up PA15 as Left LED OUTPUT
-// 	  REG_PIOA_PER |= PIO_PER_P15; //enable PIO controller on PA15
-// 	  REG_PIOA_OER |= PIO_PER_P15; //enable output on pin PA15
-// 	  REG_PIOA_CODR |= PIO_PER_P15; //set output low on PA15 as default
-// 
-// 	  //Set up PA16 as Right LED OUTPUT
-// 	  REG_PIOA_PER |= PIO_PER_P16; //enable PIO controller on PA16
-// 	  REG_PIOA_OER |= PIO_PER_P16; //enable output on pin PA16
-// 	  REG_PIOA_CODR |= PIO_PER_P16; //set output low on PA16 as default
-// }
+uint8_t A_seq;
+uint8_t B_seq;
+
+ void Encoder_isRight(uint32_t A, uint32_t B){
+
+	//read Encoder input A
+	bool A_in = REG_PIOC_PDSR & A;
+	//read Encoder input B
+	bool B_in = REG_PIOC_PDSR & B;
+	
+	A_seq = A_seq << 1;
+	A_seq |= A_in;
+	
+	B_seq = B_seq << 1;
+	B_seq |= B_in;
+	
+	A_seq &= 0b00001111;
+	B_seq &= 0b00001111;
+
+
+	//return true if turned right
+	if ((A_seq == 0b00001001) && (B_seq == 0b00000011)){
+		REG_PIOB_SODR |= PIO_PER_P3; //set output high on PB14 as default
+	}
+
+	else if ((A_seq == 0b00000011) && (B_seq == 0b00001001)){
+		REG_PIOB_CODR |= PIO_PER_P3; //set output high on PB14 as default
+	}
+
+
+}
+
+
 
 void Encoder_init(){
 
-// 	 Set up PA12 as BUTTON INPUT
-// 	 	 REG_PIOA_PER |= PIO_PER_P12; //enable PIO controller on PA12
-// 	 	 REG_PIOA_ODR |= PIO_ODR_P12; //disable output on pin PA12
-// 	 	 REG_PIOA_PPDDR |= PIO_PPDDR_P12; //disable pull-down resistor on PA12
-// 	 	 REG_PIOA_PUER |= PIO_PUER_P12;	//enable pull-up resistor on PA12
-// 	 	 REG_PIOA_IFSCER |= PIO_IFSCER_P12; //turn on slow clock debounce
-// 	 	 REG_PIOA_IFER |= PIO_IFER_P12;	//start debounce filter
+	A_seq = 0;
+	B_seq = 0;
 
+	//enable clock for PIOC
+	REG_PMC_PCER0 |= PMC_PCER0_PID13;
 
-	//enable clock for PIOA
-	//REG_PMC_PCER0 |= PMC_PCER0_PID11;
 
 	/**************			CONFIGURE 16 STEP ENCODERS			**************/
 
@@ -157,12 +167,12 @@ void Encoder_init(){
 
 
 	//Set up PC12 as ENCODER 7 INPUT A
-	REG_PIOC_PER |= PIO_PER_P12; //enable PIO controller
-	REG_PIOC_ODR |= PIO_ODR_P12; //disable output
-	REG_PIOC_PPDDR |= PIO_PPDDR_P12; //disable pull-down resistor
-	REG_PIOC_PUER |= PIO_PUER_P12;	//enable pull-up resistor
-	REG_PIOC_IFSCER |= PIO_IFSCER_P12; //turn on slow clock debounce
-	REG_PIOC_IFER |= PIO_IFER_P12;	//start debounce filter
+	REG_PIOC_PER |= PIO_PER_P3; //enable PIO controller
+	REG_PIOC_ODR |= PIO_ODR_P3; //disable output
+	REG_PIOC_PPDDR |= PIO_PPDDR_P3; //disable pull-down resistor
+	REG_PIOC_PUER |= PIO_PUER_P3;	//enable pull-up resistor
+	REG_PIOC_IFSCER |= PIO_IFSCER_P3; //turn on slow clock debounce
+	REG_PIOC_IFER |= PIO_IFER_P3;	//start debounce filter
 
 	//Set up PC13 as ENCODER 7 INPUT B
 	REG_PIOC_PER |= PIO_PER_P13; //enable PIO controller
@@ -339,7 +349,7 @@ void Encoder_init(){
 
 	/**************			CONFIGURE ENCODER INTERRUPTS			**************/
 
-	uint32_t flag_clear = REG_PIOA_ISR;	//clear left over interrupt flags
+	uint32_t flag_clear = REG_PIOC_ISR;	//clear left over interrupt flags
 
 	//Enable interrupts for Encoder 1
 	REG_PIOC_IER |= PIO_IER_P0;			//enable input rising edge interrupt
@@ -378,8 +388,8 @@ void Encoder_init(){
 	REG_PIOC_REHLSR |= PIO_REHLSR_P11;
 
 	//Enable interrupts for Encoder 7
-	REG_PIOC_IER |= PIO_IER_P12;			//enable input rising edge interrupt
-	REG_PIOC_REHLSR |= PIO_REHLSR_P12;
+	REG_PIOC_IER |= PIO_IER_P3;			//enable input rising edge interrupt
+	REG_PIOC_REHLSR |= PIO_REHLSR_P3;
 	REG_PIOC_IER |= PIO_IER_P13;			//enable input rising edge interrupt
 	REG_PIOC_REHLSR |= PIO_REHLSR_P13;
 
@@ -438,4 +448,91 @@ void Encoder_init(){
 	REG_PIOC_REHLSR |= PIO_REHLSR_P31;
 
 	NVIC_EnableIRQ(PIOC_IRQn);			//enable PORT C interrupts
+}
+
+
+
+void PIOC_Handler(){
+
+	uint32_t status = REG_PIOC_ISR;	//read PIOC interrupt status & clear interrupt flags
+
+	//check if Encoder 1 was rotated
+	if ( (status & PIO_ISR_P0) || (status & PIO_ISR_P1) ){	
+		
+	}
+
+	//check if Encoder 2 was rotated
+	else if ( (status & PIO_ISR_P2) || (status & PIO_ISR_P3) ){
+		
+	}
+
+	//check if Encoder 3 was rotated
+	else if ( (status & PIO_ISR_P4) || (status & PIO_ISR_P5) ){
+		
+	}
+
+	//check if Encoder 4 was rotated
+	else if ( (status & PIO_ISR_P6) || (status & PIO_ISR_P7) ){
+		
+	}
+
+	//check if Encoder 5 was rotated
+	else if ( (status & PIO_ISR_P8) || (status & PIO_ISR_P9) ){
+		
+	}
+
+	//check if Encoder 6 was rotated
+	else if ( (status & PIO_ISR_P10) || (status & PIO_ISR_P11) ){
+		
+	}
+
+	//check if Encoder 7 was rotated
+	else if ( (status & PIO_ISR_P3) || (status & PIO_ISR_P13) ){
+		
+	}
+
+	//check if Encoder 8 was rotated
+	else if ( (status & PIO_ISR_P14) || (status & PIO_ISR_P15) ){
+		
+	}
+
+	//check if Encoder 9 was rotated
+	else if ( (status & PIO_ISR_P16) || (status & PIO_ISR_P17) ){
+		
+	}
+
+	//check if Encoder 10 was rotated
+	else if ( (status & PIO_ISR_P18) || (status & PIO_ISR_P19) ){
+		
+	}
+
+	//check if Encoder 11 was rotated
+	else if ( (status & PIO_ISR_P20) || (status & PIO_ISR_P21) ){
+		Encoder_isRight(PIO_ODSR_P20, PIO_ODSR_P21);
+	}
+
+	//check if Encoder 12 was rotated
+	else if ( (status & PIO_ISR_P22) || (status & PIO_ISR_P23) ){
+		
+	}
+
+	//check if Encoder 13 was rotated
+	else if ( (status & PIO_ISR_P24) || (status & PIO_ISR_P25) ){
+		
+	}
+	
+	//check if Encoder 14 was rotated
+	else if ( (status & PIO_ISR_P26) || (status & PIO_ISR_P27) ){
+		
+	}
+
+	//check if Encoder 15 was rotated
+	else if ( (status & PIO_ISR_P28) || (status & PIO_ISR_P29) ){
+		
+	}
+
+	//check if Encoder 16 was rotated
+	else if ( (status & PIO_ISR_P30) || (status & PIO_ISR_P31) ){
+		
+	}
 }
