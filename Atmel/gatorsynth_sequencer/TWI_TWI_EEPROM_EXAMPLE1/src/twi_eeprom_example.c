@@ -266,7 +266,7 @@ int main(void)
 	packet_tx.chip        = 0b0100000;
 	packet_tx.addr[0]     = EEPROM_MEM_ADDR >> 8;
 	packet_tx.addr[1]     = EEPROM_MEM_ADDR;
-	packet_tx.addr_length = EEPROM_MEM_ADDR_LENGTH;
+	packet_tx.addr_length = 0;
 	packet_tx.buffer      = (uint8_t *) test_data_tx;
 	packet_tx.length      = TEST_DATA_LENGTH;
 

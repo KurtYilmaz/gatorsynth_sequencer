@@ -13,7 +13,7 @@
  #define MAX7314_inputPortLow 0x00
  #define MAX7314_inputPortHigh 0x01
 
- #define MAX7314_slaveAddress 0b0100000 //7bit address when AD0 = GND
+ #define MAX7314_slaveAddress (uint8_t) 0b0100000 //7bit address when AD0 = GND
 
  void init_IO_int(){
 
@@ -31,7 +31,8 @@
 	uint32_t flag_clear = REG_PIOB_ISR;	//clear left over interrupt flags
 
 	//Enable interrupts for PB10
-	REG_PIOB_IER |= PIO_IER_P10;			//enable input level change interrupt
+	REG_PIOB_IER |= PIO_IER_P10;			//enable falling edge change interrupt
+	REG_PIOB_FELLSR |= PIO_FELLSR_P10;
 
 	NVIC_EnableIRQ(PIOB_IRQn);
 
@@ -57,8 +58,8 @@
 	// thigh = ((CHDIV * 2^CKDIV) + 4) * Tper
 	// thigh = tlow => 400kHz (supposedly...)
 	//set TWI0 clock to 400kHz (supported by IO expander)
-	REG_TWI0_CWGR |= TWI_CWGR_CLDIV(46);
-	REG_TWI0_CWGR |= TWI_CWGR_CHDIV(46);
+	REG_TWI0_CWGR |= TWI_CWGR_CLDIV(121);
+	REG_TWI0_CWGR |= TWI_CWGR_CHDIV(121);
 
 	//disable slave mode & enable master mode
 	REG_TWI0_CR |= TWI_CR_SVDIS;

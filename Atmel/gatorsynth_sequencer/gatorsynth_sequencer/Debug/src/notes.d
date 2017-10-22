@@ -111,7 +111,7 @@ src/notes.d src/notes.o: ../src/notes.c ../src/asf.h \
  ../src/ASF/common/services/delay/sam/cycle_counter.h \
  ../src/ASF/sam/drivers/pmc/sleep.h \
  ../src/ASF/sam/utils/cmsis/sam4n/source/templates/exceptions.h \
- ../src/dac.h ../src/encoders.h
+ ../src/ASF/sam/drivers/twi/twi.h ../src/dac.h ../src/encoders.h
 
 ../src/asf.h:
 
@@ -344,6 +344,8 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 ../src/ASF/sam/drivers/pmc/sleep.h:
 
 ../src/ASF/sam/utils/cmsis/sam4n/source/templates/exceptions.h:
+
+../src/ASF/sam/drivers/twi/twi.h:
 
 ../src/dac.h:
 

@@ -2555,49 +2555,49 @@ __STATIC_INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
   400a68:	f88d 4010 	strb.w	r4, [sp, #16]
 	packet_tx.addr[1]     = EEPROM_MEM_ADDR;
   400a6c:	f88d 4011 	strb.w	r4, [sp, #17]
-	packet_tx.addr_length = EEPROM_MEM_ADDR_LENGTH;
-  400a70:	2302      	movs	r3, #2
-  400a72:	9305      	str	r3, [sp, #20]
+	packet_tx.addr_length = 0;
+  400a70:	9405      	str	r4, [sp, #20]
 	packet_tx.buffer      = (uint8_t *) test_data_tx;
-  400a74:	4b20      	ldr	r3, [pc, #128]	; (400af8 <main+0x11c>)
-  400a76:	9306      	str	r3, [sp, #24]
+  400a72:	4b21      	ldr	r3, [pc, #132]	; (400af8 <main+0x11c>)
+  400a74:	9306      	str	r3, [sp, #24]
 	packet_tx.length      = TEST_DATA_LENGTH;
-  400a78:	2301      	movs	r3, #1
-  400a7a:	9307      	str	r3, [sp, #28]
+  400a76:	2301      	movs	r3, #1
+  400a78:	9307      	str	r3, [sp, #28]
 	packet_rx.addr[1]     = packet_tx.addr[1];
 	packet_rx.addr_length = packet_tx.addr_length;
 	packet_rx.buffer      = gs_uc_test_data_rx;
 	packet_rx.length      = packet_tx.length;
 
 	if (twi_master_init(BOARD_BASE_TWI_EEPROM, &opt) != TWI_SUCCESS) {
-  400a7c:	a909      	add	r1, sp, #36	; 0x24
-  400a7e:	481f      	ldr	r0, [pc, #124]	; (400afc <main+0x120>)
-  400a80:	4b1f      	ldr	r3, [pc, #124]	; (400b00 <main+0x124>)
-  400a82:	4798      	blx	r3
-  400a84:	b118      	cbz	r0, 400a8e <main+0xb2>
+  400a7a:	a909      	add	r1, sp, #36	; 0x24
+  400a7c:	481f      	ldr	r0, [pc, #124]	; (400afc <main+0x120>)
+  400a7e:	4b20      	ldr	r3, [pc, #128]	; (400b00 <main+0x124>)
+  400a80:	4798      	blx	r3
+  400a82:	b118      	cbz	r0, 400a8c <main+0xb0>
 		puts("-E-\tTWI master initialization failed.\r");
-  400a86:	481f      	ldr	r0, [pc, #124]	; (400b04 <main+0x128>)
-  400a88:	4b15      	ldr	r3, [pc, #84]	; (400ae0 <main+0x104>)
-  400a8a:	4798      	blx	r3
-  400a8c:	e7fe      	b.n	400a8c <main+0xb0>
+  400a84:	481f      	ldr	r0, [pc, #124]	; (400b04 <main+0x128>)
+  400a86:	4b16      	ldr	r3, [pc, #88]	; (400ae0 <main+0x104>)
+  400a88:	4798      	blx	r3
+  400a8a:	e7fe      	b.n	400a8a <main+0xae>
 		}
 	}
 
 	while(1){
 	/* Send test pattern to EEPROM */
 	if (twi_master_write(BOARD_BASE_TWI_EEPROM, &packet_tx) != TWI_SUCCESS) {
-  400a8e:	4d1b      	ldr	r5, [pc, #108]	; (400afc <main+0x120>)
-  400a90:	4c1d      	ldr	r4, [pc, #116]	; (400b08 <main+0x12c>)
-  400a92:	a904      	add	r1, sp, #16
-  400a94:	4628      	mov	r0, r5
-  400a96:	47a0      	blx	r4
-  400a98:	2800      	cmp	r0, #0
-  400a9a:	d0fa      	beq.n	400a92 <main+0xb6>
+  400a8c:	4d1b      	ldr	r5, [pc, #108]	; (400afc <main+0x120>)
+  400a8e:	4c1e      	ldr	r4, [pc, #120]	; (400b08 <main+0x12c>)
+  400a90:	a904      	add	r1, sp, #16
+  400a92:	4628      	mov	r0, r5
+  400a94:	47a0      	blx	r4
+  400a96:	2800      	cmp	r0, #0
+  400a98:	d0fa      	beq.n	400a90 <main+0xb4>
 		puts("-E-\tTWI master write packet failed.\r");
-  400a9c:	481b      	ldr	r0, [pc, #108]	; (400b0c <main+0x130>)
-  400a9e:	4b10      	ldr	r3, [pc, #64]	; (400ae0 <main+0x104>)
-  400aa0:	4798      	blx	r3
-  400aa2:	e7fe      	b.n	400aa2 <main+0xc6>
+  400a9a:	481c      	ldr	r0, [pc, #112]	; (400b0c <main+0x130>)
+  400a9c:	4b10      	ldr	r3, [pc, #64]	; (400ae0 <main+0x104>)
+  400a9e:	4798      	blx	r3
+  400aa0:	e7fe      	b.n	400aa0 <main+0xc4>
+  400aa2:	bf00      	nop
   400aa4:	0040011d 	.word	0x0040011d
   400aa8:	0040020d 	.word	0x0040020d
   400aac:	400e1000 	.word	0x400e1000
@@ -5540,8 +5540,8 @@ __STATIC_INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
   40282c:	2074634f 	.word	0x2074634f
   402830:	32203132 	.word	0x32203132
   402834:	20373130 	.word	0x20373130
-  402838:	323a3231 	.word	0x323a3231
-  40283c:	38303a39 	.word	0x38303a39
+  402838:	313a3331 	.word	0x313a3331
+  40283c:	37313a31 	.word	0x37313a31
   402840:	0d2d2d20 	.word	0x0d2d2d20
   402844:	00000000 	.word	0x00000000
   402848:	666e6f43 	.word	0x666e6f43

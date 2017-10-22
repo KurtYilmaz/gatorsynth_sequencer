@@ -2,6 +2,8 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+src\ASF\sam\drivers\twi\twi.c
+
 src\dac.c
 
 src\encoders.c

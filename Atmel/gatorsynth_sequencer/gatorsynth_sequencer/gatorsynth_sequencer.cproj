@@ -32,6 +32,7 @@
           <option id="common.boards" value="Add" config="" content-id="Atmel.ASF" />
           <option id="common.services.basic.clock" value="Add" config="" content-id="Atmel.ASF" />
           <option id="common.services.delay" value="Add" config="" content-id="Atmel.ASF" />
+          <option id="sam.drivers.twi" value="Add" config="" content-id="Atmel.ASF" />
           <option id="sam.utils.linker_scripts" value="Add" config="" content-id="Atmel.ASF" />
         </options>
         <configurations>
@@ -151,6 +152,8 @@
           <file path="src/ASF/common/services/delay/sam/cycle_counter.c" framework="" version="3.22.0" source="common\services\delay\sam\cycle_counter.c" changed="False" content-id="Atmel.ASF" />
           <file path="src/ASF/common/services/delay/sam/cycle_counter.h" framework="" version="3.22.0" source="common\services\delay\sam\cycle_counter.h" changed="False" content-id="Atmel.ASF" />
           <file path="src/ASF/common/services/delay/delay.h" framework="" version="3.22.0" source="common\services\delay\delay.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam/drivers/twi/twi.c" framework="" version="3.28.1" source="sam\drivers\twi\twi.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/sam/drivers/twi/twi.h" framework="" version="3.28.1" source="sam\drivers\twi\twi.h" changed="False" content-id="Atmel.ASF" />
         </files>
         <documentation help="http://asf.atmel.com/docs/3.22.0/common.applications.user_application.user_board.sam4n16c/html/index.html" />
         <offline-documentation help="" />
@@ -162,7 +165,7 @@
       </framework-data>
     </AsfFrameworkConfig>
     <avrtool>com.atmel.avrdbg.tool.atmelice</avrtool>
-    <avrtoolserialnumber>J41800006388</avrtoolserialnumber>
+    <avrtoolserialnumber>J41800037009</avrtoolserialnumber>
     <avrdeviceexpectedsignature>0x29560CE0</avrdeviceexpectedsignature>
     <com_atmel_avrdbg_tool_atmelice>
       <ToolOptions>
@@ -170,13 +173,13 @@
           <JtagDbgClock>7500000</JtagDbgClock>
           <SwdClock>2000000</SwdClock>
         </InterfaceProperties>
-        <InterfaceName>JTAG</InterfaceName>
+        <InterfaceName>SWD</InterfaceName>
       </ToolOptions>
       <ToolType>com.atmel.avrdbg.tool.atmelice</ToolType>
-      <ToolNumber>J41800006388</ToolNumber>
+      <ToolNumber>J41800037009</ToolNumber>
       <ToolName>Atmel-ICE</ToolName>
     </com_atmel_avrdbg_tool_atmelice>
-    <avrtoolinterface>JTAG</avrtoolinterface>
+    <avrtoolinterface>SWD</avrtoolinterface>
     <avrtoolinterfaceclock>7500000</avrtoolinterfaceclock>
     <custom>
       <ToolOptions>
@@ -228,6 +231,7 @@
       <Value>../src/ASF/common/services/clock</Value>
       <Value>../src/ASF/common/services/delay</Value>
       <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.40\include</Value>
+      <Value>../src/ASF/sam/drivers/twi</Value>
     </ListValues>
   </armgcc.compiler.directories.IncludePaths>
   <armgcc.compiler.optimization.level>Optimize for size (-Os)</armgcc.compiler.optimization.level>
@@ -268,6 +272,7 @@
       <Value>../src/ASF/common/services/clock</Value>
       <Value>../src/ASF/common/services/delay</Value>
       <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.40\include</Value>
+      <Value>../src/ASF/sam/drivers/twi</Value>
     </ListValues>
   </armgcc.assembler.general.IncludePaths>
   <armgcc.preprocessingassembler.general.AssemblerFlags>-DARM_MATH_CM4=true -DBOARD=USER_BOARD -Dprintf=iprintf -Dscanf=iscanf</armgcc.preprocessingassembler.general.AssemblerFlags>
@@ -290,6 +295,7 @@
       <Value>../src/ASF/common/services/clock</Value>
       <Value>../src/ASF/common/services/delay</Value>
       <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.40\include</Value>
+      <Value>../src/ASF/sam/drivers/twi</Value>
     </ListValues>
   </armgcc.preprocessingassembler.general.IncludePaths>
 </ArmGcc>
@@ -331,6 +337,7 @@
       <Value>../src/ASF/common/services/clock</Value>
       <Value>../src/ASF/common/services/delay</Value>
       <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.40\include</Value>
+      <Value>../src/ASF/sam/drivers/twi</Value>
     </ListValues>
   </armgcc.compiler.directories.IncludePaths>
   <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
@@ -374,6 +381,7 @@
       <Value>../src/ASF/common/services/clock</Value>
       <Value>../src/ASF/common/services/delay</Value>
       <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.40\include</Value>
+      <Value>../src/ASF/sam/drivers/twi</Value>
     </ListValues>
   </armgcc.assembler.general.IncludePaths>
   <armgcc.assembler.debugging.DebugLevel>Default (-g)</armgcc.assembler.debugging.DebugLevel>
@@ -397,6 +405,7 @@
       <Value>../src/ASF/common/services/clock</Value>
       <Value>../src/ASF/common/services/delay</Value>
       <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.40\include</Value>
+      <Value>../src/ASF/sam/drivers/twi</Value>
     </ListValues>
   </armgcc.preprocessingassembler.general.IncludePaths>
   <armgcc.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcc.preprocessingassembler.debugging.DebugLevel>
@@ -404,6 +413,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="src\ASF\sam\drivers\twi\twi.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\ASF\sam\drivers\twi\twi.h">
+      <SubType>compile</SubType>
+    </None>
     <Compile Include="src\dac.c">
       <SubType>compile</SubType>
     </Compile>
@@ -805,6 +820,7 @@
     <Folder Include="src\ASF\sam\" />
     <Folder Include="src\ASF\sam\drivers\" />
     <Folder Include="src\ASF\sam\drivers\pmc\" />
+    <Folder Include="src\ASF\sam\drivers\twi\" />
     <Folder Include="src\ASF\sam\utils\" />
     <Folder Include="src\ASF\sam\utils\cmsis\" />
     <Folder Include="src\ASF\sam\utils\cmsis\sam4n\" />

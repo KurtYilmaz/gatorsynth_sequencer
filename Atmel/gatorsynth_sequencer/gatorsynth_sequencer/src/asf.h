@@ -81,4 +81,7 @@
 // From module: System Clock Control - SAM4N implementation
 #include <sysclk.h>
 
+// From module: TWI - Two-wire Interface
+#include <twi.h>
+
 #endif // ASF_H

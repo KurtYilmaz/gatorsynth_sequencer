@@ -1,4 +1,5 @@
-src/i2c.d src/i2c.o: ../src/i2c.c ../src/asf.h \
+src/ASF/sam/drivers/twi/twi.d src/ASF/sam/drivers/twi/twi.o: \
+ ../src/ASF/sam/drivers/twi/twi.c ../src/ASF/sam/drivers/twi/twi.h \
  ../src/ASF/sam/utils/compiler.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gcc\arm-none-eabi\5.3.1\include\stddef.h \
  ../src/ASF/common/utils/parts.h \
@@ -97,23 +98,9 @@ src/i2c.d src/i2c.o: ../src/i2c.c ../src/asf.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\machine\stdlib.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\alloca.h \
  ../src/ASF/common/utils/interrupt.h \
- ../src/ASF/common/utils/interrupt/interrupt_sam_nvic.h \
- ../src/ASF/sam/utils/status_codes.h \
- ../src/ASF/common/boards/user_board/user_board.h \
- ../src/config/conf_board.h ../src/ASF/common/services/delay/delay.h \
- ../src/ASF/common/services/clock/sysclk.h ../src/config/conf_clock.h \
- ../src/ASF/common/services/clock/sam4n/sysclk.h \
- ../src/ASF/common/services/clock/osc.h \
- ../src/ASF/common/services/clock/sam4n/osc.h \
- ../src/ASF/common/boards/board.h ../src/ASF/sam/drivers/pmc/pmc.h \
- ../src/ASF/common/services/clock/pll.h \
- ../src/ASF/common/services/clock/sam4n/pll.h \
- ../src/ASF/common/services/delay/sam/cycle_counter.h \
- ../src/ASF/sam/drivers/pmc/sleep.h \
- ../src/ASF/sam/utils/cmsis/sam4n/source/templates/exceptions.h \
- ../src/ASF/sam/drivers/twi/twi.h
+ ../src/ASF/common/utils/interrupt/interrupt_sam_nvic.h
 
-../src/asf.h:
+../src/ASF/sam/drivers/twi/twi.h:
 
 ../src/ASF/sam/utils/compiler.h:
 
@@ -312,37 +299,3 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 ../src/ASF/common/utils/interrupt.h:
 
 ../src/ASF/common/utils/interrupt/interrupt_sam_nvic.h:
-
-../src/ASF/sam/utils/status_codes.h:
-
-../src/ASF/common/boards/user_board/user_board.h:
-
-../src/config/conf_board.h:
-
-../src/ASF/common/services/delay/delay.h:
-
-../src/ASF/common/services/clock/sysclk.h:
-
-../src/config/conf_clock.h:
-
-../src/ASF/common/services/clock/sam4n/sysclk.h:
-
-../src/ASF/common/services/clock/osc.h:
-
-../src/ASF/common/services/clock/sam4n/osc.h:
-
-../src/ASF/common/boards/board.h:
-
-../src/ASF/sam/drivers/pmc/pmc.h:
-
-../src/ASF/common/services/clock/pll.h:
-
-../src/ASF/common/services/clock/sam4n/pll.h:
-
-../src/ASF/common/services/delay/sam/cycle_counter.h:
-
-../src/ASF/sam/drivers/pmc/sleep.h:
-
-../src/ASF/sam/utils/cmsis/sam4n/source/templates/exceptions.h:
-
-../src/ASF/sam/drivers/twi/twi.h:

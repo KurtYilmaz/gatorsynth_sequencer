@@ -68,8 +68,10 @@ void SPI_led_init(){
 }
 
 void SPI_dac_init(){
-	
-	REG_PMC_PCER0 |= PMC_PCER0_PID12; //enable peripheral clock on PORTB
+
+	REG_PIOB_PER |= PIO_PER_P13; //enable PIO controller on PB14
+	REG_PIOB_OER |= PIO_PER_P13; //enable output on pin PB14
+	REG_PIOB_SODR |=  PIO_PER_P13;
 
 	//enable peripheral clock
 	REG_PMC_PCER0 |= PMC_PCER0_PID21;
@@ -92,7 +94,7 @@ void SPI_dac_init(){
 	//REG_SPI_CSR |= SPI_CSR_CSNAAT;
 
 	//give peripheral control of pins
-	REG_PIOB_PDR |= PIO_PDR_P14; //NPCS1
+	REG_PIOA_PDR |= PIO_PDR_P11; //NPCS1
 	REG_PIOA_PDR |= PIO_PDR_P13; //MOSI
 	REG_PIOA_PDR |= PIO_PDR_P14; //SSCK
 

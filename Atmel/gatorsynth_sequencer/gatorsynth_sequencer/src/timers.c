@@ -11,6 +11,7 @@
  #include "leds.h"
  #include "spi.h"
  #include "dac.h"
+ #include "notes.h"
 
  void timers_init(void) {
 
@@ -72,8 +73,8 @@
 		overflow_count += 1;
 
 		//base this off a ADC pot results
-		if (overflow_count == 9000){
-			/*DAC_write_gate_off();*/
+		if (overflow_count == 5000){
+			DAC_write_gate_off();
 		}
 	 }
 
@@ -82,10 +83,10 @@
 		SPI_led_init();
 		leds_update_cursor(curr_step);
 
-// 		DAC_write_cv(notes[curr_step]);
-// 		if (notes_status[curr_step] == 1){
-// 			DAC_write_gate_on();
-// 		}
+ 		DAC_write_cv(notes_get(curr_step));
+		if (leds_status_get(curr_step) == 1){
+			DAC_write_gate_on();
+		}
 		
 
 		if (curr_step == 15){

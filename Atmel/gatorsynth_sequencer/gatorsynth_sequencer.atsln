@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "gatorsynth_sequencer", "gatorsynth_sequencer\gatorsynth_sequencer.cproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
 EndProject
-Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "TWI_TWI_EEPROM_EXAMPLE1", "TWI_TWI_EEPROM_EXAMPLE1\TWI_TWI_EEPROM_EXAMPLE1.cproj", "{1334F356-E14A-4F95-A33C-E3565CA46C25}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -17,10 +15,6 @@ Global
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|ARM.Build.0 = Debug|ARM
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|ARM.ActiveCfg = Release|ARM
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|ARM.Build.0 = Release|ARM
-		{1334F356-E14A-4F95-A33C-E3565CA46C25}.Debug|ARM.ActiveCfg = Debug|ARM
-		{1334F356-E14A-4F95-A33C-E3565CA46C25}.Debug|ARM.Build.0 = Debug|ARM
-		{1334F356-E14A-4F95-A33C-E3565CA46C25}.Release|ARM.ActiveCfg = Release|ARM
-		{1334F356-E14A-4F95-A33C-E3565CA46C25}.Release|ARM.Build.0 = Release|ARM
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

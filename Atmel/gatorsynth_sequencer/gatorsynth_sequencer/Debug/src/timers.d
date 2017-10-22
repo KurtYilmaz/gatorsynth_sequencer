@@ -111,7 +111,8 @@ src/timers.d src/timers.o: ../src/timers.c ../src/asf.h \
  ../src/ASF/common/services/delay/sam/cycle_counter.h \
  ../src/ASF/sam/drivers/pmc/sleep.h \
  ../src/ASF/sam/utils/cmsis/sam4n/source/templates/exceptions.h \
- ../src/timers.h ../src/leds.h ../src/spi.h ../src/dac.h
+ ../src/ASF/sam/drivers/twi/twi.h ../src/timers.h ../src/leds.h \
+ ../src/spi.h ../src/dac.h ../src/notes.h
 
 ../src/asf.h:
 
@@ -345,6 +346,8 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 
 ../src/ASF/sam/utils/cmsis/sam4n/source/templates/exceptions.h:
 
+../src/ASF/sam/drivers/twi/twi.h:
+
 ../src/timers.h:
 
 ../src/leds.h:
@@ -352,3 +355,5 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 ../src/spi.h:
 
 ../src/dac.h:
+
+../src/notes.h:
