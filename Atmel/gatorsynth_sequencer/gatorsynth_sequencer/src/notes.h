@@ -13,5 +13,7 @@
 
 
 float notes_get(uint8_t curr_step);
+void notes_inc(uint8_t step);
+void notes_dec(uint8_t step);
 
 #endif /* NOTES_H_ */

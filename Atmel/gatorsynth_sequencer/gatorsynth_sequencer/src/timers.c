@@ -12,6 +12,8 @@
  #include "spi.h"
  #include "dac.h"
  #include "notes.h"
+ #include "sequencer.h"
+ #include "adc.h"
 
  void timers_init(void) {
 
@@ -48,9 +50,9 @@
 	REG_TC0_RC0 = 1250;
 
 	// For the interrupt
-	REG_PIOA_PER |= PIO_PER_P20; //enable PIO controller on PA11
-	REG_PIOA_OER |= PIO_PER_P20; //enable output on pin PA11
-	REG_PMC_PCER0 |= PMC_PCER0_PID11; //Enable PMC control for PA11
+// 	REG_PIOA_PER |= PIO_PER_P20; //enable PIO controller on PA11
+// 	REG_PIOA_OER |= PIO_PER_P20; //enable output on pin PA11
+	/*REG_PMC_PCER0 |= PMC_PCER0_PID11; //Enable PMC control for PA11*/
 
 	// TC0 control register enables timer and triggers it to start
 	REG_TC0_CCR0 |= TC_CCR_CLKEN | TC_CCR_SWTRG;
@@ -70,10 +72,11 @@
 
 	 // Test code, normally trigger next step, output clock
 	 if((REG_TC0_SR0 & TC_SR_CPCS) >= 0) {
+
 		overflow_count += 1;
 
 		//base this off a ADC pot results
-		if (overflow_count == 5000){
+		if (overflow_count == note_length){
 			DAC_write_gate_off();
 		}
 	 }
@@ -87,8 +90,9 @@
 		if (leds_status_get(curr_step) == 1){
 			DAC_write_gate_on();
 		}
-		
 
+		REG_ADC_CR |= ADC_CR_START;
+		
 		if (curr_step == 15){
 			curr_step = 0;
 		}

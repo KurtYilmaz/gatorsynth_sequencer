@@ -13,10 +13,10 @@
 #define TIMERS_H_
 
 void timers_init(void);
-
 void update_timers(int bpm);
 
 uint16_t overflow_count;
+uint16_t note_length;
 uint8_t curr_step;
 
 

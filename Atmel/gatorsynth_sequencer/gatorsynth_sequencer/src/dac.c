@@ -10,12 +10,12 @@
 #include "spi.h"
 
 
-#define VREF 3.3
+#define VREF 10
 #define max 1023
 
 void DAC_write_cv(float voltage){
 
-	//cpu_irq_disable();
+	cpu_irq_disable();
 
 	float float_voltage = (max*(voltage))/VREF;
 	uint16_t dac_voltage = (uint16_t) float_voltage;
@@ -31,14 +31,14 @@ void DAC_write_cv(float voltage){
 	delay_us(3);
 	REG_PIOB_SODR |=  PIO_PER_P13;
 
-	//cpu_irq_enable();
+	cpu_irq_enable();
 	
 
 }
 
 void DAC_write_gate_on(){
 
-	//cpu_irq_disable();
+	cpu_irq_disable();
 
 	float float_voltage = (max*(VREF))/VREF;
 	uint16_t dac_voltage = (uint16_t) float_voltage;
@@ -53,12 +53,12 @@ void DAC_write_gate_on(){
 	delay_us(3);
 	REG_PIOB_SODR |=  PIO_PER_P13;
 
-	//cpu_irq_enable();
+	cpu_irq_enable();
 }
 
 void DAC_write_gate_off(){
 
-	//cpu_irq_disable();
+	cpu_irq_disable();
 
 	float float_voltage = (max*(0))/VREF;
 	uint16_t dac_voltage = (uint16_t) float_voltage;
@@ -73,7 +73,7 @@ void DAC_write_gate_off(){
 	delay_us(3);
 	REG_PIOB_SODR |=  PIO_PER_P13;
 
-	//cpu_irq_enable();
+	cpu_irq_enable();
 
 }
 

@@ -9,9 +9,8 @@
 #include <stdbool.h>
 #include "spi.h"
 
-uint16_t leds_prev_data[3] = {0x0000, 0x0000, 0x0fff};
 
-int leds_status[16] = {1, 0, 0, 0, 0, 0, 0, 0,
+int leds_status[16] = {0, 0, 0, 0, 0, 0, 0, 0,
 0, 0, 0, 0, 0, 0, 0, 0};
 
 uint16_t leds_data_1[12] = {0x0000, 0x0000, 0x0000,
@@ -78,28 +77,28 @@ void led_toggle(uint8_t top_row, uint8_t bottom_row){
 	}
 
 	switch(top_row) {
-		case 254 :
+		case 126 :
 			leds_status[7] = abs(leds_status[7] - 1);
 			break;
-		case 253 :
+		case 125 :
 			leds_status[6] = abs(leds_status[6] - 1);
 			break;
-		case 251 :
+		case 123 :
 			leds_status[5] = abs(leds_status[5] - 1);
 			break;
-		case 247 :
+		case 119 :
 			leds_status[4] = abs(leds_status[4] - 1);
 			break;
-		case 239 :
+		case 111 :
 			leds_status[3] = abs(leds_status[3] - 1);
 			break;
-		case 223 :
+		case 95 :
 			leds_status[2] = abs(leds_status[2] - 1);
 			break;
-		case 191 :
+		case 63 :
 			leds_status[1] = abs(leds_status[1] - 1);
 			break;
-		case 127 :
+		case 2 :
 			leds_status[0] = abs(leds_status[0] - 1);
 			break;
 		default : 
@@ -119,7 +118,7 @@ void leds_update_cursor(uint8_t curr_step){
 				if(leds_status[i] == 1){
 					leds_data_1[toffset] = 0x0000;
 					leds_data_1[toffset+1] = 0x0000;
-					leds_data_1[toffset+2] = 0x3FFF;
+					leds_data_1[toffset+2] = 0xFFFF;
 				}
 				else{
 					leds_data_1[toffset] = 0x0000;
@@ -132,7 +131,7 @@ void leds_update_cursor(uint8_t curr_step){
 				if(leds_status[i] == 1){
 					leds_data_2[toffset] = 0x0000;
 					leds_data_2[toffset+1] = 0x0000;
-					leds_data_2[toffset+2] = 0x3FFF;
+					leds_data_2[toffset+2] = 0xFFFF;
 				}
 				else{
 					leds_data_2[toffset] = 0x0000;
@@ -145,7 +144,7 @@ void leds_update_cursor(uint8_t curr_step){
 				if(leds_status[i] == 1){
 					leds_data_3[toffset] = 0x0000;
 					leds_data_3[toffset+1] = 0x0000;
-					leds_data_3[toffset+2] = 0x3FFF;
+					leds_data_3[toffset+2] = 0xFFFF;
 				}
 				else{
 					leds_data_3[toffset] = 0x0000;
@@ -158,7 +157,7 @@ void leds_update_cursor(uint8_t curr_step){
 				if(leds_status[i] == 1){
 					leds_data_4[toffset] = 0x0000;
 					leds_data_4[toffset+1] = 0x0000;
-					leds_data_4[toffset+2] = 0x3FFF;
+					leds_data_4[toffset+2] = 0xFFFF;
 				}
 				else{
 					leds_data_4[toffset] = 0x0000;
@@ -172,26 +171,26 @@ void leds_update_cursor(uint8_t curr_step){
 /* Update Cursor to correct position */
 	if ( (curr_step >= 0) && (curr_step < 4) ){
 		offset = (curr_step)*3;
-		leds_data_1[offset] = 0x1FFF;
-		leds_data_1[offset+1] = 0x03FF;
+		leds_data_1[offset] = 0xFFFF;
+		leds_data_1[offset+1] = 0x0FFF;
 		leds_data_1[offset+2] = 0x0000;
 	}
 	else if ( (curr_step >= 4) && (curr_step < 8) ){
 		offset = (curr_step % 4)*3;
-		leds_data_2[offset] = 0x1FFF;
-		leds_data_2[offset+1] = 0x03FF;
+		leds_data_2[offset] = 0xFFFF;
+		leds_data_2[offset+1] = 0x0FFF;
 		leds_data_2[offset+2] = 0x0000;
 	}
 	else if ( (curr_step >= 8) && (curr_step < 12) ){
 		offset = (curr_step % 8)*3;
-		leds_data_3[offset] = 0x1FFF;
-		leds_data_3[offset+1] = 0x03FF;
+		leds_data_3[offset] = 0xFFFF;
+		leds_data_3[offset+1] = 0x0FFF;
 		leds_data_3[offset+2] = 0x0000;
 	}
 	else if ( (curr_step >= 12) && (curr_step < 16) ){
 		offset = (curr_step % 12)*3;
-		leds_data_4[offset] = 0x1FFF;
-		leds_data_4[offset+1] = 0x03FF;
+		leds_data_4[offset] = 0xFFFF;
+		leds_data_4[offset+1] = 0x0FFF;
 		leds_data_4[offset+2] = 0x0000;
 	}
 
@@ -372,4 +371,4 @@ void leds_update_note(uint8_t led_pos){
 	delay_ms(2.74);
 	cpu_irq_enable();
 
- };
+ }

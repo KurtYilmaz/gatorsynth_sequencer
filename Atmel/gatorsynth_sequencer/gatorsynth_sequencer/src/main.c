@@ -8,10 +8,10 @@
 #include "dac.h"
 #include "notes.h"
 #include "i2c.h"
+#include "sequencer.h"
+#include "adc.h"
 #include <twi.h>
 
-
-uint16_t bpm = 120;
 uint8_t brightness = 0x07;
 uint8_t count = 0;
 
@@ -22,7 +22,7 @@ uint8_t temp_data[2] = {0};
 #define BOARD_ID_TWI    ID_TWI0
 #define BOARD_BASE_TWI  TWI0
 
-void config_MAX7314();
+void config_MAX7314(void);
 void read_MAX7314(uint8_t *port_data);
 
 int main (void)
@@ -31,12 +31,15 @@ int main (void)
 	WDT->WDT_MR = WDT_MR_WDDIS; //disable watchdog timer
 
 	board_init();				//board init (currently empty)
+	init_sequencer_controls();
 
 	SPI_led_init();
 	leds_update_display();
 
 	timers_init();				//initiate timer for Flashing LED on PA20
 	update_timers(bpm);
+
+	ADC_init();
 
 	REG_PIOB_PER |= PIO_PER_P3; //enable PIO controller on PB3
 	REG_PIOB_OER |= PIO_PER_P3; //enable output on pin PB3
@@ -89,12 +92,12 @@ int main (void)
 	twi_master_write(BOARD_BASE_TWI, &packet_tx);
 
 
-	uint8_t port_data[] = {MAX7314_portConfigRegisterLow, 0xFF, 0xFF};
+	uint8_t port_data_write[] = {MAX7314_portConfigRegisterLow, 0xFF, 0xFF};
 
 	/* Configure the Chip Ports as Inputs */
 	packet_tx.chip        = 0b0100000;
 	packet_tx.addr_length = 0;
-	packet_tx.buffer      = (uint8_t *) port_data;
+	packet_tx.buffer      = (uint8_t *) port_data_write;
 	packet_tx.length      = 3;
 	twi_master_write(BOARD_BASE_TWI, &packet_tx);
  }
@@ -122,3 +125,4 @@ int main (void)
 
 
  }
+

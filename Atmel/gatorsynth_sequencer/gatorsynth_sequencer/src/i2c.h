@@ -14,12 +14,12 @@
 
  #define MAX7314_slaveAddress 0b010000 //7bit address when AD0 = GND
 
- void init_IO_int();
- void i2c_init();
- void i2c_stop();
+ void init_IO_int(void);
+ void i2c_init(void);
+ void i2c_stop(void);
  void i2c_start(uint8_t slave_addr, uint8_t mread);
- uint8_t i2c_readNACK();
- uint8_t i2c_readACK();
+ uint8_t i2c_readNACK(void);
+ uint8_t i2c_readACK(void);
  void i2c_write(uint8_t data);
  void i2c_writeStop(uint8_t data);
 

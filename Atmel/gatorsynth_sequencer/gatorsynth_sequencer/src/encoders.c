@@ -12,11 +12,13 @@
 #include <board.h>
 #include <conf_board.h>
 #include <stdbool.h>
+#include "notes.h"
+#include "timers.h"
 
 uint8_t A_seq;
 uint8_t B_seq;
 
- void Encoder_isRight(uint32_t A, uint32_t B){
+ void encoder_direction(uint32_t A, uint32_t B, uint8_t step){
 
 	//read Encoder input A
 	bool A_in = REG_PIOC_PDSR & A;
@@ -35,11 +37,14 @@ uint8_t B_seq;
 
 	//return true if turned right
 	if ((A_seq == 0b00001001) && (B_seq == 0b00000011)){
-		REG_PIOB_SODR |= PIO_PER_P3; //set output high on PB14 as default
+		REG_PIOB_SODR |= PIO_PER_P3; //set output high on PB3
+		notes_inc(step);
+
 	}
 
 	else if ((A_seq == 0b00000011) && (B_seq == 0b00001001)){
-		REG_PIOB_CODR |= PIO_PER_P3; //set output high on PB14 as default
+		REG_PIOB_CODR |= PIO_PER_P3; //set output low on PB3
+		notes_dec(step);
 	}
 
 
@@ -458,81 +463,81 @@ void PIOC_Handler(){
 
 	//check if Encoder 1 was rotated
 	if ( (status & PIO_ISR_P0) || (status & PIO_ISR_P1) ){	
-		
+		encoder_direction(PIO_ODSR_P0, PIO_ODSR_P1, 0);
 	}
 
 	//check if Encoder 2 was rotated
 	else if ( (status & PIO_ISR_P2) || (status & PIO_ISR_P3) ){
-		
+		encoder_direction(PIO_ODSR_P2, PIO_ODSR_P3, 1);
 	}
 
 	//check if Encoder 3 was rotated
 	else if ( (status & PIO_ISR_P4) || (status & PIO_ISR_P5) ){
-		
+		encoder_direction(PIO_ODSR_P4, PIO_ODSR_P5, 2);
 	}
 
 	//check if Encoder 4 was rotated
 	else if ( (status & PIO_ISR_P6) || (status & PIO_ISR_P7) ){
-		
+		encoder_direction(PIO_ODSR_P6, PIO_ODSR_P7, 3);
 	}
 
 	//check if Encoder 5 was rotated
 	else if ( (status & PIO_ISR_P8) || (status & PIO_ISR_P9) ){
-		
+		encoder_direction(PIO_ODSR_P8, PIO_ODSR_P9, 4);
 	}
 
 	//check if Encoder 6 was rotated
 	else if ( (status & PIO_ISR_P10) || (status & PIO_ISR_P11) ){
-		
+		encoder_direction(PIO_ODSR_P10, PIO_ODSR_P11, 5);
 	}
 
 	//check if Encoder 7 was rotated
-	else if ( (status & PIO_ISR_P3) || (status & PIO_ISR_P13) ){
-		
+	else if ( (status & PIO_ISR_P12) || (status & PIO_ISR_P13) ){
+		encoder_direction(PIO_ODSR_P12, PIO_ODSR_P13, 6);
 	}
 
 	//check if Encoder 8 was rotated
 	else if ( (status & PIO_ISR_P14) || (status & PIO_ISR_P15) ){
-		
+		encoder_direction(PIO_ODSR_P14, PIO_ODSR_P15, 7);
 	}
 
 	//check if Encoder 9 was rotated
 	else if ( (status & PIO_ISR_P16) || (status & PIO_ISR_P17) ){
-		
+		encoder_direction(PIO_ODSR_P16, PIO_ODSR_P17, 8);
 	}
 
 	//check if Encoder 10 was rotated
 	else if ( (status & PIO_ISR_P18) || (status & PIO_ISR_P19) ){
-		
+		encoder_direction(PIO_ODSR_P18, PIO_ODSR_P19, 9);
 	}
 
 	//check if Encoder 11 was rotated
 	else if ( (status & PIO_ISR_P20) || (status & PIO_ISR_P21) ){
-		Encoder_isRight(PIO_ODSR_P20, PIO_ODSR_P21);
+		encoder_direction(PIO_ODSR_P20, PIO_ODSR_P21, 10);
 	}
 
 	//check if Encoder 12 was rotated
 	else if ( (status & PIO_ISR_P22) || (status & PIO_ISR_P23) ){
-		
+		encoder_direction(PIO_ODSR_P22, PIO_ODSR_P23, 11);
 	}
 
 	//check if Encoder 13 was rotated
 	else if ( (status & PIO_ISR_P24) || (status & PIO_ISR_P25) ){
-		
+		encoder_direction(PIO_ODSR_P24, PIO_ODSR_P25, 12);
 	}
 	
 	//check if Encoder 14 was rotated
 	else if ( (status & PIO_ISR_P26) || (status & PIO_ISR_P27) ){
-		
+		encoder_direction(PIO_ODSR_P26, PIO_ODSR_P27, 13);
 	}
 
 	//check if Encoder 15 was rotated
 	else if ( (status & PIO_ISR_P28) || (status & PIO_ISR_P29) ){
-		
+		encoder_direction(PIO_ODSR_P28, PIO_ODSR_P29, 14);
 	}
 
 	//check if Encoder 16 was rotated
 	else if ( (status & PIO_ISR_P30) || (status & PIO_ISR_P31) ){
-		
+		encoder_direction(PIO_ODSR_P30, PIO_ODSR_P31, 15);
 	}
 }

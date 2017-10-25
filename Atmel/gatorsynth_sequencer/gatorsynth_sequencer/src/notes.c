@@ -6,8 +6,8 @@
  */ 
 
  #include <asf.h>
- #include "dac.h"
- #include "encoders.h"
+ //#include "dac.h"
+ //#include "encoders.h"
 
  #define Base 0
 
@@ -154,16 +154,39 @@
  //Octave 11
  #define A10 (Base + 10)
 
+ float notes_lookup[121] = {A0, A0_SH, B0, C1, C1_SH, D1, D1_SH, E1, F1, F1_SH, G1, G1_SH,
+						 A1, A1_SH, B1, C2, C2_SH, D2, D2_SH, E2, F2, F2_SH, G2, G2_SH,
+						 A2, A2_SH, B2, C3, C3_SH, D3, D3_SH, E3, F3, F3_SH, G3, G3_SH,
+						 A3, A3_SH, B3, C4, C4_SH, D4, D4_SH, E4, F4, F4_SH, G4, G4_SH,
+						 A4, A4_SH, B4, C5, C5_SH, D5, D5_SH, E5, F5, F5_SH, G5, G5_SH,
+						 A5, A5_SH, B5, C6, C6_SH, D6, D6_SH, E6, F6, F6_SH, G6, G6_SH,
+						 A6, A6_SH, B6, C7, C7_SH, D7, D7_SH, E7, F7, F7_SH, G7, G7_SH,
+						 A7, A7_SH, B7, C8, C8_SH, D8, D8_SH, E8, F8, F8_SH, G8, G8_SH,
+						 A8, A8_SH, B8, C9, C9_SH, D9, D9_SH, E9, F9, F9_SH, G9, G9_SH,
+						 A9, A9_SH, B9, C10, C10_SH, D10, D10_SH, E10, F10, F10_SH, G10, G10_SH,
+						 A10};
 
- // uint8_t notes_status[16] = {1, 0, 1, 0, 1, 0, 1, 0,
- // 						0, 1, 1, 1, 1, 0, 0, 1};
 
- float notes[16] = {3, 0, 2, 0, 1, 0, 2, 0,
-					0, 3, 0, 0, 0, 0, 0, 0};
+ int notes_index[16] = { 48, 48, 48, 48, 48, 48, 48, 48,
+						 48, 48, 48, 48, 48, 48, 48, 48};
 
 
 
  float notes_get(uint8_t curr_step){
-	return notes[curr_step];
+	int lookup_index = notes_index[curr_step];
+	return notes_lookup[lookup_index];
  }
+
+  void notes_inc(uint8_t step){
+	if (notes_index[step] < 120){
+		notes_index[step]++;
+	}
+ }
+
+ void notes_dec(uint8_t step){
+	if (notes_index[step] > 0){
+		notes_index[step]--;
+	}
+ }
+ 
  

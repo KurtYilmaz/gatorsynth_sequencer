@@ -13,8 +13,7 @@ uint8_t A_seq;
 uint8_t B_seq;
 
 void Encoder_init(void);
-bool Encoder_isRight(uint8_t A, uint8_t B);
-bool Encoder_isRight(uint8_t A, uint8_t B);
+int encoder_direction(uint32_t A, uint32_t B);
 
 
 #endif /* ENCODERS_H_ */

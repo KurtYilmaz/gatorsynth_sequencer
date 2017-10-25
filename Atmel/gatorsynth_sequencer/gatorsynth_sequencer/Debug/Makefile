@@ -78,6 +78,7 @@ SUBDIRS :=  \
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../src/adc.c \
 ../src/ASF/sam/drivers/twi/twi.c \
 ../src/dac.c \
 ../src/encoders.c \
@@ -107,6 +108,7 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+src/adc.o \
 src/ASF/sam/drivers/twi/twi.o \
 src/dac.o \
 src/encoders.o \
@@ -129,6 +131,7 @@ src/i2c.o \
 src/main.o
 
 OBJS_AS_ARGS +=  \
+src/adc.o \
 src/ASF/sam/drivers/twi/twi.o \
 src/dac.o \
 src/encoders.o \
@@ -151,6 +154,7 @@ src/i2c.o \
 src/main.o
 
 C_DEPS +=  \
+src/adc.d \
 src/ASF/sam/drivers/twi/twi.d \
 src/dac.d \
 src/encoders.d \
@@ -173,6 +177,7 @@ src/i2c.d \
 src/main.d
 
 C_DEPS_AS_ARGS +=  \
+src/adc.d \
 src/ASF/sam/drivers/twi/twi.d \
 src/dac.d \
 src/encoders.d \
@@ -250,14 +255,16 @@ LINKER_SCRIPT_DEP+=  \
 
 
 
-src/ASF/sam/drivers/twi/%.o: ../src/ASF/sam/drivers/twi/%.c
+
+
+src/%.o: ../src/%.c
 	@echo Building file: $<
 	@echo Invoking: ARM/GNU C Compiler : 5.3.1
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE)  -x c -mthumb -D__SAM4N16C__ -DDEBUG -Dscanf=iscanf -DBOARD=USER_BOARD -DARM_MATH_CM4=true -Dprintf=iprintf  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\4.2.0\CMSIS\Include" -I"../src/config" -I"../src/ASF/thirdparty/CMSIS/Lib/GCC" -I"../src/ASF/common/utils" -I"../src" -I"../src/ASF/sam/utils" -I"../src/ASF/sam/utils/preprocessor" -I"../src/ASF/common/boards" -I"../src/ASF/sam/utils/header_files" -I"../src/ASF/sam/utils/cmsis/sam4n/source/templates" -I"../src/ASF/sam/utils/cmsis/sam4n/include" -I"../src/ASF/common/boards/user_board" -I"../src/ASF/thirdparty/CMSIS/Include" -I"../src/ASF/sam/drivers/pmc" -I"../src/ASF/common/services/clock" -I"../src/ASF/common/services/delay" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include" -I"../src/ASF/sam/drivers/twi"  -O1 -fdata-sections -ffunction-sections -ffast-math -mlong-calls -g3 -Wall -mcpu=cortex-m4 -c -pipe -fno-strict-aliasing -Wall -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -std=gnu99 -ffunction-sections -fdata-sections -Wchar-subscripts -Wcomment -Wformat=2 -Wimplicit-int -Wmain -Wparentheses -Wsequence-point -Wreturn-type -Wswitch -Wtrigraphs -Wunused -Wuninitialized -Wunknown-pragmas -Wfloat-equal -Wundef -Wshadow -Wbad-function-cast -Wwrite-strings -Wsign-compare -Waggregate-return  -Wmissing-declarations -Wformat -Wmissing-format-attribute -Wno-deprecated-declarations -Wpacked -Wredundant-decls -Wnested-externs -Wlong-long -Wunreachable-code -Wcast-align --param max-inline-insns-single=500 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
-src/%.o: ../src/%.c
+src/ASF/sam/drivers/twi/%.o: ../src/ASF/sam/drivers/twi/%.c
 	@echo Building file: $<
 	@echo Invoking: ARM/GNU C Compiler : 5.3.1
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE)  -x c -mthumb -D__SAM4N16C__ -DDEBUG -Dscanf=iscanf -DBOARD=USER_BOARD -DARM_MATH_CM4=true -Dprintf=iprintf  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\4.2.0\CMSIS\Include" -I"../src/config" -I"../src/ASF/thirdparty/CMSIS/Lib/GCC" -I"../src/ASF/common/utils" -I"../src" -I"../src/ASF/sam/utils" -I"../src/ASF/sam/utils/preprocessor" -I"../src/ASF/common/boards" -I"../src/ASF/sam/utils/header_files" -I"../src/ASF/sam/utils/cmsis/sam4n/source/templates" -I"../src/ASF/sam/utils/cmsis/sam4n/include" -I"../src/ASF/common/boards/user_board" -I"../src/ASF/thirdparty/CMSIS/Include" -I"../src/ASF/sam/drivers/pmc" -I"../src/ASF/common/services/clock" -I"../src/ASF/common/services/delay" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAM4N_DFP\1.0.40\include" -I"../src/ASF/sam/drivers/twi"  -O1 -fdata-sections -ffunction-sections -ffast-math -mlong-calls -g3 -Wall -mcpu=cortex-m4 -c -pipe -fno-strict-aliasing -Wall -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -std=gnu99 -ffunction-sections -fdata-sections -Wchar-subscripts -Wcomment -Wformat=2 -Wimplicit-int -Wmain -Wparentheses -Wsequence-point -Wreturn-type -Wswitch -Wtrigraphs -Wunused -Wuninitialized -Wunknown-pragmas -Wfloat-equal -Wundef -Wshadow -Wbad-function-cast -Wwrite-strings -Wsign-compare -Waggregate-return  -Wmissing-declarations -Wformat -Wmissing-format-attribute -Wno-deprecated-declarations -Wpacked -Wredundant-decls -Wnested-externs -Wlong-long -Wunreachable-code -Wcast-align --param max-inline-insns-single=500 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
