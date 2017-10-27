@@ -65,7 +65,7 @@ int main (void)
 	 if (status & PIO_ISR_P10){
 		read_MAX7314(temp_data);
 
-		if  ( !((temp_data[0] = 127) && (temp_data[1] == 255)) ){
+		if  ( !((temp_data[0] == 127) && (temp_data[1] == 255)) ){
 			port_data[0] = temp_data[0];
 			port_data[1] = temp_data[1];
 

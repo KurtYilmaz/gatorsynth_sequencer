@@ -18,7 +18,7 @@
  void timers_init(void) {
 
 	overflow_count = 0;
-	curr_step = 0;
+	curr_step = 15;
 
 	// T0 is used for stepping
 	// Enable interrupts on timer 0
@@ -83,7 +83,14 @@
 
 	 if(overflow_count >= 10000) {
 
-		SPI_led_init();
+		if (curr_step == 15){
+			curr_step = 0;
+		}
+		else{
+			curr_step++;
+		}
+
+		SPI_led_init();	
 		leds_update_cursor(curr_step);
 
  		DAC_write_cv(notes_get(curr_step));
@@ -92,13 +99,6 @@
 		}
 
 		REG_ADC_CR |= ADC_CR_START;
-		
-		if (curr_step == 15){
-			curr_step = 0;
-		}
-		else{
-			curr_step++;
-		}
 
 		overflow_count = 0;
 	 }

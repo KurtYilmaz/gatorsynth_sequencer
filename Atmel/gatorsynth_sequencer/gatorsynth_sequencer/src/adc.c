@@ -28,7 +28,7 @@
 	REG_ADC_CHER |= ADC_CHER_CH2;
 
 	//configure ADC clock to 5MHz
-	REG_ADC_MR |= ADC_MR_PRESCAL(1);
+	REG_ADC_MR |= ADC_MR_PRESCAL(9);
 
 	//enable interrupt for end of ADC conversion on CH2
 	REG_ADC_IER |= ADC_IER_EOC2;

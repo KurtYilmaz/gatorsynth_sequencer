@@ -8,6 +8,8 @@
 #include <asf.h>
 #include <stdbool.h>
 #include "spi.h"
+#include "timers.h"
+
 
 
 int leds_status[16] = {0, 0, 0, 0, 0, 0, 0, 0,
@@ -104,9 +106,9 @@ void led_toggle(uint8_t top_row, uint8_t bottom_row){
 		default : 
 			break;
 	}
-
-	leds_update_display();
-
+	
+	SPI_led_init();
+	leds_update_cursor(curr_step);
 }
 
 void leds_update_cursor(uint8_t curr_step){
