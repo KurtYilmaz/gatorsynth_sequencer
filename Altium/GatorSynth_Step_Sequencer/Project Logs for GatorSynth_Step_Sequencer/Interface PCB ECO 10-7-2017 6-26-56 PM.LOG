@@ -1,0 +1,85 @@
+Removed Pin From Net: NetName=SW1 Pin=R5-1
+Removed Pin From Net: NetName=3.3V Pin=R5-2
+Removed Pin From Net: NetName=SW2 Pin=R6-1
+Removed Pin From Net: NetName=3.3V Pin=R6-2
+Removed Pin From Net: NetName=SW3 Pin=R7-1
+Removed Pin From Net: NetName=3.3V Pin=R7-2
+Removed Pin From Net: NetName=SW4 Pin=R8-1
+Removed Pin From Net: NetName=3.3V Pin=R8-2
+Removed Pin From Net: NetName=SW5 Pin=R9-1
+Removed Pin From Net: NetName=3.3V Pin=R9-2
+Removed Pin From Net: NetName=SW6 Pin=R10-1
+Removed Pin From Net: NetName=3.3V Pin=R10-2
+Removed Pin From Net: NetName=SW7 Pin=R11-1
+Removed Pin From Net: NetName=3.3V Pin=R11-2
+Removed Pin From Net: NetName=SW8 Pin=R12-1
+Removed Pin From Net: NetName=3.3V Pin=R12-2
+Removed Pin From Net: NetName=SW9 Pin=R13-1
+Removed Pin From Net: NetName=3.3V Pin=R13-2
+Removed Pin From Net: NetName=SW10 Pin=R14-1
+Removed Pin From Net: NetName=3.3V Pin=R14-2
+Removed Pin From Net: NetName=SW11 Pin=R15-1
+Removed Pin From Net: NetName=3.3V Pin=R15-2
+Removed Pin From Net: NetName=SW12 Pin=R16-1
+Removed Pin From Net: NetName=3.3V Pin=R16-2
+Removed Pin From Net: NetName=SW13 Pin=R17-1
+Removed Pin From Net: NetName=3.3V Pin=R17-2
+Removed Pin From Net: NetName=SW14 Pin=R18-1
+Removed Pin From Net: NetName=3.3V Pin=R18-2
+Removed Pin From Net: NetName=SW15 Pin=R19-1
+Removed Pin From Net: NetName=3.3V Pin=R19-2
+Removed Pin From Net: NetName=SW16 Pin=R20-1
+Removed Pin From Net: NetName=3.3V Pin=R20-2
+Removed Member From Class: ClassName=Interface Member=R6
+Removed Member From Class: ClassName=Interface Member=R7
+Removed Member From Class: ClassName=Interface Member=R8
+Removed Member From Class: ClassName=Interface Member=R9
+Removed Member From Class: ClassName=Interface Member=R10
+Removed Member From Class: ClassName=Interface Member=R11
+Removed Member From Class: ClassName=Interface Member=R12
+Removed Member From Class: ClassName=Interface Member=R13
+Removed Member From Class: ClassName=Interface Member=R14
+Removed Member From Class: ClassName=Interface Member=R15
+Removed Member From Class: ClassName=Interface Member=R16
+Removed Member From Class: ClassName=Interface Member=R17
+Removed Member From Class: ClassName=Interface Member=R18
+Removed Member From Class: ClassName=Interface Member=R19
+Removed Member From Class: ClassName=Interface Member=R20
+Removed Member From Class: ClassName=Interface Member=R21
+Change Component Designator: OldDesignator=R21 NewDesignator=R5
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P9(HDR1X10)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P10(HDR1X10)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC Pin=P9-1
+Added Pin To Net: NetName=SW1 Pin=P9-3
+Added Pin To Net: NetName=SW2 Pin=P9-4
+Added Pin To Net: NetName=SW9 Pin=P9-5
+Added Pin To Net: NetName=SW10 Pin=P9-6
+Added Pin To Net: NetName=SW5 Pin=P9-7
+Added Pin To Net: NetName=SW6 Pin=P9-8
+Added Pin To Net: NetName=SW13 Pin=P9-9
+Added Pin To Net: NetName=SW14 Pin=P9-10
+Added Pin To Net: NetName=VCC Pin=P10-1
+Added Pin To Net: NetName=SW3 Pin=P10-3
+Added Pin To Net: NetName=SW4 Pin=P10-4
+Added Pin To Net: NetName=SW11 Pin=P10-5
+Added Pin To Net: NetName=SW12 Pin=P10-6
+Added Pin To Net: NetName=SW7 Pin=P10-7
+Added Pin To Net: NetName=SW8 Pin=P10-8
+Added Pin To Net: NetName=SW15 Pin=P10-9
+Added Pin To Net: NetName=SW16 Pin=P10-10
+Added Member To Class: ClassName=Interface Member=Component P9 2.2k_RES
+Added Member To Class: ClassName=Interface Member=Component P10 2.2k_RES

@@ -1,0 +1,29 @@
+PCAD Importer Log
+Project : MAX500BCPE.LibPkg
+
+Section : C:\Users\Kurt\gatorsynth_sequencer\Altium\Individual Parts\MAX500BCPE.lia
+    Section : PCB Library - MAX500BCPE.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token isVisible On Line 186
+            Warning - 1 : Skipping Token isVisible On Line 205
+            Warning - 1 : Skipping Token MAX500BCPE On Line 209
+            Warning - 1 : Skipping Token attachedSymbol On Line 395
+        EndSection
+
+        Section : Import Messages
+        EndSection
+    EndSection
+
+    Section : SCH Library - MAX500BCPE.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token padStyleDef On Line 21
+            Warning - 1 : Skipping Token multiLayer On Line 96
+            Warning - 1 : Skipping Token layerContents On Line 114
+            Warning - 1 : Skipping Token layerContents On Line 188
+        EndSection
+
+        Section : Generating SCH Library - MAX500BCPE.SchLib
+        EndSection
+    EndSection
+EndSection
