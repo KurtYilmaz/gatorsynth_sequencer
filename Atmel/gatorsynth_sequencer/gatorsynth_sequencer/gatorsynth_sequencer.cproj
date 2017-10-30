@@ -431,6 +431,12 @@
     <Compile Include="src\dac.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="src\displays.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\displays.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="src\encoders.c">
       <SubType>compile</SubType>
     </Compile>

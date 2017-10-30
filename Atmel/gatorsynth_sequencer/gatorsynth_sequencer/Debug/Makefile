@@ -81,6 +81,7 @@ C_SRCS +=  \
 ../src/adc.c \
 ../src/ASF/sam/drivers/twi/twi.c \
 ../src/dac.c \
+../src/displays.c \
 ../src/encoders.c \
 ../src/leds.c \
 ../src/sequencer.c \
@@ -111,6 +112,7 @@ OBJS +=  \
 src/adc.o \
 src/ASF/sam/drivers/twi/twi.o \
 src/dac.o \
+src/displays.o \
 src/encoders.o \
 src/leds.o \
 src/sequencer.o \
@@ -134,6 +136,7 @@ OBJS_AS_ARGS +=  \
 src/adc.o \
 src/ASF/sam/drivers/twi/twi.o \
 src/dac.o \
+src/displays.o \
 src/encoders.o \
 src/leds.o \
 src/sequencer.o \
@@ -157,6 +160,7 @@ C_DEPS +=  \
 src/adc.d \
 src/ASF/sam/drivers/twi/twi.d \
 src/dac.d \
+src/displays.d \
 src/encoders.d \
 src/leds.d \
 src/sequencer.d \
@@ -180,6 +184,7 @@ C_DEPS_AS_ARGS +=  \
 src/adc.d \
 src/ASF/sam/drivers/twi/twi.d \
 src/dac.d \
+src/displays.d \
 src/encoders.d \
 src/leds.d \
 src/sequencer.d \
@@ -214,6 +219,8 @@ LINKER_SCRIPT_DEP+=  \
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 

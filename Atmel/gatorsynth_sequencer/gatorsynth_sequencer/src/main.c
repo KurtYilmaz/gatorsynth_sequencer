@@ -10,6 +10,7 @@
 #include "i2c.h"
 #include "sequencer.h"
 #include "adc.h"
+#include "displays.h"
 #include <twi.h>
 
 uint8_t brightness = 0x07;
@@ -35,10 +36,10 @@ int main (void)
 
 	SPI_led_init();
 	leds_update_display();
-
+	
 	timers_init();				//initiate timer for Flashing LED on PA20
 	update_timers(bpm);
-
+	
 	ADC_init();
 
 	REG_PIOB_PER |= PIO_PER_P3; //enable PIO controller on PB3
@@ -47,10 +48,11 @@ int main (void)
 	Encoder_init();				//initialize encoders
 
 	i2c_init();
+	display_init();
+
 	init_IO_int();
 	config_MAX7314();
 	read_MAX7314(port_data);
-
 
 	while (1)
 	{

@@ -8,6 +8,8 @@ src\ASF\sam\drivers\twi\twi.c
 
 src\dac.c
 
+src\displays.c
+
 src\encoders.c
 
 src\leds.c

@@ -1,4 +1,4 @@
-src/main.d src/main.o: ../src/main.c ../src/asf.h \
+src/displays.d src/displays.o: ../src/displays.c ../src/asf.h \
  ../src/ASF/sam/utils/compiler.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gcc\arm-none-eabi\5.3.1\include\stddef.h \
  ../src/ASF/common/utils/parts.h \
@@ -111,9 +111,7 @@ src/main.d src/main.o: ../src/main.c ../src/asf.h \
  ../src/ASF/common/services/delay/sam/cycle_counter.h \
  ../src/ASF/sam/drivers/pmc/sleep.h \
  ../src/ASF/sam/utils/cmsis/sam4n/source/templates/exceptions.h \
- ../src/ASF/sam/drivers/twi/twi.h ../src/encoders.h ../src/timers.h \
- ../src/leds.h ../src/spi.h ../src/dac.h ../src/notes.h ../src/i2c.h \
- ../src/sequencer.h ../src/adc.h ../src/displays.h
+ ../src/ASF/sam/drivers/twi/twi.h ../src/i2c.h
 
 ../src/asf.h:
 
@@ -349,22 +347,4 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 
 ../src/ASF/sam/drivers/twi/twi.h:
 
-../src/encoders.h:
-
-../src/timers.h:
-
-../src/leds.h:
-
-../src/spi.h:
-
-../src/dac.h:
-
-../src/notes.h:
-
 ../src/i2c.h:
-
-../src/sequencer.h:
-
-../src/adc.h:
-
-../src/displays.h:
