@@ -3,6 +3,8 @@ Version=1.0
 HierarchyMode=0
 ChannelRoomNamingStyle=0
 ReleasesFolder=
+ReleaseVaultGUID=
+ReleaseVaultName=
 ChannelDesignatorFormatString=$Component_$RoomName
 ChannelRoomLevelSeperator=_
 OpenOutputs=1
@@ -31,7 +33,6 @@ FSMEncodingStyle=eFMSDropDownList_OneHot
 OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
-LinkedManagedProjectGUID=
 
 [Preferences]
 PrefsVaultGUID=
@@ -412,13 +413,13 @@ GenerateClassCluster=0
 DocumentUniqueId=QPULVQNE
 
 [Document23]
-DocumentPath=Digital_In.SchDoc
+DocumentPath=Digital_Io.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=12
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -428,91 +429,129 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DHPRVWUM
 
+[Document24]
+DocumentPath=Jack_In.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=13
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=LLCTSLSL
+
+[Document25]
+DocumentPath=Jack_Out.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=14
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=EKAVGNPA
+
 [GeneratedDocument1]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.DRR
+DocumentPath=..\..\..\Desktop\GatorSynth_Step_Sequencer.xls
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.EXTREP
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GBL
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GBO
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GBS
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GKO
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GM1
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GM2
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GM3
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GM2
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GM13
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GM3
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GM15
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GM13
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GM16
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GM15
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GPB
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GM16
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GPT
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GPB
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GTL
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GPT
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GTO
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GTP
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GTS
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.LDP
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.REP
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.RUL
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.REP
 DItemRevisionGUID=
 
 [GeneratedDocument22]
+DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument23]
 DocumentPath=Project Outputs for GatorSynth_Step_Sequencer\Interface.TXT
 DItemRevisionGUID=
 
@@ -521,9 +560,10 @@ Name=Default Configuration
 ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
+CurrentRevision=
 Variant=[No Variations]
+GenerateBOM=1
 OutputJobsCount=0
-ContentTypeGUID=
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -540,101 +580,26 @@ OutputName2=XSpice Netlist
 OutputDocumentPath2=
 OutputVariantName2=
 OutputDefault2=0
-OutputType3=CadnetixNetlist
-OutputName3=Cadnetix Netlist
+OutputType3=SIMetrixNetlist
+OutputName3=SIMetrix
 OutputDocumentPath3=
 OutputVariantName3=
 OutputDefault3=0
-OutputType4=CalayNetlist
-OutputName4=Calay Netlist
+OutputType4=SIMPLISNetlist
+OutputName4=SIMPLIS
 OutputDocumentPath4=
 OutputVariantName4=
 OutputDefault4=0
-OutputType5=EDIF
-OutputName5=EDIF for PCB
+OutputType5=Verilog
+OutputName5=Verilog File
 OutputDocumentPath5=
 OutputVariantName5=
 OutputDefault5=0
-OutputType6=EESofNetlist
-OutputName6=EESof Netlist
+OutputType6=VHDL
+OutputName6=VHDL File
 OutputDocumentPath6=
 OutputVariantName6=
 OutputDefault6=0
-OutputType7=IntergraphNetlist
-OutputName7=Intergraph Netlist
-OutputDocumentPath7=
-OutputVariantName7=
-OutputDefault7=0
-OutputType8=MentorBoardStationNetlist
-OutputName8=Mentor BoardStation Netlist
-OutputDocumentPath8=
-OutputVariantName8=
-OutputDefault8=0
-OutputType9=MultiWire
-OutputName9=MultiWire
-OutputDocumentPath9=
-OutputVariantName9=
-OutputDefault9=0
-OutputType10=OrCadPCB2Netlist
-OutputName10=Orcad/PCB2 Netlist
-OutputDocumentPath10=
-OutputVariantName10=
-OutputDefault10=0
-OutputType11=PADSNetlist
-OutputName11=PADS ASCII Netlist
-OutputDocumentPath11=
-OutputVariantName11=
-OutputDefault11=0
-OutputType12=Pcad
-OutputName12=Pcad for PCB
-OutputDocumentPath12=
-OutputVariantName12=
-OutputDefault12=0
-OutputType13=PCADnltNetlist
-OutputName13=PCADnlt Netlist
-OutputDocumentPath13=
-OutputVariantName13=
-OutputDefault13=0
-OutputType14=Protel2Netlist
-OutputName14=Protel2 Netlist
-OutputDocumentPath14=
-OutputVariantName14=
-OutputDefault14=0
-OutputType15=ProtelNetlist
-OutputName15=Protel
-OutputDocumentPath15=
-OutputVariantName15=
-OutputDefault15=0
-OutputType16=RacalNetlist
-OutputName16=Racal Netlist
-OutputDocumentPath16=
-OutputVariantName16=
-OutputDefault16=0
-OutputType17=RINFNetlist
-OutputName17=RINF Netlist
-OutputDocumentPath17=
-OutputVariantName17=
-OutputDefault17=0
-OutputType18=SciCardsNetlist
-OutputName18=SciCards Netlist
-OutputDocumentPath18=
-OutputVariantName18=
-OutputDefault18=0
-OutputType19=TangoNetlist
-OutputName19=Tango Netlist
-OutputDocumentPath19=
-OutputVariantName19=
-OutputDefault19=0
-OutputType20=TelesisNetlist
-OutputName20=Telesis Netlist
-OutputDocumentPath20=
-OutputVariantName20=
-OutputDefault20=0
-OutputType21=WireListNetlist
-OutputName21=WireList Netlist
-OutputDocumentPath21=
-OutputVariantName21=
-OutputDefault21=0
 
 [OutputGroup2]
 Name=Simulator Outputs
@@ -646,6 +611,16 @@ OutputName1=Mixed Sim
 OutputDocumentPath1=
 OutputVariantName1=
 OutputDefault1=0
+OutputType2=SIMetrixSimulation
+OutputName2=SIMetrix
+OutputDocumentPath2=
+OutputVariantName2=
+OutputDefault2=0
+OutputType3=SIMPLISSimulation
+OutputName3=SIMPLIS
+OutputDocumentPath3=
+OutputVariantName3=
+OutputDefault3=0
 
 [OutputGroup3]
 Name=Documentation Outputs
@@ -718,12 +693,54 @@ OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
 PageOptions11=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
-OutputType12=PCBDrawing
-OutputName12=Draftsman
+OutputType12=Assembler Source Print
+OutputName12=Assembler Source Prints
 OutputDocumentPath12=
 OutputVariantName12=
 OutputDefault12=0
 PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+OutputType13=C Source Print
+OutputName13=C Source Prints
+OutputDocumentPath13=
+OutputVariantName13=
+OutputDefault13=0
+PageOptions13=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+OutputType14=C/C++ Header Print
+OutputName14=C/C++ Header Prints
+OutputDocumentPath14=
+OutputVariantName14=
+OutputDefault14=0
+PageOptions14=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+OutputType15=C++ Source Print
+OutputName15=C++ Source Prints
+OutputDocumentPath15=
+OutputVariantName15=
+OutputDefault15=0
+PageOptions15=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+OutputType16=FSM Print
+OutputName16=FSM Prints
+OutputDocumentPath16=
+OutputVariantName16=
+OutputDefault16=0
+PageOptions16=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+OutputType17=Logic Analyser Print
+OutputName17=Logic Analyser Prints
+OutputDocumentPath17=
+OutputVariantName17=
+OutputDefault17=0
+PageOptions17=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+OutputType18=OpenBus Print
+OutputName18=OpenBus Prints
+OutputDocumentPath18=
+OutputVariantName18=
+OutputDefault18=0
+PageOptions18=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+OutputType19=VHDL Print
+OutputName19=VHDL Prints
+OutputDocumentPath19=
+OutputVariantName19=
+OutputDefault19=0
+PageOptions19=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 
 [OutputGroup4]
 Name=Assembly Outputs
@@ -834,6 +851,18 @@ OutputDocumentPath1=
 OutputVariantName1=[No Variations]
 OutputDefault1=0
 PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration1_Name1=ColumnNameFormat
+Configuration1_Item1=CaptionAsName
+Configuration1_Name2=Filter
+Configuration1_Item2=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
+Configuration1_Name3=General
+Configuration1_Item3=OpenExported=True|AddToProject=True|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=Board Stack Report.XLT|BatchMode=5|FormWidth=1383|FormHeight=956|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
+Configuration1_Name4=GroupOrder
+Configuration1_Item4=Comment=True|Footprint=True
+Configuration1_Name5=SortOrder
+Configuration1_Item5=Designator=Up|Comment=Up|Footprint=Up
+Configuration1_Name6=VisibleOrder
+Configuration1_Item6=Comment=68|Description=68|Designator=68|Footprint=68|LibRef=68|Quantity=68
 OutputType2=ComponentCrossReference
 OutputName2=Component Cross Reference Report
 OutputDocumentPath2=
@@ -1104,42 +1133,6 @@ OutputName4=Export STEP
 OutputDocumentPath4=
 OutputVariantName4=[No Variations]
 OutputDefault4=0
-OutputType5=ExportPARASOLID
-OutputName5=Export PARASOLID
-OutputDocumentPath5=
-OutputVariantName5=[No Variations]
-OutputDefault5=0
-OutputType6=ExportVRML
-OutputName6=Export VRML
-OutputDocumentPath6=
-OutputVariantName6=[No Variations]
-OutputDefault6=0
-OutputType7=Save As/Export PCB
-OutputName7=Save As/Export PCB
-OutputDocumentPath7=
-OutputVariantName7=
-OutputDefault7=0
-OutputType8=Save As/Export Schematic
-OutputName8=Save As/Export Schematic
-OutputDocumentPath8=
-OutputVariantName8=
-OutputDefault8=0
-OutputType9=Specctra Design PCB
-OutputName9=Specctra Design PCB
-OutputDocumentPath9=
-OutputVariantName9=
-OutputDefault9=0
-
-[OutputGroup10]
-Name=PostProcess Outputs
-Description=
-TargetPrinter=Microsoft Print to PDF
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=Copy Files
-OutputName1=Copy Files
-OutputDocumentPath1=
-OutputVariantName1=
-OutputDefault1=0
 
 [Modification Levels]
 Type1=1
@@ -1222,16 +1215,6 @@ Type77=1
 Type78=1
 Type79=1
 Type80=1
-Type81=1
-Type82=1
-Type83=1
-Type84=1
-Type85=1
-Type86=1
-Type87=1
-Type88=1
-Type89=1
-Type90=1
 
 [Difference Levels]
 Type1=1
@@ -1279,10 +1262,6 @@ Type42=1
 Type43=1
 Type44=1
 Type45=1
-Type46=1
-Type47=1
-Type48=1
-Type49=1
 
 [Electrical Rules Check]
 Type1=1
@@ -1396,8 +1375,6 @@ Type108=2
 Type109=1
 Type110=1
 Type111=1
-Type112=1
-Type113=1
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW
