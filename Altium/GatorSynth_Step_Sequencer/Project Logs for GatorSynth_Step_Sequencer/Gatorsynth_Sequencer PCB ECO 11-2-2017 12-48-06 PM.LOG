@@ -1,0 +1,28 @@
+Removed Member From Class: ClassName=Digital_Io Member=P8
+Removed Member From Class: ClassName=Digital_Io Member=R25
+Added Pin To Net: NetName=PP_BTN Pin=P9_U_Ribbon_Connectors1-12
+Added Pin To Net: NetName=PP_LED Pin=P8-GRN1
+Added Pin To Net: NetName=PP_LED Pin=P9_U_Ribbon_Connectors1-13
+Added Pin To Net: NetName=PP_LED Pin=R26-2
+Added Net: Name=PP_LED
+Added Member To Class: ClassName=CV Control1 Member=Component C24_CV Control1 (C24) Cap
+Added Member To Class: ClassName=CV Control1 Member=Component C25_CV Control1 (C25) Cap
+Added Member To Class: ClassName=Programmer Member=Component J4 20021111-00010T4
+Added Member To Class: ClassName=Programmer Member=Component J5 Socket
+Added Member To Class: ClassName=Jack_Out7 Member=Component J7_Jack_Out7 (J7) Phonejack3 RN
+Added Member To Class: ClassName=Top_Level Member=Component P8 BUTTONPAD-1X1
+Added Member To Class: ClassName=CV Control1 Member=Component R13_CV Control1 (R13) Res1
+Added Member To Class: ClassName=CV Control1 Member=Component R14_CV Control1 (R14) Res3
+Added Member To Class: ClassName=CV Control1 Member=Component R15_CV Control1 (R15) Res3
+Added Member To Class: ClassName=CV Control1 Member=Component R16_CV Control1 (R16) Res1
+Added Member To Class: ClassName=CV Control1 Member=Component R17_CV Control1 (R17) Res3
+Added Member To Class: ClassName=CV Control1 Member=Component R18_CV Control1 (R18) Res3
+Added Member To Class: ClassName=Gate Control2 Member=Component R19_Gate Control2 (R19) Res1
+Added Member To Class: ClassName=Gate Control2 Member=Component R20_Gate Control2 (R20) Res1
+Added Member To Class: ClassName=Gate Control2 Member=Component R21_Gate Control2 (R21) Res1
+Added Member To Class: ClassName=Gate Control2 Member=Component R22_Gate Control2 (R22) Res1
+Added Member To Class: ClassName=Top_Level Member=Component R25 R3
+Added Member To Class: ClassName=Processor Member=Component U1 ATSAM4N16CA-AU
+Added Member To Class: ClassName=CV Control1 Member=Component U2_CV Control1 (U2) LTC1661CN8#PBF
+Added Member To Class: ClassName=CV Control1 Member=Component U3_CV Control1 (U3) LT1632CN8#PBF
+Added Member To Class: ClassName=Gate Control2 Member=Component U4_Gate Control2 (U4) LT1632CN8#PBF
