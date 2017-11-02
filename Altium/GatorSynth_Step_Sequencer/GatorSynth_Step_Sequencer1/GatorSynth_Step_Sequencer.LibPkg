@@ -71,6 +71,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HHSKSAUN
 
+[Document3]
+DocumentPath=GatorSynth_originals.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=GNGWTOVL
+
 [SearchPath1]
 Path=C:\Users\Kurt\gatorsynth_sequencer\Altium\GatorSynth_Step_Sequencer\GatorSynth_Step_Sequencer1\*.*
 IncludeSubFolders=1

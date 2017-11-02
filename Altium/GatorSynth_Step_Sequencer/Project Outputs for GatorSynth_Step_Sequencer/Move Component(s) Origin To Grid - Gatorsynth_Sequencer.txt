@@ -1,0 +1,287 @@
+Move Component(s) Origin to Grid
+Filename     : C:\Users\Kurt\gatorsynth_sequencer\Altium\GatorSynth_Step_Sequencer\Gatorsynth_Sequencer.PcbDoc
+Date         : 11/2/2017
+Time         : 7:53:16 AM
+Time Elapsed : 00:00:00
+
+
+    SMT Small Component Rfbb-Comment (56.896mm,187.081mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component Cin-Comment (42.469mm,188.808mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component Cbst-Comment (56.515mm,193.634mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component Cout-Comment (42.596mm,209.865mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component L1-Comment (54.153mm,203.159mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component Rfbt-Comment (56.058mm,183.576mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component VIN-Comment (28.143mm,186.852mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component GND-Comment (28.143mm,190.688mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component VOUT-Comment (28.143mm,211.77mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component GND1-Comment (28.143mm,207.985mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SOIC Component U7-Comment (52.426mm,189.57mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Component XC1-12.0MHz (376.999mm,172.2mm) on Top Layer - Component pads are OFF grid. No action taken.
+    DIP Component U8-CD4051BE (324.899mm,195.8mm) on Top Layer - Component pads are OFF grid. No action taken.
+    DIP Component U6-LT1632CN8#PBF (354.299mm,100.9mm) on Top Layer - Component pads are OFF grid. No action taken.
+    DIP Component U5-LT1632CN8#PBF (410.799mm,100.9mm) on Top Layer - Component pads are OFF grid. No action taken.
+    DIP Component U4_Gate Control2-LT1632CN8#PBF (431.799mm,282.099mm) on Top Layer - Component pads are OFF grid. No action taken.
+    DIP Component U4_Gate Control1-LT1632CN8#PBF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    DIP Component U3_CV Control2-LT1632CN8#PBF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    DIP Component U3_CV Control1-LT1632CN8#PBF (486.899mm,264.399mm) on Top Layer - Component pads are OFF grid. No action taken.
+    DIP Component U2_CV Control2-LTC1661CN8#PBF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    DIP Component U2_CV Control1-LTC1661CN8#PBF (531.599mm,264.399mm) on Top Layer - Component pads are OFF grid. No action taken.
+    LCC Component U1-ATSAM4N16CA-AU (418.799mm,165.6mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Component S1_NOTE Encoders16-Rotary Encoder (404.9mm,308.9mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_NOTE Encoders15-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_NOTE Encoders14-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_NOTE Encoders13-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_NOTE Encoders12-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_NOTE Encoders11-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_NOTE Encoders10-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_NOTE Encoders9-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_NOTE Encoders8-Rotary Encoder (432.6mm,299.5mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_NOTE Encoders7-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_NOTE Encoders6-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_NOTE Encoders5-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_NOTE Encoders4-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_NOTE Encoders3-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_NOTE Encoders2-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_NOTE Encoders1-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_AUX Encoders8-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_AUX Encoders7-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_AUX Encoders6-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_AUX Encoders5-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_AUX Encoders4-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_AUX Encoders3-Rotary Encoder (424.199mm,221.3mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Component S1_AUX Encoders2-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component S1_AUX Encoders1-Rotary Encoder (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Small Component R31-Res1 (321.499mm,119.9mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R30-Res1 (317.199mm,106.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R29-Res1 (328.899mm,106.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R28-Res1 (322.999mm,106.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R27-Res1 (334.699mm,106.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R26-Res1 (340.599mm,106.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R25-R3 (386.899mm,106.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R24-Res1 (392.699mm,106.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R23-Res1 (427.099mm,106.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R22_Gate Control2-Res1 (317.199mm,281.999mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R22_Gate Control1-Res1 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Small Component R21_Gate Control2-Res1 (343.599mm,281.999mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R21_Gate Control1-Res1 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Small Component R20_Gate Control2-Res1 (369.799mm,281.999mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R20_Gate Control1-Res1 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Small Component R19_Gate Control2-Res1 (396.199mm,281.999mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R19_Gate Control1-Res1 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component R18_CV Control2-Res3 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component R18_CV Control1-Res3 (316.899mm,267.699mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R17_CV Control2-Res3 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component R17_CV Control1-Res3 (385.499mm,267.699mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R16_CV Control2-Res1 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Small Component R16_CV Control1-Res1 (362.899mm,264.299mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R15_CV Control2-Res3 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component R15_CV Control1-Res3 (339.799mm,267.699mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R14_CV Control2-Res3 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component R14_CV Control1-Res3 (408.399mm,267.699mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R13_CV Control2-Res1 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Small Component R13_CV Control1-Res1 (454.599mm,264.299mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SOIC Component R12_NoteExpanders-MNR15ERRPJ822 (346.199mm,323.799mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SOIC Component R12_ButtonExpanders-MNR15ERRPJ822 (348.999mm,242.7mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SOIC Component R11_NoteExpanders-MNR15ERRPJ822 (319.799mm,323.799mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SOIC Component R11_ButtonExpanders-MNR15ERRPJ822 (319.799mm,242.7mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R10_NoteExpanders-R5 (370.399mm,330.299mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R10_ButtonExpanders-R5 (375.999mm,249.2mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R9_U_Displays8 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R9_U_Displays7 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R9_U_Displays6 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R9_U_Displays5 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R9_U_Displays4 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R9_U_Displays3 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R9_U_Displays2 (336.5mm,603.3mm) on Top Layer - Origin changed from [336.5mm:603.3mm] to [336.5mm:603.3mm]
+    SMT Small Component R9_U_Displays1 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    Small Component R8-R4 (344.099mm,77.2mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R7-R3 (339.799mm,77.2mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R6-R2 (393.599mm,77.2mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R5-R1 (389.299mm,77.2mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R4-RPot (396.999mm,165.7mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R3_NOTE Encoders16-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_NOTE Encoders15-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_NOTE Encoders14-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_NOTE Encoders13-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_NOTE Encoders12-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_NOTE Encoders11-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_NOTE Encoders10-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_NOTE Encoders9-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_NOTE Encoders8-B_LPF (398.599mm,315.999mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R3_NOTE Encoders7-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_NOTE Encoders6-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_NOTE Encoders5-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_NOTE Encoders4-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_NOTE Encoders3-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_NOTE Encoders2-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_NOTE Encoders1-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_AUX Encoders8-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_AUX Encoders7-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_AUX Encoders6-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_AUX Encoders5-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_AUX Encoders4-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_AUX Encoders3-B_LPF (393.999mm,234.9mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R3_AUX Encoders2-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_AUX Encoders1-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_NOTE Encoders16-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_NOTE Encoders15-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_NOTE Encoders14-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_NOTE Encoders13-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_NOTE Encoders12-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_NOTE Encoders11-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_NOTE Encoders10-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_NOTE Encoders9-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_NOTE Encoders8-A_LPF (371.399mm,315.999mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R2_NOTE Encoders7-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_NOTE Encoders6-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_NOTE Encoders5-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_NOTE Encoders4-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_NOTE Encoders3-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_NOTE Encoders2-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_NOTE Encoders1-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_AUX Encoders8-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_AUX Encoders7-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_AUX Encoders6-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_AUX Encoders5-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_AUX Encoders4-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_AUX Encoders3-A_LPF (368.399mm,234.9mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R2_AUX Encoders2-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_AUX Encoders1-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_NOTE Encoders16-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_NOTE Encoders15-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_NOTE Encoders14-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_NOTE Encoders13-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_NOTE Encoders12-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_NOTE Encoders11-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_NOTE Encoders10-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_NOTE Encoders9-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_NOTE Encoders8-Button Pullup (452.699mm,315.999mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R1_NOTE Encoders7-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_NOTE Encoders6-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_NOTE Encoders5-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_NOTE Encoders4-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_NOTE Encoders3-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_NOTE Encoders2-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_NOTE Encoders1-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_AUX Encoders8-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_AUX Encoders7-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_AUX Encoders6-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_AUX Encoders5-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_AUX Encoders4-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_AUX Encoders3-Button Pullup (444.999mm,234.9mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R1_AUX Encoders2-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R1_AUX Encoders1-Button Pullup (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    DIP Component P9-Header 8X2 (17mm,190.7mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SIP Component P8-BUTTONPAD-1X1 (360.299mm,86.2mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component P7-Header 3 (399.099mm,104.7mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component P6-Header 2 (382.699mm,170.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component P5-Header 2 (407.099mm,170.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Component P4-BUTTONPAD (500.399mm,29.6mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Component P3-BUTTONPAD (447.499mm,29.6mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Component P2-BUTTONPAD (624.599mm,29.6mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Component P1-BUTTONPAD (571.699mm,29.6mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SIP Component J7_Jack_Out9-Phonejack3 RN (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SIP Component J7_Jack_Out8-Phonejack3 RN (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SIP Component J7_Jack_Out7-Phonejack3 RN (318.6mm,292.93mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SIP Component J7_Jack_Out6-Phonejack3 RN (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SIP Component J7_Jack_Out5-Phonejack3 RN (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SIP Component J7_Jack_Out4-Phonejack3 RN (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SIP Component J7_Jack_Out3-Phonejack3 RN (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SIP Component J7_Jack_Out2-Phonejack3 RN (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SIP Component J7_Jack_Out1-Phonejack3 RN (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SIP Component J6-Phonejack3 RN (317.299mm,119.7mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component J5-Socket (317.799mm,188mm) on Top Layer - Component pads are OFF grid. No action taken.
+    DIP Component J4-20021111-00010T4 (322.699mm,182mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT SIP Component J3_U_Displays8-1-1734839-2 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT SIP Component J3_U_Displays7-1-1734839-2 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT SIP Component J3_U_Displays6-1-1734839-2 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT SIP Component J3_U_Displays5-1-1734839-2 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT SIP Component J3_U_Displays4-1-1734839-2 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT SIP Component J3_U_Displays3-1-1734839-2 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    SMT SIP Component J3_U_Displays2-1-1734839-2 (318.1mm,599.5mm) on Top Layer - Origin changed from [318.1mm:599.5mm] to [318.1mm:599.5mm]
+    SMT SIP Component J3_U_Displays1-1-1734839-2 (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid.
+    Small Component J2-Erase_Socket (366.799mm,172.1mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component J1-SMD-STRAP_CLOSED (387.299mm,173.6mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SOIC Component EXP1_NoteExpanders-MAX7314AEGT (401.599mm,328.099mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SOIC Component EXP1_ButtonExpanders-MAX7314AEGT (409.999mm,247.1mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Component DRV4-TLC5971PWPR (360.799mm,77.9mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Component DRV3-TLC5971PWPR (351.599mm,77.9mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Component DRV2-TLC5971PWPR (516.099mm,77.9mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Component DRV1-TLC5971PWPR (506.799mm,77.9mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component D1-Diode 1N4148 (417.599mm,106.7mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C26 (421.199mm,109.7mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component C25_CV Control2-Cap (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Small Component C25_CV Control1-Cap (432.599mm,263.199mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component C24_CV Control2-Cap (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Small Component C24_CV Control1-Cap (500.199mm,263.199mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component C23_NoteExpanders-Cap (425.599mm,329.499mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component C23_ButtonExpanders-Cap (436.799mm,248.4mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C22-Cap (333.999mm,80.3mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component C21 (329.799mm,77.2mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C20-Cap (322.799mm,80.3mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component C19 (318.399mm,77.2mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C18-Cap (383.699mm,80.3mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component C17 (379.299mm,77.2mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C16-Cap (372.499mm,80.3mm) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component C15 (368.099mm,77.2mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C14 (338.999mm,172.9mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C13 (333.399mm,172.9mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C12 (327.799mm,172.9mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C11 (323.399mm,173.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C10 (317.199mm,172.9mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C9 (362.499mm,173.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C8 (358.199mm,173.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C7 (353.799mm,173.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C6 (349.499mm,173.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C5 (345.199mm,173.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C4-CAP-NONPOL (370.999mm,173.8mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C3-CAP-NONPOL (391.599mm,173.8mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_NOTE Encoders16-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_NOTE Encoders15-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_NOTE Encoders14-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_NOTE Encoders13-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_NOTE Encoders12-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_NOTE Encoders11-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_NOTE Encoders10-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_NOTE Encoders9-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_NOTE Encoders8-B_LPF (344.099mm,316.299mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_NOTE Encoders7-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_NOTE Encoders6-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_NOTE Encoders5-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_NOTE Encoders4-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_NOTE Encoders3-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_NOTE Encoders2-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_NOTE Encoders1-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_AUX Encoders8-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_AUX Encoders7-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_AUX Encoders6-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_AUX Encoders5-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_AUX Encoders4-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_AUX Encoders3-B_LPF (342.599mm,235.3mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_AUX Encoders2-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2_AUX Encoders1-B_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_NOTE Encoders16-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_NOTE Encoders15-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_NOTE Encoders14-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_NOTE Encoders13-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_NOTE Encoders12-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_NOTE Encoders11-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_NOTE Encoders10-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_NOTE Encoders9-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_NOTE Encoders8-A_LPF (317.199mm,316.299mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_NOTE Encoders7-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_NOTE Encoders6-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_NOTE Encoders5-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_NOTE Encoders4-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_NOTE Encoders3-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_NOTE Encoders2-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_NOTE Encoders1-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_AUX Encoders8-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_AUX Encoders7-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_AUX Encoders6-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_AUX Encoders5-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_AUX Encoders4-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_AUX Encoders3-A_LPF (317.199mm,235.3mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_AUX Encoders2-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C1_AUX Encoders1-A_LPF (395.5mm,417.4mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+count : 279
