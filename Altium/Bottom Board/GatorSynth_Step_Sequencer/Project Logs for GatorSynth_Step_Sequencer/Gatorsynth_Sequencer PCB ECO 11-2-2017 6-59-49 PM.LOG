@@ -1,0 +1,1099 @@
+Removed Pin From Net: NetName=NetC3_1 Pin=C3-1
+Removed Pin From Net: NetName=NetC3_1 Pin=U1-96
+Removed Member From Class: ClassName=CV Control1 Member=C24_CV Control2
+Removed Member From Class: ClassName=U_Ribbon_Connectors4 Member=Note Encoders 1
+Removed Member From Class: ClassName=CV Control1 Member=R17_CV Control2
+Removed Member From Class: ClassName=CV Control1 Member=R18_CV Control2
+Removed Member From Class: ClassName=Gate Control1 Member=R20_Gate Control2
+Removed Member From Class: ClassName=Gate Control1 Member=R22_Gate Control2
+Change Component Designator: OldDesignator=Aux Encoders NewDesignator=P9_U_Ribbon_Connectors3
+Change Component Designator: OldDesignator=Misc Signals NewDesignator=P9_U_Ribbon_Connectors2
+Change Component Designator: OldDesignator=Note Encoders 1 NewDesignator=P9_U_Ribbon_Connectors5
+Change Component Designator: OldDesignator=Note Encoders 2 NewDesignator=P9_U_Ribbon_Connectors4
+Added Component: Designator=C1_AUX Encoders1(C0805)
+Added Component: Designator=C1_AUX Encoders2(C0805)
+Added Component: Designator=C1_AUX Encoders3(C0805)
+Added Component: Designator=C1_AUX Encoders4(C0805)
+Added Component: Designator=C1_AUX Encoders5(C0805)
+Added Component: Designator=C1_AUX Encoders6(C0805)
+Added Component: Designator=C1_AUX Encoders7(C0805)
+Added Component: Designator=C1_AUX Encoders8(C0805)
+Added Component: Designator=C1_NOTE Encoders1(C0805)
+Added Component: Designator=C1_NOTE Encoders2(C0805)
+Added Component: Designator=C1_NOTE Encoders3(C0805)
+Added Component: Designator=C1_NOTE Encoders4(C0805)
+Added Component: Designator=C1_NOTE Encoders5(C0805)
+Added Component: Designator=C1_NOTE Encoders6(C0805)
+Added Component: Designator=C1_NOTE Encoders7(C0805)
+Added Component: Designator=C1_NOTE Encoders8(C0805)
+Added Component: Designator=C1_NOTE Encoders9(C0805)
+Added Component: Designator=C1_NOTE Encoders10(C0805)
+Added Component: Designator=C1_NOTE Encoders11(C0805)
+Added Component: Designator=C1_NOTE Encoders12(C0805)
+Added Component: Designator=C1_NOTE Encoders13(C0805)
+Added Component: Designator=C1_NOTE Encoders14(C0805)
+Added Component: Designator=C1_NOTE Encoders15(C0805)
+Added Component: Designator=C1_NOTE Encoders16(C0805)
+Added Component: Designator=C2_AUX Encoders1(C0805)
+Added Component: Designator=C2_AUX Encoders2(C0805)
+Added Component: Designator=C2_AUX Encoders3(C0805)
+Added Component: Designator=C2_AUX Encoders4(C0805)
+Added Component: Designator=C2_AUX Encoders5(C0805)
+Added Component: Designator=C2_AUX Encoders6(C0805)
+Added Component: Designator=C2_AUX Encoders7(C0805)
+Added Component: Designator=C2_AUX Encoders8(C0805)
+Added Component: Designator=C2_NOTE Encoders1(C0805)
+Added Component: Designator=C2_NOTE Encoders2(C0805)
+Added Component: Designator=C2_NOTE Encoders3(C0805)
+Added Component: Designator=C2_NOTE Encoders4(C0805)
+Added Component: Designator=C2_NOTE Encoders5(C0805)
+Added Component: Designator=C2_NOTE Encoders6(C0805)
+Added Component: Designator=C2_NOTE Encoders7(C0805)
+Added Component: Designator=C2_NOTE Encoders8(C0805)
+Added Component: Designator=C2_NOTE Encoders9(C0805)
+Added Component: Designator=C2_NOTE Encoders10(C0805)
+Added Component: Designator=C2_NOTE Encoders11(C0805)
+Added Component: Designator=C2_NOTE Encoders12(C0805)
+Added Component: Designator=C2_NOTE Encoders13(C0805)
+Added Component: Designator=C2_NOTE Encoders14(C0805)
+Added Component: Designator=C2_NOTE Encoders15(C0805)
+Added Component: Designator=C2_NOTE Encoders16(C0805)
+Added Component: Designator=C15(RAD-0.2)
+Added Component: Designator=C16(C0805)
+Added Component: Designator=C17(RAD-0.2)
+Added Component: Designator=C18(C0805)
+Added Component: Designator=C19(RAD-0.2)
+Added Component: Designator=C20(C0805)
+Added Component: Designator=C21(RAD-0.2)
+Added Component: Designator=C22(C0805)
+Added Component: Designator=C23_ButtonExpanders(RAD-0.1)
+Added Component: Designator=C23_NoteExpanders(RAD-0.1)
+Added Component: Designator=DRV1(TI-PWP20-2965X2290TP_N)
+Added Component: Designator=DRV2(TI-PWP20-2965X2290TP_N)
+Added Component: Designator=DRV3(TI-PWP20-2965X2290TP_N)
+Added Component: Designator=DRV4(TI-PWP20-2965X2290TP_N)
+Added Component: Designator=EXP1_ButtonExpanders(21-0055H_24)
+Added Component: Designator=EXP1_NoteExpanders(21-0055H_24)
+Added Component: Designator=J3_U_Displays1(CONN_1-1734592-2)
+Added Component: Designator=J3_U_Displays2(CONN_1-1734592-2)
+Added Component: Designator=J3_U_Displays3(CONN_1-1734592-2)
+Added Component: Designator=J3_U_Displays4(CONN_1-1734592-2)
+Added Component: Designator=J3_U_Displays5(CONN_1-1734592-2)
+Added Component: Designator=J3_U_Displays6(CONN_1-1734592-2)
+Added Component: Designator=J3_U_Displays7(CONN_1-1734592-2)
+Added Component: Designator=J3_U_Displays8(CONN_1-1734592-2)
+Added Component: Designator=J5(PIN1)
+Added Component: Designator=P1(BUTTONPAD-2X2)
+Added Component: Designator=P2(BUTTONPAD-2X2)
+Added Component: Designator=P3(BUTTONPAD-2X2)
+Added Component: Designator=P4(BUTTONPAD-2X2)
+Added Component: Designator=P8(BUTTONPAD-1X1)
+Added Component: Designator=P9_U_Ribbon_Connectors1(HDR2X8)
+Added Component: Designator=R1_AUX Encoders1(6-0805_N)
+Added Component: Designator=R1_AUX Encoders2(6-0805_N)
+Added Component: Designator=R1_AUX Encoders3(6-0805_N)
+Added Component: Designator=R1_AUX Encoders4(6-0805_N)
+Added Component: Designator=R1_AUX Encoders5(6-0805_N)
+Added Component: Designator=R1_AUX Encoders6(6-0805_N)
+Added Component: Designator=R1_AUX Encoders7(6-0805_N)
+Added Component: Designator=R1_AUX Encoders8(6-0805_N)
+Added Component: Designator=R1_NOTE Encoders1(6-0805_N)
+Added Component: Designator=R1_NOTE Encoders2(6-0805_N)
+Added Component: Designator=R1_NOTE Encoders3(6-0805_N)
+Added Component: Designator=R1_NOTE Encoders4(6-0805_N)
+Added Component: Designator=R1_NOTE Encoders5(6-0805_N)
+Added Component: Designator=R1_NOTE Encoders6(6-0805_N)
+Added Component: Designator=R1_NOTE Encoders7(6-0805_N)
+Added Component: Designator=R1_NOTE Encoders8(6-0805_N)
+Added Component: Designator=R1_NOTE Encoders9(6-0805_N)
+Added Component: Designator=R1_NOTE Encoders10(6-0805_N)
+Added Component: Designator=R1_NOTE Encoders11(6-0805_N)
+Added Component: Designator=R1_NOTE Encoders12(6-0805_N)
+Added Component: Designator=R1_NOTE Encoders13(6-0805_N)
+Added Component: Designator=R1_NOTE Encoders14(6-0805_N)
+Added Component: Designator=R1_NOTE Encoders15(6-0805_N)
+Added Component: Designator=R1_NOTE Encoders16(6-0805_N)
+Added Component: Designator=R2_AUX Encoders1(6-0805_N)
+Added Component: Designator=R2_AUX Encoders2(6-0805_N)
+Added Component: Designator=R2_AUX Encoders3(6-0805_N)
+Added Component: Designator=R2_AUX Encoders4(6-0805_N)
+Added Component: Designator=R2_AUX Encoders5(6-0805_N)
+Added Component: Designator=R2_AUX Encoders6(6-0805_N)
+Added Component: Designator=R2_AUX Encoders7(6-0805_N)
+Added Component: Designator=R2_AUX Encoders8(6-0805_N)
+Added Component: Designator=R2_NOTE Encoders1(6-0805_N)
+Added Component: Designator=R2_NOTE Encoders2(6-0805_N)
+Added Component: Designator=R2_NOTE Encoders3(6-0805_N)
+Added Component: Designator=R2_NOTE Encoders4(6-0805_N)
+Added Component: Designator=R2_NOTE Encoders5(6-0805_N)
+Added Component: Designator=R2_NOTE Encoders6(6-0805_N)
+Added Component: Designator=R2_NOTE Encoders7(6-0805_N)
+Added Component: Designator=R2_NOTE Encoders8(6-0805_N)
+Added Component: Designator=R2_NOTE Encoders9(6-0805_N)
+Added Component: Designator=R2_NOTE Encoders10(6-0805_N)
+Added Component: Designator=R2_NOTE Encoders11(6-0805_N)
+Added Component: Designator=R2_NOTE Encoders12(6-0805_N)
+Added Component: Designator=R2_NOTE Encoders13(6-0805_N)
+Added Component: Designator=R2_NOTE Encoders14(6-0805_N)
+Added Component: Designator=R2_NOTE Encoders15(6-0805_N)
+Added Component: Designator=R2_NOTE Encoders16(6-0805_N)
+Added Component: Designator=R3_AUX Encoders1(6-0805_N)
+Added Component: Designator=R3_AUX Encoders2(6-0805_N)
+Added Component: Designator=R3_AUX Encoders3(6-0805_N)
+Added Component: Designator=R3_AUX Encoders4(6-0805_N)
+Added Component: Designator=R3_AUX Encoders5(6-0805_N)
+Added Component: Designator=R3_AUX Encoders6(6-0805_N)
+Added Component: Designator=R3_AUX Encoders7(6-0805_N)
+Added Component: Designator=R3_AUX Encoders8(6-0805_N)
+Added Component: Designator=R3_NOTE Encoders1(6-0805_N)
+Added Component: Designator=R3_NOTE Encoders2(6-0805_N)
+Added Component: Designator=R3_NOTE Encoders3(6-0805_N)
+Added Component: Designator=R3_NOTE Encoders4(6-0805_N)
+Added Component: Designator=R3_NOTE Encoders5(6-0805_N)
+Added Component: Designator=R3_NOTE Encoders6(6-0805_N)
+Added Component: Designator=R3_NOTE Encoders7(6-0805_N)
+Added Component: Designator=R3_NOTE Encoders8(6-0805_N)
+Added Component: Designator=R3_NOTE Encoders9(6-0805_N)
+Added Component: Designator=R3_NOTE Encoders10(6-0805_N)
+Added Component: Designator=R3_NOTE Encoders11(6-0805_N)
+Added Component: Designator=R3_NOTE Encoders12(6-0805_N)
+Added Component: Designator=R3_NOTE Encoders13(6-0805_N)
+Added Component: Designator=R3_NOTE Encoders14(6-0805_N)
+Added Component: Designator=R3_NOTE Encoders15(6-0805_N)
+Added Component: Designator=R3_NOTE Encoders16(6-0805_N)
+Added Component: Designator=R4(POT inline wide)
+Added Component: Designator=R5(AXIAL-0.3)
+Added Component: Designator=R6(AXIAL-0.3)
+Added Component: Designator=R7(AXIAL-0.3)
+Added Component: Designator=R8(AXIAL-0.3)
+Added Component: Designator=R9_U_Displays1(6-0805_N)
+Added Component: Designator=R9_U_Displays2(6-0805_N)
+Added Component: Designator=R9_U_Displays3(6-0805_N)
+Added Component: Designator=R9_U_Displays4(6-0805_N)
+Added Component: Designator=R9_U_Displays5(6-0805_N)
+Added Component: Designator=R9_U_Displays6(6-0805_N)
+Added Component: Designator=R9_U_Displays7(6-0805_N)
+Added Component: Designator=R9_U_Displays8(6-0805_N)
+Added Component: Designator=R10_ButtonExpanders(6-0805_N)
+Added Component: Designator=R10_NoteExpanders(6-0805_N)
+Added Component: Designator=R11_ButtonExpanders(MNR15)
+Added Component: Designator=R11_NoteExpanders(MNR15)
+Added Component: Designator=R12_ButtonExpanders(MNR15)
+Added Component: Designator=R12_NoteExpanders(MNR15)
+Added Component: Designator=R32(0402)
+Added Component: Designator=R33(0402)
+Added Component: Designator=U8(N16)
+Added Pin To Net: NetName=GND Pin=C1_AUX Encoders1-1
+Added Pin To Net: NetName=AE_L7 Pin=C1_AUX Encoders1-2
+Added Pin To Net: NetName=GND Pin=C1_AUX Encoders2-1
+Added Pin To Net: NetName=AE_L6 Pin=C1_AUX Encoders2-2
+Added Pin To Net: NetName=GND Pin=C1_AUX Encoders3-1
+Added Pin To Net: NetName=AE_L5 Pin=C1_AUX Encoders3-2
+Added Pin To Net: NetName=GND Pin=C1_AUX Encoders4-1
+Added Pin To Net: NetName=AE_L4 Pin=C1_AUX Encoders4-2
+Added Pin To Net: NetName=GND Pin=C1_AUX Encoders5-1
+Added Pin To Net: NetName=AE_L3 Pin=C1_AUX Encoders5-2
+Added Pin To Net: NetName=GND Pin=C1_AUX Encoders6-1
+Added Pin To Net: NetName=AE_L2 Pin=C1_AUX Encoders6-2
+Added Pin To Net: NetName=GND Pin=C1_AUX Encoders7-1
+Added Pin To Net: NetName=AE_L1 Pin=C1_AUX Encoders7-2
+Added Pin To Net: NetName=GND Pin=C1_AUX Encoders8-1
+Added Pin To Net: NetName=AE_L0 Pin=C1_AUX Encoders8-2
+Added Pin To Net: NetName=GND Pin=C1_NOTE Encoders1-1
+Added Pin To Net: NetName=NE_L15 Pin=C1_NOTE Encoders1-2
+Added Pin To Net: NetName=GND Pin=C1_NOTE Encoders2-1
+Added Pin To Net: NetName=NE_L14 Pin=C1_NOTE Encoders2-2
+Added Pin To Net: NetName=GND Pin=C1_NOTE Encoders3-1
+Added Pin To Net: NetName=NE_L13 Pin=C1_NOTE Encoders3-2
+Added Pin To Net: NetName=GND Pin=C1_NOTE Encoders4-1
+Added Pin To Net: NetName=NE_L12 Pin=C1_NOTE Encoders4-2
+Added Pin To Net: NetName=GND Pin=C1_NOTE Encoders5-1
+Added Pin To Net: NetName=NE_L11 Pin=C1_NOTE Encoders5-2
+Added Pin To Net: NetName=GND Pin=C1_NOTE Encoders6-1
+Added Pin To Net: NetName=NE_L10 Pin=C1_NOTE Encoders6-2
+Added Pin To Net: NetName=GND Pin=C1_NOTE Encoders7-1
+Added Pin To Net: NetName=NE_L9 Pin=C1_NOTE Encoders7-2
+Added Pin To Net: NetName=GND Pin=C1_NOTE Encoders8-1
+Added Pin To Net: NetName=NE_L8 Pin=C1_NOTE Encoders8-2
+Added Pin To Net: NetName=GND Pin=C1_NOTE Encoders9-1
+Added Pin To Net: NetName=NE_L7 Pin=C1_NOTE Encoders9-2
+Added Pin To Net: NetName=GND Pin=C1_NOTE Encoders10-1
+Added Pin To Net: NetName=NE_L6 Pin=C1_NOTE Encoders10-2
+Added Pin To Net: NetName=GND Pin=C1_NOTE Encoders11-1
+Added Pin To Net: NetName=NE_L5 Pin=C1_NOTE Encoders11-2
+Added Pin To Net: NetName=GND Pin=C1_NOTE Encoders12-1
+Added Pin To Net: NetName=NE_L4 Pin=C1_NOTE Encoders12-2
+Added Pin To Net: NetName=GND Pin=C1_NOTE Encoders13-1
+Added Pin To Net: NetName=NE_L3 Pin=C1_NOTE Encoders13-2
+Added Pin To Net: NetName=GND Pin=C1_NOTE Encoders14-1
+Added Pin To Net: NetName=NE_L2 Pin=C1_NOTE Encoders14-2
+Added Pin To Net: NetName=GND Pin=C1_NOTE Encoders15-1
+Added Pin To Net: NetName=NE_L1 Pin=C1_NOTE Encoders15-2
+Added Pin To Net: NetName=GND Pin=C1_NOTE Encoders16-1
+Added Pin To Net: NetName=NE_L0 Pin=C1_NOTE Encoders16-2
+Added Pin To Net: NetName=GND Pin=C2_AUX Encoders1-1
+Added Pin To Net: NetName=AE_R7 Pin=C2_AUX Encoders1-2
+Added Pin To Net: NetName=GND Pin=C2_AUX Encoders2-1
+Added Pin To Net: NetName=AE_R6 Pin=C2_AUX Encoders2-2
+Added Pin To Net: NetName=GND Pin=C2_AUX Encoders3-1
+Added Pin To Net: NetName=AE_R5 Pin=C2_AUX Encoders3-2
+Added Pin To Net: NetName=GND Pin=C2_AUX Encoders4-1
+Added Pin To Net: NetName=AE_R4 Pin=C2_AUX Encoders4-2
+Added Pin To Net: NetName=GND Pin=C2_AUX Encoders5-1
+Added Pin To Net: NetName=AE_R3 Pin=C2_AUX Encoders5-2
+Added Pin To Net: NetName=GND Pin=C2_AUX Encoders6-1
+Added Pin To Net: NetName=AE_R2 Pin=C2_AUX Encoders6-2
+Added Pin To Net: NetName=GND Pin=C2_AUX Encoders7-1
+Added Pin To Net: NetName=AE_R1 Pin=C2_AUX Encoders7-2
+Added Pin To Net: NetName=GND Pin=C2_AUX Encoders8-1
+Added Pin To Net: NetName=AE_R0 Pin=C2_AUX Encoders8-2
+Added Pin To Net: NetName=GND Pin=C2_NOTE Encoders1-1
+Added Pin To Net: NetName=NE_R15 Pin=C2_NOTE Encoders1-2
+Added Pin To Net: NetName=GND Pin=C2_NOTE Encoders2-1
+Added Pin To Net: NetName=NE_R14 Pin=C2_NOTE Encoders2-2
+Added Pin To Net: NetName=GND Pin=C2_NOTE Encoders3-1
+Added Pin To Net: NetName=NE_R13 Pin=C2_NOTE Encoders3-2
+Added Pin To Net: NetName=GND Pin=C2_NOTE Encoders4-1
+Added Pin To Net: NetName=NE_R12 Pin=C2_NOTE Encoders4-2
+Added Pin To Net: NetName=GND Pin=C2_NOTE Encoders5-1
+Added Pin To Net: NetName=NE_R11 Pin=C2_NOTE Encoders5-2
+Added Pin To Net: NetName=GND Pin=C2_NOTE Encoders6-1
+Added Pin To Net: NetName=NE_R10 Pin=C2_NOTE Encoders6-2
+Added Pin To Net: NetName=GND Pin=C2_NOTE Encoders7-1
+Added Pin To Net: NetName=NE_R9 Pin=C2_NOTE Encoders7-2
+Added Pin To Net: NetName=GND Pin=C2_NOTE Encoders8-1
+Added Pin To Net: NetName=NE_R8 Pin=C2_NOTE Encoders8-2
+Added Pin To Net: NetName=GND Pin=C2_NOTE Encoders9-1
+Added Pin To Net: NetName=NE_R7 Pin=C2_NOTE Encoders9-2
+Added Pin To Net: NetName=GND Pin=C2_NOTE Encoders10-1
+Added Pin To Net: NetName=NE_R6 Pin=C2_NOTE Encoders10-2
+Added Pin To Net: NetName=GND Pin=C2_NOTE Encoders11-1
+Added Pin To Net: NetName=NE_R5 Pin=C2_NOTE Encoders11-2
+Added Pin To Net: NetName=GND Pin=C2_NOTE Encoders12-1
+Added Pin To Net: NetName=NE_R4 Pin=C2_NOTE Encoders12-2
+Added Pin To Net: NetName=GND Pin=C2_NOTE Encoders13-1
+Added Pin To Net: NetName=NE_R3 Pin=C2_NOTE Encoders13-2
+Added Pin To Net: NetName=GND Pin=C2_NOTE Encoders14-1
+Added Pin To Net: NetName=NE_R2 Pin=C2_NOTE Encoders14-2
+Added Pin To Net: NetName=GND Pin=C2_NOTE Encoders15-1
+Added Pin To Net: NetName=NE_R1 Pin=C2_NOTE Encoders15-2
+Added Pin To Net: NetName=GND Pin=C2_NOTE Encoders16-1
+Added Pin To Net: NetName=NE_R0 Pin=C2_NOTE Encoders16-2
+Added Pin To Net: NetName=3.3V Pin=C15-1
+Added Pin To Net: NetName=GND Pin=C15-2
+Added Pin To Net: NetName=GND Pin=C16-1
+Added Pin To Net: NetName=3.3V Pin=C16-2
+Added Pin To Net: NetName=3.3V Pin=C17-1
+Added Pin To Net: NetName=GND Pin=C17-2
+Added Pin To Net: NetName=GND Pin=C18-1
+Added Pin To Net: NetName=3.3V Pin=C18-2
+Added Pin To Net: NetName=3.3V Pin=C19-1
+Added Pin To Net: NetName=GND Pin=C19-2
+Added Pin To Net: NetName=GND Pin=C20-1
+Added Pin To Net: NetName=3.3V Pin=C20-2
+Added Pin To Net: NetName=3.3V Pin=C21-1
+Added Pin To Net: NetName=GND Pin=C21-2
+Added Pin To Net: NetName=GND Pin=C22-1
+Added Pin To Net: NetName=3.3V Pin=C22-2
+Added Pin To Net: NetName=3.3V Pin=C23_ButtonExpanders-1
+Added Pin To Net: NetName=GND Pin=C23_ButtonExpanders-2
+Added Pin To Net: NetName=3.3V Pin=C23_NoteExpanders-1
+Added Pin To Net: NetName=GND Pin=C23_NoteExpanders-2
+Added Pin To Net: NetName=NetDRV1_1 Pin=DRV1-1
+Added Pin To Net: NetName=GND Pin=DRV1-2
+Added Pin To Net: NetName=RED1 Pin=DRV1-3
+Added Pin To Net: NetName=GRN1 Pin=DRV1-4
+Added Pin To Net: NetName=BLU1 Pin=DRV1-5
+Added Pin To Net: NetName=RED9 Pin=DRV1-6
+Added Pin To Net: NetName=GRN9 Pin=DRV1-7
+Added Pin To Net: NetName=BLU9 Pin=DRV1-8
+Added Pin To Net: NetName=MOSI Pin=DRV1-9
+Added Pin To Net: NetName=SPCK Pin=DRV1-10
+Added Pin To Net: NetName=SCKO1 Pin=DRV1-11
+Added Pin To Net: NetName=SDTO1 Pin=DRV1-12
+Added Pin To Net: NetName=RED10 Pin=DRV1-13
+Added Pin To Net: NetName=GRN10 Pin=DRV1-14
+Added Pin To Net: NetName=BLU10 Pin=DRV1-15
+Added Pin To Net: NetName=RED2 Pin=DRV1-16
+Added Pin To Net: NetName=GRN2 Pin=DRV1-17
+Added Pin To Net: NetName=BLU2 Pin=DRV1-18
+Added Pin To Net: NetName=3.3V Pin=DRV1-19
+Added Pin To Net: NetName=3.3V Pin=DRV1-20
+Added Pin To Net: NetName=GND Pin=DRV1-21
+Added Pin To Net: NetName=NetDRV2_1 Pin=DRV2-1
+Added Pin To Net: NetName=GND Pin=DRV2-2
+Added Pin To Net: NetName=RED3 Pin=DRV2-3
+Added Pin To Net: NetName=GRN3 Pin=DRV2-4
+Added Pin To Net: NetName=BLU3 Pin=DRV2-5
+Added Pin To Net: NetName=RED11 Pin=DRV2-6
+Added Pin To Net: NetName=GRN11 Pin=DRV2-7
+Added Pin To Net: NetName=BLU11 Pin=DRV2-8
+Added Pin To Net: NetName=SDTO1 Pin=DRV2-9
+Added Pin To Net: NetName=SCKO1 Pin=DRV2-10
+Added Pin To Net: NetName=SCKO2 Pin=DRV2-11
+Added Pin To Net: NetName=SDTO2 Pin=DRV2-12
+Added Pin To Net: NetName=RED12 Pin=DRV2-13
+Added Pin To Net: NetName=GRN12 Pin=DRV2-14
+Added Pin To Net: NetName=BLU12 Pin=DRV2-15
+Added Pin To Net: NetName=RED4 Pin=DRV2-16
+Added Pin To Net: NetName=GRN4 Pin=DRV2-17
+Added Pin To Net: NetName=BLU4 Pin=DRV2-18
+Added Pin To Net: NetName=3.3V Pin=DRV2-19
+Added Pin To Net: NetName=3.3V Pin=DRV2-20
+Added Pin To Net: NetName=GND Pin=DRV2-21
+Added Pin To Net: NetName=NetDRV3_1 Pin=DRV3-1
+Added Pin To Net: NetName=GND Pin=DRV3-2
+Added Pin To Net: NetName=RED5 Pin=DRV3-3
+Added Pin To Net: NetName=GRN5 Pin=DRV3-4
+Added Pin To Net: NetName=BLU5 Pin=DRV3-5
+Added Pin To Net: NetName=RED13 Pin=DRV3-6
+Added Pin To Net: NetName=GRN13 Pin=DRV3-7
+Added Pin To Net: NetName=BLU13 Pin=DRV3-8
+Added Pin To Net: NetName=SDTO2 Pin=DRV3-9
+Added Pin To Net: NetName=SCKO2 Pin=DRV3-10
+Added Pin To Net: NetName=SCKO3 Pin=DRV3-11
+Added Pin To Net: NetName=SDTO3 Pin=DRV3-12
+Added Pin To Net: NetName=RED14 Pin=DRV3-13
+Added Pin To Net: NetName=GRN14 Pin=DRV3-14
+Added Pin To Net: NetName=BLU14 Pin=DRV3-15
+Added Pin To Net: NetName=RED6 Pin=DRV3-16
+Added Pin To Net: NetName=GRN6 Pin=DRV3-17
+Added Pin To Net: NetName=BLU6 Pin=DRV3-18
+Added Pin To Net: NetName=3.3V Pin=DRV3-19
+Added Pin To Net: NetName=3.3V Pin=DRV3-20
+Added Pin To Net: NetName=GND Pin=DRV3-21
+Added Pin To Net: NetName=NetDRV4_1 Pin=DRV4-1
+Added Pin To Net: NetName=GND Pin=DRV4-2
+Added Pin To Net: NetName=RED7 Pin=DRV4-3
+Added Pin To Net: NetName=GRN7 Pin=DRV4-4
+Added Pin To Net: NetName=BLU7 Pin=DRV4-5
+Added Pin To Net: NetName=RED15 Pin=DRV4-6
+Added Pin To Net: NetName=GRN15 Pin=DRV4-7
+Added Pin To Net: NetName=BLU15 Pin=DRV4-8
+Added Pin To Net: NetName=SDTO3 Pin=DRV4-9
+Added Pin To Net: NetName=SCKO3 Pin=DRV4-10
+Added Pin To Net: NetName=RED16 Pin=DRV4-13
+Added Pin To Net: NetName=GRN16 Pin=DRV4-14
+Added Pin To Net: NetName=BLU16 Pin=DRV4-15
+Added Pin To Net: NetName=RED8 Pin=DRV4-16
+Added Pin To Net: NetName=GRN8 Pin=DRV4-17
+Added Pin To Net: NetName=BLU8 Pin=DRV4-18
+Added Pin To Net: NetName=3.3V Pin=DRV4-19
+Added Pin To Net: NetName=3.3V Pin=DRV4-20
+Added Pin To Net: NetName=GND Pin=DRV4-21
+Added Pin To Net: NetName=BTN_INT Pin=EXP1_ButtonExpanders-1
+Added Pin To Net: NetName=3.3V Pin=EXP1_ButtonExpanders-2
+Added Pin To Net: NetName=GND Pin=EXP1_ButtonExpanders-3
+Added Pin To Net: NetName=SW1 Pin=EXP1_ButtonExpanders-4
+Added Pin To Net: NetName=SW2 Pin=EXP1_ButtonExpanders-5
+Added Pin To Net: NetName=SW3 Pin=EXP1_ButtonExpanders-6
+Added Pin To Net: NetName=SW4 Pin=EXP1_ButtonExpanders-7
+Added Pin To Net: NetName=SW5 Pin=EXP1_ButtonExpanders-8
+Added Pin To Net: NetName=SW6 Pin=EXP1_ButtonExpanders-9
+Added Pin To Net: NetName=SW7 Pin=EXP1_ButtonExpanders-10
+Added Pin To Net: NetName=SW8 Pin=EXP1_ButtonExpanders-11
+Added Pin To Net: NetName=GND Pin=EXP1_ButtonExpanders-12
+Added Pin To Net: NetName=SW9 Pin=EXP1_ButtonExpanders-13
+Added Pin To Net: NetName=SW10 Pin=EXP1_ButtonExpanders-14
+Added Pin To Net: NetName=SW11 Pin=EXP1_ButtonExpanders-15
+Added Pin To Net: NetName=SW12 Pin=EXP1_ButtonExpanders-16
+Added Pin To Net: NetName=SW13 Pin=EXP1_ButtonExpanders-17
+Added Pin To Net: NetName=SW14 Pin=EXP1_ButtonExpanders-18
+Added Pin To Net: NetName=SW15 Pin=EXP1_ButtonExpanders-19
+Added Pin To Net: NetName=SW16 Pin=EXP1_ButtonExpanders-20
+Added Pin To Net: NetName=EXTRA_IN_ButtonExpanders Pin=EXP1_ButtonExpanders-21
+Added Pin To Net: NetName=SCL Pin=EXP1_ButtonExpanders-22
+Added Pin To Net: NetName=SDA Pin=EXP1_ButtonExpanders-23
+Added Pin To Net: NetName=3.3V Pin=EXP1_ButtonExpanders-24
+Added Pin To Net: NetName=ENC_INT Pin=EXP1_NoteExpanders-1
+Added Pin To Net: NetName=3.3V Pin=EXP1_NoteExpanders-2
+Added Pin To Net: NetName=GND Pin=EXP1_NoteExpanders-3
+Added Pin To Net: NetName=NE_SW0 Pin=EXP1_NoteExpanders-4
+Added Pin To Net: NetName=NE_SW1 Pin=EXP1_NoteExpanders-5
+Added Pin To Net: NetName=NE_SW2 Pin=EXP1_NoteExpanders-6
+Added Pin To Net: NetName=NE_SW3 Pin=EXP1_NoteExpanders-7
+Added Pin To Net: NetName=NE_SW4 Pin=EXP1_NoteExpanders-8
+Added Pin To Net: NetName=NE_SW5 Pin=EXP1_NoteExpanders-9
+Added Pin To Net: NetName=NE_SW6 Pin=EXP1_NoteExpanders-10
+Added Pin To Net: NetName=NE_SW7 Pin=EXP1_NoteExpanders-11
+Added Pin To Net: NetName=GND Pin=EXP1_NoteExpanders-12
+Added Pin To Net: NetName=AE_SW0 Pin=EXP1_NoteExpanders-13
+Added Pin To Net: NetName=AE_SW1 Pin=EXP1_NoteExpanders-14
+Added Pin To Net: NetName=AE_SW2 Pin=EXP1_NoteExpanders-15
+Added Pin To Net: NetName=AE_SW3 Pin=EXP1_NoteExpanders-16
+Added Pin To Net: NetName=AE_SW4 Pin=EXP1_NoteExpanders-17
+Added Pin To Net: NetName=AE_SW5 Pin=EXP1_NoteExpanders-18
+Added Pin To Net: NetName=AE_SW6 Pin=EXP1_NoteExpanders-19
+Added Pin To Net: NetName=AE_SW7 Pin=EXP1_NoteExpanders-20
+Added Pin To Net: NetName=EXTRA_IN_NoteExpanders Pin=EXP1_NoteExpanders-21
+Added Pin To Net: NetName=SCL Pin=EXP1_NoteExpanders-22
+Added Pin To Net: NetName=SDA Pin=EXP1_NoteExpanders-23
+Added Pin To Net: NetName=3.3V Pin=EXP1_NoteExpanders-24
+Added Pin To Net: NetName=GND Pin=J3_U_Displays1-1
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays1-2
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays1-3
+Added Pin To Net: NetName=GND Pin=J3_U_Displays1-4
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays1-5
+Added Pin To Net: NetName=GND Pin=J3_U_Displays1-6
+Added Pin To Net: NetName=DISP_RESET Pin=J3_U_Displays1-7
+Added Pin To Net: NetName=GND Pin=J3_U_Displays1-8
+Added Pin To Net: NetName=SCL Pin=J3_U_Displays1-9
+Added Pin To Net: NetName=SDA_DISP7 Pin=J3_U_Displays1-10
+Added Pin To Net: NetName=SDA_DISP7 Pin=J3_U_Displays1-11
+Added Pin To Net: NetName=GND Pin=J3_U_Displays1-12
+Added Pin To Net: NetName=GND Pin=J3_U_Displays2-1
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays2-2
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays2-3
+Added Pin To Net: NetName=GND Pin=J3_U_Displays2-4
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays2-5
+Added Pin To Net: NetName=GND Pin=J3_U_Displays2-6
+Added Pin To Net: NetName=DISP_RESET Pin=J3_U_Displays2-7
+Added Pin To Net: NetName=GND Pin=J3_U_Displays2-8
+Added Pin To Net: NetName=SCL Pin=J3_U_Displays2-9
+Added Pin To Net: NetName=SDA_DISP6 Pin=J3_U_Displays2-10
+Added Pin To Net: NetName=SDA_DISP6 Pin=J3_U_Displays2-11
+Added Pin To Net: NetName=GND Pin=J3_U_Displays2-12
+Added Pin To Net: NetName=GND Pin=J3_U_Displays3-1
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays3-2
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays3-3
+Added Pin To Net: NetName=GND Pin=J3_U_Displays3-4
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays3-5
+Added Pin To Net: NetName=GND Pin=J3_U_Displays3-6
+Added Pin To Net: NetName=DISP_RESET Pin=J3_U_Displays3-7
+Added Pin To Net: NetName=GND Pin=J3_U_Displays3-8
+Added Pin To Net: NetName=SCL Pin=J3_U_Displays3-9
+Added Pin To Net: NetName=SDA_DISP5 Pin=J3_U_Displays3-10
+Added Pin To Net: NetName=SDA_DISP5 Pin=J3_U_Displays3-11
+Added Pin To Net: NetName=GND Pin=J3_U_Displays3-12
+Added Pin To Net: NetName=GND Pin=J3_U_Displays4-1
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays4-2
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays4-3
+Added Pin To Net: NetName=GND Pin=J3_U_Displays4-4
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays4-5
+Added Pin To Net: NetName=GND Pin=J3_U_Displays4-6
+Added Pin To Net: NetName=DISP_RESET Pin=J3_U_Displays4-7
+Added Pin To Net: NetName=GND Pin=J3_U_Displays4-8
+Added Pin To Net: NetName=SCL Pin=J3_U_Displays4-9
+Added Pin To Net: NetName=SDA_DISP4 Pin=J3_U_Displays4-10
+Added Pin To Net: NetName=SDA_DISP4 Pin=J3_U_Displays4-11
+Added Pin To Net: NetName=GND Pin=J3_U_Displays4-12
+Added Pin To Net: NetName=GND Pin=J3_U_Displays5-1
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays5-2
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays5-3
+Added Pin To Net: NetName=GND Pin=J3_U_Displays5-4
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays5-5
+Added Pin To Net: NetName=GND Pin=J3_U_Displays5-6
+Added Pin To Net: NetName=DISP_RESET Pin=J3_U_Displays5-7
+Added Pin To Net: NetName=GND Pin=J3_U_Displays5-8
+Added Pin To Net: NetName=SCL Pin=J3_U_Displays5-9
+Added Pin To Net: NetName=SDA_DISP3 Pin=J3_U_Displays5-10
+Added Pin To Net: NetName=SDA_DISP3 Pin=J3_U_Displays5-11
+Added Pin To Net: NetName=GND Pin=J3_U_Displays5-12
+Added Pin To Net: NetName=GND Pin=J3_U_Displays6-1
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays6-2
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays6-3
+Added Pin To Net: NetName=GND Pin=J3_U_Displays6-4
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays6-5
+Added Pin To Net: NetName=GND Pin=J3_U_Displays6-6
+Added Pin To Net: NetName=DISP_RESET Pin=J3_U_Displays6-7
+Added Pin To Net: NetName=GND Pin=J3_U_Displays6-8
+Added Pin To Net: NetName=SCL Pin=J3_U_Displays6-9
+Added Pin To Net: NetName=SDA_DISP2 Pin=J3_U_Displays6-10
+Added Pin To Net: NetName=SDA_DISP2 Pin=J3_U_Displays6-11
+Added Pin To Net: NetName=GND Pin=J3_U_Displays6-12
+Added Pin To Net: NetName=GND Pin=J3_U_Displays7-1
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays7-2
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays7-3
+Added Pin To Net: NetName=GND Pin=J3_U_Displays7-4
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays7-5
+Added Pin To Net: NetName=GND Pin=J3_U_Displays7-6
+Added Pin To Net: NetName=DISP_RESET Pin=J3_U_Displays7-7
+Added Pin To Net: NetName=GND Pin=J3_U_Displays7-8
+Added Pin To Net: NetName=SCL Pin=J3_U_Displays7-9
+Added Pin To Net: NetName=SDA_DISP1 Pin=J3_U_Displays7-10
+Added Pin To Net: NetName=SDA_DISP1 Pin=J3_U_Displays7-11
+Added Pin To Net: NetName=GND Pin=J3_U_Displays7-12
+Added Pin To Net: NetName=GND Pin=J3_U_Displays8-1
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays8-2
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays8-3
+Added Pin To Net: NetName=GND Pin=J3_U_Displays8-4
+Added Pin To Net: NetName=3.3V Pin=J3_U_Displays8-5
+Added Pin To Net: NetName=GND Pin=J3_U_Displays8-6
+Added Pin To Net: NetName=DISP_RESET Pin=J3_U_Displays8-7
+Added Pin To Net: NetName=GND Pin=J3_U_Displays8-8
+Added Pin To Net: NetName=SCL Pin=J3_U_Displays8-9
+Added Pin To Net: NetName=SDA_DISP0 Pin=J3_U_Displays8-10
+Added Pin To Net: NetName=SDA_DISP0 Pin=J3_U_Displays8-11
+Added Pin To Net: NetName=GND Pin=J3_U_Displays8-12
+Added Pin To Net: NetName=BLU1 Pin=P1-BLU1
+Added Pin To Net: NetName=BLU2 Pin=P1-BLU2
+Added Pin To Net: NetName=BLU9 Pin=P1-BLU3
+Added Pin To Net: NetName=BLU10 Pin=P1-BLU4
+Added Pin To Net: NetName=GRN1 Pin=P1-GRN1
+Added Pin To Net: NetName=GRN2 Pin=P1-GRN2
+Added Pin To Net: NetName=GRN9 Pin=P1-GRN3
+Added Pin To Net: NetName=GRN10 Pin=P1-GRN4
+Added Pin To Net: NetName=RED1 Pin=P1-RED1
+Added Pin To Net: NetName=RED2 Pin=P1-RED2
+Added Pin To Net: NetName=RED9 Pin=P1-RED3
+Added Pin To Net: NetName=RED10 Pin=P1-RED4
+Added Pin To Net: NetName=GND Pin=P1-SIG1
+Added Pin To Net: NetName=SW1 Pin=P1-SIG2
+Added Pin To Net: NetName=GND Pin=P1-SIG3
+Added Pin To Net: NetName=SW2 Pin=P1-SIG4
+Added Pin To Net: NetName=GND Pin=P1-SIG5
+Added Pin To Net: NetName=SW9 Pin=P1-SIG6
+Added Pin To Net: NetName=GND Pin=P1-SIG7
+Added Pin To Net: NetName=SW10 Pin=P1-SIG8
+Added Pin To Net: NetName=12V Pin=P1-VCC1
+Added Pin To Net: NetName=12V Pin=P1-VCC2
+Added Pin To Net: NetName=12V Pin=P1-VCC3
+Added Pin To Net: NetName=12V Pin=P1-VCC4
+Added Pin To Net: NetName=BLU3 Pin=P2-BLU1
+Added Pin To Net: NetName=BLU4 Pin=P2-BLU2
+Added Pin To Net: NetName=BLU11 Pin=P2-BLU3
+Added Pin To Net: NetName=BLU12 Pin=P2-BLU4
+Added Pin To Net: NetName=GRN3 Pin=P2-GRN1
+Added Pin To Net: NetName=GRN4 Pin=P2-GRN2
+Added Pin To Net: NetName=GRN11 Pin=P2-GRN3
+Added Pin To Net: NetName=GRN12 Pin=P2-GRN4
+Added Pin To Net: NetName=RED3 Pin=P2-RED1
+Added Pin To Net: NetName=RED4 Pin=P2-RED2
+Added Pin To Net: NetName=RED11 Pin=P2-RED3
+Added Pin To Net: NetName=RED12 Pin=P2-RED4
+Added Pin To Net: NetName=GND Pin=P2-SIG1
+Added Pin To Net: NetName=SW3 Pin=P2-SIG2
+Added Pin To Net: NetName=GND Pin=P2-SIG3
+Added Pin To Net: NetName=SW4 Pin=P2-SIG4
+Added Pin To Net: NetName=GND Pin=P2-SIG5
+Added Pin To Net: NetName=SW11 Pin=P2-SIG6
+Added Pin To Net: NetName=GND Pin=P2-SIG7
+Added Pin To Net: NetName=SW12 Pin=P2-SIG8
+Added Pin To Net: NetName=12V Pin=P2-VCC1
+Added Pin To Net: NetName=12V Pin=P2-VCC2
+Added Pin To Net: NetName=12V Pin=P2-VCC3
+Added Pin To Net: NetName=12V Pin=P2-VCC4
+Added Pin To Net: NetName=BLU5 Pin=P3-BLU1
+Added Pin To Net: NetName=BLU6 Pin=P3-BLU2
+Added Pin To Net: NetName=BLU13 Pin=P3-BLU3
+Added Pin To Net: NetName=BLU14 Pin=P3-BLU4
+Added Pin To Net: NetName=GRN5 Pin=P3-GRN1
+Added Pin To Net: NetName=GRN6 Pin=P3-GRN2
+Added Pin To Net: NetName=GRN13 Pin=P3-GRN3
+Added Pin To Net: NetName=GRN14 Pin=P3-GRN4
+Added Pin To Net: NetName=RED5 Pin=P3-RED1
+Added Pin To Net: NetName=RED6 Pin=P3-RED2
+Added Pin To Net: NetName=RED13 Pin=P3-RED3
+Added Pin To Net: NetName=RED14 Pin=P3-RED4
+Added Pin To Net: NetName=GND Pin=P3-SIG1
+Added Pin To Net: NetName=SW5 Pin=P3-SIG2
+Added Pin To Net: NetName=GND Pin=P3-SIG3
+Added Pin To Net: NetName=SW6 Pin=P3-SIG4
+Added Pin To Net: NetName=GND Pin=P3-SIG5
+Added Pin To Net: NetName=SW13 Pin=P3-SIG6
+Added Pin To Net: NetName=GND Pin=P3-SIG7
+Added Pin To Net: NetName=SW14 Pin=P3-SIG8
+Added Pin To Net: NetName=12V Pin=P3-VCC1
+Added Pin To Net: NetName=12V Pin=P3-VCC2
+Added Pin To Net: NetName=12V Pin=P3-VCC3
+Added Pin To Net: NetName=12V Pin=P3-VCC4
+Added Pin To Net: NetName=BLU7 Pin=P4-BLU1
+Added Pin To Net: NetName=BLU8 Pin=P4-BLU2
+Added Pin To Net: NetName=BLU15 Pin=P4-BLU3
+Added Pin To Net: NetName=BLU16 Pin=P4-BLU4
+Added Pin To Net: NetName=GRN7 Pin=P4-GRN1
+Added Pin To Net: NetName=GRN8 Pin=P4-GRN2
+Added Pin To Net: NetName=GRN15 Pin=P4-GRN3
+Added Pin To Net: NetName=GRN16 Pin=P4-GRN4
+Added Pin To Net: NetName=RED7 Pin=P4-RED1
+Added Pin To Net: NetName=RED8 Pin=P4-RED2
+Added Pin To Net: NetName=RED15 Pin=P4-RED3
+Added Pin To Net: NetName=RED16 Pin=P4-RED4
+Added Pin To Net: NetName=GND Pin=P4-SIG1
+Added Pin To Net: NetName=SW7 Pin=P4-SIG2
+Added Pin To Net: NetName=GND Pin=P4-SIG3
+Added Pin To Net: NetName=SW8 Pin=P4-SIG4
+Added Pin To Net: NetName=GND Pin=P4-SIG5
+Added Pin To Net: NetName=SW15 Pin=P4-SIG6
+Added Pin To Net: NetName=GND Pin=P4-SIG7
+Added Pin To Net: NetName=SW16 Pin=P4-SIG8
+Added Pin To Net: NetName=12V Pin=P4-VCC1
+Added Pin To Net: NetName=12V Pin=P4-VCC2
+Added Pin To Net: NetName=12V Pin=P4-VCC3
+Added Pin To Net: NetName=12V Pin=P4-VCC4
+Added Pin To Net: NetName=GND Pin=P8-BLU1
+Added Pin To Net: NetName=PP_LED Pin=P8-GRN1
+Added Pin To Net: NetName=GND Pin=P8-RED1
+Added Pin To Net: NetName=GND Pin=P8-SIG1
+Added Pin To Net: NetName=PP_BTN Pin=P8-SIG2
+Added Pin To Net: NetName=GND Pin=P8-VCC1
+Added Pin To Net: NetName=NetP9_U_Ribbon_Connectors1_1 Pin=P9_U_Ribbon_Connectors1-1
+Added Pin To Net: NetName=NetP9_U_Ribbon_Connectors1_2 Pin=P9_U_Ribbon_Connectors1-2
+Added Pin To Net: NetName=NetP9_U_Ribbon_Connectors1_3 Pin=P9_U_Ribbon_Connectors1-3
+Added Pin To Net: NetName=NetP9_U_Ribbon_Connectors1_4 Pin=P9_U_Ribbon_Connectors1-4
+Added Pin To Net: NetName=NetP9_U_Ribbon_Connectors1_5 Pin=P9_U_Ribbon_Connectors1-5
+Added Pin To Net: NetName=NetP9_U_Ribbon_Connectors1_6 Pin=P9_U_Ribbon_Connectors1-6
+Added Pin To Net: NetName=NetP9_U_Ribbon_Connectors1_7 Pin=P9_U_Ribbon_Connectors1-7
+Added Pin To Net: NetName=NetP9_U_Ribbon_Connectors1_8 Pin=P9_U_Ribbon_Connectors1-8
+Added Pin To Net: NetName=NetP9_U_Ribbon_Connectors1_9 Pin=P9_U_Ribbon_Connectors1-9
+Added Pin To Net: NetName=NetP9_U_Ribbon_Connectors1_10 Pin=P9_U_Ribbon_Connectors1-10
+Added Pin To Net: NetName=NetP9_U_Ribbon_Connectors1_11 Pin=P9_U_Ribbon_Connectors1-11
+Added Pin To Net: NetName=NetP9_U_Ribbon_Connectors1_12 Pin=P9_U_Ribbon_Connectors1-12
+Added Pin To Net: NetName=NetP9_U_Ribbon_Connectors1_13 Pin=P9_U_Ribbon_Connectors1-13
+Added Pin To Net: NetName=NetP9_U_Ribbon_Connectors1_14 Pin=P9_U_Ribbon_Connectors1-14
+Added Pin To Net: NetName=NetP9_U_Ribbon_Connectors1_15 Pin=P9_U_Ribbon_Connectors1-15
+Added Pin To Net: NetName=NetP9_U_Ribbon_Connectors1_16 Pin=P9_U_Ribbon_Connectors1-16
+Added Pin To Net: NetName=3.3V Pin=R1_AUX Encoders1-1
+Added Pin To Net: NetName=AE_SW7 Pin=R1_AUX Encoders1-2
+Added Pin To Net: NetName=3.3V Pin=R1_AUX Encoders2-1
+Added Pin To Net: NetName=AE_SW6 Pin=R1_AUX Encoders2-2
+Added Pin To Net: NetName=3.3V Pin=R1_AUX Encoders3-1
+Added Pin To Net: NetName=AE_SW5 Pin=R1_AUX Encoders3-2
+Added Pin To Net: NetName=3.3V Pin=R1_AUX Encoders4-1
+Added Pin To Net: NetName=AE_SW4 Pin=R1_AUX Encoders4-2
+Added Pin To Net: NetName=3.3V Pin=R1_AUX Encoders5-1
+Added Pin To Net: NetName=AE_SW3 Pin=R1_AUX Encoders5-2
+Added Pin To Net: NetName=3.3V Pin=R1_AUX Encoders6-1
+Added Pin To Net: NetName=AE_SW2 Pin=R1_AUX Encoders6-2
+Added Pin To Net: NetName=3.3V Pin=R1_AUX Encoders7-1
+Added Pin To Net: NetName=AE_SW1 Pin=R1_AUX Encoders7-2
+Added Pin To Net: NetName=3.3V Pin=R1_AUX Encoders8-1
+Added Pin To Net: NetName=AE_SW0 Pin=R1_AUX Encoders8-2
+Added Pin To Net: NetName=3.3V Pin=R1_NOTE Encoders1-1
+Added Pin To Net: NetName=NE_SW15 Pin=R1_NOTE Encoders1-2
+Added Pin To Net: NetName=3.3V Pin=R1_NOTE Encoders2-1
+Added Pin To Net: NetName=NE_SW14 Pin=R1_NOTE Encoders2-2
+Added Pin To Net: NetName=3.3V Pin=R1_NOTE Encoders3-1
+Added Pin To Net: NetName=NE_SW13 Pin=R1_NOTE Encoders3-2
+Added Pin To Net: NetName=3.3V Pin=R1_NOTE Encoders4-1
+Added Pin To Net: NetName=NE_SW12 Pin=R1_NOTE Encoders4-2
+Added Pin To Net: NetName=3.3V Pin=R1_NOTE Encoders5-1
+Added Pin To Net: NetName=NE_SW11 Pin=R1_NOTE Encoders5-2
+Added Pin To Net: NetName=3.3V Pin=R1_NOTE Encoders6-1
+Added Pin To Net: NetName=NE_SW10 Pin=R1_NOTE Encoders6-2
+Added Pin To Net: NetName=3.3V Pin=R1_NOTE Encoders7-1
+Added Pin To Net: NetName=NE_SW9 Pin=R1_NOTE Encoders7-2
+Added Pin To Net: NetName=3.3V Pin=R1_NOTE Encoders8-1
+Added Pin To Net: NetName=NE_SW8 Pin=R1_NOTE Encoders8-2
+Added Pin To Net: NetName=3.3V Pin=R1_NOTE Encoders9-1
+Added Pin To Net: NetName=NE_SW7 Pin=R1_NOTE Encoders9-2
+Added Pin To Net: NetName=3.3V Pin=R1_NOTE Encoders10-1
+Added Pin To Net: NetName=NE_SW6 Pin=R1_NOTE Encoders10-2
+Added Pin To Net: NetName=3.3V Pin=R1_NOTE Encoders11-1
+Added Pin To Net: NetName=NE_SW5 Pin=R1_NOTE Encoders11-2
+Added Pin To Net: NetName=3.3V Pin=R1_NOTE Encoders12-1
+Added Pin To Net: NetName=NE_SW4 Pin=R1_NOTE Encoders12-2
+Added Pin To Net: NetName=3.3V Pin=R1_NOTE Encoders13-1
+Added Pin To Net: NetName=NE_SW3 Pin=R1_NOTE Encoders13-2
+Added Pin To Net: NetName=3.3V Pin=R1_NOTE Encoders14-1
+Added Pin To Net: NetName=NE_SW2 Pin=R1_NOTE Encoders14-2
+Added Pin To Net: NetName=3.3V Pin=R1_NOTE Encoders15-1
+Added Pin To Net: NetName=NE_SW1 Pin=R1_NOTE Encoders15-2
+Added Pin To Net: NetName=3.3V Pin=R1_NOTE Encoders16-1
+Added Pin To Net: NetName=NE_SW0 Pin=R1_NOTE Encoders16-2
+Added Pin To Net: NetName=NetR2_AUX Encoders1_1 Pin=R2_AUX Encoders1-1
+Added Pin To Net: NetName=AE_L7 Pin=R2_AUX Encoders1-2
+Added Pin To Net: NetName=NetR2_AUX Encoders2_1 Pin=R2_AUX Encoders2-1
+Added Pin To Net: NetName=AE_L6 Pin=R2_AUX Encoders2-2
+Added Pin To Net: NetName=NetR2_AUX Encoders3_1 Pin=R2_AUX Encoders3-1
+Added Pin To Net: NetName=AE_L5 Pin=R2_AUX Encoders3-2
+Added Pin To Net: NetName=NetR2_AUX Encoders4_1 Pin=R2_AUX Encoders4-1
+Added Pin To Net: NetName=AE_L4 Pin=R2_AUX Encoders4-2
+Added Pin To Net: NetName=NetR2_AUX Encoders5_1 Pin=R2_AUX Encoders5-1
+Added Pin To Net: NetName=AE_L3 Pin=R2_AUX Encoders5-2
+Added Pin To Net: NetName=NetR2_AUX Encoders6_1 Pin=R2_AUX Encoders6-1
+Added Pin To Net: NetName=AE_L2 Pin=R2_AUX Encoders6-2
+Added Pin To Net: NetName=NetR2_AUX Encoders7_1 Pin=R2_AUX Encoders7-1
+Added Pin To Net: NetName=AE_L1 Pin=R2_AUX Encoders7-2
+Added Pin To Net: NetName=NetR2_AUX Encoders8_1 Pin=R2_AUX Encoders8-1
+Added Pin To Net: NetName=AE_L0 Pin=R2_AUX Encoders8-2
+Added Pin To Net: NetName=NetR2_NOTE Encoders1_1 Pin=R2_NOTE Encoders1-1
+Added Pin To Net: NetName=NE_L15 Pin=R2_NOTE Encoders1-2
+Added Pin To Net: NetName=NetR2_NOTE Encoders2_1 Pin=R2_NOTE Encoders2-1
+Added Pin To Net: NetName=NE_L14 Pin=R2_NOTE Encoders2-2
+Added Pin To Net: NetName=NetR2_NOTE Encoders3_1 Pin=R2_NOTE Encoders3-1
+Added Pin To Net: NetName=NE_L13 Pin=R2_NOTE Encoders3-2
+Added Pin To Net: NetName=NetR2_NOTE Encoders4_1 Pin=R2_NOTE Encoders4-1
+Added Pin To Net: NetName=NE_L12 Pin=R2_NOTE Encoders4-2
+Added Pin To Net: NetName=NetR2_NOTE Encoders5_1 Pin=R2_NOTE Encoders5-1
+Added Pin To Net: NetName=NE_L11 Pin=R2_NOTE Encoders5-2
+Added Pin To Net: NetName=NetR2_NOTE Encoders6_1 Pin=R2_NOTE Encoders6-1
+Added Pin To Net: NetName=NE_L10 Pin=R2_NOTE Encoders6-2
+Added Pin To Net: NetName=NetR2_NOTE Encoders7_1 Pin=R2_NOTE Encoders7-1
+Added Pin To Net: NetName=NE_L9 Pin=R2_NOTE Encoders7-2
+Added Pin To Net: NetName=NetR2_NOTE Encoders8_1 Pin=R2_NOTE Encoders8-1
+Added Pin To Net: NetName=NE_L8 Pin=R2_NOTE Encoders8-2
+Added Pin To Net: NetName=NetR2_NOTE Encoders9_1 Pin=R2_NOTE Encoders9-1
+Added Pin To Net: NetName=NE_L7 Pin=R2_NOTE Encoders9-2
+Added Pin To Net: NetName=NetR2_NOTE Encoders10_1 Pin=R2_NOTE Encoders10-1
+Added Pin To Net: NetName=NE_L6 Pin=R2_NOTE Encoders10-2
+Added Pin To Net: NetName=NetR2_NOTE Encoders11_1 Pin=R2_NOTE Encoders11-1
+Added Pin To Net: NetName=NE_L5 Pin=R2_NOTE Encoders11-2
+Added Pin To Net: NetName=NetR2_NOTE Encoders12_1 Pin=R2_NOTE Encoders12-1
+Added Pin To Net: NetName=NE_L4 Pin=R2_NOTE Encoders12-2
+Added Pin To Net: NetName=NetR2_NOTE Encoders13_1 Pin=R2_NOTE Encoders13-1
+Added Pin To Net: NetName=NE_L3 Pin=R2_NOTE Encoders13-2
+Added Pin To Net: NetName=NetR2_NOTE Encoders14_1 Pin=R2_NOTE Encoders14-1
+Added Pin To Net: NetName=NE_L2 Pin=R2_NOTE Encoders14-2
+Added Pin To Net: NetName=NetR2_NOTE Encoders15_1 Pin=R2_NOTE Encoders15-1
+Added Pin To Net: NetName=NE_L1 Pin=R2_NOTE Encoders15-2
+Added Pin To Net: NetName=NetR2_NOTE Encoders16_1 Pin=R2_NOTE Encoders16-1
+Added Pin To Net: NetName=NE_L0 Pin=R2_NOTE Encoders16-2
+Added Pin To Net: NetName=NetR3_AUX Encoders1_1 Pin=R3_AUX Encoders1-1
+Added Pin To Net: NetName=AE_R7 Pin=R3_AUX Encoders1-2
+Added Pin To Net: NetName=NetR3_AUX Encoders2_1 Pin=R3_AUX Encoders2-1
+Added Pin To Net: NetName=AE_R6 Pin=R3_AUX Encoders2-2
+Added Pin To Net: NetName=NetR3_AUX Encoders3_1 Pin=R3_AUX Encoders3-1
+Added Pin To Net: NetName=AE_R5 Pin=R3_AUX Encoders3-2
+Added Pin To Net: NetName=NetR3_AUX Encoders4_1 Pin=R3_AUX Encoders4-1
+Added Pin To Net: NetName=AE_R4 Pin=R3_AUX Encoders4-2
+Added Pin To Net: NetName=NetR3_AUX Encoders5_1 Pin=R3_AUX Encoders5-1
+Added Pin To Net: NetName=AE_R3 Pin=R3_AUX Encoders5-2
+Added Pin To Net: NetName=NetR3_AUX Encoders6_1 Pin=R3_AUX Encoders6-1
+Added Pin To Net: NetName=AE_R2 Pin=R3_AUX Encoders6-2
+Added Pin To Net: NetName=NetR3_AUX Encoders7_1 Pin=R3_AUX Encoders7-1
+Added Pin To Net: NetName=AE_R1 Pin=R3_AUX Encoders7-2
+Added Pin To Net: NetName=NetR3_AUX Encoders8_1 Pin=R3_AUX Encoders8-1
+Added Pin To Net: NetName=AE_R0 Pin=R3_AUX Encoders8-2
+Added Pin To Net: NetName=NetR3_NOTE Encoders1_1 Pin=R3_NOTE Encoders1-1
+Added Pin To Net: NetName=NE_R15 Pin=R3_NOTE Encoders1-2
+Added Pin To Net: NetName=NetR3_NOTE Encoders2_1 Pin=R3_NOTE Encoders2-1
+Added Pin To Net: NetName=NE_R14 Pin=R3_NOTE Encoders2-2
+Added Pin To Net: NetName=NetR3_NOTE Encoders3_1 Pin=R3_NOTE Encoders3-1
+Added Pin To Net: NetName=NE_R13 Pin=R3_NOTE Encoders3-2
+Added Pin To Net: NetName=NetR3_NOTE Encoders4_1 Pin=R3_NOTE Encoders4-1
+Added Pin To Net: NetName=NE_R12 Pin=R3_NOTE Encoders4-2
+Added Pin To Net: NetName=NetR3_NOTE Encoders5_1 Pin=R3_NOTE Encoders5-1
+Added Pin To Net: NetName=NE_R11 Pin=R3_NOTE Encoders5-2
+Added Pin To Net: NetName=NetR3_NOTE Encoders6_1 Pin=R3_NOTE Encoders6-1
+Added Pin To Net: NetName=NE_R10 Pin=R3_NOTE Encoders6-2
+Added Pin To Net: NetName=NetR3_NOTE Encoders7_1 Pin=R3_NOTE Encoders7-1
+Added Pin To Net: NetName=NE_R9 Pin=R3_NOTE Encoders7-2
+Added Pin To Net: NetName=NetR3_NOTE Encoders8_1 Pin=R3_NOTE Encoders8-1
+Added Pin To Net: NetName=NE_R8 Pin=R3_NOTE Encoders8-2
+Added Pin To Net: NetName=NetR3_NOTE Encoders9_1 Pin=R3_NOTE Encoders9-1
+Added Pin To Net: NetName=NE_R7 Pin=R3_NOTE Encoders9-2
+Added Pin To Net: NetName=NetR3_NOTE Encoders10_1 Pin=R3_NOTE Encoders10-1
+Added Pin To Net: NetName=NE_R6 Pin=R3_NOTE Encoders10-2
+Added Pin To Net: NetName=NetR3_NOTE Encoders11_1 Pin=R3_NOTE Encoders11-1
+Added Pin To Net: NetName=NE_R5 Pin=R3_NOTE Encoders11-2
+Added Pin To Net: NetName=NetR3_NOTE Encoders12_1 Pin=R3_NOTE Encoders12-1
+Added Pin To Net: NetName=NE_R4 Pin=R3_NOTE Encoders12-2
+Added Pin To Net: NetName=NetR3_NOTE Encoders13_1 Pin=R3_NOTE Encoders13-1
+Added Pin To Net: NetName=NE_R3 Pin=R3_NOTE Encoders13-2
+Added Pin To Net: NetName=NetR3_NOTE Encoders14_1 Pin=R3_NOTE Encoders14-1
+Added Pin To Net: NetName=NE_R2 Pin=R3_NOTE Encoders14-2
+Added Pin To Net: NetName=NetR3_NOTE Encoders15_1 Pin=R3_NOTE Encoders15-1
+Added Pin To Net: NetName=NE_R1 Pin=R3_NOTE Encoders15-2
+Added Pin To Net: NetName=NetR3_NOTE Encoders16_1 Pin=R3_NOTE Encoders16-1
+Added Pin To Net: NetName=NE_R0 Pin=R3_NOTE Encoders16-2
+Added Pin To Net: NetName=GND Pin=R4-1
+Added Pin To Net: NetName=3.3V Pin=R4-2
+Added Pin To Net: NetName=NetR4_3 Pin=R4-3
+Added Pin To Net: NetName=GND Pin=R5-1
+Added Pin To Net: NetName=NetDRV1_1 Pin=R5-2
+Added Pin To Net: NetName=GND Pin=R6-1
+Added Pin To Net: NetName=NetDRV2_1 Pin=R6-2
+Added Pin To Net: NetName=GND Pin=R7-1
+Added Pin To Net: NetName=NetDRV3_1 Pin=R7-2
+Added Pin To Net: NetName=GND Pin=R8-1
+Added Pin To Net: NetName=NetDRV4_1 Pin=R8-2
+Added Pin To Net: NetName=3.3V Pin=R9_U_Displays1-1
+Added Pin To Net: NetName=SDA_DISP7 Pin=R9_U_Displays1-2
+Added Pin To Net: NetName=3.3V Pin=R9_U_Displays2-1
+Added Pin To Net: NetName=SDA_DISP6 Pin=R9_U_Displays2-2
+Added Pin To Net: NetName=3.3V Pin=R9_U_Displays3-1
+Added Pin To Net: NetName=SDA_DISP5 Pin=R9_U_Displays3-2
+Added Pin To Net: NetName=3.3V Pin=R9_U_Displays4-1
+Added Pin To Net: NetName=SDA_DISP4 Pin=R9_U_Displays4-2
+Added Pin To Net: NetName=3.3V Pin=R9_U_Displays5-1
+Added Pin To Net: NetName=SDA_DISP3 Pin=R9_U_Displays5-2
+Added Pin To Net: NetName=3.3V Pin=R9_U_Displays6-1
+Added Pin To Net: NetName=SDA_DISP2 Pin=R9_U_Displays6-2
+Added Pin To Net: NetName=3.3V Pin=R9_U_Displays7-1
+Added Pin To Net: NetName=SDA_DISP1 Pin=R9_U_Displays7-2
+Added Pin To Net: NetName=3.3V Pin=R9_U_Displays8-1
+Added Pin To Net: NetName=SDA_DISP0 Pin=R9_U_Displays8-2
+Added Pin To Net: NetName=BTN_INT Pin=R10_ButtonExpanders-1
+Added Pin To Net: NetName=3.3V Pin=R10_ButtonExpanders-2
+Added Pin To Net: NetName=ENC_INT Pin=R10_NoteExpanders-1
+Added Pin To Net: NetName=3.3V Pin=R10_NoteExpanders-2
+Added Pin To Net: NetName=SW1 Pin=R11_ButtonExpanders-1
+Added Pin To Net: NetName=SW2 Pin=R11_ButtonExpanders-2
+Added Pin To Net: NetName=SW3 Pin=R11_ButtonExpanders-3
+Added Pin To Net: NetName=SW4 Pin=R11_ButtonExpanders-4
+Added Pin To Net: NetName=3.3V Pin=R11_ButtonExpanders-5
+Added Pin To Net: NetName=SW8 Pin=R11_ButtonExpanders-6
+Added Pin To Net: NetName=SW7 Pin=R11_ButtonExpanders-7
+Added Pin To Net: NetName=SW6 Pin=R11_ButtonExpanders-8
+Added Pin To Net: NetName=SW5 Pin=R11_ButtonExpanders-9
+Added Pin To Net: NetName=3.3V Pin=R11_ButtonExpanders-10
+Added Pin To Net: NetName=NE_SW0 Pin=R11_NoteExpanders-1
+Added Pin To Net: NetName=NE_SW1 Pin=R11_NoteExpanders-2
+Added Pin To Net: NetName=NE_SW2 Pin=R11_NoteExpanders-3
+Added Pin To Net: NetName=NE_SW3 Pin=R11_NoteExpanders-4
+Added Pin To Net: NetName=3.3V Pin=R11_NoteExpanders-5
+Added Pin To Net: NetName=NE_SW7 Pin=R11_NoteExpanders-6
+Added Pin To Net: NetName=NE_SW6 Pin=R11_NoteExpanders-7
+Added Pin To Net: NetName=NE_SW5 Pin=R11_NoteExpanders-8
+Added Pin To Net: NetName=NE_SW4 Pin=R11_NoteExpanders-9
+Added Pin To Net: NetName=3.3V Pin=R11_NoteExpanders-10
+Added Pin To Net: NetName=SW16 Pin=R12_ButtonExpanders-1
+Added Pin To Net: NetName=SW15 Pin=R12_ButtonExpanders-2
+Added Pin To Net: NetName=SW14 Pin=R12_ButtonExpanders-3
+Added Pin To Net: NetName=SW13 Pin=R12_ButtonExpanders-4
+Added Pin To Net: NetName=3.3V Pin=R12_ButtonExpanders-5
+Added Pin To Net: NetName=SW9 Pin=R12_ButtonExpanders-6
+Added Pin To Net: NetName=SW10 Pin=R12_ButtonExpanders-7
+Added Pin To Net: NetName=SW11 Pin=R12_ButtonExpanders-8
+Added Pin To Net: NetName=SW12 Pin=R12_ButtonExpanders-9
+Added Pin To Net: NetName=3.3V Pin=R12_ButtonExpanders-10
+Added Pin To Net: NetName=AE_SW7 Pin=R12_NoteExpanders-1
+Added Pin To Net: NetName=AE_SW6 Pin=R12_NoteExpanders-2
+Added Pin To Net: NetName=AE_SW5 Pin=R12_NoteExpanders-3
+Added Pin To Net: NetName=AE_SW4 Pin=R12_NoteExpanders-4
+Added Pin To Net: NetName=3.3V Pin=R12_NoteExpanders-5
+Added Pin To Net: NetName=AE_SW0 Pin=R12_NoteExpanders-6
+Added Pin To Net: NetName=AE_SW1 Pin=R12_NoteExpanders-7
+Added Pin To Net: NetName=AE_SW2 Pin=R12_NoteExpanders-8
+Added Pin To Net: NetName=AE_SW3 Pin=R12_NoteExpanders-9
+Added Pin To Net: NetName=3.3V Pin=R12_NoteExpanders-10
+Added Pin To Net: NetName=NetR32_1 Pin=R32-1
+Added Pin To Net: NetName=GND Pin=R32-2
+Added Pin To Net: NetName=3.3V Pin=R33-1
+Added Pin To Net: NetName=NetR32_1 Pin=R33-2
+Added Pin To Net: NetName=SDA_DISP4 Pin=U8-1
+Added Pin To Net: NetName=SDA_DISP6 Pin=U8-2
+Added Pin To Net: NetName=SDA Pin=U8-3
+Added Pin To Net: NetName=SDA_DISP7 Pin=U8-4
+Added Pin To Net: NetName=SDA_DISP5 Pin=U8-5
+Added Pin To Net: NetName=GND Pin=U8-6
+Added Pin To Net: NetName=GND Pin=U8-7
+Added Pin To Net: NetName=GND Pin=U8-8
+Added Pin To Net: NetName=DISP_SEL2 Pin=U8-9
+Added Pin To Net: NetName=DISP_SEL1 Pin=U8-10
+Added Pin To Net: NetName=DISP_SEL0 Pin=U8-11
+Added Pin To Net: NetName=SDA_DISP3 Pin=U8-12
+Added Pin To Net: NetName=SDA_DISP0 Pin=U8-13
+Added Pin To Net: NetName=SDA_DISP1 Pin=U8-14
+Added Pin To Net: NetName=SDA_DISP2 Pin=U8-15
+Added Pin To Net: NetName=3.3V Pin=U8-16
+Change Net Name : Old Net Name=NetC3_1 New Net Name=NetC4_2
+Added Pin To Net: NetName=NetC3_1 Pin=C3-1
+Added Pin To Net: NetName=NetC3_1 Pin=U1-96
+Added Pin To Net: NetName=NetC3_1 Pin=XC1-1
+Added Net: Name=NetC3_1
+Added Member To Class: ClassName=AUX Encoders1 Member=Component C1_AUX Encoders1 (C1) A_LPF
+Added Member To Class: ClassName=AUX Encoders2 Member=Component C1_AUX Encoders2 (C1) A_LPF
+Added Member To Class: ClassName=AUX Encoders3 Member=Component C1_AUX Encoders3 (C1) A_LPF
+Added Member To Class: ClassName=AUX Encoders4 Member=Component C1_AUX Encoders4 (C1) A_LPF
+Added Member To Class: ClassName=AUX Encoders5 Member=Component C1_AUX Encoders5 (C1) A_LPF
+Added Member To Class: ClassName=AUX Encoders6 Member=Component C1_AUX Encoders6 (C1) A_LPF
+Added Member To Class: ClassName=AUX Encoders7 Member=Component C1_AUX Encoders7 (C1) A_LPF
+Added Member To Class: ClassName=AUX Encoders8 Member=Component C1_AUX Encoders8 (C1) A_LPF
+Added Member To Class: ClassName=NOTE Encoders1 Member=Component C1_NOTE Encoders1 (C1) A_LPF
+Added Member To Class: ClassName=NOTE Encoders2 Member=Component C1_NOTE Encoders2 (C1) A_LPF
+Added Member To Class: ClassName=NOTE Encoders3 Member=Component C1_NOTE Encoders3 (C1) A_LPF
+Added Member To Class: ClassName=NOTE Encoders4 Member=Component C1_NOTE Encoders4 (C1) A_LPF
+Added Member To Class: ClassName=NOTE Encoders5 Member=Component C1_NOTE Encoders5 (C1) A_LPF
+Added Member To Class: ClassName=NOTE Encoders6 Member=Component C1_NOTE Encoders6 (C1) A_LPF
+Added Member To Class: ClassName=NOTE Encoders7 Member=Component C1_NOTE Encoders7 (C1) A_LPF
+Added Member To Class: ClassName=NOTE Encoders8 Member=Component C1_NOTE Encoders8 (C1) A_LPF
+Added Member To Class: ClassName=NOTE Encoders9 Member=Component C1_NOTE Encoders9 (C1) A_LPF
+Added Member To Class: ClassName=NOTE Encoders10 Member=Component C1_NOTE Encoders10 (C1) A_LPF
+Added Member To Class: ClassName=NOTE Encoders11 Member=Component C1_NOTE Encoders11 (C1) A_LPF
+Added Member To Class: ClassName=NOTE Encoders12 Member=Component C1_NOTE Encoders12 (C1) A_LPF
+Added Member To Class: ClassName=NOTE Encoders13 Member=Component C1_NOTE Encoders13 (C1) A_LPF
+Added Member To Class: ClassName=NOTE Encoders14 Member=Component C1_NOTE Encoders14 (C1) A_LPF
+Added Member To Class: ClassName=NOTE Encoders15 Member=Component C1_NOTE Encoders15 (C1) A_LPF
+Added Member To Class: ClassName=NOTE Encoders16 Member=Component C1_NOTE Encoders16 (C1) A_LPF
+Added Member To Class: ClassName=AUX Encoders1 Member=Component C2_AUX Encoders1 (C2) B_LPF
+Added Member To Class: ClassName=AUX Encoders2 Member=Component C2_AUX Encoders2 (C2) B_LPF
+Added Member To Class: ClassName=AUX Encoders3 Member=Component C2_AUX Encoders3 (C2) B_LPF
+Added Member To Class: ClassName=AUX Encoders4 Member=Component C2_AUX Encoders4 (C2) B_LPF
+Added Member To Class: ClassName=AUX Encoders5 Member=Component C2_AUX Encoders5 (C2) B_LPF
+Added Member To Class: ClassName=AUX Encoders6 Member=Component C2_AUX Encoders6 (C2) B_LPF
+Added Member To Class: ClassName=AUX Encoders7 Member=Component C2_AUX Encoders7 (C2) B_LPF
+Added Member To Class: ClassName=AUX Encoders8 Member=Component C2_AUX Encoders8 (C2) B_LPF
+Added Member To Class: ClassName=NOTE Encoders1 Member=Component C2_NOTE Encoders1 (C2) B_LPF
+Added Member To Class: ClassName=NOTE Encoders2 Member=Component C2_NOTE Encoders2 (C2) B_LPF
+Added Member To Class: ClassName=NOTE Encoders3 Member=Component C2_NOTE Encoders3 (C2) B_LPF
+Added Member To Class: ClassName=NOTE Encoders4 Member=Component C2_NOTE Encoders4 (C2) B_LPF
+Added Member To Class: ClassName=NOTE Encoders5 Member=Component C2_NOTE Encoders5 (C2) B_LPF
+Added Member To Class: ClassName=NOTE Encoders6 Member=Component C2_NOTE Encoders6 (C2) B_LPF
+Added Member To Class: ClassName=NOTE Encoders7 Member=Component C2_NOTE Encoders7 (C2) B_LPF
+Added Member To Class: ClassName=NOTE Encoders8 Member=Component C2_NOTE Encoders8 (C2) B_LPF
+Added Member To Class: ClassName=NOTE Encoders9 Member=Component C2_NOTE Encoders9 (C2) B_LPF
+Added Member To Class: ClassName=NOTE Encoders10 Member=Component C2_NOTE Encoders10 (C2) B_LPF
+Added Member To Class: ClassName=NOTE Encoders11 Member=Component C2_NOTE Encoders11 (C2) B_LPF
+Added Member To Class: ClassName=NOTE Encoders12 Member=Component C2_NOTE Encoders12 (C2) B_LPF
+Added Member To Class: ClassName=NOTE Encoders13 Member=Component C2_NOTE Encoders13 (C2) B_LPF
+Added Member To Class: ClassName=NOTE Encoders14 Member=Component C2_NOTE Encoders14 (C2) B_LPF
+Added Member To Class: ClassName=NOTE Encoders15 Member=Component C2_NOTE Encoders15 (C2) B_LPF
+Added Member To Class: ClassName=NOTE Encoders16 Member=Component C2_NOTE Encoders16 (C2) B_LPF
+Added Member To Class: ClassName=Buttons Member=Component C15 
+Added Member To Class: ClassName=Buttons Member=Component C16 Cap
+Added Member To Class: ClassName=Buttons Member=Component C17 
+Added Member To Class: ClassName=Buttons Member=Component C18 Cap
+Added Member To Class: ClassName=Buttons Member=Component C19 
+Added Member To Class: ClassName=Buttons Member=Component C20 Cap
+Added Member To Class: ClassName=Buttons Member=Component C21 
+Added Member To Class: ClassName=Buttons Member=Component C22 Cap
+Added Member To Class: ClassName=ButtonExpanders Member=Component C23_ButtonExpanders (C23) Cap
+Added Member To Class: ClassName=NoteExpanders Member=Component C23_NoteExpanders (C23) Cap
+Added Member To Class: ClassName=CV Control1 Member=Component C24_CV Control1 (C24) Cap
+Added Member To Class: ClassName=Buttons Member=Component DRV1 TLC5971PWPR
+Added Member To Class: ClassName=Buttons Member=Component DRV2 TLC5971PWPR
+Added Member To Class: ClassName=Buttons Member=Component DRV3 TLC5971PWPR
+Added Member To Class: ClassName=Buttons Member=Component DRV4 TLC5971PWPR
+Added Member To Class: ClassName=ButtonExpanders Member=Component EXP1_ButtonExpanders (EXP1) MAX7314AEGT
+Added Member To Class: ClassName=NoteExpanders Member=Component EXP1_NoteExpanders (EXP1) MAX7314AEGT
+Added Member To Class: ClassName=U_Displays1 Member=Component J3_U_Displays1 (J3) 1-1734839-2
+Added Member To Class: ClassName=U_Displays2 Member=Component J3_U_Displays2 (J3) 1-1734839-2
+Added Member To Class: ClassName=U_Displays3 Member=Component J3_U_Displays3 (J3) 1-1734839-2
+Added Member To Class: ClassName=U_Displays4 Member=Component J3_U_Displays4 (J3) 1-1734839-2
+Added Member To Class: ClassName=U_Displays5 Member=Component J3_U_Displays5 (J3) 1-1734839-2
+Added Member To Class: ClassName=U_Displays6 Member=Component J3_U_Displays6 (J3) 1-1734839-2
+Added Member To Class: ClassName=U_Displays7 Member=Component J3_U_Displays7 (J3) 1-1734839-2
+Added Member To Class: ClassName=U_Displays8 Member=Component J3_U_Displays8 (J3) 1-1734839-2
+Added Member To Class: ClassName=Programmer Member=Component J5 Socket
+Added Member To Class: ClassName=Buttons Member=Component P1 BUTTONPAD
+Added Member To Class: ClassName=Buttons Member=Component P2 BUTTONPAD
+Added Member To Class: ClassName=Buttons Member=Component P3 BUTTONPAD
+Added Member To Class: ClassName=Buttons Member=Component P4 BUTTONPAD
+Added Member To Class: ClassName=Top_Level Member=Component P8 BUTTONPAD-1X1
+Added Member To Class: ClassName=U_Ribbon_Connectors1 Member=Component P9_U_Ribbon_Connectors1 (P9) Header 8X2
+Added Member To Class: ClassName=U_Ribbon_Connectors4 Member=Component P9_U_Ribbon_Connectors4 (P9) Header 8X2
+Added Member To Class: ClassName=AUX Encoders1 Member=Component R1_AUX Encoders1 (R1) Button Pullup
+Added Member To Class: ClassName=AUX Encoders2 Member=Component R1_AUX Encoders2 (R1) Button Pullup
+Added Member To Class: ClassName=AUX Encoders3 Member=Component R1_AUX Encoders3 (R1) Button Pullup
+Added Member To Class: ClassName=AUX Encoders4 Member=Component R1_AUX Encoders4 (R1) Button Pullup
+Added Member To Class: ClassName=AUX Encoders5 Member=Component R1_AUX Encoders5 (R1) Button Pullup
+Added Member To Class: ClassName=AUX Encoders6 Member=Component R1_AUX Encoders6 (R1) Button Pullup
+Added Member To Class: ClassName=AUX Encoders7 Member=Component R1_AUX Encoders7 (R1) Button Pullup
+Added Member To Class: ClassName=AUX Encoders8 Member=Component R1_AUX Encoders8 (R1) Button Pullup
+Added Member To Class: ClassName=NOTE Encoders1 Member=Component R1_NOTE Encoders1 (R1) Button Pullup
+Added Member To Class: ClassName=NOTE Encoders2 Member=Component R1_NOTE Encoders2 (R1) Button Pullup
+Added Member To Class: ClassName=NOTE Encoders3 Member=Component R1_NOTE Encoders3 (R1) Button Pullup
+Added Member To Class: ClassName=NOTE Encoders4 Member=Component R1_NOTE Encoders4 (R1) Button Pullup
+Added Member To Class: ClassName=NOTE Encoders5 Member=Component R1_NOTE Encoders5 (R1) Button Pullup
+Added Member To Class: ClassName=NOTE Encoders6 Member=Component R1_NOTE Encoders6 (R1) Button Pullup
+Added Member To Class: ClassName=NOTE Encoders7 Member=Component R1_NOTE Encoders7 (R1) Button Pullup
+Added Member To Class: ClassName=NOTE Encoders8 Member=Component R1_NOTE Encoders8 (R1) Button Pullup
+Added Member To Class: ClassName=NOTE Encoders9 Member=Component R1_NOTE Encoders9 (R1) Button Pullup
+Added Member To Class: ClassName=NOTE Encoders10 Member=Component R1_NOTE Encoders10 (R1) Button Pullup
+Added Member To Class: ClassName=NOTE Encoders11 Member=Component R1_NOTE Encoders11 (R1) Button Pullup
+Added Member To Class: ClassName=NOTE Encoders12 Member=Component R1_NOTE Encoders12 (R1) Button Pullup
+Added Member To Class: ClassName=NOTE Encoders13 Member=Component R1_NOTE Encoders13 (R1) Button Pullup
+Added Member To Class: ClassName=NOTE Encoders14 Member=Component R1_NOTE Encoders14 (R1) Button Pullup
+Added Member To Class: ClassName=NOTE Encoders15 Member=Component R1_NOTE Encoders15 (R1) Button Pullup
+Added Member To Class: ClassName=NOTE Encoders16 Member=Component R1_NOTE Encoders16 (R1) Button Pullup
+Added Member To Class: ClassName=AUX Encoders1 Member=Component R2_AUX Encoders1 (R2) A_LPF
+Added Member To Class: ClassName=AUX Encoders2 Member=Component R2_AUX Encoders2 (R2) A_LPF
+Added Member To Class: ClassName=AUX Encoders3 Member=Component R2_AUX Encoders3 (R2) A_LPF
+Added Member To Class: ClassName=AUX Encoders4 Member=Component R2_AUX Encoders4 (R2) A_LPF
+Added Member To Class: ClassName=AUX Encoders5 Member=Component R2_AUX Encoders5 (R2) A_LPF
+Added Member To Class: ClassName=AUX Encoders6 Member=Component R2_AUX Encoders6 (R2) A_LPF
+Added Member To Class: ClassName=AUX Encoders7 Member=Component R2_AUX Encoders7 (R2) A_LPF
+Added Member To Class: ClassName=AUX Encoders8 Member=Component R2_AUX Encoders8 (R2) A_LPF
+Added Member To Class: ClassName=NOTE Encoders1 Member=Component R2_NOTE Encoders1 (R2) A_LPF
+Added Member To Class: ClassName=NOTE Encoders2 Member=Component R2_NOTE Encoders2 (R2) A_LPF
+Added Member To Class: ClassName=NOTE Encoders3 Member=Component R2_NOTE Encoders3 (R2) A_LPF
+Added Member To Class: ClassName=NOTE Encoders4 Member=Component R2_NOTE Encoders4 (R2) A_LPF
+Added Member To Class: ClassName=NOTE Encoders5 Member=Component R2_NOTE Encoders5 (R2) A_LPF
+Added Member To Class: ClassName=NOTE Encoders6 Member=Component R2_NOTE Encoders6 (R2) A_LPF
+Added Member To Class: ClassName=NOTE Encoders7 Member=Component R2_NOTE Encoders7 (R2) A_LPF
+Added Member To Class: ClassName=NOTE Encoders8 Member=Component R2_NOTE Encoders8 (R2) A_LPF
+Added Member To Class: ClassName=NOTE Encoders9 Member=Component R2_NOTE Encoders9 (R2) A_LPF
+Added Member To Class: ClassName=NOTE Encoders10 Member=Component R2_NOTE Encoders10 (R2) A_LPF
+Added Member To Class: ClassName=NOTE Encoders11 Member=Component R2_NOTE Encoders11 (R2) A_LPF
+Added Member To Class: ClassName=NOTE Encoders12 Member=Component R2_NOTE Encoders12 (R2) A_LPF
+Added Member To Class: ClassName=NOTE Encoders13 Member=Component R2_NOTE Encoders13 (R2) A_LPF
+Added Member To Class: ClassName=NOTE Encoders14 Member=Component R2_NOTE Encoders14 (R2) A_LPF
+Added Member To Class: ClassName=NOTE Encoders15 Member=Component R2_NOTE Encoders15 (R2) A_LPF
+Added Member To Class: ClassName=NOTE Encoders16 Member=Component R2_NOTE Encoders16 (R2) A_LPF
+Added Member To Class: ClassName=AUX Encoders1 Member=Component R3_AUX Encoders1 (R3) B_LPF
+Added Member To Class: ClassName=AUX Encoders2 Member=Component R3_AUX Encoders2 (R3) B_LPF
+Added Member To Class: ClassName=AUX Encoders3 Member=Component R3_AUX Encoders3 (R3) B_LPF
+Added Member To Class: ClassName=AUX Encoders4 Member=Component R3_AUX Encoders4 (R3) B_LPF
+Added Member To Class: ClassName=AUX Encoders5 Member=Component R3_AUX Encoders5 (R3) B_LPF
+Added Member To Class: ClassName=AUX Encoders6 Member=Component R3_AUX Encoders6 (R3) B_LPF
+Added Member To Class: ClassName=AUX Encoders7 Member=Component R3_AUX Encoders7 (R3) B_LPF
+Added Member To Class: ClassName=AUX Encoders8 Member=Component R3_AUX Encoders8 (R3) B_LPF
+Added Member To Class: ClassName=NOTE Encoders1 Member=Component R3_NOTE Encoders1 (R3) B_LPF
+Added Member To Class: ClassName=NOTE Encoders2 Member=Component R3_NOTE Encoders2 (R3) B_LPF
+Added Member To Class: ClassName=NOTE Encoders3 Member=Component R3_NOTE Encoders3 (R3) B_LPF
+Added Member To Class: ClassName=NOTE Encoders4 Member=Component R3_NOTE Encoders4 (R3) B_LPF
+Added Member To Class: ClassName=NOTE Encoders5 Member=Component R3_NOTE Encoders5 (R3) B_LPF
+Added Member To Class: ClassName=NOTE Encoders6 Member=Component R3_NOTE Encoders6 (R3) B_LPF
+Added Member To Class: ClassName=NOTE Encoders7 Member=Component R3_NOTE Encoders7 (R3) B_LPF
+Added Member To Class: ClassName=NOTE Encoders8 Member=Component R3_NOTE Encoders8 (R3) B_LPF
+Added Member To Class: ClassName=NOTE Encoders9 Member=Component R3_NOTE Encoders9 (R3) B_LPF
+Added Member To Class: ClassName=NOTE Encoders10 Member=Component R3_NOTE Encoders10 (R3) B_LPF
+Added Member To Class: ClassName=NOTE Encoders11 Member=Component R3_NOTE Encoders11 (R3) B_LPF
+Added Member To Class: ClassName=NOTE Encoders12 Member=Component R3_NOTE Encoders12 (R3) B_LPF
+Added Member To Class: ClassName=NOTE Encoders13 Member=Component R3_NOTE Encoders13 (R3) B_LPF
+Added Member To Class: ClassName=NOTE Encoders14 Member=Component R3_NOTE Encoders14 (R3) B_LPF
+Added Member To Class: ClassName=NOTE Encoders15 Member=Component R3_NOTE Encoders15 (R3) B_LPF
+Added Member To Class: ClassName=NOTE Encoders16 Member=Component R3_NOTE Encoders16 (R3) B_LPF
+Added Member To Class: ClassName=Top_Level Member=Component R4 RPot
+Added Member To Class: ClassName=Buttons Member=Component R5 R1
+Added Member To Class: ClassName=Buttons Member=Component R6 R2
+Added Member To Class: ClassName=Buttons Member=Component R7 R3
+Added Member To Class: ClassName=Buttons Member=Component R8 R4
+Added Member To Class: ClassName=U_Displays1 Member=Component R9_U_Displays1 (R9) 
+Added Member To Class: ClassName=U_Displays2 Member=Component R9_U_Displays2 (R9) 
+Added Member To Class: ClassName=U_Displays3 Member=Component R9_U_Displays3 (R9) 
+Added Member To Class: ClassName=U_Displays4 Member=Component R9_U_Displays4 (R9) 
+Added Member To Class: ClassName=U_Displays5 Member=Component R9_U_Displays5 (R9) 
+Added Member To Class: ClassName=U_Displays6 Member=Component R9_U_Displays6 (R9) 
+Added Member To Class: ClassName=U_Displays7 Member=Component R9_U_Displays7 (R9) 
+Added Member To Class: ClassName=U_Displays8 Member=Component R9_U_Displays8 (R9) 
+Added Member To Class: ClassName=ButtonExpanders Member=Component R10_ButtonExpanders (R10) R5
+Added Member To Class: ClassName=NoteExpanders Member=Component R10_NoteExpanders (R10) R5
+Added Member To Class: ClassName=ButtonExpanders Member=Component R11_ButtonExpanders (R11) MNR15ERRPJ822
+Added Member To Class: ClassName=NoteExpanders Member=Component R11_NoteExpanders (R11) MNR15ERRPJ822
+Added Member To Class: ClassName=ButtonExpanders Member=Component R12_ButtonExpanders (R12) MNR15ERRPJ822
+Added Member To Class: ClassName=NoteExpanders Member=Component R12_NoteExpanders (R12) MNR15ERRPJ822
+Added Member To Class: ClassName=CV Control1 Member=Component R17_CV Control1 (R17) Res3
+Added Member To Class: ClassName=CV Control1 Member=Component R18_CV Control1 (R18) Res3
+Added Member To Class: ClassName=Gate Control1 Member=Component R20_Gate Control1 (R20) Res1
+Added Member To Class: ClassName=Gate Control1 Member=Component R22_Gate Control1 (R22) Res1
+Added Member To Class: ClassName=Power Member=Component R32 CRCW040210K2FKED
+Added Member To Class: ClassName=Power Member=Component R33 CRCW040233K2FKED
+Added Member To Class: ClassName=U_Display_Mux Member=Component U8 CD4051BE
+Added Room: Name=ButtonExpanders
+Added Room: Name=Buttons
+Added Room: Name=CV Control1
+Added Room: Name=CV Control2
+Added Room: Name=Digital_Io
+Added Room: Name=Gate Control1
+Added Room: Name=Gate Control2
+Added Room: Name=Jack_In
+Added Room: Name=Jack_Out1
+Added Room: Name=Jack_Out2
+Added Room: Name=Jack_Out3
+Added Room: Name=Jack_Out4
+Added Room: Name=Jack_Out5
+Added Room: Name=Jack_Out6
+Added Room: Name=Jack_Out7
+Added Room: Name=Jack_Out8
+Added Room: Name=Jack_Out9
+Added Room: Name=NoteExpanders
+Added Room: Name=Power
+Added Room: Name=Programmer
+Added Room: Name=Top_Level
+Added Room: Name=U_Display_Mux
+Added Room: Name=U_Displays1
+Added Room: Name=U_Displays2
+Added Room: Name=U_Displays3
+Added Room: Name=U_Displays4
+Added Room: Name=U_Displays5
+Added Room: Name=U_Displays6
+Added Room: Name=U_Displays7
+Added Room: Name=U_Displays8
+Added Room: Name=U_Ribbon_Connectors1
+Added Room: Name=U_Ribbon_Connectors2
+Added Room: Name=U_Ribbon_Connectors3
+Added Room: Name=U_Ribbon_Connectors4
+Added Room: Name=U_Ribbon_Connectors5

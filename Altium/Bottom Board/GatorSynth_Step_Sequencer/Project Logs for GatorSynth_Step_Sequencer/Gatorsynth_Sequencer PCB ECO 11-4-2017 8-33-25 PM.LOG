@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=GATE4 Pin=Gate Ctrl2-1
+Removed Pin From Net: NetName=GATE3 Pin=Gate Ctrl2-7
+Removed Pin From Net: NetName=GATE4 Pin=R19-2
+Removed Pin From Net: NetName=GATE3 Pin=R21-1
+Added Pin To Net: NetName=GATE3 Pin=R19-2
+Added Pin To Net: NetName=GATE4 Pin=R21-1
+Added Pin To Net: NetName=GATE3 Pin=Gate Ctrl2-1
+Added Pin To Net: NetName=GATE4 Pin=Gate Ctrl2-7
