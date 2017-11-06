@@ -1,0 +1,28 @@
+PCAD Importer Log
+Project : MAX7314AEGT.LibPkg
+
+Section : C:\Users\Kurt\gatorsynth_sequencer\Altium\Individual Parts\MAX7314AEGT.lia
+    Section : PCB Library - MAX7314AEGT.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token isVisible On Line 214
+            Warning - 1 : Skipping Token isVisible On Line 235
+            Warning - 1 : Skipping Token MAX7314AEGT On Line 239
+            Warning - 1 : Skipping Token attachedSymbol On Line 505
+        EndSection
+
+        Section : Import Messages
+        EndSection
+    EndSection
+
+    Section : SCH Library - MAX7314AEGT.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token multiLayer On Line 84
+            Warning - 1 : Skipping Token layerContents On Line 110
+            Warning - 1 : Skipping Token layerContents On Line 216
+        EndSection
+
+        Section : Generating SCH Library - MAX7314AEGT.SchLib
+        EndSection
+    EndSection
+EndSection

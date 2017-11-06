@@ -1,0 +1,5 @@
+Added Component: Designator=R4(Potentiometer (NO SLOT))
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=R4-1
+Added Pin To Net: NetName=NOTE_LEN Pin=R4-2
+Added Pin To Net: NetName=3.3V Pin=R4-3

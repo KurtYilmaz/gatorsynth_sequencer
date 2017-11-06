@@ -1,0 +1,45 @@
+﻿Field=#~Integer~#~50|Field=Comment~String~Comment~99|Field=Description~String~Description~99|Field=Designator~String~Designator~99|Field=Footprint~String~Footprint~99|Field=LibRef~String~LibRef~99|Field=Quantity~Integer~Quantity~99|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~GatorSynth_Step_Sequencer.PrjPcb|ReportField=ProjectFullPath~C:\Users\Kyle\gatorsynth_sequencer\Altium\GatorSynth_Step_Sequencer\GatorSynth_Step_Sequencer.PrjPcb|ReportField=Title~Bill of Materials For Project [GatorSynth_Step_Sequencer.PrjPcb] (No PCB Document Selected)|ReportField=TotalQuantity~265|ReportField=ReportTime~12:31:01 AM|ReportField=ReportDate~11/1/2017|ReportField=ReportDateTime~11/1/2017 12:31:01 AM|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~11/1/2017|ReportField=CurrentTime~12:28:59 AM|ReportField=Date~|ReportField=DocumentFullPathAndName~C:\Users\Kyle\gatorsynth_sequencer\Altium\GatorSynth_Step_Sequencer\Top_Level.SchDoc|ReportField=DocumentName~Top_Level.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~11/1/2017|ReportField=Organization~|ReportField=ProjectName~GatorSynth_Step_Sequencer.PrjPcb|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~GatorSynth_Step_Sequencer.PrjPcb|ReportField=DataSourceFullPath~C:\Users\Kyle\gatorsynth_sequencer\Altium\GatorSynth_Step_Sequencer\GatorSynth_Step_Sequencer.PrjPcb
+1|CRCW040233K2FKED|Imported|?|0402|CRCW040233K2FKED|1
+2||Capacitor|C1, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14|C0805|Cap|11
+3|A_LPF|Capacitor|C1_AuxEncoders1, C1_AuxEncoders2, C1_AuxEncoders3, C1_AuxEncoders4, C1_AuxEncoders5, C1_AuxEncoders6, C1_AuxEncoders7, C1_NoteEncoders8, C1_NoteEncoders9, C1_NoteEncoders10, C1_NoteEncoders11, C1_NoteEncoders12, C1_NoteEncoders13, C1_NoteEncoders14, C1_NoteEncoders15, C1_NoteEncoders16, C1_NoteEncoders17, C1_NoteEncoders18, C1_NoteEncoders19, C1_NoteEncoders20, C1_NoteEncoders21, C1_NoteEncoders22, C1_NoteEncoders23|C0805|Cap|23
+4|B_LPF|Capacitor|C2_AuxEncoders1, C2_AuxEncoders2, C2_AuxEncoders3, C2_AuxEncoders4, C2_AuxEncoders5, C2_AuxEncoders6, C2_AuxEncoders7, C2_NoteEncoders8, C2_NoteEncoders9, C2_NoteEncoders10, C2_NoteEncoders11, C2_NoteEncoders12, C2_NoteEncoders13, C2_NoteEncoders14, C2_NoteEncoders15, C2_NoteEncoders16, C2_NoteEncoders17, C2_NoteEncoders18, C2_NoteEncoders19, C2_NoteEncoders20, C2_NoteEncoders21, C2_NoteEncoders22, C2_NoteEncoders23|C0805|Cap|23
+5||Polarized Capacitor (Axial)|C15, C17, C19, C21|RAD-0.2|Cap Pol2|4
+6|Cap|Capacitor|C16, C18, C20, C22, C23_Expanders1, C23_Expanders2|RAD-0.1|Cap|6
+7|Cap|Capacitor|C24_CV_Control1, C24_CV_Control2, C25_CV_Control1, C25_CV_Control2|RAD-0.3|Cap|4
+8|CAP-NONPOL|Ceramic capacitor, SMD 0402, NP0, 50V, +/-5%|C321, C322|AP1-00001|A01-0019|2
+9|08053C104KAT2A|Imported|C?|0805|08053C104KAT2A|1
+10|C3216X5R1E476M16|Imported|C?|1206|C3216X5R1E476M16|1
+11|GRM32ER61E226KE1|Imported|C?|1210|GRM32ER61E226KE1|1
+12|Diode 1N4148|High Conductance Fast Diode|D?|DO-35|Diode 1N4148|1
+13|TLC5971PWPR|12-Channel, 16-Bit ES-PWM RGB LED Driver with 3.3 V Linear Regulator, 6 to 17 V, -40 to 85 degC, 20-pin SOP (PWP20), Green (RoHS & no Sb/Br)|DRV1, DRV2, DRV3, DRV4|TI-PWP20-2965X2290TP_N|TLC5971PWPR|4
+14|MAX7314AEGT|Interface IC - I/O extensions Maxim Integrated MAX7314AEG%2B PWM I%C2%B2C 400 kHz QSOP 24|EXP1_Expanders1, EXP1_Expanders2|21-0055H_24|MAX7314AEGT|2
+15|Erase_Socket|Socket|J1|PIN1|Socket|1
+16|1-1734839-2|Imported|J2|CONN_1-1734592-2|1-1734839-2|8
+17|Socket|Socket|J10|PIN1|Socket|1
+18|Phonejack3 TN|Jack Socket, 1/4" [6.5mm], Thru-Hole, Vertical, 3-Conductor with Tip closed & Ring open|J?, J?_Jack_Out1, J?_Jack_Out2, J?_Jack_Out3, J?_Jack_Out4, J?_Jack_Out5, J?_Jack_Out6, J?_Jack_Out7, J?_Jack_Out8, J?_Jack_Out9|HDR1X4|Phonejack3 TN|10
+19|SRN8040-2R2Y|Imported|L?|SRN8040|SRN8040-2R2Y|1
+20|BUTTONPAD|5mm Button PadProven layout and schematic for 2x2 button pad. Panelize this device/fp to a 4x4 pad if needed. Spark Fun Electronics SKU : COM-07835. Compatible common cathode tri-color LED SKU : COM-00105|P1, P2, P3, P4|BUTTONPAD-2X2|BUTTONPAD-2X2|4
+21|2.2k_RES|Header, 10-Pin|P5_Expanders1, P5_Expanders2, P6_Expanders1, P6_Expanders2|HDR1X10|Header 10|4
+22|PROG|Header, 10-Pin|P7|HDR1X10|Header 10|1
+23|Header 2|Header, 2-Pin|P?|HDR1X2|Header 2|2
+24|PLAY/PAUSE|5mm Button PadProven layout and schematic for 2x2 button pad. Panelize this device/fp to a 4x4 pad if needed. Spark Fun Electronics SKU : COM-07835. Compatible common cathode tri-color LED SKU : COM-00105|P?|BUTTONPAD-1X1|BUTTONPAD-2X2|1
+25|Button Pullup|Resistor|R1_AuxEncoders1, R1_AuxEncoders2, R1_AuxEncoders3, R1_AuxEncoders4, R1_AuxEncoders5, R1_AuxEncoders6, R1_AuxEncoders7, R1_NoteEncoders8, R1_NoteEncoders9, R1_NoteEncoders10, R1_NoteEncoders11, R1_NoteEncoders12, R1_NoteEncoders13, R1_NoteEncoders14, R1_NoteEncoders15, R1_NoteEncoders16, R1_NoteEncoders17, R1_NoteEncoders18, R1_NoteEncoders19, R1_NoteEncoders20, R1_NoteEncoders21, R1_NoteEncoders22, R1_NoteEncoders23|6-0805_N|Res1|23
+26|A_LPF|Resistor|R2_AuxEncoders1, R2_AuxEncoders2, R2_AuxEncoders3, R2_AuxEncoders4, R2_AuxEncoders5, R2_AuxEncoders6, R2_AuxEncoders7, R2_NoteEncoders8, R2_NoteEncoders9, R2_NoteEncoders10, R2_NoteEncoders11, R2_NoteEncoders12, R2_NoteEncoders13, R2_NoteEncoders14, R2_NoteEncoders15, R2_NoteEncoders16, R2_NoteEncoders17, R2_NoteEncoders18, R2_NoteEncoders19, R2_NoteEncoders20, R2_NoteEncoders21, R2_NoteEncoders22, R2_NoteEncoders23|6-0805_N|Res1|23
+27|B_LPF|Resistor|R3_AuxEncoders1, R3_AuxEncoders2, R3_AuxEncoders3, R3_AuxEncoders4, R3_AuxEncoders5, R3_AuxEncoders6, R3_AuxEncoders7, R3_NoteEncoders8, R3_NoteEncoders9, R3_NoteEncoders10, R3_NoteEncoders11, R3_NoteEncoders12, R3_NoteEncoders13, R3_NoteEncoders14, R3_NoteEncoders15, R3_NoteEncoders16, R3_NoteEncoders17, R3_NoteEncoders18, R3_NoteEncoders19, R3_NoteEncoders20, R3_NoteEncoders21, R3_NoteEncoders22, R3_NoteEncoders23|6-0805_N|Res1|23
+28|RPot|Potentiometer|R4|VR5|RPot|1
+29|R1|Resistor|R5|AXIAL-0.3|Res1|1
+30|R2|Resistor|R6|AXIAL-0.3|Res1|1
+31|R3|Resistor|R7|AXIAL-0.3|Res1|1
+32|R4|Resistor|R8|AXIAL-0.3|Res1|1
+33||Resistor|R9|6-0805_N|Res1|8
+34|R5|Resistor|R17_Expanders1, R17_Expanders2|AXIAL-0.3|Res1|2
+35|Res1|Resistor|R18_CV_Control1, R18_CV_Control2, R21_CV_Control1, R21_CV_Control2, R24, R24, R24_Gate_Control1, R24_Gate_Control2, R25, R25, R25_Gate_Control1, R25_Gate_Control2, R26, R26, R26, R26, R26_Gate_Control1, R26_Gate_Control2, R27_Gate_Control1, R27_Gate_Control2|AXIAL-0.3|Res1|20
+36|Res3|Resistor|R19_CV_Control1, R19_CV_Control2, R20_CV_Control1, R20_CV_Control2, R22_CV_Control1, R22_CV_Control2, R23_CV_Control1, R23_CV_Control2|J1-0603|Res3|8
+37|CRCW040210K2FKED|Imported|R?|0402|CRCW040210K2FKED|1
+38|Rotary Encoder||S1_AuxEncoders1, S1_AuxEncoders2, S1_AuxEncoders3, S1_AuxEncoders4, S1_AuxEncoders5, S1_AuxEncoders6, S1_AuxEncoders7, S1_NoteEncoders8, S1_NoteEncoders9, S1_NoteEncoders10, S1_NoteEncoders11, S1_NoteEncoders12, S1_NoteEncoders13, S1_NoteEncoders14, S1_NoteEncoders15, S1_NoteEncoders16, S1_NoteEncoders17, S1_NoteEncoders18, S1_NoteEncoders19, S1_NoteEncoders20, S1_NoteEncoders21, S1_NoteEncoders22, S1_NoteEncoders23|Rotary Encoder SF|Rotary Encoder|23
+39|ATSAM4N16CA-AU|AT91 ARM Cortex-M4 32-bit Microcontroller, 1MB Flash, 128KB SRAM, USB, 79 User I/Os, 100-Pin LQFP, Industrial Grade (-40°C to 105°C), Pb-Free|U1|LQFP100_N|ATSAM4S16CA-AU|1
+40|CD4051BE|Imported|U2|N16|CD4051BE|1
+41|LTC1661CN8#PBF|Imported|U3_CV_Control1, U3_CV_Control2|PDIP-8_N|LTC1661CN8#PBF|2
+42|LT1632CN8#PBF|Imported|U4_CV_Control1, U4_CV_Control2, U5, U5_Gate_Control1, U5_Gate_Control2, U6|PDIP-8_N|LT1632CN8#PBF|6
+43|TPS563200DDCR|Imported|U?|DDC0006A|TPS563200DDCR|1
+44|12.0MHz|Fox FQ5032B 12.0MHz SMD crystal 738B-12|XC300|AP7-00039|A07-0042|1

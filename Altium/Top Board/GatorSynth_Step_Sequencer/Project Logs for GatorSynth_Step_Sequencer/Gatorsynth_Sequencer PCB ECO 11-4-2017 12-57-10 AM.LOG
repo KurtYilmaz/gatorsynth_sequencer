@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=3.3V Pin=R4-2
+Change Component DesignItemId : Designator=R4 Old DesignItemId=RPot New DesignItemId=Potentiometer
+Change Component Comment : Designator=R4 Old Comment=RPot New Comment=Potentiometer
+Change Component Description : Designator=R4 Old Description=Potentiometer New Description=
+Change Component Library : Designator=R4 Old Library=Miscellaneous Devices.IntLib New Library=FlexControl.SCHLIB
+Change component parameters. Clean all parameters for all variants
+Added Pin To Net: NetName=3.3V Pin=R4-3
+Added Pin To Net: NetName=GND Pin=R4-4
+Added Pin To Net: NetName=GND Pin=R4-5
+Added Pin To Net: NetName=GND Pin=R4-6
+Added Pin To Net: NetName=GND Pin=R4-7
+Added Pin To Net: NetName=NetR4_2 Pin=R4-2
+Added Net: Name=NetR4_2

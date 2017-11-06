@@ -1,0 +1,59 @@
+Removed Pin From Net: NetName=AE_SW7 Pin=R12_EXP_BTN1-1
+Removed Pin From Net: NetName=AE_SW6 Pin=R12_EXP_BTN1-2
+Removed Pin From Net: NetName=AE_SW5 Pin=R12_EXP_BTN1-3
+Removed Pin From Net: NetName=AE_SW4 Pin=R12_EXP_BTN1-4
+Removed Pin From Net: NetName=AE_SW3 Pin=R12_EXP_BTN1-6
+Removed Pin From Net: NetName=AE_SW2 Pin=R12_EXP_BTN1-7
+Removed Pin From Net: NetName=AE_SW1 Pin=R12_EXP_BTN1-8
+Removed Pin From Net: NetName=AE_SW0 Pin=R12_EXP_BTN1-9
+Removed Pin From Net: NetName=SW16 Pin=R12_EXP_BTN2-1
+Removed Pin From Net: NetName=SW15 Pin=R12_EXP_BTN2-2
+Removed Pin From Net: NetName=SW14 Pin=R12_EXP_BTN2-3
+Removed Pin From Net: NetName=SW13 Pin=R12_EXP_BTN2-4
+Removed Pin From Net: NetName=SW12 Pin=R12_EXP_BTN2-6
+Removed Pin From Net: NetName=SW11 Pin=R12_EXP_BTN2-7
+Removed Pin From Net: NetName=SW10 Pin=R12_EXP_BTN2-8
+Removed Pin From Net: NetName=SW9 Pin=R12_EXP_BTN2-9
+Added Pin To Net: NetName=AE_SW3 Pin=R12_EXP_BTN1-1
+Added Pin To Net: NetName=AE_SW2 Pin=R12_EXP_BTN1-2
+Added Pin To Net: NetName=AE_SW1 Pin=R12_EXP_BTN1-3
+Added Pin To Net: NetName=AE_SW0 Pin=R12_EXP_BTN1-4
+Added Pin To Net: NetName=AE_SW7 Pin=R12_EXP_BTN1-6
+Added Pin To Net: NetName=AE_SW6 Pin=R12_EXP_BTN1-7
+Added Pin To Net: NetName=AE_SW5 Pin=R12_EXP_BTN1-8
+Added Pin To Net: NetName=AE_SW4 Pin=R12_EXP_BTN1-9
+Added Pin To Net: NetName=SW12 Pin=R12_EXP_BTN2-1
+Added Pin To Net: NetName=SW11 Pin=R12_EXP_BTN2-2
+Added Pin To Net: NetName=SW10 Pin=R12_EXP_BTN2-3
+Added Pin To Net: NetName=SW9 Pin=R12_EXP_BTN2-4
+Added Pin To Net: NetName=SW16 Pin=R12_EXP_BTN2-6
+Added Pin To Net: NetName=SW15 Pin=R12_EXP_BTN2-7
+Added Pin To Net: NetName=SW14 Pin=R12_EXP_BTN2-8
+Added Pin To Net: NetName=SW13 Pin=R12_EXP_BTN2-9
+Added Member To Class: ClassName=BTN Member=Component C15 
+Added Member To Class: ClassName=BTN Member=Component R5 R1
+Added Member To Class: ClassName=BTN Member=Component R6 R2
+Added Member To Class: ClassName=BTN Member=Component R7 R3
+Added Member To Class: ClassName=BTN Member=Component R8 R4
+Change Room Name: Old Name=N6 New Name=JO_CV2
+Change Room Scope: Old Scope=InComponentClass('N6') New Scope=InComponentClass('JO_CV2')
+Added Room: Name=BTN
+Added Room: Name=CC1
+Added Room: Name=CC2
+Added Room: Name=D_IO
+Added Room: Name=DISP7
+Added Room: Name=GC0
+Added Room: Name=GC1
+Added Room: Name=JI_C
+Added Room: Name=JO_C
+Added Room: Name=JO_CV1
+Added Room: Name=JO_CV3
+Added Room: Name=JO_CV4
+Added Room: Name=JO_GA1
+Added Room: Name=JO_GA2
+Added Room: Name=JO_GA3
+Added Room: Name=JO_GA4
+Added Room: Name=MUX
+Added Room: Name=PROG
+Added Room: Name=PWR
+Added Room: Name=Top_Level
