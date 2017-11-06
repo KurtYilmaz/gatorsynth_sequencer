@@ -79,28 +79,28 @@
 		if (overflow_count == note_length){
 			DAC_write_gate_off();
 		}
+ }
+
+ if(overflow_count >= 10000) {
+
+	 if (curr_step == 15){
+		 curr_step = 0;
+	 }
+	 else{
+		 curr_step++;
 	 }
 
-	 if(overflow_count >= 10000) {
+	 SPI_led_init();
+	 leds_update_cursor(curr_step);
 
-		if (curr_step == 15){
-			curr_step = 0;
-		}
-		else{
-			curr_step++;
-		}
+	 DAC_write_cv(notes_get(curr_step));
+	 if (leds_status_get(curr_step) == 1){
+		 DAC_write_gate_on();
+	 }
 
-		SPI_led_init();	
-		leds_update_cursor(curr_step);
+	 REG_ADC_CR |= ADC_CR_START;
 
- 		DAC_write_cv(notes_get(curr_step));
-		if (leds_status_get(curr_step) == 1){
-			DAC_write_gate_on();
-		}
-
-		REG_ADC_CR |= ADC_CR_START;
-
-		overflow_count = 0;
+	 overflow_count =0;
 	 }
 
  }
