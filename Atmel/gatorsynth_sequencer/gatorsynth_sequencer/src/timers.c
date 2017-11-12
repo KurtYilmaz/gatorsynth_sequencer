@@ -18,7 +18,13 @@
  void timers_init(void) {
 
 	overflow_count = 0;
-	curr_step = 15;
+	curr_step = 0;
+	curr_page = 0;
+	curr_pattern = 0;
+
+	display_page = 0;
+	page_loop = 0;
+	resolution = 2;
 
 	// T0 is used for stepping
 	// Enable interrupts on timer 0
@@ -81,26 +87,35 @@
 		}
  }
 
- if(overflow_count >= 10000) {
+	 if(overflow_count >= 10000) {
 
-	 if (curr_step == 15){
-		 curr_step = 0;
-	 }
-	 else{
-		 curr_step++;
-	 }
+		 if (curr_step == 15){
+			 //increment to next page or go back to first page
+			 if (curr_page < page_loop){
+				 curr_page++;
+			 }
+			 else{
+				 curr_page = 0;
+			 }
 
-	 SPI_led_init();
-	 leds_update_cursor(curr_step);
+			 //return to first step on next page
+			 curr_step = 0;
+		 }
+		 else{
+			 curr_step++;
+		 }
 
-	 DAC_write_cv(notes_get(curr_step));
-	 if (leds_status_get(curr_step) == 1){
-		 DAC_write_gate_on();
-	 }
+		 SPI_led_init();
+		 leds_update_cursor(curr_step);
 
-	 REG_ADC_CR |= ADC_CR_START;
+		 DAC_write_cv(notes_get(curr_step));
+		 if (notes_status_get(curr_step) == 1){
+			 DAC_write_gate_on();
+		 }
 
-	 overflow_count =0;
+		 REG_ADC_CR |= ADC_CR_START;
+
+		 overflow_count =0;
 	 }
 
  }

@@ -13,6 +13,9 @@
 
 
 float notes_get(uint8_t curr_step);
+int notes_display_get(uint8_t display_page, uint8_t curr_step);
+void notes_status_set(uint8_t display_page, int leds_status[]);
+int notes_status_get(uint8_t curr_step);
 void notes_inc(uint8_t step);
 void notes_dec(uint8_t step);
 

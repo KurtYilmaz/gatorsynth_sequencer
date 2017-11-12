@@ -13,7 +13,7 @@ uint8_t A_seq;
 uint8_t B_seq;
 
 void Encoder_init(void);
-int encoder_direction(uint32_t A, uint32_t B);
+int encoder_direction(uint32_t A, uint32_t B, uint8_t step);
 
 
 #endif /* ENCODERS_H_ */

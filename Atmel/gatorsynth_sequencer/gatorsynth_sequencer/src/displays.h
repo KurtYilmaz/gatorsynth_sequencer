@@ -14,7 +14,8 @@ void display_data(uint8_t data);
 void display_reset(void);
 void display_init(void);
 
-void display_test();
+void display_test(void);
+void display_ports_init(void);
 
 
 

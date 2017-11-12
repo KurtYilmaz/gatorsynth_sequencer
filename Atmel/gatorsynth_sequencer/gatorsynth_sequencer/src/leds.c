@@ -9,6 +9,7 @@
 #include <stdbool.h>
 #include "spi.h"
 #include "timers.h"
+#include "notes.h"
 
 
 
@@ -106,12 +107,34 @@ void led_toggle(uint8_t top_row, uint8_t bottom_row){
 		default : 
 			break;
 	}
+
+	/* match note status to display status if changed*/
+	notes_status_set(display_page, leds_status);
 	
 	SPI_led_init();
 	leds_update_cursor(curr_step);
 }
 
+/* updates LED statuses for current page being displayed */
+void leds_update_status(){
+
+	/* match LED status to current display page status */
+	for (int i = 0; i < 16; i++){
+		leds_status[i] = notes_display_get(display_page, i);
+	}
+
+}
+
+void notes_update_status(){
+
+	/* update note status if button was pressed on current page */
+		notes_status_set(display_page, leds_status);
+}
+
 void leds_update_cursor(uint8_t curr_step){
+
+	/* update LEDs status for current page being displayed */
+	leds_update_status();
 
 /* Initialize the Notes that are Enabled as Blue */
 	for (int i = 0; i < 16; i++){
@@ -169,33 +192,34 @@ void leds_update_cursor(uint8_t curr_step){
 			}
 	}
 
-
-/* Update Cursor to correct position */
-	if ( (curr_step >= 0) && (curr_step < 4) ){
-		offset = (curr_step)*3;
-		leds_data_1[offset] = 0xFFFF;
-		leds_data_1[offset+1] = 0x0FFF;
-		leds_data_1[offset+2] = 0x0000;
+	/*check if page being displayed is the current page being output to synth before updating cursor*/
+	if (curr_page == display_page){
+		/* Update Cursor to correct position */
+			if ( (curr_step >= 0) && (curr_step < 4) ){
+				offset = (curr_step)*3;
+				leds_data_1[offset] = 0xFFFF;
+				leds_data_1[offset+1] = 0x0FFF;
+				leds_data_1[offset+2] = 0x0000;
+			}
+			else if ( (curr_step >= 4) && (curr_step < 8) ){
+				offset = (curr_step % 4)*3;
+				leds_data_2[offset] = 0xFFFF;
+				leds_data_2[offset+1] = 0x0FFF;
+				leds_data_2[offset+2] = 0x0000;
+			}
+			else if ( (curr_step >= 8) && (curr_step < 12) ){
+				offset = (curr_step % 8)*3;
+				leds_data_3[offset] = 0xFFFF;
+				leds_data_3[offset+1] = 0x0FFF;
+				leds_data_3[offset+2] = 0x0000;
+			}
+			else if ( (curr_step >= 12) && (curr_step < 16) ){
+				offset = (curr_step % 12)*3;
+				leds_data_4[offset] = 0xFFFF;
+				leds_data_4[offset+1] = 0x0FFF;
+				leds_data_4[offset+2] = 0x0000;
+			}
 	}
-	else if ( (curr_step >= 4) && (curr_step < 8) ){
-		offset = (curr_step % 4)*3;
-		leds_data_2[offset] = 0xFFFF;
-		leds_data_2[offset+1] = 0x0FFF;
-		leds_data_2[offset+2] = 0x0000;
-	}
-	else if ( (curr_step >= 8) && (curr_step < 12) ){
-		offset = (curr_step % 8)*3;
-		leds_data_3[offset] = 0xFFFF;
-		leds_data_3[offset+1] = 0x0FFF;
-		leds_data_3[offset+2] = 0x0000;
-	}
-	else if ( (curr_step >= 12) && (curr_step < 16) ){
-		offset = (curr_step % 12)*3;
-		leds_data_4[offset] = 0xFFFF;
-		leds_data_4[offset+1] = 0x0FFF;
-		leds_data_4[offset+2] = 0x0000;
-	}
-
 
 	leds_update_display();
 }

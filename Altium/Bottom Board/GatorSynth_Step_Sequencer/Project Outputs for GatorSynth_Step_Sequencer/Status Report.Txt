@@ -1,9 +1,13 @@
-Output: Bill of Materials
-Type  : BOM
-From  : Variant [[No Variations]] of Project [GatorSynth_Step_Sequencer.PrjPcb]
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [GatorSynth_Step_Sequencer.PrjPcb]
+   Generated File[Gatorsynth_Sequencer-Plated.TXT]
+   Generated File[Gatorsynth_Sequencer-NonPlated.TXT]
+   Generated File[Gatorsynth_Sequencer.LDP]
+   Generated File[Gatorsynth_Sequencer.DRR]
 
 
-Files Generated   : 0
+Files Generated   : 4
 Documents Printed : 0
 
-Finished Output Generation At 12:30:18 AM On 11/1/2017
+Finished Output Generation At 5:03:13 PM On 11/6/2017

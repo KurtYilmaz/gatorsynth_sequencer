@@ -39,21 +39,16 @@ uint8_t B_seq;
 	if ((A_seq == 0b00001001) && (B_seq == 0b00000011)){
 		REG_PIOB_SODR |= PIO_PER_P3; //set output high on PB3
 		notes_inc(step);
-
 	}
 
 	else if ((A_seq == 0b00000011) && (B_seq == 0b00001001)){
 		REG_PIOB_CODR |= PIO_PER_P3; //set output low on PB3
 		notes_dec(step);
 	}
-
-
 }
 
 
-
 void Encoder_init(){
-
 	A_seq = 0;
 	B_seq = 0;
 
@@ -349,7 +344,7 @@ void Encoder_init(){
 	REG_PIOC_PUER |= PIO_PUER_P31;	//enable pull-up resistor
 	REG_PIOC_IFSCER |= PIO_IFSCER_P31; //turn on slow clock debounce
 	REG_PIOC_IFER |= PIO_IFER_P31;	//start debounce filter
-	 
+	
 
 
 	/**************			CONFIGURE ENCODER INTERRUPTS			**************/
@@ -453,6 +448,8 @@ void Encoder_init(){
 	REG_PIOC_REHLSR |= PIO_REHLSR_P31;
 
 	NVIC_EnableIRQ(PIOC_IRQn);			//enable PORT C interrupts
+
+
 }
 
 

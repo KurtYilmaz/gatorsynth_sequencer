@@ -68,15 +68,29 @@
  }
 
  void display_reset(){
-	//configure register used for display reset if not already done
-	REG_PIOA_PER |= PIO_PER_P31; //enable PIO controller on PA31
-	REG_PIOA_OER |= PIO_PER_P31; //enable output on pin PA31
-
 	REG_PIOA_SODR |= PIO_PER_P31; //set high
 	delay_ms(1);
 	REG_PIOA_CODR |= PIO_PER_P31; //set low
 	delay_ms(10);
-	REG_PIOA_SODR |= PIO_PER_P31; //set high and hold for normaloperation
+	REG_PIOA_SODR |= PIO_PER_P31; //set high and hold for normal operation
+ }
+
+ void display_ports_init(){
+	//configure register used for display reset if not already done
+	REG_PIOA_PER |= PIO_PER_P31; //enable PIO controller on PA31
+	REG_PIOA_OER |= PIO_PER_P31; //enable output on pin PA31
+
+	//configure Display Select 0
+	REG_PIOA_PER |= PIO_PER_P28; //enable PIO controller on PA28
+	REG_PIOA_OER |= PIO_PER_P28; //enable output on pin PA28
+
+	//configure Display Select 1
+	REG_PIOA_PER |= PIO_PER_P29; //enable PIO controller on PA29
+	REG_PIOA_OER |= PIO_PER_P29; //enable output on pin PA29
+
+	//configure Display Select 2
+	REG_PIOA_PER |= PIO_PER_P30; //enable PIO controller on PA30
+	REG_PIOA_OER |= PIO_PER_P30; //enable output on pin PA30
  }
 
  void display_init(){
@@ -84,6 +98,7 @@
 	delay_ms(40);
 
 	//reset display to begin
+	display_ports_init();
 	display_reset();	
 
 	//init settings for OLED

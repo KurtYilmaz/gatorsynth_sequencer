@@ -1,0 +1,22 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Gatorsynth_Sequencer.PcbDoc   11/6/2017  5:28:48 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII Plated RoundHoles File : Gatorsynth_Sequencer-Plated.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      15mil (0.381mm)                                           Round             278       PTH        102.18inch (2595.36mm)
+T2      24mil (0.599mm)                                           Round             34        PTH        18.07inch (459.07mm)
+T3      30mil (0.762mm)                                           Round             4         PTH        2.25inch (57.09mm)
+T4      31mil (0.787mm)                                           Round             16        PTH        1.90inch (48.26mm)
+T5      35mil (0.899mm)                                           Round             80        PTH        18.44inch (468.32mm)
+T6      39mil (1.001mm)                                           Round             68        PTH        17.03inch (432.67mm)
+T7      40mil (1.016mm)                                           Round             123       PTH        65.35inch (1659.82mm)
+T8      107mil (2.718mm)                                          Round             50        PTH        44.12inch (1120.63mm)
+T9      118mil (3mm)                                              Round             26        PTH        39.07inch (992.28mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              679
+
+Total Processing Time (hh:mm:ss) : 00:00:00

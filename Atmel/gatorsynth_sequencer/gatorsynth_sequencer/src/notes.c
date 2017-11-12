@@ -8,6 +8,7 @@
  #include <asf.h>
  //#include "dac.h"
  //#include "encoders.h"
+ #include "timers.h"
 
  #define Base 0
 
@@ -167,26 +168,48 @@
 						 A10};
 
 
- int notes_index[16] = { 48, 48, 48, 48, 48, 48, 48, 48,
-						 48, 48, 48, 48, 48, 48, 48, 48};
+ int notes_index[16] = { 0, 1, 2, 3, 4, 5, 6, 7,
+						 8, 9, 10, 11, 12, 13, 14, 15};
+
+
+/* [pattern #][page #][note #][Note, Note Status] */
+int patterns[16][16][16][2] = {};
 
 
 
- float notes_get(uint8_t curr_step){
-	int lookup_index = notes_index[curr_step];
+float notes_get(uint8_t curr_step){
+	int lookup_index = patterns[curr_pattern][curr_page][curr_step][0];
 	return notes_lookup[lookup_index];
- }
+}
 
-  void notes_inc(uint8_t step){
-	if (notes_index[step] < 120){
-		notes_index[step]++;
-	}
- }
+int notes_status_get(uint8_t curr_step){
+	return patterns[curr_pattern][curr_page][curr_step][1];
+}
 
- void notes_dec(uint8_t step){
-	if (notes_index[step] > 0){
-		notes_index[step]--;
+int notes_display_get(uint8_t display_page, uint8_t step){
+	return patterns[curr_pattern][display_page][step][1];
+}
+
+void notes_status_set(uint8_t display_page, int leds_status[]){
+
+	/* match notes status to current display page status */
+	for (int i = 0; i < 16; i++){
+		patterns[curr_pattern][display_page][i][1] = leds_status[i];
 	}
- }
+
+}
+
+
+void notes_inc(uint8_t step){
+	if (patterns[curr_pattern][display_page][step][0] < 120){
+		patterns[curr_pattern][display_page][step][0]++;
+	}
+}
+
+void notes_dec(uint8_t step){
+	if (patterns[curr_pattern][display_page][step][0] > 0){
+		patterns[curr_pattern][display_page][step][0]--;
+	}
+}
  
  
