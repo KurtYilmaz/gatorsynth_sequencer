@@ -201,9 +201,52 @@ void notes_status_set(uint8_t display_page, int leds_status[]){
 
 
 void notes_inc(uint8_t step){
-	if (patterns[curr_pattern][display_page][step][0] < 120){
-		patterns[curr_pattern][display_page][step][0]++;
-	}
+// 	if (patterns[curr_pattern][display_page][step][0] < 120){
+// 		patterns[curr_pattern][display_page][step][0]++;
+// 	}
+	
+// 	patterns[curr_pattern][display_page][0][0] = 34; //G3
+// 	patterns[curr_pattern][display_page][1][0] = 32; //F3
+// 	patterns[curr_pattern][display_page][2][0] = 34; //G3
+// 	patterns[curr_pattern][display_page][3][0] = 49; //A4_SH
+	patterns[curr_pattern][display_page][0][0] = 48; //A1
+	patterns[curr_pattern][display_page][1][0] = 48; //A2
+	patterns[curr_pattern][display_page][2][0] = 48; //A3
+	patterns[curr_pattern][display_page][3][0] = 48; //A4
+
+	patterns[curr_pattern][display_page][4][0] = 48; //G3
+	patterns[curr_pattern][display_page][5][0] = 48; //D4
+	patterns[curr_pattern][display_page][6][0] = 48; //C4
+	patterns[curr_pattern][display_page][7][0] = 48; //A4_SH
+	
+	patterns[curr_pattern][display_page][8][0] = 60; //A3_SH
+	patterns[curr_pattern][display_page][9][0] = 60; //A3
+	patterns[curr_pattern][display_page][10][0] = 60; //F3
+	patterns[curr_pattern][display_page][11][0] = 60; //D3_SH
+	patterns[curr_pattern][display_page][12][0] = 60; //D3
+	patterns[curr_pattern][display_page][13][0] = 60; //C3
+	patterns[curr_pattern][display_page][14][0] = 60; //A3_SH
+	patterns[curr_pattern][display_page][15][0] = 60; //F3
+
+	patterns[curr_pattern][display_page][0][1] = 1; //G3
+	patterns[curr_pattern][display_page][1][1] = 1; //F3
+	patterns[curr_pattern][display_page][2][1] = 1; //G3
+	patterns[curr_pattern][display_page][3][1] = 1; //A4_SH
+	patterns[curr_pattern][display_page][4][1] = 1; //G3
+	patterns[curr_pattern][display_page][5][1] = 1; //D4
+	patterns[curr_pattern][display_page][6][1] = 1; //C4
+	patterns[curr_pattern][display_page][7][1] = 1; //A4_SH
+	
+	patterns[curr_pattern][display_page][8][1] = 1; //A3_SH
+	patterns[curr_pattern][display_page][9][1] = 1; //A3
+	patterns[curr_pattern][display_page][10][1] = 1; //F3
+	patterns[curr_pattern][display_page][11][1] = 1; //D3_SH
+	patterns[curr_pattern][display_page][12][1] = 1; //D3
+	patterns[curr_pattern][display_page][13][1] = 1; //C3
+	patterns[curr_pattern][display_page][14][1] = 1; //A3_SH
+	patterns[curr_pattern][display_page][15][1] = 1; //F3
+
+
 }
 
 void notes_dec(uint8_t step){
