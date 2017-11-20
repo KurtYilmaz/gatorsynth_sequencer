@@ -54,6 +54,8 @@ int main (void)
 	config_MAX7314();
 	read_MAX7314(port_data);
 
+	notes_inc(5);
+
 	while (1)
 	{
 	}

@@ -9,6 +9,7 @@
  //#include "dac.h"
  //#include "encoders.h"
  #include "timers.h"
+ #include "sequencer.h"
 
  #define Base 0
 
@@ -176,51 +177,45 @@
 int patterns[16][16][16][2] = {};
 
 	//test initializations
-	patterns[curr_pattern][display_page][0][0] = 48; //C4
-	patterns[curr_pattern][display_page][1][0] = 48; //C4
-	patterns[curr_pattern][display_page][2][0] = 48; //C4
-	patterns[curr_pattern][display_page][3][0] = 48; //C4
-	patterns[curr_pattern][display_page][4][0] = 48; //C4
-	patterns[curr_pattern][display_page][5][0] = 48; //C4
-	patterns[curr_pattern][display_page][6][0] = 48; //C4
-	patterns[curr_pattern][display_page][7][0] = 48; //C4
-
-	patterns[curr_pattern][display_page][8][0] = 60; //C5
-	patterns[curr_pattern][display_page][9][0] = 60; //C5
-	patterns[curr_pattern][display_page][10][0] = 60; //C5
-	patterns[curr_pattern][display_page][11][0] = 60; //C5
-	patterns[curr_pattern][display_page][12][0] = 60; //C5
-	patterns[curr_pattern][display_page][13][0] = 60; //C5
-	patterns[curr_pattern][display_page][14][0] = 60; //C5
-	patterns[curr_pattern][display_page][15][0] = 60; //C5
-
-	patterns[curr_pattern][display_page][0][1] = 1; 
-	patterns[curr_pattern][display_page][1][1] = 1; 
-	patterns[curr_pattern][display_page][2][1] = 1; 
-	patterns[curr_pattern][display_page][3][1] = 1; 
-	patterns[curr_pattern][display_page][4][1] = 1; 
-	patterns[curr_pattern][display_page][5][1] = 1; 
-	patterns[curr_pattern][display_page][6][1] = 1; 
-	patterns[curr_pattern][display_page][7][1] = 1; 
-
-	patterns[curr_pattern][display_page][8][1] = 1; 
-	patterns[curr_pattern][display_page][9][1] = 1; 
-	patterns[curr_pattern][display_page][10][1] = 1; 
-	patterns[curr_pattern][display_page][11][1] = 1; 
-	patterns[curr_pattern][display_page][12][1] = 1; 
-	patterns[curr_pattern][display_page][13][1] = 1; 
-	patterns[curr_pattern][display_page][14][1] = 1; 
-	patterns[curr_pattern][display_page][15][1] = 1;
 
 
 
-float notes_get(uint8_t curr_step){
-	int lookup_index = patterns[curr_pattern][curr_page][curr_step][0];
+float notes_get(uint8_t curr_step, uint8_t channel){
+	int lookup_index;
+
+	if (channel == CHANNEL_1){
+		lookup_index = patterns[curr_pattern_ch[0]][curr_page_ch[0]][curr_step][0];
+	}
+	else if (channel == CHANNEL_2){
+		lookup_index = patterns[curr_pattern_ch[1]][curr_page_ch[1]][curr_step][0];
+	}
+	else if (channel == CHANNEL_3){
+		lookup_index = patterns[curr_pattern_ch[2]][curr_page_ch[2]][curr_step][0];
+	}
+	else if (channel == CHANNEL_4){
+		lookup_index = patterns[curr_pattern_ch[3]][curr_page_ch[3]][curr_step][0];
+	}
+	
 	return notes_lookup[lookup_index];
 }
 
-int notes_status_get(uint8_t curr_step){
-	return patterns[curr_pattern][curr_page][curr_step][1];
+int notes_status_get(uint8_t curr_step, uint8_t channel){
+
+	if (channel == CHANNEL_1){
+		return patterns[curr_pattern_ch[0]][curr_page_ch[0]][curr_step][1];
+	}
+	else if (channel == CHANNEL_2){
+		return patterns[curr_pattern_ch[1]][curr_page_ch[1]][curr_step][1];
+	}
+	else if (channel == CHANNEL_3){
+		return patterns[curr_pattern_ch[2]][curr_page_ch[2]][curr_step][1];
+	}
+	else if (channel == CHANNEL_4){
+		return patterns[curr_pattern_ch[3]][curr_page_ch[3]][curr_step][1];
+	}
+
+	//default
+	return patterns[curr_pattern_ch[0]][curr_page_ch[0]][curr_step][1];
 }
 
 int notes_display_get(uint8_t display_page, uint8_t step){
@@ -238,9 +233,81 @@ void notes_status_set(uint8_t display_page, int leds_status[]){
 
 
 void notes_inc(uint8_t step){
-	if (patterns[curr_pattern][display_page][step][0] < 120){
-		patterns[curr_pattern][display_page][step][0]++;
-	}
+// 	if (patterns[curr_pattern][display_page][step][0] < 120){
+// 		patterns[curr_pattern][display_page][step][0]++;
+// 	}
+
+	patterns[curr_pattern][display_page][0][0] = 48; //C4
+	patterns[curr_pattern][display_page][1][0] = 49; //C4
+	patterns[curr_pattern][display_page][2][0] = 50; //C4
+	patterns[curr_pattern][display_page][3][0] = 51; //C4
+	patterns[curr_pattern][display_page][4][0] = 52; //C4
+	patterns[curr_pattern][display_page][5][0] = 53; //C4
+	patterns[curr_pattern][display_page][6][0] = 54; //C4
+	patterns[curr_pattern][display_page][7][0] = 55; //C4
+
+	patterns[curr_pattern][display_page][8][0] = 60; //C5
+	patterns[curr_pattern][display_page][9][0] = 59; //C5
+	patterns[curr_pattern][display_page][10][0] = 58; //C5
+	patterns[curr_pattern][display_page][11][0] = 57; //C5
+	patterns[curr_pattern][display_page][12][0] = 56; //C5
+	patterns[curr_pattern][display_page][13][0] = 55; //C5
+	patterns[curr_pattern][display_page][14][0] = 54; //C5
+	patterns[curr_pattern][display_page][15][0] = 63; //C5
+
+	patterns[curr_pattern][display_page][0][1] = 1;
+	patterns[curr_pattern][display_page][1][1] = 1;
+	patterns[curr_pattern][display_page][2][1] = 1;
+	patterns[curr_pattern][display_page][3][1] = 1;
+	patterns[curr_pattern][display_page][4][1] = 1;
+	patterns[curr_pattern][display_page][5][1] = 1;
+	patterns[curr_pattern][display_page][6][1] = 1;
+	patterns[curr_pattern][display_page][7][1] = 1;
+
+	patterns[curr_pattern][display_page][8][1] = 1;
+	patterns[curr_pattern][display_page][9][1] = 1;
+	patterns[curr_pattern][display_page][10][1] = 1;
+	patterns[curr_pattern][display_page][11][1] = 1;
+	patterns[curr_pattern][display_page][12][1] = 1;
+	patterns[curr_pattern][display_page][13][1] = 1;
+	patterns[curr_pattern][display_page][14][1] = 1;
+	patterns[curr_pattern][display_page][15][1] = 1;
+
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][0] = 71; //C4
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][0] = 72; //C4
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][0] = 73; //C4
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][0] = 74; //C4
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][0] = 75; //C4
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][0] = 76; //C4
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][0] = 77; //C4
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][0] = 78; //C4
+
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][0] = 79; //C5
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][0] = 80; //C5
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][0] = 81; //C5
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][0] = 82; //C5
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][0] = 83; //C5
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][0] = 84; //C5
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][0] = 85; //C5
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][0] = 86; //C5
+
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][1] = 1;
+
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][1] = 1;
 }
 
 void notes_dec(uint8_t step){

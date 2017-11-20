@@ -69,9 +69,31 @@ void SPI_led_init(){
 
 void SPI_dac_init(){
 
-	REG_PIOB_PER |= PIO_PER_P13; //enable PIO controller on PB14
-	REG_PIOB_OER |= PIO_PER_P13; //enable output on pin PB14
+	//Chip Selects for the DACs / CVs
+	REG_PIOB_PER |= PIO_PER_P13; //enable PIO controller on PB13
+	REG_PIOB_OER |= PIO_PER_P13; //enable output on pin PB13
 	REG_PIOB_SODR |=  PIO_PER_P13;
+
+	REG_PIOB_PER |= PIO_PER_P14; //enable PIO controller on PB14
+	REG_PIOB_OER |= PIO_PER_P14; //enable output on pin PB14
+	REG_PIOB_SODR |=  PIO_PER_P14;
+
+	//Outputs for the Gates
+	REG_PIOB_PER |= PIO_PER_P0; //enable PIO controller on PB13
+	REG_PIOB_OER |= PIO_PER_P0; //enable output on pin PB13
+	REG_PIOB_SODR |=  PIO_PER_P0;
+
+	REG_PIOB_PER |= PIO_PER_P1; //enable PIO controller on PB13
+	REG_PIOB_OER |= PIO_PER_P1; //enable output on pin PB13
+	REG_PIOB_SODR |=  PIO_PER_P1;
+
+	REG_PIOB_PER |= PIO_PER_P2; //enable PIO controller on PB13
+	REG_PIOB_OER |= PIO_PER_P2; //enable output on pin PB13
+	REG_PIOB_SODR |=  PIO_PER_P2;
+
+	REG_PIOB_PER |= PIO_PER_P3; //enable PIO controller on PB13
+	REG_PIOB_OER |= PIO_PER_P3; //enable output on pin PB13
+	REG_PIOB_SODR |=  PIO_PER_P3;
 
 	//enable peripheral clock
 	REG_PMC_PCER0 |= PMC_PCER0_PID21;
