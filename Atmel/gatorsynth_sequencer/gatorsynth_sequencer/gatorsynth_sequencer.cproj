@@ -231,8 +231,8 @@
       <Value>../src/ASF/sam/drivers/pmc</Value>
       <Value>../src/ASF/common/services/clock</Value>
       <Value>../src/ASF/common/services/delay</Value>
-      <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.40\include</Value>
       <Value>../src/ASF/sam/drivers/twi</Value>
+      <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.49\include</Value>
     </ListValues>
   </armgcc.compiler.directories.IncludePaths>
   <armgcc.compiler.optimization.level>Optimize for size (-Os)</armgcc.compiler.optimization.level>
@@ -272,8 +272,8 @@
       <Value>../src/ASF/sam/drivers/pmc</Value>
       <Value>../src/ASF/common/services/clock</Value>
       <Value>../src/ASF/common/services/delay</Value>
-      <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.40\include</Value>
       <Value>../src/ASF/sam/drivers/twi</Value>
+      <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.49\include</Value>
     </ListValues>
   </armgcc.assembler.general.IncludePaths>
   <armgcc.preprocessingassembler.general.AssemblerFlags>-DARM_MATH_CM4=true -DBOARD=USER_BOARD -Dprintf=iprintf -Dscanf=iscanf</armgcc.preprocessingassembler.general.AssemblerFlags>
@@ -295,8 +295,8 @@
       <Value>../src/ASF/sam/drivers/pmc</Value>
       <Value>../src/ASF/common/services/clock</Value>
       <Value>../src/ASF/common/services/delay</Value>
-      <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.40\include</Value>
       <Value>../src/ASF/sam/drivers/twi</Value>
+      <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.49\include</Value>
     </ListValues>
   </armgcc.preprocessingassembler.general.IncludePaths>
 </ArmGcc>
@@ -337,8 +337,8 @@
       <Value>../src/ASF/sam/drivers/pmc</Value>
       <Value>../src/ASF/common/services/clock</Value>
       <Value>../src/ASF/common/services/delay</Value>
-      <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.40\include</Value>
       <Value>../src/ASF/sam/drivers/twi</Value>
+      <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.49\include</Value>
     </ListValues>
   </armgcc.compiler.directories.IncludePaths>
   <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
@@ -381,8 +381,8 @@
       <Value>../src/ASF/sam/drivers/pmc</Value>
       <Value>../src/ASF/common/services/clock</Value>
       <Value>../src/ASF/common/services/delay</Value>
-      <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.40\include</Value>
       <Value>../src/ASF/sam/drivers/twi</Value>
+      <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.49\include</Value>
     </ListValues>
   </armgcc.assembler.general.IncludePaths>
   <armgcc.assembler.debugging.DebugLevel>Default (-g)</armgcc.assembler.debugging.DebugLevel>
@@ -405,8 +405,8 @@
       <Value>../src/ASF/sam/drivers/pmc</Value>
       <Value>../src/ASF/common/services/clock</Value>
       <Value>../src/ASF/common/services/delay</Value>
-      <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.40\include</Value>
       <Value>../src/ASF/sam/drivers/twi</Value>
+      <Value>%24(PackRepoDir)\atmel\SAM4N_DFP\1.0.49\include</Value>
     </ListValues>
   </armgcc.preprocessingassembler.general.IncludePaths>
   <armgcc.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcc.preprocessingassembler.debugging.DebugLevel>

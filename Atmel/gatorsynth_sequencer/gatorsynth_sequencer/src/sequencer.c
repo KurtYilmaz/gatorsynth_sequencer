@@ -127,10 +127,10 @@ uint8_t res_to_int(uint8_t res){
 		return 2;
 	}
 	else if (res == 2){
-		return 3;
+		return 4;
 	}
 	else if (res == 3){
-		return 4;
+		return 6;
 	}
 	else if (res == 4){
 		return 8;

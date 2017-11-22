@@ -80,28 +80,28 @@ void led_toggle(uint8_t top_row, uint8_t bottom_row){
 	}
 
 	switch(top_row) {
-		case 126 :
+		case 254 :
 			leds_status[7] = abs(leds_status[7] - 1);
 			break;
-		case 125 :
+		case 253 :
 			leds_status[6] = abs(leds_status[6] - 1);
 			break;
-		case 123 :
+		case 251 :
 			leds_status[5] = abs(leds_status[5] - 1);
 			break;
-		case 119 :
+		case 247 :
 			leds_status[4] = abs(leds_status[4] - 1);
 			break;
-		case 111 :
+		case 239 :
 			leds_status[3] = abs(leds_status[3] - 1);
 			break;
-		case 95 :
+		case 223 :
 			leds_status[2] = abs(leds_status[2] - 1);
 			break;
-		case 63 :
+		case 191 :
 			leds_status[1] = abs(leds_status[1] - 1);
 			break;
-		case 2 :
+		case 127 :
 			leds_status[0] = abs(leds_status[0] - 1);
 			break;
 		default : 

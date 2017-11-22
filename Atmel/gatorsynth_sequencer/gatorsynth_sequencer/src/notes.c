@@ -233,82 +233,82 @@ void notes_status_set(uint8_t display_page, int leds_status[]){
 
 
 void notes_inc(uint8_t step){
-// 	if (patterns[curr_pattern][display_page][step][0] < 120){
-// 		patterns[curr_pattern][display_page][step][0]++;
-// 	}
+	if (patterns[curr_pattern][display_page][step][0] < 120){
+		patterns[curr_pattern][display_page][step][0]++;
+	}
 
-	patterns[curr_pattern][display_page][0][0] = 60; //C5
-	patterns[curr_pattern][display_page][1][0] = 60; //C5
-	patterns[curr_pattern][display_page][2][0] = 62; //D5
-	patterns[curr_pattern][display_page][3][0] = 64; //E5
-	patterns[curr_pattern][display_page][4][0] = 67; //G5
-	patterns[curr_pattern][display_page][5][0] = 67; //G5
-	patterns[curr_pattern][display_page][6][0] = 67; //G5
-	patterns[curr_pattern][display_page][7][0] = 64; //E5
-
-	patterns[curr_pattern][display_page][8][0] = 64; //F5
-	patterns[curr_pattern][display_page][9][0] = 64; //E5
-	patterns[curr_pattern][display_page][10][0] = 60; //C5
-	patterns[curr_pattern][display_page][11][0] = 55; //G4
-	patterns[curr_pattern][display_page][12][0] = 55; //G4
-	patterns[curr_pattern][display_page][13][0] = 55; //G4
-	patterns[curr_pattern][display_page][14][0] = 57; //A4
-	patterns[curr_pattern][display_page][15][0] = 59; //B4
-
-	patterns[curr_pattern][display_page][0][1] = 1;
-	patterns[curr_pattern][display_page][1][1] = 1;
-	patterns[curr_pattern][display_page][2][1] = 1;
-	patterns[curr_pattern][display_page][3][1] = 1;
-	patterns[curr_pattern][display_page][4][1] = 0;
-	patterns[curr_pattern][display_page][5][1] = 1;
-	patterns[curr_pattern][display_page][6][1] = 0;
-	patterns[curr_pattern][display_page][7][1] = 1;
-
-	patterns[curr_pattern][display_page][8][1] = 1;
-	patterns[curr_pattern][display_page][9][1] = 1;
-	patterns[curr_pattern][display_page][10][1] = 1;
-	patterns[curr_pattern][display_page][11][1] = 1;
-	patterns[curr_pattern][display_page][12][1] = 0;
-	patterns[curr_pattern][display_page][13][1] = 1;
-	patterns[curr_pattern][display_page][14][1] = 1;
-	patterns[curr_pattern][display_page][15][1] = 1;
-
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][0] = 28; //E2
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][0] = 28; //E2
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][0] = 28; //E2
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][0] = 0; //REST
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][0] = 28; //E2
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][0] = 28; //E2
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][0] = 28; //E2
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][0] = 0; //REST
-
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][0] = 25; //C2_SH
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][0] = 0; //REST
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][0] = 0; //REST
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][0] = 25; //C2_SH
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][0] = 25; //C2_SH
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][0] = 28; //E2
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][0] = 0; //REST
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][0] = 28; //E2
-
-
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][1] = 0;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][1] = 0;
-
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][1] = 0;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][1] = 0;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][1] = 0;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][1] = 1;
+// 	patterns[curr_pattern][display_page][0][0] = 60; //C5
+// 	patterns[curr_pattern][display_page][1][0] = 60; //C5
+// 	patterns[curr_pattern][display_page][2][0] = 62; //D5
+// 	patterns[curr_pattern][display_page][3][0] = 64; //E5
+// 	patterns[curr_pattern][display_page][4][0] = 67; //G5
+// 	patterns[curr_pattern][display_page][5][0] = 67; //G5
+// 	patterns[curr_pattern][display_page][6][0] = 67; //G5
+// 	patterns[curr_pattern][display_page][7][0] = 64; //E5
+// 
+// 	patterns[curr_pattern][display_page][8][0] = 64; //F5
+// 	patterns[curr_pattern][display_page][9][0] = 64; //E5
+// 	patterns[curr_pattern][display_page][10][0] = 60; //C5
+// 	patterns[curr_pattern][display_page][11][0] = 55; //G4
+// 	patterns[curr_pattern][display_page][12][0] = 55; //G4
+// 	patterns[curr_pattern][display_page][13][0] = 55; //G4
+// 	patterns[curr_pattern][display_page][14][0] = 57; //A4
+// 	patterns[curr_pattern][display_page][15][0] = 59; //B4
+// 
+// 	patterns[curr_pattern][display_page][0][1] = 1;
+// 	patterns[curr_pattern][display_page][1][1] = 1;
+// 	patterns[curr_pattern][display_page][2][1] = 1;
+// 	patterns[curr_pattern][display_page][3][1] = 1;
+// 	patterns[curr_pattern][display_page][4][1] = 0;
+// 	patterns[curr_pattern][display_page][5][1] = 1;
+// 	patterns[curr_pattern][display_page][6][1] = 0;
+// 	patterns[curr_pattern][display_page][7][1] = 1;
+// 
+// 	patterns[curr_pattern][display_page][8][1] = 1;
+// 	patterns[curr_pattern][display_page][9][1] = 1;
+// 	patterns[curr_pattern][display_page][10][1] = 1;
+// 	patterns[curr_pattern][display_page][11][1] = 1;
+// 	patterns[curr_pattern][display_page][12][1] = 0;
+// 	patterns[curr_pattern][display_page][13][1] = 1;
+// 	patterns[curr_pattern][display_page][14][1] = 1;
+// 	patterns[curr_pattern][display_page][15][1] = 1;
+// 
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][0] = 28; //E2
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][0] = 28; //E2
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][0] = 28; //E2
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][0] = 0; //REST
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][0] = 28; //E2
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][0] = 28; //E2
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][0] = 28; //E2
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][0] = 0; //REST
+// 
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][0] = 25; //C2_SH
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][0] = 0; //REST
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][0] = 0; //REST
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][0] = 25; //C2_SH
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][0] = 25; //C2_SH
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][0] = 28; //E2
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][0] = 0; //REST
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][0] = 28; //E2
+// 
+// 
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][1] = 0;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][1] = 0;
+// 
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][1] = 0;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][1] = 0;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][1] = 0;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][1] = 1;
 }
 
 void notes_dec(uint8_t step){
@@ -316,78 +316,78 @@ void notes_dec(uint8_t step){
 		patterns[curr_pattern][display_page][step][0]--;
 	}
 
-	patterns[curr_pattern][display_page][0][0] = 60; //C5
-	patterns[curr_pattern][display_page][1][0] = 60; //C5
-	patterns[curr_pattern][display_page][2][0] = 62; //D5
-	patterns[curr_pattern][display_page][3][0] = 64; //E5
-	patterns[curr_pattern][display_page][4][0] = 67; //G5
-	patterns[curr_pattern][display_page][5][0] = 67; //G5
-	patterns[curr_pattern][display_page][6][0] = 67; //G5
-	patterns[curr_pattern][display_page][7][0] = 64; //E5
-
-	patterns[curr_pattern][display_page][8][0] = 64; //F5
-	patterns[curr_pattern][display_page][9][0] = 64; //E5
-	patterns[curr_pattern][display_page][10][0] = 60; //C5
-	patterns[curr_pattern][display_page][11][0] = 55; //G4
-	patterns[curr_pattern][display_page][12][0] = 55; //G4
-	patterns[curr_pattern][display_page][13][0] = 55; //G4
-	patterns[curr_pattern][display_page][14][0] = 57; //A4
-	patterns[curr_pattern][display_page][15][0] = 59; //B4
-
-	patterns[curr_pattern][display_page][0][1] = 1;
-	patterns[curr_pattern][display_page][1][1] = 1;
-	patterns[curr_pattern][display_page][2][1] = 1;
-	patterns[curr_pattern][display_page][3][1] = 1;
-	patterns[curr_pattern][display_page][4][1] = 0;
-	patterns[curr_pattern][display_page][5][1] = 1;
-	patterns[curr_pattern][display_page][6][1] = 0;
-	patterns[curr_pattern][display_page][7][1] = 1;
-
-	patterns[curr_pattern][display_page][8][1] = 1;
-	patterns[curr_pattern][display_page][9][1] = 1;
-	patterns[curr_pattern][display_page][10][1] = 1;
-	patterns[curr_pattern][display_page][11][1] = 1;
-	patterns[curr_pattern][display_page][12][1] = 0;
-	patterns[curr_pattern][display_page][13][1] = 1;
-	patterns[curr_pattern][display_page][14][1] = 1;
-	patterns[curr_pattern][display_page][15][1] = 1;
-
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][0] = 28; //E2
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][0] = 28; //E2
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][0] = 28; //E2
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][0] = 0; //REST
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][0] = 28; //E2
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][0] = 28; //E2
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][0] = 28; //E2
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][0] = 0; //REST
-
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][0] = 25; //C2_SH
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][0] = 0; //REST
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][0] = 0; //REST
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][0] = 25; //C2_SH
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][0] = 25; //C2_SH
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][0] = 28; //E2
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][0] = 0; //REST
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][0] = 28; //E2
-
-
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][1] = 0;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][1] = 0;
-
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][1] = 0;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][1] = 0;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][1] = 0;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][1] = 1;
+// 	patterns[curr_pattern][display_page][0][0] = 60; //C5
+// 	patterns[curr_pattern][display_page][1][0] = 60; //C5
+// 	patterns[curr_pattern][display_page][2][0] = 62; //D5
+// 	patterns[curr_pattern][display_page][3][0] = 64; //E5
+// 	patterns[curr_pattern][display_page][4][0] = 67; //G5
+// 	patterns[curr_pattern][display_page][5][0] = 67; //G5
+// 	patterns[curr_pattern][display_page][6][0] = 67; //G5
+// 	patterns[curr_pattern][display_page][7][0] = 64; //E5
+// 
+// 	patterns[curr_pattern][display_page][8][0] = 64; //F5
+// 	patterns[curr_pattern][display_page][9][0] = 64; //E5
+// 	patterns[curr_pattern][display_page][10][0] = 60; //C5
+// 	patterns[curr_pattern][display_page][11][0] = 55; //G4
+// 	patterns[curr_pattern][display_page][12][0] = 55; //G4
+// 	patterns[curr_pattern][display_page][13][0] = 55; //G4
+// 	patterns[curr_pattern][display_page][14][0] = 57; //A4
+// 	patterns[curr_pattern][display_page][15][0] = 59; //B4
+// 
+// 	patterns[curr_pattern][display_page][0][1] = 1;
+// 	patterns[curr_pattern][display_page][1][1] = 1;
+// 	patterns[curr_pattern][display_page][2][1] = 1;
+// 	patterns[curr_pattern][display_page][3][1] = 1;
+// 	patterns[curr_pattern][display_page][4][1] = 0;
+// 	patterns[curr_pattern][display_page][5][1] = 1;
+// 	patterns[curr_pattern][display_page][6][1] = 0;
+// 	patterns[curr_pattern][display_page][7][1] = 1;
+// 
+// 	patterns[curr_pattern][display_page][8][1] = 1;
+// 	patterns[curr_pattern][display_page][9][1] = 1;
+// 	patterns[curr_pattern][display_page][10][1] = 1;
+// 	patterns[curr_pattern][display_page][11][1] = 1;
+// 	patterns[curr_pattern][display_page][12][1] = 0;
+// 	patterns[curr_pattern][display_page][13][1] = 1;
+// 	patterns[curr_pattern][display_page][14][1] = 1;
+// 	patterns[curr_pattern][display_page][15][1] = 1;
+// 
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][0] = 28; //E2
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][0] = 28; //E2
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][0] = 28; //E2
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][0] = 0; //REST
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][0] = 28; //E2
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][0] = 28; //E2
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][0] = 28; //E2
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][0] = 0; //REST
+// 
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][0] = 25; //C2_SH
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][0] = 0; //REST
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][0] = 0; //REST
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][0] = 25; //C2_SH
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][0] = 25; //C2_SH
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][0] = 28; //E2
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][0] = 0; //REST
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][0] = 28; //E2
+// 
+// 
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][1] = 0;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][1] = 0;
+// 
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][1] = 0;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][1] = 0;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][1] = 1;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][1] = 0;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][1] = 1;
 }
  
  

@@ -431,9 +431,21 @@ void res_display(uint8_t res) {
 	display_char(' ', 28, 2);
 	display_char('/', 22, 2); 
 	display_char(' ', 28, 2);
-	display_number(res, 22, 2);
-	display_char(' ', 28, 2);
-	display_char('t', 22, 2);
+	if(res == 6) {
+		display_number(4, 22, 2);
+		display_char('t', 22, 2);
+	}
+	else if(res == 12) {
+		display_number(8, 22, 2);
+		display_char('t', 22, 2);
+	}
+	else if(res == 24) {
+		display_number(16, 22, 2);
+		display_char('t', 22, 2);
+	}
+	else {
+		display_number(res, 22, 2);
+	}
 	finish_display(2);  
 }
 

@@ -1,0 +1,28 @@
+PCAD Importer Log
+Project : LTC2602CMS8TR.LibPkg
+
+Section : C:\Users\Kurt\gatorsynth_sequencer\Altium\DAC Upgrade\LTC1661_UPGRADE\LTC2602CMS8TR.lia
+    Section : PCB Library - LTC2602CMS8TR.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token isVisible On Line 101
+            Warning - 1 : Skipping Token isVisible On Line 143
+            Warning - 1 : Skipping Token LTC2602CMS8TR On Line 147
+            Warning - 1 : Skipping Token attachedSymbol On Line 253
+        EndSection
+
+        Section : Import Messages
+        EndSection
+    EndSection
+
+    Section : SCH Library - LTC2602CMS8TR.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token multiLayer On Line 84
+            Warning - 1 : Skipping Token layerContents On Line 94
+            Warning - 1 : Skipping Token layerContents On Line 103
+        EndSection
+
+        Section : Generating SCH Library - LTC2602CMS8TR.SchLib
+        EndSection
+    EndSection
+EndSection

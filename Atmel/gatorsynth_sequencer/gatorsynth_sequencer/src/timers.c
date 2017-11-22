@@ -21,10 +21,11 @@
  void timers_init(void) {
 
 	overflow_count = 0;
-	display_overflow_count = 0;
+	note_overflow_count = 0;
+	refresh_overflow_count = 0;
 	resolution = 2;
 	display_page = 0;
-	page_loop = 0;
+	page_loop = 1;
 	curr_step = 0;
 	curr_page = 0;
 	curr_pattern = 0;
@@ -58,7 +59,7 @@
 	
 	// Enable peripheral clock for TC1
 	// Peripheral ID (PID) for TC1 is 24
-	REG_PMC_PCER0 |= PMC_PCER0_PID24;
+	// REG_PMC_PCER0 |= PMC_PCER0_PID24;
 
 	// Links timer clock to Master clock / 32 = 3.125 MHz
 	// 3.125 MHz = 62500 ticks @ 50 BPM (without handling overflows)
@@ -71,17 +72,24 @@
 	// TIMER_CLOCK5 = SCLK
 	REG_TC0_CMR0 |= TC_CMR_TCCLKS_TIMER_CLOCK2 | TC_CMR_CPCTRG;
 	REG_TC0_CMR1 |= TC_CMR_TCCLKS_TIMER_CLOCK2 | TC_CMR_CPCTRG;
+	// REG_TC0_CMR2 |= TC_CMR_TCCLKS_TIMER_CLOCK4 | TC_CMR_CPCTRG;
 	// Set interrupt on compare to RC value
 	REG_TC0_IER0 |= TC_IER_CPCS;
 	REG_TC0_IER1 |= TC_IER_CPCS;
+	// REG_TC0_IER2 |= TC_IER_CPCS;
 
-// 	// 60 BPM = 1 Hz. SCK = 32 KHz. 16,000 counts per half second, 2 interrupts per cycle
-// 	REG_TC0_RC0 = 16000;
-
-	// 60 BPM = 1 Hz. MCK/8 = 12.5 MHz. 6.25 mil counts per half second, 2 interrupts per cycle
-	// Anticipating 5000 overflows (5000*1250 is 6.25 mil)
+	// 60 BPM = 1 Hz. MCK/8 = 12.5 MHz. 12.5 million counts per second, 1 interrupt per cycle
+	// Anticipating 10000 overflows (10000*1250 is 12.5 million counts)
 	REG_TC0_RC0 = 1250;
+
+	// 2 seconds = 0.5 Hz. MCK/8 = 12.5 MHz. 25 million counts
+	// Anticipating 10000 overflows (10000*2500 is 25 million counts)
 	REG_TC0_RC1 = 2500;
+
+
+	// 60 Hz. MCK/8 = 12.5 MHz. 13020 counts
+	// Anticipating 4 overflows (4*3255 is 13020 counts)
+	// REG_TC0_RC2 = 3255;
 
 	// For the interrupt
 // 	REG_PIOA_PER |= PIO_PER_P20; //enable PIO controller on PA11
@@ -91,6 +99,7 @@
 	// TC0 control register enables timer and triggers it to start
 	REG_TC0_CCR0 |= TC_CCR_CLKEN | TC_CCR_SWTRG;
 	REG_TC0_CCR1 |= TC_CCR_CLKEN | TC_CCR_SWTRG;
+//	REG_TC0_CCR2 |= TC_CCR_CLKEN | TC_CCR_SWTRG;
  }
 
  void update_timers(int bpm) {
@@ -104,12 +113,12 @@
  }
 
  void TC0_Handler() {
-	 // Handling timer = RC
 
+// Step count timer
 	 // Test code, normally trigger next step, output clock
 	 if((REG_TC0_SR0 & TC_SR_CPCS) >= 1) {
 
-		overflow_count += 1;
+		overflow_count ++;
 
 		//turn off gates for each channel
 		if (overflow_count == 2000){ //note_length
@@ -178,14 +187,24 @@
 		 overflow_count = 0;
 	 }
 
-	 if((REG_TC0_SR1 & TC_SR_CPCS) >= 1) {
-		display_overflow_count += 1;
+// Timeout timer for note displays
+	if((REG_TC0_SR1 & TC_SR_CPCS) >= 1) {
+		note_overflow_count++;
 	}
 
-	if (display_overflow_count >= 10000){
-		display_overflow_count = 0;
+	if (note_overflow_count >= 10000){
+		note_overflow_count = 0;
 		test++;
 	}
+
+// Display refresh timer
+// 	if((REG_TC0_SR2 & TC_SR_CPCS) >= 1) {
+// 		refresh_overflow_count++;
+// 	}
+// 
+// 	if(refresh_overflow_count >= 3255) {
+// 		// update displays
+// 	}
 
  }
 

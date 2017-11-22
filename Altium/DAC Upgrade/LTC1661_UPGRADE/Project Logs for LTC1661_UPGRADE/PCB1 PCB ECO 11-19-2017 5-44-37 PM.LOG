@@ -1,0 +1,42 @@
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Linear Technology"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LTC2602CMS8#TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "MSOP-8 Linear Technology"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U1(MSOP-8_MS)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Linear Technology"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LTC2602CMS8#TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "MSOP-8 Linear Technology"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U2(DIP-8)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=U1-7
+Added Pin To Net: NetName=GND Pin=U2-7
+Added Net: Name=GND
+Added Pin To Net: NetName=NetU1_1 Pin=U1-1
+Added Pin To Net: NetName=NetU1_1 Pin=U2-1
+Added Net: Name=NetU1_1
+Added Pin To Net: NetName=NetU1_2 Pin=U1-2
+Added Pin To Net: NetName=NetU1_2 Pin=U2-2
+Added Net: Name=NetU1_2
+Added Pin To Net: NetName=NetU1_3 Pin=U1-3
+Added Pin To Net: NetName=NetU1_3 Pin=U2-3
+Added Net: Name=NetU1_3
+Added Pin To Net: NetName=NetU1_4 Pin=U1-4
+Added Pin To Net: NetName=NetU1_4 Pin=U2-4
+Added Net: Name=NetU1_4
+Added Pin To Net: NetName=NetU1_5 Pin=U1-5
+Added Pin To Net: NetName=NetU1_5 Pin=U2-5
+Added Net: Name=NetU1_5
+Added Pin To Net: NetName=NetU1_8 Pin=U1-8
+Added Pin To Net: NetName=NetU1_8 Pin=U2-8
+Added Net: Name=NetU1_8
+Added Pin To Net: NetName=VCC Pin=U1-6
+Added Pin To Net: NetName=VCC Pin=U2-6
+Added Net: Name=VCC
+Added Class: Name=Sheet1
+Added Room: Name=Sheet1
