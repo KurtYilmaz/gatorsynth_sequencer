@@ -41,23 +41,26 @@ int main (void)
 	update_timers(bpm);
 	
 	ADC_init();
-
-	REG_PIOB_PER |= PIO_PER_P3; //enable PIO controller on PB3
-	REG_PIOB_OER |= PIO_PER_P3; //enable output on pin PB3
-	REG_PIOB_SODR |= PIO_PER_P3; //set output high on PB3 as default
 	Encoder_init();				//initialize encoders
 
 	i2c_init();
-	display_init();
+	//notes_inc(5);
+	
 
 	init_IO_int();
 	config_MAX7314();
 	read_MAX7314(port_data);
-
-	notes_inc(5);
+	all_displays_init();
+	//note_display(5);
+	//bpm_display(bpm);
+	page_display(display_page);
 
 	while (1)
 	{
+	//read_MAX7314(port_data);
+	//config_MAX7314();
+	//delay_us(10);
+	//note_display(5);
 	}
 }
 
@@ -80,6 +83,12 @@ int main (void)
 			}
 		}
 		
+	 }
+
+	 else{
+		read_MAX7314(temp_data);
+		read_MAX7314(temp_data);
+		uint8_t test = 0;
 	 }
 
  }

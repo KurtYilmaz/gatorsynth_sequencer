@@ -12,6 +12,7 @@
 
  #include "timers.h"
  #include "sequencer.h"
+ #include "displays.h"
 
  uint8_t A_seq;
  uint8_t B_seq;
@@ -36,67 +37,131 @@
 
 	//return true if turned right
 	if ((A_seq == 0b00001001) && (B_seq == 0b00000011)){
-		REG_PIOB_SODR |= PIO_PER_P3; //set output high on PB3
-		
 		if (aux_control == 0){
 			bpm_inc();
+			update_timers(bpm);
+			bpm_display(bpm);
 		}
 		else if (aux_control == 1){
 			/* resolution UP */
-			page_loop_inc();
+			res_inc();
+			update_timers(bpm);
+			res_display(res_to_int(resolution));
+			//page_loop_inc();
 		}
 		else if (aux_control == 2){
 			display_page_inc();
+			page_display(display_page);
 		}
 		else if (aux_control == 3){
 			pattern_inc();
+			pattern_display(curr_pattern);
 		}
 		else if (aux_control == 4){
 			pattern_up(CHANNEL_1);
+			output_display_1(curr_pattern_ch[0], curr_pattern_ch[1]);
 		}
 		else if (aux_control == 5){
 			pattern_up(CHANNEL_2);
+			output_display_1(curr_pattern_ch[0], curr_pattern_ch[1]);
 		}
 		else if (aux_control == 6){
 			pattern_up(CHANNEL_3);
+			output_display_2(curr_pattern_ch[2], curr_pattern_ch[3]);
 		}
 		else if (aux_control == 7){
 			pattern_up(CHANNEL_4);
+			output_display_2(curr_pattern_ch[2], curr_pattern_ch[3]);
 		}
 
 	}
 
 	else if ((A_seq == 0b00000011) && (B_seq == 0b00001001)){
-		REG_PIOB_CODR |= PIO_PER_P3; //set output low on PB3
-		
+
 		if (aux_control == 0){
 			bpm_dec();
+			update_timers(bpm);
+			bpm_display(bpm);
 		}
 		else if (aux_control == 1){
 			/* resolution DOWN */
-			page_loop_dec();
+			res_dec();
+			update_timers(bpm);
+			res_display(res_to_int(resolution));
+			//page_loop_dec();
 		}
 		else if (aux_control == 2){
 			display_page_dec();
+			page_display(display_page);
 		}
 		else if (aux_control == 3){
 			pattern_dec();
+			pattern_display(curr_pattern);
 		}
 		else if (aux_control == 4){
 			pattern_down(CHANNEL_1);
+			output_display_1(curr_pattern_ch[0], curr_pattern_ch[1]);
 		}
 		else if (aux_control == 5){
 			pattern_down(CHANNEL_2);
+			output_display_1(curr_pattern_ch[0], curr_pattern_ch[1]);
 		}
 		else if (aux_control == 6){
 			pattern_down(CHANNEL_3);
+			output_display_2(curr_pattern_ch[2], curr_pattern_ch[3]);
 		}
 		else if (aux_control == 7){
 			pattern_down(CHANNEL_4);
+			output_display_2(curr_pattern_ch[2], curr_pattern_ch[3]);
 		}
 	}
 
 
+}
+
+uint8_t res_to_int(uint8_t res){
+	if (res == 0){
+		return 1;
+	}
+	else if (res == 1){
+		return 2;
+	}
+	else if (res == 2){
+		return 3;
+	}
+	else if (res == 3){
+		return 4;
+	}
+	else if (res == 4){
+		return 8;
+	}
+	else if (res == 5){
+		return 12;
+	}
+	else if (res == 6){
+		return 16;
+	}
+	else if (res == 7){
+		return 24;
+	}
+	else if (res == 8){
+		return 32;
+	}
+
+	//default
+	return 1;
+}
+
+void res_inc(){
+	if (resolution < 8){
+		resolution++;
+	}
+}
+
+void res_dec(){
+	if (resolution > 0){
+		resolution--;
+	}
 }
 
  void bpm_inc(){
@@ -136,14 +201,14 @@
  }
 
 void pattern_up(uint8_t channel){
-	if (patterns_out[channel] < 15){
-		patterns_out[channel]++;
+	if (curr_pattern_ch[channel] < 15){
+		curr_pattern_ch[channel]++;
 	}
 }
 
 void pattern_down(uint8_t channel){
-	  if (patterns_out[channel] > 0){
-		  patterns_out[channel]--;
+	  if (curr_pattern_ch[channel] > 0){
+		  curr_pattern_ch[channel]--;
 	  }
 }
 
@@ -162,7 +227,7 @@ void page_loop_dec(){
 
  void init_sequencer_controls(){
 
-	bpm = 120;
+	bpm = 240;
 
 	A_seq = 0;
 	B_seq = 0;
@@ -381,7 +446,6 @@ void page_loop_dec(){
 	 //check if Aux Encoder 1 was rotated
 	 if ( (status & PIO_ISR_P0) || (status & PIO_ISR_P1) ){
 		 control_direction(PIO_ODSR_P0, PIO_ODSR_P1, 0);
-		 update_timers(bpm);
 	 }
 
 	 else if ( (status & PIO_ISR_P2) ){

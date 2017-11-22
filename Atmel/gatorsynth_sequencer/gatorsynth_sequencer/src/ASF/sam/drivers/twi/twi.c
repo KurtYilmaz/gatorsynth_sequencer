@@ -332,7 +332,7 @@ uint32_t twi_master_read(Twi *p_twi, twi_packet_t *p_packet)
  */
 uint32_t twi_master_write(Twi *p_twi, twi_packet_t *p_packet)
 {
-	//cpu_irq_disable();
+	cpu_irq_disable();
 
 	uint32_t status;
 	uint32_t cnt = p_packet->length;
@@ -355,12 +355,12 @@ uint32_t twi_master_write(Twi *p_twi, twi_packet_t *p_packet)
 	while (cnt > 0) {
 		status = p_twi->TWI_SR;
 		if (status & TWI_SR_NACK) {
-			return TWI_RECEIVE_NACK;
-		}
+ 			return TWI_RECEIVE_NACK;
+ 		}
 
 		if (!(status & TWI_SR_TXRDY)) {
-			continue;
-		}
+ 			continue;
+ 		}
 		p_twi->TWI_THR = *buffer++;
 
 		cnt--;
@@ -375,6 +375,7 @@ uint32_t twi_master_write(Twi *p_twi, twi_packet_t *p_packet)
 		if (status & TWI_SR_TXRDY) {
 			break;
 		}
+
 	}
 
 	p_twi->TWI_CR = TWI_CR_STOP;
@@ -382,7 +383,7 @@ uint32_t twi_master_write(Twi *p_twi, twi_packet_t *p_packet)
 	while (!(p_twi->TWI_SR & TWI_SR_TXCOMP)) {
 	}
 
-	//cpu_irq_enable();
+	cpu_irq_enable();
 
 	return TWI_SUCCESS;
 }

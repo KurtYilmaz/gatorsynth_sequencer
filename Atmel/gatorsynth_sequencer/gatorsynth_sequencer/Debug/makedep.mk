@@ -12,6 +12,8 @@ src\displays.c
 
 src\encoders.c
 
+src\fonts.c
+
 src\leds.c
 
 src\sequencer.c

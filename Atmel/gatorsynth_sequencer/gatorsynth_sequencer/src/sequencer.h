@@ -19,6 +19,9 @@ uint8_t patterns_out[4];
 #define CHANNEL_3 2
 #define CHANNEL_4 3
 
+uint8_t res_to_int(uint8_t res);
+void res_inc(void);
+void res_dec(void);
 void bpm_inc(void);
 void bpm_dec(void);
 void display_page_inc(void);

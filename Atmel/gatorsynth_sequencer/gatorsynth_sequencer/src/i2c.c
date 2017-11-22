@@ -28,11 +28,23 @@
 	REG_PIOB_IFSCER |= PIO_IFSCER_P10; //turn on slow clock debounce
 	REG_PIOB_IFER |= PIO_IFER_P10;	//start debounce filter
 
+	//Set up PB11 as Encoder IO Expander Input
+	REG_PIOB_PER |= PIO_PER_P11; //enable PIO controller
+	REG_PIOB_ODR |= PIO_ODR_P11; //disable output
+	REG_PIOB_PPDDR |= PIO_PPDDR_P11; //disable pull-down resistor
+	REG_PIOB_PUER |= PIO_PUER_P11;	//enable pull-up resistor
+	REG_PIOB_IFSCER |= PIO_IFSCER_P11; //turn on slow clock debounce
+	REG_PIOB_IFER |= PIO_IFER_P11;	//start debounce filter
+
 	uint32_t flag_clear = REG_PIOB_ISR;	//clear left over interrupt flags
 
 	//Enable interrupts for PB10
 	REG_PIOB_IER |= PIO_IER_P10;			//enable falling edge change interrupt
 	REG_PIOB_FELLSR |= PIO_FELLSR_P10;
+
+	//Enable interrupts for PB10
+	REG_PIOB_IER |= PIO_IER_P11;			//enable falling edge change interrupt
+	REG_PIOB_FELLSR |= PIO_FELLSR_P11;
 
 	NVIC_EnableIRQ(PIOB_IRQn);
 

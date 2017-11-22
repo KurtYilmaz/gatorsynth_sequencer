@@ -185,6 +185,7 @@
       <ToolOptions>
         <InterfaceProperties>
           <JtagDbgClock>7500000</JtagDbgClock>
+          <SwdClock>2000000</SwdClock>
         </InterfaceProperties>
         <InterfaceName>
         </InterfaceName>
@@ -441,6 +442,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\encoders.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\fonts.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\fonts.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\leds.c">

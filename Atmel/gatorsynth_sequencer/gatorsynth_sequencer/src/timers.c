@@ -14,6 +14,7 @@
  #include "notes.h"
  #include "sequencer.h"
  #include "adc.h"
+ #include "displays.h"
 
  uint8_t test = 0;
 
@@ -97,7 +98,7 @@
 // 	// Offset is needed, possible not with the crystals working
 // 	REG_TC0_RC0 = (uint16_t)(960000/bpm - 420);
 	if(bpm > 1) {
-		REG_TC0_RC0 = (uint16_t)(75000/bpm);
+		REG_TC0_RC0 = (uint16_t)(75000/(bpm*res_to_int(resolution)));
 	}
 
  }
@@ -111,7 +112,7 @@
 		overflow_count += 1;
 
 		//turn off gates for each channel
-		if (overflow_count == note_length){
+		if (overflow_count == 2000){ //note_length
 			DAC_write_gate_off(CHANNEL_1);
 			DAC_write_gate_off(CHANNEL_2);
 			DAC_write_gate_off(CHANNEL_3);

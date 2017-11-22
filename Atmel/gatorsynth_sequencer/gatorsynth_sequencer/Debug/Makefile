@@ -83,6 +83,7 @@ C_SRCS +=  \
 ../src/dac.c \
 ../src/displays.c \
 ../src/encoders.c \
+../src/fonts.c \
 ../src/leds.c \
 ../src/sequencer.c \
 ../src/spi.c \
@@ -114,6 +115,7 @@ src/ASF/sam/drivers/twi/twi.o \
 src/dac.o \
 src/displays.o \
 src/encoders.o \
+src/fonts.o \
 src/leds.o \
 src/sequencer.o \
 src/spi.o \
@@ -138,6 +140,7 @@ src/ASF/sam/drivers/twi/twi.o \
 src/dac.o \
 src/displays.o \
 src/encoders.o \
+src/fonts.o \
 src/leds.o \
 src/sequencer.o \
 src/spi.o \
@@ -162,6 +165,7 @@ src/ASF/sam/drivers/twi/twi.d \
 src/dac.d \
 src/displays.d \
 src/encoders.d \
+src/fonts.d \
 src/leds.d \
 src/sequencer.d \
 src/spi.d \
@@ -186,6 +190,7 @@ src/ASF/sam/drivers/twi/twi.d \
 src/dac.d \
 src/displays.d \
 src/encoders.d \
+src/fonts.d \
 src/leds.d \
 src/sequencer.d \
 src/spi.d \
@@ -219,6 +224,8 @@ LINKER_SCRIPT_DEP+=  \
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 

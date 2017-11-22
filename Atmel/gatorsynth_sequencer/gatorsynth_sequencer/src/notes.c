@@ -11,7 +11,7 @@
  #include "timers.h"
  #include "sequencer.h"
 
- #define Base 0
+ #define Base 3
 
  //Octave 1
  #define C0 (Base)
@@ -237,76 +237,77 @@ void notes_inc(uint8_t step){
 // 		patterns[curr_pattern][display_page][step][0]++;
 // 	}
 
-	patterns[curr_pattern][display_page][0][0] = 48; //C4
-	patterns[curr_pattern][display_page][1][0] = 49; //C4
-	patterns[curr_pattern][display_page][2][0] = 50; //C4
-	patterns[curr_pattern][display_page][3][0] = 51; //C4
-	patterns[curr_pattern][display_page][4][0] = 52; //C4
-	patterns[curr_pattern][display_page][5][0] = 53; //C4
-	patterns[curr_pattern][display_page][6][0] = 54; //C4
-	patterns[curr_pattern][display_page][7][0] = 55; //C4
+	patterns[curr_pattern][display_page][0][0] = 60; //C5
+	patterns[curr_pattern][display_page][1][0] = 60; //C5
+	patterns[curr_pattern][display_page][2][0] = 62; //D5
+	patterns[curr_pattern][display_page][3][0] = 64; //E5
+	patterns[curr_pattern][display_page][4][0] = 67; //G5
+	patterns[curr_pattern][display_page][5][0] = 67; //G5
+	patterns[curr_pattern][display_page][6][0] = 67; //G5
+	patterns[curr_pattern][display_page][7][0] = 64; //E5
 
-	patterns[curr_pattern][display_page][8][0] = 60; //C5
-	patterns[curr_pattern][display_page][9][0] = 59; //C5
-	patterns[curr_pattern][display_page][10][0] = 58; //C5
-	patterns[curr_pattern][display_page][11][0] = 57; //C5
-	patterns[curr_pattern][display_page][12][0] = 56; //C5
-	patterns[curr_pattern][display_page][13][0] = 55; //C5
-	patterns[curr_pattern][display_page][14][0] = 54; //C5
-	patterns[curr_pattern][display_page][15][0] = 63; //C5
+	patterns[curr_pattern][display_page][8][0] = 64; //F5
+	patterns[curr_pattern][display_page][9][0] = 64; //E5
+	patterns[curr_pattern][display_page][10][0] = 60; //C5
+	patterns[curr_pattern][display_page][11][0] = 55; //G4
+	patterns[curr_pattern][display_page][12][0] = 55; //G4
+	patterns[curr_pattern][display_page][13][0] = 55; //G4
+	patterns[curr_pattern][display_page][14][0] = 57; //A4
+	patterns[curr_pattern][display_page][15][0] = 59; //B4
 
 	patterns[curr_pattern][display_page][0][1] = 1;
 	patterns[curr_pattern][display_page][1][1] = 1;
 	patterns[curr_pattern][display_page][2][1] = 1;
 	patterns[curr_pattern][display_page][3][1] = 1;
-	patterns[curr_pattern][display_page][4][1] = 1;
+	patterns[curr_pattern][display_page][4][1] = 0;
 	patterns[curr_pattern][display_page][5][1] = 1;
-	patterns[curr_pattern][display_page][6][1] = 1;
+	patterns[curr_pattern][display_page][6][1] = 0;
 	patterns[curr_pattern][display_page][7][1] = 1;
 
 	patterns[curr_pattern][display_page][8][1] = 1;
 	patterns[curr_pattern][display_page][9][1] = 1;
 	patterns[curr_pattern][display_page][10][1] = 1;
 	patterns[curr_pattern][display_page][11][1] = 1;
-	patterns[curr_pattern][display_page][12][1] = 1;
+	patterns[curr_pattern][display_page][12][1] = 0;
 	patterns[curr_pattern][display_page][13][1] = 1;
 	patterns[curr_pattern][display_page][14][1] = 1;
 	patterns[curr_pattern][display_page][15][1] = 1;
 
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][0] = 71; //C4
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][0] = 72; //C4
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][0] = 73; //C4
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][0] = 74; //C4
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][0] = 75; //C4
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][0] = 76; //C4
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][0] = 77; //C4
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][0] = 78; //C4
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][0] = 28; //E2
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][0] = 28; //E2
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][0] = 28; //E2
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][0] = 0; //REST
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][0] = 28; //E2
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][0] = 28; //E2
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][0] = 28; //E2
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][0] = 0; //REST
 
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][0] = 79; //C5
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][0] = 80; //C5
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][0] = 81; //C5
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][0] = 82; //C5
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][0] = 83; //C5
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][0] = 84; //C5
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][0] = 85; //C5
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][0] = 86; //C5
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][0] = 25; //C2_SH
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][0] = 0; //REST
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][0] = 0; //REST
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][0] = 25; //C2_SH
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][0] = 25; //C2_SH
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][0] = 28; //E2
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][0] = 0; //REST
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][0] = 28; //E2
+
 
 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][1] = 1;
 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][1] = 1;
 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][1] = 0;
 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][1] = 1;
 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][1] = 1;
 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][1] = 0;
 
 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][1] = 0;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][1] = 0;
 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][1] = 1;
 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][1] = 1;
 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][1] = 1;
-	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][1] = 0;
 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][1] = 1;
 }
 
@@ -314,6 +315,79 @@ void notes_dec(uint8_t step){
 	if (patterns[curr_pattern][display_page][step][0] > 0){
 		patterns[curr_pattern][display_page][step][0]--;
 	}
+
+	patterns[curr_pattern][display_page][0][0] = 60; //C5
+	patterns[curr_pattern][display_page][1][0] = 60; //C5
+	patterns[curr_pattern][display_page][2][0] = 62; //D5
+	patterns[curr_pattern][display_page][3][0] = 64; //E5
+	patterns[curr_pattern][display_page][4][0] = 67; //G5
+	patterns[curr_pattern][display_page][5][0] = 67; //G5
+	patterns[curr_pattern][display_page][6][0] = 67; //G5
+	patterns[curr_pattern][display_page][7][0] = 64; //E5
+
+	patterns[curr_pattern][display_page][8][0] = 64; //F5
+	patterns[curr_pattern][display_page][9][0] = 64; //E5
+	patterns[curr_pattern][display_page][10][0] = 60; //C5
+	patterns[curr_pattern][display_page][11][0] = 55; //G4
+	patterns[curr_pattern][display_page][12][0] = 55; //G4
+	patterns[curr_pattern][display_page][13][0] = 55; //G4
+	patterns[curr_pattern][display_page][14][0] = 57; //A4
+	patterns[curr_pattern][display_page][15][0] = 59; //B4
+
+	patterns[curr_pattern][display_page][0][1] = 1;
+	patterns[curr_pattern][display_page][1][1] = 1;
+	patterns[curr_pattern][display_page][2][1] = 1;
+	patterns[curr_pattern][display_page][3][1] = 1;
+	patterns[curr_pattern][display_page][4][1] = 0;
+	patterns[curr_pattern][display_page][5][1] = 1;
+	patterns[curr_pattern][display_page][6][1] = 0;
+	patterns[curr_pattern][display_page][7][1] = 1;
+
+	patterns[curr_pattern][display_page][8][1] = 1;
+	patterns[curr_pattern][display_page][9][1] = 1;
+	patterns[curr_pattern][display_page][10][1] = 1;
+	patterns[curr_pattern][display_page][11][1] = 1;
+	patterns[curr_pattern][display_page][12][1] = 0;
+	patterns[curr_pattern][display_page][13][1] = 1;
+	patterns[curr_pattern][display_page][14][1] = 1;
+	patterns[curr_pattern][display_page][15][1] = 1;
+
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][0] = 28; //E2
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][0] = 28; //E2
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][0] = 28; //E2
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][0] = 0; //REST
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][0] = 28; //E2
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][0] = 28; //E2
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][0] = 28; //E2
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][0] = 0; //REST
+
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][0] = 25; //C2_SH
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][0] = 0; //REST
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][0] = 0; //REST
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][0] = 25; //C2_SH
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][0] = 25; //C2_SH
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][0] = 28; //E2
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][0] = 0; //REST
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][0] = 28; //E2
+
+
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][1] = 0;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][1] = 0;
+
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][1] = 0;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][1] = 0;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][1] = 1;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][1] = 0;
+	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][1] = 1;
 }
  
  
