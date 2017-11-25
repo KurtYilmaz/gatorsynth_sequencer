@@ -231,6 +231,15 @@ void notes_status_set(uint8_t display_page, int leds_status[]){
 
 }
 
+void notes_clear(uint8_t curr_pattern){
+	for (int i = 0; i < 16; i++){
+		for (int j = 0; j < 16; j++){
+			patterns[curr_pattern][i][j][0] = 48; //set note to C4
+			patterns[curr_pattern][i][j][1]= 0;	  //turn notes all OFF
+		}
+	}
+}
+
 
 void notes_inc(uint8_t step){
 	if (patterns[curr_pattern][display_page][step][0] < 120){

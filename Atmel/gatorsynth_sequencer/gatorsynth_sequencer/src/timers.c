@@ -16,7 +16,6 @@
  #include "adc.h"
  #include "displays.h"
 
- uint8_t test = 0;
 
  void timers_init(void) {
 
@@ -25,7 +24,7 @@
 	refresh_overflow_count = 0;
 	resolution = 2;
 	display_page = 0;
-	page_loop = 1;
+	page_loop = 0;
 	curr_step = 0;
 	curr_page = 0;
 	curr_pattern = 0;
@@ -45,6 +44,11 @@
 	page_loop_ch[2] = 0;
 	page_loop_ch[3] = 0;
 
+	channel_mute[0] = 0;
+	channel_mute[1] = 0;
+	channel_mute[2] = 0;
+	channel_mute[3] = 0;
+
 
 	// T0 is used for stepping
 	// T1 is used for 2 sec timer
@@ -59,7 +63,7 @@
 	
 	// Enable peripheral clock for TC1
 	// Peripheral ID (PID) for TC1 is 24
-	// REG_PMC_PCER0 |= PMC_PCER0_PID24;
+	REG_PMC_PCER0 |= PMC_PCER0_PID24;
 
 	// Links timer clock to Master clock / 32 = 3.125 MHz
 	// 3.125 MHz = 62500 ticks @ 50 BPM (without handling overflows)
@@ -92,13 +96,14 @@
 	// REG_TC0_RC2 = 3255;
 
 	// For the interrupt
-// 	REG_PIOA_PER |= PIO_PER_P20; //enable PIO controller on PA11
+// 	REG_PIOA_PER |= PIO_PER_
+0; //enable PIO controller on PA11
 // 	REG_PIOA_OER |= PIO_PER_P20; //enable output on pin PA11
 	/*REG_PMC_PCER0 |= PMC_PCER0_PID11; //Enable PMC control for PA11*/
 
 	// TC0 control register enables timer and triggers it to start
 	REG_TC0_CCR0 |= TC_CCR_CLKEN | TC_CCR_SWTRG;
-	REG_TC0_CCR1 |= TC_CCR_CLKEN | TC_CCR_SWTRG;
+//	REG_TC0_CCR1 |= TC_CCR_CLKEN | TC_CCR_SWTRG;
 //	REG_TC0_CCR2 |= TC_CCR_CLKEN | TC_CCR_SWTRG;
  }
 
@@ -121,7 +126,7 @@
 		overflow_count ++;
 
 		//turn off gates for each channel
-		if (overflow_count == 2000){ //note_length
+		if (overflow_count == note_length){ //note_length
 			DAC_write_gate_off(CHANNEL_1);
 			DAC_write_gate_off(CHANNEL_2);
 			DAC_write_gate_off(CHANNEL_3);
@@ -129,7 +134,7 @@
 		}
  }
 
-	 if(overflow_count >= 10000) {
+	 if(overflow_count >= 40000) {
 
 		 if (curr_step == 15){
 			 //increment to next page or go back to first page
@@ -170,16 +175,16 @@
 		 DAC_write_cv(notes_get(curr_step, CHANNEL_4), CHANNEL_4);
 
 		 //update the gates for each channel
-		 if (notes_status_get(curr_step, CHANNEL_1) == 1){
+		 if ( (notes_status_get(curr_step, CHANNEL_1) == 1) && channel_mute[CHANNEL_1] == 0){
 			 DAC_write_gate_on(CHANNEL_1);
 		 }
-		 if (notes_status_get(curr_step, CHANNEL_2) == 1){
+		 if ( (notes_status_get(curr_step, CHANNEL_2) == 1) && channel_mute[CHANNEL_2] == 0){
 			 DAC_write_gate_on(CHANNEL_2);
 		 }
-		 if (notes_status_get(curr_step, CHANNEL_3) == 1){
+		 if ( (notes_status_get(curr_step, CHANNEL_3) == 1) && channel_mute[CHANNEL_3] == 0){
 			 DAC_write_gate_on(CHANNEL_3);
 		 }
-		 if (notes_status_get(curr_step, CHANNEL_4) == 1){
+		 if ( (notes_status_get(curr_step, CHANNEL_4) == 1) && channel_mute[CHANNEL_4] == 0){
 			 DAC_write_gate_on(CHANNEL_4);
 		 }
 	
@@ -193,29 +198,9 @@
 	}
 
 	if (note_overflow_count >= 10000){
+		pattern_clr = 0;
 		note_overflow_count = 0;
-		test++;
+		REG_TC0_CCR1 |= TC_CCR_CLKDIS;
+		pattern_display(curr_pattern);
 	}
-
-// Display refresh timer
-// 	if((REG_TC0_SR2 & TC_SR_CPCS) >= 1) {
-// 		refresh_overflow_count++;
-// 	}
-// 
-// 	if(refresh_overflow_count >= 3255) {
-// 		// update displays
-// 	}
-
- }
-
-//   void TC1_Handler(){
-
-// 	 if((REG_TC1_SR0 & TC_SR_CPCS) >= 0) {
-  // 		display_overflow_count++;
-  // 	 }
-  // 
-  // 	if (display_overflow_count >= 10000){
-  // 		display_overflow_count = 0;
-  // 	}
-  // 
-  //   }
+}

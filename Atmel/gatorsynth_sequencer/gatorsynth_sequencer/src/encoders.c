@@ -14,9 +14,10 @@
 #include <stdbool.h>
 #include "notes.h"
 #include "timers.h"
+#include "sequencer.h"
 
-uint8_t A_seq;
-uint8_t B_seq;
+// uint8_t A_seq;
+// uint8_t B_seq;
 
  void encoder_direction(uint32_t A, uint32_t B, uint8_t step){
 
@@ -383,9 +384,9 @@ void Encoder_init(){
 
 	//Enable interrupts for Encoder 6
 	REG_PIOC_IER |= PIO_IER_P10;			//enable input rising edge interrupt
-	REG_PIOC_REHLSR |= PIO_REHLSR_P10;
+	//REG_PIOC_REHLSR |= PIO_REHLSR_P10;
 	REG_PIOC_IER |= PIO_IER_P11;			//enable input rising edge interrupt
-	REG_PIOC_REHLSR |= PIO_REHLSR_P11;
+	//REG_PIOC_REHLSR |= PIO_REHLSR_P11;
 
 	//Enable interrupts for Encoder 7
 	REG_PIOC_IER |= PIO_IER_P3;			//enable input rising edge interrupt

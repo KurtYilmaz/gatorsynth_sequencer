@@ -29,6 +29,7 @@ uint8_t curr_pattern;
 uint8_t curr_page_ch[4];
 uint8_t curr_pattern_ch[4];
 uint8_t page_loop_ch[4];
+uint8_t channel_mute[4];
 
 //defines page displayed on buttons instead of what's actually playing
 uint8_t display_page;

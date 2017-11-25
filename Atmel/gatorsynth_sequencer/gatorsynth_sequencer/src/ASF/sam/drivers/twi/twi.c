@@ -332,7 +332,7 @@ uint32_t twi_master_read(Twi *p_twi, twi_packet_t *p_packet)
  */
 uint32_t twi_master_write(Twi *p_twi, twi_packet_t *p_packet)
 {
-	cpu_irq_disable();
+	//cpu_irq_disable();
 
 	uint32_t status;
 	uint32_t cnt = p_packet->length;
@@ -383,7 +383,7 @@ uint32_t twi_master_write(Twi *p_twi, twi_packet_t *p_packet)
 	while (!(p_twi->TWI_SR & TWI_SR_TXCOMP)) {
 	}
 
-	cpu_irq_enable();
+	//cpu_irq_enable();
 
 	return TWI_SUCCESS;
 }

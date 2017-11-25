@@ -332,7 +332,7 @@ uint8_t curr_display = 7;
 	}
  }
 
- void display_number(uint32_t input, uint8_t font_size, uint8_t d_id) {
+ void display_number(uint16_t input, uint8_t font_size, uint8_t d_id) {
 	int buffersize = 0;
     char buffer[8];
 
@@ -460,14 +460,34 @@ void page_display(uint8_t page) {
 	finish_display(3);
 }
 
+void loop_display(uint8_t page_loop) {
+	display_char('L', 28, 3);
+	display_char('O', 28, 3);
+	display_char('O', 28, 3);
+	display_char('P', 28, 3);
+	display_char(':', 28, 3);
+	display_number(page_loop, 28, 3);
+	finish_display(3);
+}
+
 // Display 4
 void pattern_display(uint8_t pattern) {
-	display_char('P', 18, 4);
-	display_char('T', 18, 4);
-	display_char('R', 18, 4);
-	display_char('N', 18, 4);
-	display_char(':', 18, 4);
-	display_number(pattern, 18, 4);
+	display_char('P', 28, 4);
+	display_char('T', 28, 4);
+	display_char('R', 28, 4);
+	display_char('N', 28, 4);
+	display_char(':', 28, 4);
+	display_number(pattern, 28, 4);
+	finish_display(4);
+}
+
+void clr_pattern_display(uint8_t pattern) {
+	display_char('C', 28, 4);
+	display_char('L', 28, 4);
+	display_char('R', 28, 4);
+	display_char(':', 28, 4);
+	display_number(pattern, 28, 4);
+	display_char('?', 28, 4);
 	finish_display(4);
 }
 

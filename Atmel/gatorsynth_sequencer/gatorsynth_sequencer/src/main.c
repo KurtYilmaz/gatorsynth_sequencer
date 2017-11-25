@@ -14,10 +14,12 @@
 #include <twi.h>
 
 uint8_t brightness = 0x07;
-uint8_t count = 0;
+uint8_t button_count = 0;
+uint8_t encoder_count = 0;
 
 
-uint8_t port_data[2] = {0};
+uint8_t button_port_data[2] = {0};
+uint8_t encoder_port_data[2] = {0};
 uint8_t temp_data[2] = {0};
 
 #define BOARD_ID_TWI    ID_TWI0
@@ -34,36 +36,27 @@ int main (void)
 	WDT->WDT_MR = WDT_MR_WDDIS; //disable watchdog timer
 
 	board_init();				//board init (currently empty)
-	init_sequencer_controls();
-
+	
 	SPI_led_init();
-	leds_update_display();
-	
-	timers_init();				//initiate timer for Flashing LED on PA20
-	update_timers(bpm);
-	
+	i2c_init();
+	init_IO_int();
+	timers_init();
 	ADC_init();
 	Encoder_init();				//initialize encoders
-
-	i2c_init();
-	//notes_inc(5);
-	
-
-	init_IO_int();
-	config_MAX7314();
-	read_button_MAX7314(port_data);
 	all_displays_init();
-	//note_display(5);
-	//bpm_display(bpm);
-	page_display(display_page);
+	init_sequencer_controls();
+
+	leds_update_display();
+	update_timers(bpm);
+	config_MAX7314();
+	read_button_MAX7314(button_port_data);
+
+	bpm_display(bpm);
+
 
 	while (1)
 	{
-	//read_MAX7314(port_data);
-	//config_MAX7314();
-	//delay_us(10);
-	//note_display(5);
-	//page_display(display_page);
+	
 	}
 }
 
@@ -76,13 +69,13 @@ int main (void)
 		read_button_MAX7314(temp_data);
 
 		if  ( !((temp_data[0] == 255) && (temp_data[1] == 255)) ){
-			port_data[0] = temp_data[0];
-			port_data[1] = temp_data[1];
+			button_port_data[0] = temp_data[0];
+			button_port_data[1] = temp_data[1];
 
-			count++;
-			if (count >= 2){
-				led_toggle(port_data[0], port_data[1]);
-				count = 0;
+			button_count++;
+			if (button_count >= 2){
+				led_toggle(button_port_data[0], button_port_data[1]);
+				button_count = 0;
 			}
 		}
 		
@@ -90,7 +83,17 @@ int main (void)
 
 	 else if (status & PIO_ISR_P11) {
 		read_encoder_MAX7314(temp_data);
-		read_encoder_MAX7314(temp_data);
+		
+		if  ( !((temp_data[0] == 255) && (temp_data[1] == 255)) ){
+			encoder_port_data[0] = temp_data[0];
+			encoder_port_data[1] = temp_data[1];
+
+			encoder_count++;
+			if (encoder_count >= 2){
+				aux_toggle(encoder_port_data[0], encoder_port_data[1]);
+				encoder_count = 0;
+			}
+		}
 	 }
 
  }

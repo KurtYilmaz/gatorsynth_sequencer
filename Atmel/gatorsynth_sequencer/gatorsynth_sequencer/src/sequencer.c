@@ -13,9 +13,8 @@
  #include "timers.h"
  #include "sequencer.h"
  #include "displays.h"
-
- uint8_t A_seq;
- uint8_t B_seq;
+ #include "notes.h"
+ #include "dac.h"
 
 
  void control_direction(uint32_t A, uint32_t B, uint8_t aux_control){
@@ -43,15 +42,19 @@
 			bpm_display(bpm);
 		}
 		else if (aux_control == 1){
-			/* resolution UP */
 			res_inc();
 			update_timers(bpm);
 			res_display(res_to_int(resolution));
-			//page_loop_inc();
 		}
 		else if (aux_control == 2){
-			display_page_inc();
-			page_display(display_page);
+			if (page_or_loop == 0){
+				display_page_inc();
+				page_display(display_page);
+			}
+			else if (page_or_loop == 1){
+				page_loop_inc();
+				loop_display(page_loop);
+			}
 		}
 		else if (aux_control == 3){
 			pattern_inc();
@@ -84,15 +87,19 @@
 			bpm_display(bpm);
 		}
 		else if (aux_control == 1){
-			/* resolution DOWN */
 			res_dec();
 			update_timers(bpm);
 			res_display(res_to_int(resolution));
-			//page_loop_dec();
 		}
 		else if (aux_control == 2){
-			display_page_dec();
-			page_display(display_page);
+			if (page_or_loop == 0){
+				display_page_dec();
+				page_display(display_page);
+			}
+			else if (page_or_loop == 1){
+				page_loop_dec();
+				loop_display(page_loop);
+			}
 		}
 		else if (aux_control == 3){
 			pattern_dec();
@@ -165,14 +172,29 @@ void res_dec(){
 }
 
  void bpm_inc(){
-	if (bpm < 999){
-		bpm++;
+	if ( (bpm + bpm_adjust) <= 999){
+		bpm = bpm + bpm_adjust;
 	}
 }
 
  void bpm_dec(){
-	if (bpm > 20){
-		bpm--;
+	if ( (bpm - bpm_adjust) >= 20){
+		bpm = bpm - bpm_adjust;
+	}
+}
+
+void bpm_toggle(){
+	if (bpm_adjust == 1){
+		bpm_adjust = 5;
+	}
+	else if (bpm_adjust == 5){
+		bpm_adjust = 10;
+	}
+	else if (bpm_adjust == 10){
+		bpm_adjust = 20;
+	}
+	else if (bpm_adjust == 20){
+		bpm_adjust = 1;
 	}
 }
 
@@ -224,10 +246,101 @@ void page_loop_dec(){
 	}
 }
 
+void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
+
+	switch(aux_encoders) {
+		case 254 :
+			//change bpm inc/dec scale
+			bpm_toggle();
+			break;
+		case 253 :
+			//toggle resolution or scale?
+			break;
+		case 251 :
+			//toggle between page & loop variables
+			page_or_loop = abs(page_or_loop - 1);
+			if (page_or_loop == 0){
+				page_display(display_page);
+			}
+			else if (page_or_loop == 1){
+				loop_display(page_loop);
+			}
+			break;
+		case 247 :
+			if (pattern_clr == 0){
+				pattern_clr = 1;					//set pattern clear
+				REG_TC0_CCR1 |= TC_CCR_CLKEN | TC_CCR_SWTRG;		//start 2 sec timer
+				clr_pattern_display(curr_pattern);	//output clear message to display
+			}
+			else if (pattern_clr == 1){
+				note_overflow_count = 0;			//reset timer counter
+				pattern_clr = 0;					//reset clear variable
+				REG_TC0_CCR1 |= TC_CCR_CLKDIS;		//disable timer counter
+				notes_clear(curr_pattern);			//clear the current pattern
+				pattern_display(curr_pattern);		//return display to default
+			}
+			break;
+		case 239 :
+			channel_mute[CHANNEL_1] = abs(channel_mute[CHANNEL_1] - 1);
+			DAC_write_gate_off(CHANNEL_1);
+			break;
+		case 223 :
+			channel_mute[CHANNEL_2] = abs(channel_mute[CHANNEL_2] - 1);
+			DAC_write_gate_off(CHANNEL_2);
+			break;
+		case 191 :
+			channel_mute[CHANNEL_3] = abs(channel_mute[CHANNEL_3] - 1);
+			DAC_write_gate_off(CHANNEL_3);
+			break;
+		case 127 :
+			channel_mute[CHANNEL_4] = abs(channel_mute[CHANNEL_4] - 1);
+			DAC_write_gate_off(CHANNEL_4);
+			break;
+		default :
+			break;
+	}
+
+	switch(button_row) {
+		case 254 :
+			
+			break;
+		case 253 :
+			
+			break;
+		case 251 :
+			
+			break;
+		case 247 :
+			
+			break;
+		case 239 :
+			
+			break;
+		case 223 :
+		
+			break;
+		case 191 :
+			
+			break;
+		case 127 :
+			
+			break;
+		default :
+			break;
+
+}
+}
+
 
  void init_sequencer_controls(){
 
-	bpm = 240;
+	bpm = 120;
+	bpm_adjust = 1;
+
+	page_or_loop = 0;
+	pattern_clr = 0;
+	pause = 0;
+	pause_count = 0;
 
 	A_seq = 0;
 	B_seq = 0;
@@ -235,6 +348,16 @@ void page_loop_dec(){
 	//enable clock for PIOA
 	REG_PMC_PCER0 |= PMC_PCER0_PID11;
 
+	/**************			CONFIGURE PAUSE/PLAY BUTTON				**************/
+	//set up PA2 as pause/play interrupt pin
+	REG_PIOA_PER |= PIO_PER_P2; //enable PIO controller
+	REG_PIOA_ODR |= PIO_ODR_P2; //disable output
+	REG_PIOA_PPDDR |= PIO_PPDDR_P2; //disable pull-down resistor
+	REG_PIOA_PUER |= PIO_PUER_P2;	//enable pull-up resistor
+
+	//set PA18 as pause/play LED output
+	REG_PIOA_OER |= PIO_OER_P18;
+	REG_PIOA_SODR |= PIO_SODR_P18; 
 
 	/**************			CONFIGURE 8 STEP AUX ENCODERS			**************/
 
@@ -385,6 +508,12 @@ void page_loop_dec(){
 
 	uint32_t flag_clear = REG_PIOA_ISR;	//clear left over interrupt flags
 
+	//configure interrupt for pause/play button
+	REG_PIOA_IER |= PIO_IER_P2;			//enable input rising edge interrupt
+	REG_PIOA_FELLSR |= PIO_FELLSR_P2;
+	REG_PIOA_IFSCER |= PIO_IFSCER_P2; //turn on slow clock debounce
+	REG_PIOA_IFER |= PIO_IFER_P2;	//start debounce filter
+
 	//Enable interrupts for Aux Encoder 0
 	REG_PIOA_IER |= PIO_IER_P0;			//enable input rising edge interrupt
 	REG_PIOA_REHLSR |= PIO_REHLSR_P0;
@@ -447,9 +576,30 @@ void page_loop_dec(){
 	 if ( (status & PIO_ISR_P0) || (status & PIO_ISR_P1) ){
 		 control_direction(PIO_ODSR_P0, PIO_ODSR_P1, 0);
 	 }
-
+	 
+	 //check if Pause/Play button was pushed
 	 else if ( (status & PIO_ISR_P2) ){
-		/************** PLAY / PAUSE INT****************/
+		pause_count++;
+		if (pause_count == 2){
+			if (pause == 0){
+				REG_PIOA_CODR |= PIO_CODR_P18;
+				pause = 1;
+
+				DAC_write_gate_off(CHANNEL_1);
+				DAC_write_gate_off(CHANNEL_2);
+				DAC_write_gate_off(CHANNEL_3);
+				DAC_write_gate_off(CHANNEL_4);
+
+				overflow_count = 0;	
+				REG_TC0_CCR0 |= TC_CCR_CLKDIS;
+			}
+			else if (pause == 1){
+				REG_PIOA_SODR |= PIO_SODR_P18; 
+				pause = 0;
+				REG_TC0_CCR0 |= TC_CCR_CLKEN | TC_CCR_SWTRG;
+			}
+			pause_count= 0;
+		}
 	 }
 
 	 //check if Aux Encoder 2 was rotated

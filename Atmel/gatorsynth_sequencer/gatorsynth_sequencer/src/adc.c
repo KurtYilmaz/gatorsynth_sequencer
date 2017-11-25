@@ -16,7 +16,7 @@
 
  void ADC_init(){
 
-	note_length = 5000;
+	note_length = 20000;
 
 	//enable peripheral clock for ADC
 	REG_PMC_PCER0 |= PMC_PCER0_PID29;
@@ -41,16 +41,16 @@
   void convert_NoteLength(uint32_t DAC_data){
 
 	  //get note length as a proportion of the overflow count of the timer
-	  float note_float = 10000*(((float)DAC_data)/1023);
+	  float note_float = 40000*(((float)DAC_data)/1023);
 	  note_length = (uint16_t) note_float;
 
 	  //in case of over flow from offset
-	  if (note_length > 9000){
-		note_length = 9000;
-	  }
-	  else if (note_length < 1000){
-		note_length = 1000;
-	  }
+// 	  if (note_length > 9000){
+// 		note_length = 9000;
+// 	  }
+// 	  else if (note_length < 1000){
+// 		note_length = 1000;
+// 	  }
 
   }
 
