@@ -62,11 +62,38 @@
 // From module: Delay routines
 #include <delay.h>
 
+// From module: FreeRTOS - PDC Interface Layer
+#include <freertos_peripheral_control.h>
+#include <freertos_peripheral_control_private.h>
+
+// From module: FreeRTOS - SPI Interface Layer
+#include <freertos_spi_master.h>
+
+// From module: FreeRTOS - TWI Interface Layer
+#include <freertos_twi_master.h>
+
+// From module: FreeRTOS mini Real-Time Kernel
+#include <FreeRTOS.h>
+#include <FreeRTOS_CLI.h>
+#include <StackMacros.h>
+#include <croutine.h>
+#include <list.h>
+#include <mpu_wrappers.h>
+#include <portable.h>
+#include <projdefs.h>
+#include <queue.h>
+#include <semphr.h>
+#include <task.h>
+#include <timers.h>
+
 // From module: Generic board support
 #include <board.h>
 
 // From module: Interrupt management - SAM implementation
 #include <interrupt.h>
+
+// From module: PDC - Peripheral DMA Controller Example
+#include <pdc.h>
 
 // From module: PMC - Power Management Controller
 #include <pmc.h>
@@ -78,8 +105,21 @@
 // From module: SAM4N startup code
 #include <exceptions.h>
 
+// From module: SPI - SAM Implementation
+#include <spi_master.h>
+#include <spi_master.h>
+
+// From module: SPI - Serial Peripheral Interface
+#include <spi.h>
+
 // From module: System Clock Control - SAM4N implementation
 #include <sysclk.h>
+
+// From module: TWI - Two-Wire Interface - SAM implementation
+#include <sam_twi/twi_master.h>
+#include <sam_twi/twi_slave.h>
+#include <twi_master.h>
+#include <twi_slave.h>
 
 // From module: TWI - Two-wire Interface
 #include <twi.h>
