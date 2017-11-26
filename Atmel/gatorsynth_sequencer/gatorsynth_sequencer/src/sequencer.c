@@ -53,12 +53,23 @@
 			}
 			else if (page_or_loop == 1){
 				page_loop_inc();
-				loop_display(page_loop);
+				loop_display(patterns_loop[curr_pattern]);
 			}
 		}
 		else if (aux_control == 3){
-			pattern_inc();
-			pattern_display(curr_pattern);
+			if(pattern_clr == 1) {
+				clr_yes = ~clr_yes;
+				if(clr_yes) {
+					clr_pattern_display(curr_pattern, 1);
+				}
+				else {
+					clr_pattern_display(curr_pattern, 0);
+				}
+			}
+			else {
+				pattern_inc();
+				pattern_display(curr_pattern);
+			}
 		}
 		else if (aux_control == 4){
 			pattern_up(CHANNEL_1);
@@ -98,12 +109,23 @@
 			}
 			else if (page_or_loop == 1){
 				page_loop_dec();
-				loop_display(page_loop);
+				loop_display(patterns_loop[curr_pattern]);
 			}
 		}
 		else if (aux_control == 3){
-			pattern_dec();
-			pattern_display(curr_pattern);
+			if(pattern_clr == 1) {
+				clr_yes = ~clr_yes;
+				if(clr_yes) {
+					clr_pattern_display(curr_pattern, 1);
+				}
+				else {
+					clr_pattern_display(curr_pattern, 0);
+				}
+			}
+			else {
+				pattern_dec();
+				pattern_display(curr_pattern);
+			}
 		}
 		else if (aux_control == 4){
 			pattern_down(CHANNEL_1);
@@ -235,14 +257,14 @@ void pattern_down(uint8_t channel){
 }
 
 void page_loop_inc(){
-	if (page_loop < 15){
-		page_loop++;
+	if (patterns_loop[curr_pattern] < 15){
+		patterns_loop[curr_pattern]++;
 	}
 }
 
 void page_loop_dec(){
-	if (page_loop > 0){
-		page_loop--;
+	if (patterns_loop[curr_pattern] > 0){
+		patterns_loop[curr_pattern]--;
 	}
 }
 
@@ -263,20 +285,32 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 				page_display(display_page);
 			}
 			else if (page_or_loop == 1){
-				loop_display(page_loop);
+				loop_display(patterns_loop[curr_pattern]);
 			}
 			break;
 		case 247 :
+// 			if (pattern_clr == 0){
+// 				pattern_clr = 1;					//set pattern clear
+// 				REG_TC0_CCR1 |= TC_CCR_CLKEN | TC_CCR_SWTRG;		//start 2 sec timer
+// 				clr_pattern_display(curr_pattern);	//output clear message to display
+// 			}
+// 			else if (pattern_clr == 1){
+// 				note_overflow_count = 0;			//reset timer counter
+// 				pattern_clr = 0;					//reset clear variable
+// 				REG_TC0_CCR1 |= TC_CCR_CLKDIS;		//disable timer counter
+// 				notes_clear(curr_pattern);			//clear the current pattern
+// 				pattern_display(curr_pattern);		//return display to default
+// 			}
 			if (pattern_clr == 0){
-				pattern_clr = 1;					//set pattern clear
-				REG_TC0_CCR1 |= TC_CCR_CLKEN | TC_CCR_SWTRG;		//start 2 sec timer
-				clr_pattern_display(curr_pattern);	//output clear message to display
+				clr_pattern_display(curr_pattern, 0);	//output clear message to display
+				pattern_clr = 1;
 			}
 			else if (pattern_clr == 1){
-				note_overflow_count = 0;			//reset timer counter
-				pattern_clr = 0;					//reset clear variable
-				REG_TC0_CCR1 |= TC_CCR_CLKDIS;		//disable timer counter
-				notes_clear(curr_pattern);			//clear the current pattern
+				if(clr_yes) {
+					notes_clear(curr_pattern);			//clear the current pattern
+				}
+				clr_yes = 0;
+				pattern_clr = 0;
 				pattern_display(curr_pattern);		//return display to default
 			}
 			break;
@@ -320,10 +354,34 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 		
 			break;
 		case 191 :
-			
+			if(pattern_clr == 1) {
+				clr_yes = !clr_yes;
+				if(clr_yes) {
+					clr_pattern_display(curr_pattern, 1);
+				}
+				else {
+					clr_pattern_display(curr_pattern, 0);
+				}
+			}
+			else {
+				pattern_dec();
+				pattern_display(curr_pattern);
+			}
 			break;
 		case 127 :
-			
+			if(pattern_clr == 1) {
+				clr_yes = !clr_yes;
+				if(clr_yes) {
+					clr_pattern_display(curr_pattern, 1);
+				}
+				else {
+					clr_pattern_display(curr_pattern, 0);
+				}
+			}
+			else {
+				pattern_inc();
+				pattern_display(curr_pattern);
+			}
 			break;
 		default :
 			break;
@@ -339,6 +397,7 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 
 	page_or_loop = 0;
 	pattern_clr = 0;
+	clr_yes = 0;
 	pause = 0;
 	pause_count = 0;
 

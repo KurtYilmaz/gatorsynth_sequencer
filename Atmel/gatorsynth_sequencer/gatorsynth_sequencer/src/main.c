@@ -51,8 +51,15 @@ int main (void)
 	config_MAX7314();
 	read_button_MAX7314(button_port_data);
 
-	bpm_display(bpm);
+	notes_default();
 
+	note_display(48);
+ 	bpm_display(bpm);
+ 	res_display(res_to_int(resolution));
+ 	page_display(curr_page);
+ 	pattern_display(curr_pattern);
+ 	output_display_1(curr_pattern_ch[0], curr_pattern_ch[1]);
+ 	output_display_2(curr_pattern_ch[2], curr_pattern_ch[3]);
 
 	while (1)
 	{

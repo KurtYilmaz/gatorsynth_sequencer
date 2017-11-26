@@ -26,7 +26,7 @@ uint8_t curr_page;
 uint8_t curr_pattern;
 
 //channel variables
-uint8_t curr_page_ch[4];
+uint8_t curr_page_ch[16];
 uint8_t curr_pattern_ch[4];
 uint8_t page_loop_ch[4];
 uint8_t channel_mute[4];

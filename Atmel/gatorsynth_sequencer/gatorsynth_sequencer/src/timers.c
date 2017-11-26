@@ -25,7 +25,7 @@
 	resolution = 2;
 	display_page = 0;
 	page_loop = 0;
-	curr_step = 0;
+	curr_step = 15;
 	curr_page = 0;
 	curr_pattern = 0;
 
@@ -96,8 +96,7 @@
 	// REG_TC0_RC2 = 3255;
 
 	// For the interrupt
-// 	REG_PIOA_PER |= PIO_PER_
-0; //enable PIO controller on PA11
+// 	REG_PIOA_PER |= PIO_PER_0; //enable PIO controller on PA11
 // 	REG_PIOA_OER |= PIO_PER_P20; //enable output on pin PA11
 	/*REG_PMC_PCER0 |= PMC_PCER0_PID11; //Enable PMC control for PA11*/
 
@@ -126,7 +125,7 @@
 		overflow_count ++;
 
 		//turn off gates for each channel
-		if (overflow_count == note_length){ //note_length
+		if ( (overflow_count == note_length)){ //note_length
 			DAC_write_gate_off(CHANNEL_1);
 			DAC_write_gate_off(CHANNEL_2);
 			DAC_write_gate_off(CHANNEL_3);
@@ -140,7 +139,7 @@
 			 //increment to next page or go back to first page
 
 			 //update display page
-			 if (curr_page < page_loop){
+			 if (curr_page < patterns_loop[curr_pattern]){
 				curr_page++;
 			 }
 			 else{
@@ -148,13 +147,22 @@
 			 }
 
 			 //update note / page for each channel output
-			 for (int i = 0; i < 4; i++){
-				if (curr_page_ch[i] < page_loop_ch[i]){
+			 for (int i = 0; i < 16; i++){
+
+				if (curr_page_ch[i] < patterns_loop[i]){
 					curr_page_ch[i]++;
 				}
 				else{
 					curr_page_ch[i] = 0;
-				}
+				} 
+
+
+// 				if (curr_page_ch[i] < page_loop_ch[i]){
+// 					curr_page_ch[i]++;
+// 				}
+// 				else{
+// 					curr_page_ch[i] = 0;
+// 				}
 			 }
 
 

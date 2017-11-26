@@ -15,6 +15,7 @@
 #include "notes.h"
 #include "timers.h"
 #include "sequencer.h"
+#include "displays.h"
 
 // uint8_t A_seq;
 // uint8_t B_seq;
@@ -38,13 +39,14 @@
 
 	//return true if turned right
 	if ((A_seq == 0b00001001) && (B_seq == 0b00000011)){
-		REG_PIOB_SODR |= PIO_PER_P3; //set output high on PB3
 		notes_inc(step);
+		note_display(patterns[curr_pattern][display_page][step][0]);
 	}
 
 	else if ((A_seq == 0b00000011) && (B_seq == 0b00001001)){
-		REG_PIOB_CODR |= PIO_PER_P3; //set output low on PB3
 		notes_dec(step);
+		note_display(patterns[curr_pattern][display_page][step][0]);
+
 	}
 }
 

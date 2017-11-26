@@ -10,6 +10,7 @@
  //#include "encoders.h"
  #include "timers.h"
  #include "sequencer.h"
+ #include "notes.h"
 
  #define Base 3
 
@@ -174,7 +175,7 @@
 
 
 /* [pattern #][page #][note #][Note, Note Status] */
-int patterns[16][16][16][2] = {};
+//int patterns[16][16][16][3] = {};
 
 	//test initializations
 
@@ -236,6 +237,17 @@ void notes_clear(uint8_t curr_pattern){
 		for (int j = 0; j < 16; j++){
 			patterns[curr_pattern][i][j][0] = 48; //set note to C4
 			patterns[curr_pattern][i][j][1]= 0;	  //turn notes all OFF
+		}
+	}
+}
+
+void notes_default(){
+	for (int i = 0; i < 16; i++){
+		for (int j = 0; j < 16; j++){
+			for (int k = 0; k < 16; k++){
+				patterns[i][j][k][0] = 48; //set note to C4
+				patterns[i][j][k][1]= 0;	  //turn notes all OFF
+			}
 		}
 	}
 }

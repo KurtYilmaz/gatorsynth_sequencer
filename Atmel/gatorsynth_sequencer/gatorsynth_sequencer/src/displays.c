@@ -7,8 +7,10 @@
  #include <asf.h>
  #include "i2c.h"
  #include "fonts.h"
+ #include "displays.h"
  #include <twi.h>
  #include <stdlib.h>
+ #include <stdbool.h>
 
  #define SSD1306_LCDWIDTH      128
  #define SSD1306_LCDHEIGHT      64
@@ -149,8 +151,7 @@ uint8_t curr_display = 7;
 	}
  }
 
- void display_reset(uint8_t d_id){
-	display_select(d_id);
+ void display_reset(){
 	REG_PIOA_SODR |= disp_reset; //set high
 	delay_ms(1);
 	REG_PIOA_CODR |= disp_reset; //set low
@@ -159,8 +160,6 @@ uint8_t curr_display = 7;
  }
 
  void display_init(uint8_t d_id) {
-	// Reset display to begin
-	display_reset(d_id);
 
 	// Init settings for OLED
 	display_command(SSD1306_DISPLAYOFF, d_id);
@@ -209,6 +208,8 @@ uint8_t curr_display = 7;
 
  void all_displays_init(void) {
 
+	
+
 	// Configure registers used for display mux lines
 	REG_PIOA_PER |= disp_sel_0; //enable PIO controller on PA28
 	REG_PIOA_OER |= disp_sel_0; //enable output on pin PA28
@@ -221,13 +222,15 @@ uint8_t curr_display = 7;
 	REG_PIOA_PER |= disp_reset; //enable PIO controller on PA31
 	REG_PIOA_OER |= disp_reset; //enable output on pin PA31
 
-// 	display_init(0);
-//   display_init(1);
- 	display_init(2);
-// 	display_init(3);
-// 	display_init(4);
-// 	display_init(5);
-// 	display_init(6);
+	display_reset();
+
+ 	display_init(0);
+    display_init(1);
+    display_init(2);
+  	display_init(3);
+  	display_init(4);
+  	display_init(5);
+  	display_init(6);
  }
 
  void toggle_inversion(uint8_t d_id) {
@@ -332,6 +335,285 @@ uint8_t curr_display = 7;
 	}
  }
 
+ // Inverted version of display_char
+ void display_char_inverted(char input, uint8_t font_size, uint8_t d_id) {
+	 // Lets us customize our space width, input parameter can be added if needed
+	 if(input == ' ') {
+		 int i;
+		 for(i = 8; i > 0; i--) {
+			 display_data(0xFF, d_id);
+		 }
+	 }
+	 // Uses font to display characters
+	 else {
+		 uint16_t font_index = 0;
+		 uint8_t byte_1;
+		 uint8_t byte_2;
+		 uint8_t byte_3;
+		 if(font_size == 28) {
+			 uint16_t width = getWidth_28();
+			 while (font_index < width) {
+				 //Sharps and flats are elevated, rest of characters are not
+				 if(input != '#' && input != 'b') {
+					 display_data(0xFF, d_id);
+				 }
+				 byte_1 = ~(getByte_28(input, font_index));
+				 byte_2 = ~(getByte_28(input, font_index + width));
+				 byte_3 = ~(getByte_28(input, font_index + 2*width));
+				 display_data(byte_1, d_id);
+				 display_data(byte_2, d_id);
+				 display_data(byte_3, d_id);
+				 //Sharps and flats are elevated, rest of characters are not
+				 if(input == '#' || input == 'b') {
+					 display_data(0xFF, d_id);
+				 }
+				 font_index++;
+			 }
+		 }
+
+		 else if(font_size == 22) {
+			 uint16_t width = getWidth_22();
+			 while (font_index < width) {
+				 //Sharps and flats are elevated, rest of characters are not
+				 if(input != '#' && input != 'b') {
+					 display_data(0xFF, d_id);
+				 }
+				 byte_1 = ~(getByte_22(input, font_index));
+				 byte_2 = ~(getByte_22(input, font_index + width));
+				 byte_3 = ~(getByte_22(input, font_index + 2*width));
+				 display_data(byte_1, d_id);
+				 display_data(byte_2, d_id);
+				 display_data(byte_3, d_id);
+				 //Sharps and flats are elevated, rest of characters are not
+				 if(input == '#' || input == 'b') {
+					 display_data(0xFF, d_id);
+				 }
+				 font_index++;
+			 }
+		 }
+
+		 // Defaults to 18 to reduce errors.
+		 else {
+			 uint16_t width = getWidth_18();
+			 while (font_index < width) {
+				 //Sharps and flats are elevated, rest of characters are not
+				 if(input != '#' && input != 'b') {
+					 display_data(0xFF, d_id);
+				 }
+				 display_data(0, d_id);
+				 byte_1 = ~(getByte_18(input, font_index));
+				 byte_2 = ~(getByte_18(input, font_index + width));
+				 display_data(byte_1, d_id);
+				 display_data(byte_2, d_id);
+				 //Sharps and flats are elevated, rest of characters are not
+				 if(input == '#' || input == 'b') {
+					 display_data(0xFF, d_id);
+				 }
+				 font_index++;
+			 }
+		 }
+	 }
+ }
+
+ // Display 0
+ void note_display(uint16_t note) {
+	 while(disp_ptr_location[0] < 640) {
+		 display_data(0, 0);
+	 }
+
+	 uint8_t octave = 0;
+
+	  if(note < 12) {
+		 octave = 0;
+	 }
+	 else if(note < 24) {
+		 octave = 1;
+	 }
+	 else if(note < 36) {
+		 octave = 2;
+	 }
+	 else if(note < 48) {
+		 octave = 3;
+	 }
+	 else if(note < 60) {
+		octave = 4;
+	 }
+	 else if(note < 72) {
+		 octave = 5;
+	 }
+	 else if(note < 84) {
+		octave = 6;
+	 }
+	 else if(note < 96) {
+		 octave = 7;
+	 }
+	 else if(note < 108) {
+		 octave = 8;
+	 }
+	 else if (note < 120){
+		 octave = 9;
+	}
+	else{
+		octave = 10;
+	}
+
+	note = note - octave*12;
+
+	 if(note % 2 == 0) {
+		 if(note % 12 == 0) {
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('C', 28, 0);
+		 }
+		 else if(note % 10 == 0) {
+			 display_char('A', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('#', 18, 0);
+			 display_char('/', 28, 0);
+			 display_char('B', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('b', 18, 0);
+		 }
+		 else if(note % 8 == 0) {
+			 display_char('G', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('#', 18, 0);
+			 display_char('/', 28, 0);
+			 display_char('A', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('b', 18, 0);
+		 }
+		 else if(note % 6 == 0) {
+			 display_char('F', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('#', 18, 0);
+			 display_char('/', 28, 0);
+			 display_char('G', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('b', 18, 0);
+		 }
+		 else if(note % 4 == 0) {
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('E', 28, 0);
+		 }
+		 else {
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('D', 28, 0);
+		 }
+
+	 }
+
+	 else {
+		 if(note % 11 == 0) {
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('B', 28, 0);
+		 }
+		 else if(note % 9 == 0) {
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('A', 28, 0);
+		 }
+		 else if(note % 7 == 0) {
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('G', 28, 0);
+		 }
+		 else if(note % 5 == 0) {
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('F', 28, 0);
+		 }
+		 else if(note % 3 == 0) {
+			 display_char('D', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('#', 18, 0);
+			 display_char('/', 28, 0);
+			 display_char('E', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('b', 18, 0);
+		 }
+		 else {
+			 display_char('C', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('#', 18, 0);
+			 display_char('/', 28, 0);
+			 display_char('D', 28, 0);
+			 display_char(' ', 28, 0);
+			 display_char('b', 18, 0);
+		 }
+	 }
+	 display_char(' ', 28, 0);
+	 display_char(' ', 28, 0);
+
+	 display_number(octave, 189, 0);
+
+	finish_display(0);
+}
+
+void clr_pattern_display(uint8_t pattern, bool yes) {
+	display_char('C', 22, 4);
+	display_char(' ', 22, 4);
+	display_char('L', 22, 4);
+	display_char(' ', 22, 4);
+	display_char('R', 22, 4);
+	display_char(':', 22, 4);
+	display_number(pattern, 22, 4);
+	display_char(' ', 22, 4);
+	display_char(' ', 22, 4);
+	display_char(' ', 22, 4);
+	display_char(' ', 22, 4);
+	if(yes) {
+		display_char_inverted(' ', 22, 4);
+		display_char_inverted('Y', 22, 4);
+		display_char_inverted(' ', 22, 4);
+		display_char('/', 22, 4);
+		display_char(' ', 22, 4);
+		display_char('N', 22, 4);
+	}
+	else {
+		display_char(' ', 22, 4);
+		display_char('Y', 22, 4);
+		display_char(' ', 22, 4);
+		display_char('/', 22, 4);
+		display_char_inverted(' ', 22, 4);
+		display_char_inverted('N', 22, 4);
+		display_char_inverted(' ', 22, 4);
+	}
+
+	finish_display(4);
+}
+
  void display_number(uint16_t input, uint8_t font_size, uint8_t d_id) {
 	int buffersize = 0;
     char buffer[8];
@@ -387,21 +669,6 @@ uint8_t curr_display = 7;
 		i++;
 	}
  }
-
-// Display 0
-void note_display(uint16_t note) {
-	while(disp_ptr_location[0] < 1280) {
-		display_data(0, 0);
-	}
-	
-	display_char('A', 28, 0);
-	display_char(' ', 28, 0);
-	display_char('b', 18, 0);
-	display_char(' ', 28, 0);
-	display_char(' ', 28, 0);
-	display_char('3', 18, 0);
-	finish_display(0);
-}
 
 // Display 1
 void bpm_display(uint16_t bpm) {
@@ -478,16 +745,6 @@ void pattern_display(uint8_t pattern) {
 	display_char('N', 28, 4);
 	display_char(':', 28, 4);
 	display_number(pattern, 28, 4);
-	finish_display(4);
-}
-
-void clr_pattern_display(uint8_t pattern) {
-	display_char('C', 28, 4);
-	display_char('L', 28, 4);
-	display_char('R', 28, 4);
-	display_char(':', 28, 4);
-	display_number(pattern, 28, 4);
-	display_char('?', 28, 4);
 	finish_display(4);
 }
 

@@ -8,6 +8,7 @@
 
 #ifndef SEQUENCER_H_
 #define SEQUENCER_H_
+#include <stdbool.h>
 
 #define CHANNEL_1 0
 #define CHANNEL_2 1
@@ -17,6 +18,7 @@
  uint8_t A_seq;
  uint8_t B_seq;
 
+bool clr_yes;
 uint8_t pause;
 uint8_t pause_count;
 uint16_t bpm;
