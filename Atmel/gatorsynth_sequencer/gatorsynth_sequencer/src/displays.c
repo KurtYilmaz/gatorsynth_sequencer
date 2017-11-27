@@ -415,8 +415,65 @@ uint8_t curr_display = 7;
 	 }
  }
 
- // Display 0
- void note_display(uint16_t note) {
+ 
+void display_number(uint16_t input, uint8_t font_size, uint8_t d_id) {
+	 int buffersize = 0;
+	 char buffer[8];
+
+	 if(input==0) {
+		 display_char('0', font_size, d_id);
+		 display_char(' ', font_size, d_id);
+		 return;
+	 }
+
+	 //Determining needed size of buffer
+	 if (input > 999999) {
+		 buffersize = 7;
+	 }
+	 else if (input > 99999) {
+		 buffersize = 6;
+	 }
+	 else if (input > 9999) {
+		 buffersize = 5;
+	 }
+	 else if (input > 999) {
+		 buffersize = 4;
+	 }
+	 else if(input > 99) {
+		 buffersize = 3;
+	 }
+	 else if(input > 9) {
+		 buffersize = 2;
+	 }
+	 else {
+		 buffersize = 1;
+	 }
+
+	 // Grabs each digit at a time from integer and stores in array
+	 // Does this to reverse the order it's output in
+	 int i = buffersize - 1;
+	 uint32_t temp;
+	 while(input > 0) {
+		 temp = input;
+		 buffer[i] = (char)(input%10 + '0');
+		 input = temp;
+		 input = input/10;
+		 i--;
+	 }
+	 while(i > 0) {
+		 buffer[i] = '1';
+	 }
+
+	 i = 0;
+	 while(i < buffersize) {
+		 display_char(buffer[i], font_size, d_id);
+		 display_char(' ', font_size, d_id);
+		 i++;
+	 }
+ }
+
+// Display 0
+void note_display(uint16_t note) {
 	 while(disp_ptr_location[0] < 640) {
 		 display_data(0, 0);
 	 }
@@ -581,95 +638,6 @@ uint8_t curr_display = 7;
 	finish_display(0);
 }
 
-void clr_pattern_display(uint8_t pattern, bool yes) {
-	display_char('C', 22, 4);
-	display_char(' ', 22, 4);
-	display_char('L', 22, 4);
-	display_char(' ', 22, 4);
-	display_char('R', 22, 4);
-	display_char(':', 22, 4);
-	display_number(pattern, 22, 4);
-	display_char(' ', 22, 4);
-	display_char(' ', 22, 4);
-	display_char(' ', 22, 4);
-	display_char(' ', 22, 4);
-	if(yes) {
-		display_char_inverted(' ', 22, 4);
-		display_char_inverted('Y', 22, 4);
-		display_char_inverted(' ', 22, 4);
-		display_char('/', 22, 4);
-		display_char(' ', 22, 4);
-		display_char('N', 22, 4);
-	}
-	else {
-		display_char(' ', 22, 4);
-		display_char('Y', 22, 4);
-		display_char(' ', 22, 4);
-		display_char('/', 22, 4);
-		display_char_inverted(' ', 22, 4);
-		display_char_inverted('N', 22, 4);
-		display_char_inverted(' ', 22, 4);
-	}
-
-	finish_display(4);
-}
-
- void display_number(uint16_t input, uint8_t font_size, uint8_t d_id) {
-	int buffersize = 0;
-    char buffer[8];
-
-	if(input==0) {
-		display_char('0', font_size, d_id);
-		display_char(' ', font_size, d_id);
-		return;
-	}
-
-	//Determining needed size of buffer
-    if (input > 999999) {           
-        buffersize = 7;
-    }
-    else if (input > 99999) {
-        buffersize = 6;
-    }
-    else if (input > 9999) {
-        buffersize = 5;
-    }
-    else if (input > 999) {
-        buffersize = 4;
-    }
-    else if(input > 99) {
-        buffersize = 3;
-    }
-    else if(input > 9) {
-        buffersize = 2;
-    }
-    else {
-        buffersize = 1;
-    }
-
-    // Grabs each digit at a time from integer and stores in array
-	// Does this to reverse the order it's output in
-    int i = buffersize - 1;
-    uint32_t temp;
-    while(input > 0) {
-        temp = input;
-        buffer[i] = (char)(input%10 + '0');
-        input = temp;
-        input = input/10;
-        i--;
-    }
-	while(i > 0) {
-		buffer[i] = '1';
-	}
-
-    i = 0;
-    while(i < buffersize) {
-		display_char(buffer[i], font_size, d_id);
-		display_char(' ', font_size, d_id);
-		i++;
-	}
- }
-
 // Display 1
 void bpm_display(uint16_t bpm) {
 	display_char('B', 28, 1);
@@ -716,6 +684,29 @@ void res_display(uint8_t res) {
 	finish_display(2);  
 }
 
+void saving_display(uint8_t dot_number) {
+	if(dot_number == 0) {
+		display_char('S', 28, 2);
+		display_char(' ', 28, 2);
+		display_char('A', 28, 2);
+		display_char(' ', 28, 2);
+		display_char('V', 28, 2);
+		display_char(' ', 28, 2);
+		display_char('I', 28, 2);
+		display_char(' ', 28, 2);
+		display_char('N', 28, 2);
+		display_char(' ', 28, 2);
+		display_char('G', 28, 2);
+	}
+	else if(dot_number < 3) {
+		display_char('.', 28, 2);
+	}
+	else if(dot_number >= 3) {
+		display_char('.', 28, 2);
+		finish_display(2);
+	}
+}
+
 // Display 3
 void page_display(uint8_t page) {
 	display_char('P', 28, 3);
@@ -745,6 +736,39 @@ void pattern_display(uint8_t pattern) {
 	display_char('N', 28, 4);
 	display_char(':', 28, 4);
 	display_number(pattern, 28, 4);
+	finish_display(4);
+}
+
+void clr_pattern_display(uint8_t pattern, bool yes) {
+	display_char('C', 22, 4);
+	display_char(' ', 22, 4);
+	display_char('L', 22, 4);
+	display_char(' ', 22, 4);
+	display_char('R', 22, 4);
+	display_char(':', 22, 4);
+	display_number(pattern, 22, 4);
+	display_char(' ', 22, 4);
+	display_char(' ', 22, 4);
+	display_char(' ', 22, 4);
+	display_char(' ', 22, 4);
+	if(yes) {
+		display_char_inverted(' ', 22, 4);
+		display_char_inverted('Y', 22, 4);
+		display_char_inverted(' ', 22, 4);
+		display_char('/', 22, 4);
+		display_char(' ', 22, 4);
+		display_char('N', 22, 4);
+	}
+	else {
+		display_char(' ', 22, 4);
+		display_char('Y', 22, 4);
+		display_char(' ', 22, 4);
+		display_char('/', 22, 4);
+		display_char_inverted(' ', 22, 4);
+		display_char_inverted('N', 22, 4);
+		display_char_inverted(' ', 22, 4);
+	}
+
 	finish_display(4);
 }
 
