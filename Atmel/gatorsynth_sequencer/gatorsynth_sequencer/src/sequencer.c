@@ -176,13 +176,19 @@ uint8_t res_to_int(uint8_t res){
 	else if (res == 8){
 		return 32;
 	}
+	else if(res == 9) {
+		return 48;
+	}
+	else if(res == 10) {
+		return 64;
+	}
 
 	//default
 	return 1;
 }
 
 void res_inc(){
-	if (resolution < 8){
+	if (resolution < 10){
 		resolution++;
 	}
 }
@@ -348,10 +354,12 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 			
 			break;
 		case 239 :
-			
+			notes_dec(6);
+			note_display(patterns[curr_pattern][display_page][6][0]);
 			break;
 		case 223 :
-		
+			notes_inc(6);
+			note_display(patterns[curr_pattern][display_page][6][0]);
 			break;
 		case 191 :
 			if(pattern_clr == 1) {

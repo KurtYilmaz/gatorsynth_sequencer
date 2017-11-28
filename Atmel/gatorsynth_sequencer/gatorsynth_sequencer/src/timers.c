@@ -25,7 +25,7 @@
 	resolution = 2;
 	display_page = 0;
 	page_loop = 0;
-	curr_step = 15;
+	curr_step = 0;
 	curr_page = 0;
 	curr_pattern = 0;
 
@@ -116,89 +116,92 @@
 
  }
 
- void TC0_Handler() {
+  void TC0_Handler() {
 
-// Step count timer
-	 // Test code, normally trigger next step, output clock
-	 if((REG_TC0_SR0 & TC_SR_CPCS) >= 1) {
+	  // Step count timer
+	  // Test code, normally trigger next step, output clock
+	  if((REG_TC0_SR0 & TC_SR_CPCS) >= 1) {
 
-		overflow_count ++;
+		  //turn off gates for each channel
+		  if ( (overflow_count == note_length)){ //note_length
+			  DAC_write_gate_off(CHANNEL_1);
+			  DAC_write_gate_off(CHANNEL_2);
+			  DAC_write_gate_off(CHANNEL_3);
+			  DAC_write_gate_off(CHANNEL_4);
+		  }
 
-		//turn off gates for each channel
-		if ( (overflow_count == note_length)){ //note_length
-			DAC_write_gate_off(CHANNEL_1);
-			DAC_write_gate_off(CHANNEL_2);
-			DAC_write_gate_off(CHANNEL_3);
-			DAC_write_gate_off(CHANNEL_4);
-		}
- }
+		  if(overflow_count == 0) {
 
-	 if(overflow_count >= 40000) {
+			  //update the CVs for each channel
+			  //update the gates for each channel
+			  SPI_dac_init();
 
-		 if (curr_step == 15){
-			 //increment to next page or go back to first page
+			  if ( (notes_status_get(curr_step, CHANNEL_1) == 1) && channel_mute[CHANNEL_1] == 0){
+				  DAC_write_cv(notes_get(curr_step, CHANNEL_1), CHANNEL_1);
+				  DAC_write_gate_on(CHANNEL_1);
+			  }
+			  if ( (notes_status_get(curr_step, CHANNEL_2) == 1) && channel_mute[CHANNEL_2] == 0){
+				   DAC_write_cv(notes_get(curr_step, CHANNEL_2), CHANNEL_2);
+				   DAC_write_gate_on(CHANNEL_2);
+			  }
+			  if ( (notes_status_get(curr_step, CHANNEL_3) == 1) && channel_mute[CHANNEL_3] == 0){
+				  DAC_write_cv(notes_get(curr_step, CHANNEL_3), CHANNEL_3);
+				  DAC_write_gate_on(CHANNEL_3);
+			  }
+			  if ( (notes_status_get(curr_step, CHANNEL_4) == 1) && channel_mute[CHANNEL_4] == 0){
+				  DAC_write_cv(notes_get(curr_step, CHANNEL_4), CHANNEL_4);
+				  DAC_write_gate_on(CHANNEL_4);
+			  }
 
-			 //update display page
-			 if (curr_page < patterns_loop[curr_pattern]){
-				curr_page++;
-			 }
-			 else{
-				curr_page = 0;
-			 }
+			  REG_ADC_CR |= ADC_CR_START;
+		  }
 
-			 //update note / page for each channel output
-			 for (int i = 0; i < 16; i++){
+		  if (overflow_count == 20000){
 
-				if (curr_page_ch[i] < patterns_loop[i]){
-					curr_page_ch[i]++;
-				}
-				else{
-					curr_page_ch[i] = 0;
-				} 
+		  
+			  SPI_led_init();
+			  leds_update_cursor(curr_step);
+
+			  if (curr_step == 15){
+				  //increment to next page or go back to first page
+
+				  //update display page
+				  if (curr_page < patterns_loop[curr_pattern]){
+					  curr_page++;
+				  }
+				  else{
+					  curr_page = 0;
+				  }
+
+				  //update note / page for each channel output
+				  for (int i = 0; i < 4; i++){
+
+					  if (curr_page_ch[i] < patterns_loop[curr_pattern_ch[i]]){
+						  curr_page_ch[i]++;
+					  }
+					  else{
+						  curr_page_ch[i] = 0;
+					  }
+
+				  }
 
 
-// 				if (curr_page_ch[i] < page_loop_ch[i]){
-// 					curr_page_ch[i]++;
-// 				}
-// 				else{
-// 					curr_page_ch[i] = 0;
-// 				}
-			 }
+				  //return to first step on next page
+				  curr_step = 0;
+			  }
+			  else{
+				  curr_step++;
+			  }
+		  }
+
+		  overflow_count++;
+		  if (overflow_count >= 40001){
+			  overflow_count = 0;
+		  }
 
 
-			 //return to first step on next page
-			 curr_step = 0;
-		 }
-		 else{
-			 curr_step++;
-		 }
 
-		 SPI_led_init();
-		 leds_update_cursor(curr_step);
-
-		 //update the CVs for each channel
-		 DAC_write_cv(notes_get(curr_step, CHANNEL_1), CHANNEL_1);
-		 DAC_write_cv(notes_get(curr_step, CHANNEL_2), CHANNEL_2);
-		 DAC_write_cv(notes_get(curr_step, CHANNEL_3), CHANNEL_3);
-		 DAC_write_cv(notes_get(curr_step, CHANNEL_4), CHANNEL_4);
-
-		 //update the gates for each channel
-		 if ( (notes_status_get(curr_step, CHANNEL_1) == 1) && channel_mute[CHANNEL_1] == 0){
-			 DAC_write_gate_on(CHANNEL_1);
-		 }
-		 if ( (notes_status_get(curr_step, CHANNEL_2) == 1) && channel_mute[CHANNEL_2] == 0){
-			 DAC_write_gate_on(CHANNEL_2);
-		 }
-		 if ( (notes_status_get(curr_step, CHANNEL_3) == 1) && channel_mute[CHANNEL_3] == 0){
-			 DAC_write_gate_on(CHANNEL_3);
-		 }
-		 if ( (notes_status_get(curr_step, CHANNEL_4) == 1) && channel_mute[CHANNEL_4] == 0){
-			 DAC_write_gate_on(CHANNEL_4);
-		 }
-	
-		 REG_ADC_CR |= ADC_CR_START;
-		 overflow_count = 0;
-	 }
+	  }
 
 // Timeout timer for note displays
 	if((REG_TC0_SR1 & TC_SR_CPCS) >= 1) {

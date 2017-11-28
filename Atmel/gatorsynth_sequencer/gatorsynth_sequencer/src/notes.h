@@ -11,8 +11,8 @@
 
 #include <stdbool.h>
 
-int patterns_loop[16];
-int patterns[16][16][16][3];
+int patterns_loop[4];
+int patterns[16][16][16][2];
 
 float notes_get(uint8_t curr_step, uint8_t channel);
 int notes_display_get(uint8_t display_page, uint8_t curr_step);

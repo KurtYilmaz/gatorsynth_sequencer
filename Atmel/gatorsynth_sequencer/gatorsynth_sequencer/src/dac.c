@@ -17,7 +17,6 @@
 void DAC_write_cv(float voltage, uint8_t channel){
 
 	cpu_irq_disable();
-	SPI_dac_init();
 
 	float float_voltage = (max*(voltage))/VREF;
 	uint16_t dac_voltage = (uint16_t) float_voltage;

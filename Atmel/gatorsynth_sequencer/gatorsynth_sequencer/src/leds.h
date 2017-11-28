@@ -9,6 +9,5 @@ void leds_update_display(void);
 void led_toggle(uint8_t top_row, uint8_t bottom_row);
 int leds_status_get(uint8_t curr_step);
 void leds_update_status(void);
-void leds_update_status(void);
 
 #endif /* LEDS_H_ */

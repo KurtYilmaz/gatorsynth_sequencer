@@ -192,32 +192,64 @@ void leds_update_cursor(uint8_t curr_step){
 			}
 	}
 
-	/*check if page being displayed is the current page being output to synth before updating cursor*/
+/*check if page being displayed is the current page being output to synth before updating cursor*/
 	if (curr_page == display_page){
 		/* Update Cursor to correct position */
 			if ( (curr_step >= 0) && (curr_step < 4) ){
-				offset = (curr_step)*3;
-				leds_data_1[offset] = 0xFFFF;
-				leds_data_1[offset+1] = 0x0FFF;
-				leds_data_1[offset+2] = 0x0000;
+				offset = (curr_step)* 3;
+
+// 				if (offset == 253){
+// 					leds_data_4[9] = 0xFFFF;
+// 					leds_data_4[10] = 0x0FFF;
+// 					leds_data_4[11] = 0x0000;
+// 				}
+// 				else{
+					leds_data_1[offset] = 0xFFFF;
+					leds_data_1[offset+1] = 0x0FFF;
+					leds_data_1[offset+2] = 0x0000;
+/*				}*/
 			}
 			else if ( (curr_step >= 4) && (curr_step < 8) ){
 				offset = (curr_step % 4)*3;
-				leds_data_2[offset] = 0xFFFF;
-				leds_data_2[offset+1] = 0x0FFF;
-				leds_data_2[offset+2] = 0x0000;
+// 
+// 				if(offset == 253){
+// 					leds_data_1[9] = 0xFFFF;
+// 					leds_data_1[10] = 0x0FFF;
+// 					leds_data_1[11] = 0x0000;
+// 				}
+// 				else{
+					leds_data_2[offset] = 0xFFFF;
+					leds_data_2[offset+1] = 0x0FFF;
+					leds_data_2[offset+2] = 0x0000;
+/*				}*/
 			}
 			else if ( (curr_step >= 8) && (curr_step < 12) ){
 				offset = (curr_step % 8)*3;
-				leds_data_3[offset] = 0xFFFF;
-				leds_data_3[offset+1] = 0x0FFF;
-				leds_data_3[offset+2] = 0x0000;
+
+// 				if (offset == 253){
+// 					leds_data_2[9] = 0xFFFF;
+// 					leds_data_2[10] = 0x0FFF;
+// 					leds_data_2[11] = 0x0000;
+// 				}
+//				else{
+					leds_data_3[offset] = 0xFFFF;
+					leds_data_3[offset+1] = 0x0FFF;
+					leds_data_3[offset+2] = 0x0000;
+/*				}*/
 			}
 			else if ( (curr_step >= 12) && (curr_step < 16) ){
 				offset = (curr_step % 12)*3;
-				leds_data_4[offset] = 0xFFFF;
-				leds_data_4[offset+1] = 0x0FFF;
-				leds_data_4[offset+2] = 0x0000;
+
+// 				if (offset == 253){
+// 					leds_data_3[9] = 0xFFFF;
+// 					leds_data_3[10] = 0x0FFF;
+// 					leds_data_3[11] = 0x0000;
+// 				}
+/*				else{*/
+					leds_data_4[offset] = 0xFFFF;
+					leds_data_4[offset+1] = 0x0FFF;
+					leds_data_4[offset+2] = 0x0000;
+/*				}*/
 			}
 	}
 

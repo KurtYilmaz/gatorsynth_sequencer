@@ -12,7 +12,7 @@
  #include "sequencer.h"
  #include "notes.h"
 
- #define Base 3
+ #define Base 1
 
  //Octave 1
  #define C0 (Base)
@@ -142,22 +142,22 @@
 
  //Octave 10
  #define C9 (Base + 9)
- #define C9_SH (C9 + 1*0.0833)
- #define D9 (C9 + 2*0.0833)
- #define D9_SH (C9 + 3*0.0833)
- #define E9 (C9 + 4*0.0833)
- #define F9 (C9 + 5*0.0833)
- #define F9_SH (C9 + 6*0.0833)
- #define G9 (C9 + 7*0.0833)
- #define G9_SH (C9 + 8*0.0833)
- #define A9 (C9 + 9*0.0833)
- #define A9_SH (C9 + 10*0.0833)
- #define B9 (C9 + 11*0.0833)
+//  #define C9_SH (C9 + 1*0.0833)
+//  #define D9 (C9 + 2*0.0833)
+//  #define D9_SH (C9 + 3*0.0833)
+//  #define E9 (C9 + 4*0.0833)
+//  #define F9 (C9 + 5*0.0833)
+//  #define F9_SH (C9 + 6*0.0833)
+//  #define G9 (C9 + 7*0.0833)
+//  #define G9_SH (C9 + 8*0.0833)
+//  #define A9 (C9 + 9*0.0833)
+//  #define A9_SH (C9 + 10*0.0833)
+//  #define B9 (C9 + 11*0.0833)
+// 
+//  //Octave 11
+//  #define C10 (Base + 10)
 
- //Octave 11
- #define C10 (Base + 10)
-
- float notes_lookup[121] = {C0, C0_SH, D0, D0_SH, E0, F0, F0_SH, G0, G0_SH, A0, A0_SH, B0, 
+ float notes_lookup[109] = {C0, C0_SH, D0, D0_SH, E0, F0, F0_SH, G0, G0_SH, A0, A0_SH, B0, 
 							C1, C1_SH, D1, D1_SH, E1, F1, F1_SH, G1, G1_SH, A1, A1_SH, B1, 
 							C2, C2_SH, D2, D2_SH, E2, F2, F2_SH, G2, G2_SH, A2, A2_SH, B2, 
 							C3, C3_SH, D3, D3_SH, E3, F3, F3_SH, G3, G3_SH, A3, A3_SH, B3, 
@@ -166,8 +166,10 @@
 							C6, C6_SH, D6, D6_SH, E6, F6, F6_SH, G6, G6_SH, A6, A6_SH, B6, 
 							C7, C7_SH, D7, D7_SH, E7, F7, F7_SH, G7, G7_SH, A7, A7_SH, B7, 
 							C8, C8_SH, D8, D8_SH, E8, F8, F8_SH, G8, G8_SH, A8, A8_SH, B8, 
-							C9, C9_SH, D9, D9_SH, E9, F9, F9_SH, G9, G9_SH, A9, A9_SH, B9, 
-							C10};
+							C9};
+							
+// 							C9_SH, D9, D9_SH, E9, F9, F9_SH, G9, G9_SH, A9, A9_SH, B9, 
+// 							C10};
 
 // 
 //  int notes_index[16] = { 0, 1, 2, 3, 4, 5, 6, 7,
@@ -254,7 +256,7 @@ void notes_default(){
 
 
 void notes_inc(uint8_t step){
-	if (patterns[curr_pattern][display_page][step][0] < 120){
+	if (patterns[curr_pattern][display_page][step][0] < 108){
 		patterns[curr_pattern][display_page][step][0]++;
 	}
 
