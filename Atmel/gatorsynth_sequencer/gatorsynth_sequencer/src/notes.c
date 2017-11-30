@@ -447,7 +447,7 @@ void notes_default(){
 	patterns[4][1][14][0] = LUT_E1;
 	patterns[4][1][14][1] = 1;
 	patterns[4][1][15][0] = LUT_E2;
-	patterns[4][1][15][1] = 0;
+	patterns[4][1][15][1] = 1;
 
 	patterns[4][2][0][0] = LUT_B2;
 	patterns[4][2][0][1] = 1;

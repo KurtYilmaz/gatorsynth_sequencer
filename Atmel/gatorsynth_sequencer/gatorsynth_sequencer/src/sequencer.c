@@ -49,6 +49,7 @@
 		else if (aux_control == 2){
 			if (page_or_loop == 0){
 				display_page_inc();
+				leds_update_cursor(curr_step);
 				page_display(display_page);
 			}
 			else if (page_or_loop == 1){
@@ -68,7 +69,11 @@
 			}
 			else {
 				pattern_inc();
+				leds_update_cursor(curr_step);
 				pattern_display(curr_pattern);
+				if(page_or_loop == 1) {
+					loop_display(patterns_loop[curr_pattern]);
+				}
 			}
 		}
 		else if (aux_control == 4){
@@ -105,6 +110,7 @@
 		else if (aux_control == 2){
 			if (page_or_loop == 0){
 				display_page_dec();
+				leds_update_cursor(curr_step);
 				page_display(display_page);
 			}
 			else if (page_or_loop == 1){
@@ -124,7 +130,11 @@
 			}
 			else {
 				pattern_dec();
+				leds_update_cursor(curr_step);
 				pattern_display(curr_pattern);
+				if(page_or_loop == 1) {
+					loop_display(patterns_loop[curr_pattern]);
+				}
 			}
 		}
 		else if (aux_control == 4){
