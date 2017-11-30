@@ -157,6 +157,123 @@
 //  //Octave 11
 //  #define C10 (Base + 10)
 
+#define LUT_C0		(0)
+#define LUT_C0_SH	(1)
+#define LUT_D0		(2)
+#define LUT_D0_SH 	(3)
+#define LUT_E0 		(4)
+#define LUT_F0		(5)
+#define LUT_F0_SH 	(6)
+#define LUT_G0 		(7)
+#define LUT_G0_SH 	(8)
+#define LUT_A0 		(9)
+#define LUT_A0_SH 	(10)
+#define LUT_B0 		(11)
+
+#define LUT_C1		LUT_C0 + 12
+#define LUT_C1_SH	LUT_C0_SH + 12
+#define LUT_D1		LUT_D0 + 12
+#define LUT_D1_SH	LUT_D0_SH + 12
+#define LUT_E1		LUT_E0 + 12
+#define LUT_F1		LUT_F0 + 12
+#define LUT_F1_SH	LUT_F0_SH + 12
+#define LUT_G1		LUT_G0 + 12
+#define LUT_G1_SH	LUT_G0_SH + 12
+#define LUT_A1		LUT_A0 + 12
+#define LUT_A1_SH	LUT_A0_SH + 12
+#define LUT_B1		LUT_B0 + 12
+
+#define LUT_C2		LUT_C1 + 12
+#define LUT_C2_SH	LUT_C1_SH + 12
+#define LUT_D2		LUT_D1 + 12
+#define LUT_D2_SH	LUT_D1_SH + 12
+#define LUT_E2		LUT_E1 + 12
+#define LUT_F2		LUT_F1 + 12
+#define LUT_F2_SH	LUT_F1_SH + 12
+#define LUT_G2		LUT_G1 + 12
+#define LUT_G2_SH	LUT_G1_SH + 12
+#define LUT_A2		LUT_A1 + 12
+#define LUT_A2_SH	LUT_A1_SH + 12
+#define LUT_B2		LUT_B1 + 12
+
+#define LUT_C3		LUT_C2 + 12
+#define LUT_C3_SH	LUT_C2_SH + 12
+#define LUT_D3		LUT_D2 + 12
+#define LUT_D3_SH	LUT_D2_SH + 12
+#define LUT_E3		LUT_E2 + 12
+#define LUT_F3		LUT_F2 + 12
+#define LUT_F3_SH	LUT_F2_SH + 12
+#define LUT_G3		LUT_G2 + 12
+#define LUT_G3_SH	LUT_G2_SH + 12
+#define LUT_A3		LUT_A2 + 12
+#define LUT_A3_SH	LUT_A2_SH + 12
+#define LUT_B3		LUT_B2 + 12
+
+#define LUT_C4		LUT_C3 + 12
+#define LUT_C4_SH	LUT_C3_SH + 12
+#define LUT_D4		LUT_D3 + 12
+#define LUT_D4_SH	LUT_D3_SH + 12
+#define LUT_E4		LUT_E3 + 12
+#define LUT_F4		LUT_F3 + 12
+#define LUT_F4_SH	LUT_F3_SH + 12
+#define LUT_G4		LUT_G3 + 12
+#define LUT_G4_SH	LUT_G3_SH + 12
+#define LUT_A4		LUT_A3 + 12
+#define LUT_A4_SH	LUT_A3_SH + 12
+#define LUT_B4		LUT_B3 + 12
+
+#define LUT_C5		LUT_C4 + 12
+#define LUT_C5_SH	LUT_C4_SH + 12
+#define LUT_D5		LUT_D4 + 12
+#define LUT_D5_SH	LUT_D4_SH + 12
+#define LUT_E5		LUT_E4 + 12
+#define LUT_F5		LUT_F4 + 12
+#define LUT_F5_SH	LUT_F4_SH + 12
+#define LUT_G5		LUT_G4 + 12
+#define LUT_G5_SH	LUT_G4_SH + 12
+#define LUT_A5		LUT_A4 + 12
+#define LUT_A5_SH	LUT_A4_SH + 12
+#define LUT_B5		LUT_B4 + 12
+
+#define LUT_C6		LUT_C5 + 12
+#define LUT_C6_SH	LUT_C5_SH + 12
+#define LUT_D6		LUT_D5 + 12
+#define LUT_D6_SH	LUT_D5_SH + 12
+#define LUT_E6		LUT_E5 + 12
+#define LUT_F6		LUT_F5 + 12
+#define LUT_F6_SH	LUT_F5_SH + 12
+#define LUT_G6		LUT_G5 + 12
+#define LUT_G6_SH	LUT_G5_SH + 12
+#define LUT_A6		LUT_A5 + 12
+#define LUT_A6_SH	LUT_A5_SH + 12
+#define LUT_B6		LUT_B5 + 12
+
+#define LUT_C7		LUT_C6 + 12
+#define LUT_C7_SH	LUT_C6_SH + 12
+#define LUT_D7		LUT_D6 + 12
+#define LUT_D7_SH	LUT_D6_SH + 12
+#define LUT_E7		LUT_E6 + 12
+#define LUT_F7		LUT_F6 + 12
+#define LUT_F7_SH	LUT_F6_SH + 12
+#define LUT_G7		LUT_G6 + 12
+#define LUT_G7_SH	LUT_G6_SH + 12
+#define LUT_A7		LUT_A6 + 12
+#define LUT_A7_SH	LUT_A6_SH + 12
+#define LUT_B7		LUT_B6 + 12
+
+#define LUT_C8		LUT_C7 + 12
+#define LUT_C8_SH	LUT_C7_SH + 12
+#define LUT_D8		LUT_D7 + 12
+#define LUT_D8_SH	LUT_D7_SH + 12
+#define LUT_E8		LUT_E7 + 12
+#define LUT_F8		LUT_F7 + 12
+#define LUT_F8_SH	LUT_F7_SH + 12
+#define LUT_G8		LUT_G7 + 12
+#define LUT_G8_SH	LUT_G7_SH + 12
+#define LUT_A8		LUT_A7 + 12
+#define LUT_A8_SH	LUT_A7_SH + 12
+#define LUT_B8		LUT_B7 + 12
+
  float notes_lookup[109] = {C0, C0_SH, D0, D0_SH, E0, F0, F0_SH, G0, G0_SH, A0, A0_SH, B0, 
 							C1, C1_SH, D1, D1_SH, E1, F1, F1_SH, G1, G1_SH, A1, A1_SH, B1, 
 							C2, C2_SH, D2, D2_SH, E2, F2, F2_SH, G2, G2_SH, A2, A2_SH, B2, 
@@ -181,8 +298,6 @@
 
 	//test initializations
 
-
-
 float notes_get(uint8_t curr_step, uint8_t channel){
 	int lookup_index;
 
@@ -202,7 +317,7 @@ float notes_get(uint8_t curr_step, uint8_t channel){
 	return notes_lookup[lookup_index];
 }
 
-int notes_status_get(uint8_t curr_step, uint8_t channel){
+uint8_t notes_status_get(uint8_t curr_step, uint8_t channel){
 
 	if (channel == CHANNEL_1){
 		return patterns[curr_pattern_ch[0]][curr_page_ch[0]][curr_step][1];
@@ -221,7 +336,7 @@ int notes_status_get(uint8_t curr_step, uint8_t channel){
 	return patterns[curr_pattern_ch[0]][curr_page_ch[0]][curr_step][1];
 }
 
-int notes_display_get(uint8_t display_page, uint8_t step){
+uint8_t notes_display_get(uint8_t display_page, uint8_t step){
 	return patterns[curr_pattern][display_page][step][1];
 }
 
@@ -252,6 +367,396 @@ void notes_default(){
 			}
 		}
 	}
+
+	patterns[4][0][0][0] = LUT_D1;
+	patterns[4][0][0][1] = 1;
+	patterns[4][0][1][0] = LUT_D1;
+	patterns[4][0][1][1] = 0;
+
+	patterns[4][0][2][0] = LUT_A2;
+	patterns[4][0][2][1] = 1;
+	patterns[4][0][3][0] = LUT_A2;
+	patterns[4][0][3][1] = 0;
+
+	patterns[4][0][4][0] = LUT_A2;
+	patterns[4][0][4][1] = 1;
+	patterns[4][0][5][0] = LUT_A2;
+	patterns[4][0][5][1] = 0;
+
+	patterns[4][0][6][0] = LUT_E1;
+	patterns[4][0][6][1] = 1;
+
+	patterns[4][0][7][0] = LUT_E2;
+	patterns[4][0][7][1] = 1;
+
+	patterns[4][0][8][0] = LUT_B2;
+	patterns[4][0][8][1] = 1;
+	patterns[4][0][9][0] = LUT_B2;
+	patterns[4][0][9][1] = 0;
+	patterns[4][0][10][0] = LUT_B2;
+	patterns[4][0][10][1] = 0;
+	patterns[4][0][11][0] = LUT_B2;
+	patterns[4][0][11][1] = 0;
+
+	patterns[4][0][12][0] = LUT_F1;
+	patterns[4][0][12][1] = 1;
+	patterns[4][0][13][0] = LUT_F1;
+	patterns[4][0][13][1] = 0;
+
+	patterns[4][0][14][0] = LUT_C3;
+	patterns[4][0][14][1] = 1;
+	patterns[4][0][15][0] = LUT_C3;
+	patterns[4][0][15][1] = 0;
+
+	patterns[4][1][0][0] = LUT_C3;
+	patterns[4][1][0][1] = 1;
+	patterns[4][1][1][0] = LUT_C3;
+	patterns[4][1][1][1] = 0;
+
+	patterns[4][1][2][0] = LUT_E1;
+	patterns[4][1][2][1] = 1;
+
+	patterns[4][1][3][0] = LUT_E2;
+	patterns[4][1][3][1] = 1;
+
+	patterns[4][1][4][0] = LUT_B2;
+	patterns[4][1][4][1] = 1;
+	patterns[4][1][5][0] = LUT_B2;
+	patterns[4][1][5][1] = 0;
+	patterns[4][1][6][0] = LUT_B2;
+	patterns[4][1][6][1] = 0;
+	patterns[4][1][7][0] = LUT_B2;
+	patterns[4][1][7][1] = 0;
+
+	
+	patterns[4][1][8][0] = LUT_D1;
+	patterns[4][1][8][1] = 1;
+	patterns[4][1][9][0] = LUT_D1;
+	patterns[4][1][9][1] = 0;
+
+	patterns[4][1][10][0] = LUT_A2;
+	patterns[4][1][10][1] = 1;
+	patterns[4][1][11][0] = LUT_A2;
+	patterns[4][1][11][1] = 0;
+
+	patterns[4][1][12][0] = LUT_A2;
+	patterns[4][1][12][1] = 1;
+	patterns[4][1][13][0] = LUT_A2;
+	patterns[4][1][13][1] = 0;
+
+	patterns[4][1][14][0] = LUT_E1;
+	patterns[4][1][14][1] = 1;
+	patterns[4][1][15][0] = LUT_E2;
+	patterns[4][1][15][1] = 0;
+
+	patterns[4][2][0][0] = LUT_B2;
+	patterns[4][2][0][1] = 1;
+	patterns[4][2][1][0] = LUT_B2;
+	patterns[4][2][1][1] = 0;
+	patterns[4][2][2][0] = LUT_B2;
+	patterns[4][2][2][1] = 0;
+	patterns[4][2][3][0] = LUT_B2;
+	patterns[4][2][3][1] = 0;
+
+	patterns[4][2][4][0] = LUT_F1;
+	patterns[4][2][4][1] = 1;
+	patterns[4][2][5][0] = LUT_F1;
+	patterns[4][2][5][1] = 0;
+
+	patterns[4][2][6][0] = LUT_C3;
+	patterns[4][2][6][1] = 1;
+	patterns[4][2][7][0] = LUT_C3;
+	patterns[4][2][7][1] = 0;
+
+	patterns[4][2][8][0] = LUT_C3;
+	patterns[4][2][8][1] = 1;
+	patterns[4][2][9][0] = LUT_C3;
+	patterns[4][2][9][1] = 0;
+
+	patterns[4][2][10][0] = LUT_E1;
+	patterns[4][2][10][1] = 1;
+
+	patterns[4][2][11][0] = LUT_E2;
+	patterns[4][2][11][1] = 1;
+
+	patterns[4][2][12][0] = LUT_B2;
+	patterns[4][2][12][1] = 1;
+	patterns[4][2][13][0] = LUT_B2;
+	patterns[4][2][13][1] = 0;
+	patterns[4][2][14][0] = LUT_B2;
+	patterns[4][2][14][1] = 0;
+	patterns[4][2][15][0] = LUT_B2;
+	patterns[4][2][15][1] = 0;
+	
+	patterns[4][3][0][0] = LUT_D3;
+	patterns[4][3][0][1] = 1;
+
+	patterns[4][3][1][0] = LUT_F3;
+	patterns[4][3][1][1] = 1;
+
+	patterns[4][3][2][0] = LUT_D4;
+	patterns[4][3][2][1] = 1;
+	patterns[4][3][3][0] = LUT_D4;
+	patterns[4][3][3][1] = 0;
+	patterns[4][3][4][0] = LUT_D4;
+	patterns[4][3][4][1] = 0;
+	patterns[4][3][5][0] = LUT_D4;
+	patterns[4][3][5][1] = 0;
+
+	patterns[4][3][6][0] = LUT_D3;
+	patterns[4][3][6][1] = 1;
+	patterns[4][3][7][0] = LUT_F3;
+	patterns[4][3][7][1] = 1;
+	patterns[4][3][8][0] = LUT_D4;
+	patterns[4][3][8][1] = 1;
+	patterns[4][3][9][0] = LUT_D4;
+	patterns[4][3][9][1] = 0;
+	patterns[4][3][10][0] = LUT_D4;
+	patterns[4][3][10][1] = 0;
+	patterns[4][3][11][0] = LUT_D4;
+	patterns[4][3][11][1] = 0;
+
+	patterns[4][3][12][0] = LUT_E4;
+	patterns[4][3][12][1] = 1;
+	patterns[4][3][13][0] = LUT_E4;
+	patterns[4][3][13][1] = 0;
+	patterns[4][3][14][0] = LUT_E4;
+	patterns[4][3][14][1] = 0;
+
+	patterns[4][3][15][0] = LUT_F4;
+	patterns[4][3][15][1] = 1;
+	patterns[4][4][0][0] = LUT_E4;
+	patterns[4][4][0][1] = 1;
+	patterns[4][4][1][0] = LUT_F4;
+	patterns[4][4][1][1] = 1;
+	patterns[4][4][2][0] = LUT_E4;
+	patterns[4][4][2][1] = 1;
+	patterns[4][4][3][0] = LUT_C4;
+	patterns[4][4][3][1] = 1;
+	patterns[4][4][4][0] = LUT_A3;
+	patterns[4][4][4][1] = 1;
+	patterns[4][4][5][0] = LUT_A3;
+	patterns[4][4][5][1] = 0;
+	patterns[4][4][6][0] = LUT_A3;
+	patterns[4][4][6][1] = 0;
+	patterns[4][4][7][0] = LUT_A3;
+	patterns[4][4][7][1] = 0;
+
+	patterns[4][4][8][0] = LUT_A3;
+	patterns[4][4][8][1] = 1;
+	patterns[4][4][9][0] = LUT_A3;
+	patterns[4][4][9][1] = 0;
+
+	patterns[4][4][10][0] = LUT_D3;
+	patterns[4][4][10][1] = 1;
+	patterns[4][4][11][0] = LUT_D3;
+	patterns[4][4][11][1] = 0;
+
+	patterns[4][4][12][0] = LUT_F3;
+	patterns[4][4][12][1] = 1;
+	patterns[4][4][13][0] = LUT_G3;
+	patterns[4][4][13][1] = 1;
+	patterns[4][4][14][0] = LUT_A3;
+	patterns[4][4][14][1] = 1;
+	patterns[4][4][15][0] = LUT_A3;
+	patterns[4][4][15][1] = 0;
+	patterns[4][5][0][0] = LUT_A3;
+	patterns[4][5][0][1] = 0;
+	patterns[4][5][1][0] = LUT_A3;
+	patterns[4][5][1][1] = 0;
+
+	patterns[4][5][2][0] = LUT_A3;
+	patterns[4][5][2][1] = 1;
+	patterns[4][5][3][0] = LUT_A3;
+	patterns[4][5][3][1] = 0;
+
+	patterns[4][5][4][0] = LUT_D3;
+	patterns[4][5][4][1] = 1;
+	patterns[4][5][5][0] = LUT_D3;
+	patterns[4][5][5][1] = 0;
+
+	patterns[4][5][6][0] = LUT_F3;
+	patterns[4][5][6][1] = 1;
+	patterns[4][5][7][0] = LUT_G3;
+	patterns[4][5][7][1] = 1;
+
+	patterns[4][5][8][0] = LUT_E3;
+	patterns[4][5][8][1] = 1;
+	patterns[4][5][9][0] = LUT_E3;
+	patterns[4][5][9][1] = 0;
+	patterns[4][5][10][0] = LUT_E3;
+	patterns[4][5][10][1] = 0;
+	patterns[4][5][11][0] = LUT_E3;
+	patterns[4][5][11][1] = 0;
+
+	patterns[4][5][12][0] = LUT_D3;
+	patterns[4][5][12][1] = 1;
+	patterns[4][5][13][0] = LUT_F3;
+	patterns[4][5][13][1] = 1;
+
+	patterns[4][5][14][0] = LUT_D4;
+	patterns[4][5][14][1] = 1;
+	patterns[4][5][15][0] = LUT_D4;
+	patterns[4][5][15][1] = 0;
+	patterns[4][6][0][0] = LUT_D4;
+	patterns[4][6][0][1] = 0;
+	patterns[4][6][1][0] = LUT_D4;
+	patterns[4][6][1][1] = 0;
+
+	patterns[4][6][2][0] = LUT_D3;
+	patterns[4][6][2][1] = 1;
+	patterns[4][6][3][0] = LUT_F3;
+	patterns[4][6][3][1] = 1;
+
+	patterns[4][6][4][0] = LUT_D4;
+	patterns[4][6][4][1] = 1;
+	patterns[4][6][5][0] = LUT_D4;
+	patterns[4][6][5][1] = 0;
+	patterns[4][6][6][0] = LUT_D4;
+	patterns[4][6][6][1] = 0;
+	patterns[4][6][7][0] = LUT_D4;
+	patterns[4][6][7][1] = 0;
+
+	patterns[4][6][8][0] = LUT_E4;
+	patterns[4][6][8][1] = 1;
+	patterns[4][6][9][0] = LUT_E4;
+	patterns[4][6][9][1] = 0;
+	patterns[4][6][10][0] = LUT_E4;
+	patterns[4][6][10][1] = 0;
+
+	patterns[4][6][11][0] = LUT_F4;
+	patterns[4][6][11][1] = 1;
+	patterns[4][6][12][0] = LUT_E4;
+	patterns[4][6][12][1] = 1;
+	patterns[4][6][13][0] = LUT_F4;
+	patterns[4][6][13][1] = 1;
+	patterns[4][6][14][0] = LUT_E4;
+	patterns[4][6][14][1] = 1;
+	patterns[4][6][15][0] = LUT_C4;
+	patterns[4][6][15][1] = 1;
+	patterns[4][7][0][0] = LUT_A3;
+	patterns[4][7][0][1] = 1;
+	patterns[4][7][1][0] = LUT_A3;
+	patterns[4][7][1][1] = 0;
+	patterns[4][7][2][0] = LUT_A3;
+	patterns[4][7][2][1] = 0;
+	patterns[4][7][3][0] = LUT_A3;
+	patterns[4][7][3][1] = 0;
+
+	patterns[4][7][4][0] = LUT_A3;
+	patterns[4][7][4][1] = 1;
+	patterns[4][7][5][0] = LUT_A3;
+	patterns[4][7][5][1] = 0;
+
+	patterns[4][7][6][0] = LUT_D3;
+	patterns[4][7][6][1] = 1;
+	patterns[4][7][7][0] = LUT_D3;
+	patterns[4][7][7][1] = 0;
+
+	patterns[4][7][8][0] = LUT_F3;
+	patterns[4][7][8][1] = 1;
+	patterns[4][7][9][0] = LUT_G3;
+	patterns[4][7][9][1] = 1;
+
+	patterns[4][7][10][0] = LUT_A3;
+	patterns[4][7][10][1] = 1;
+	patterns[4][7][11][0] = LUT_A3;
+	patterns[4][7][11][1] = 0;
+
+	patterns[4][7][12][0] = LUT_A2;
+	patterns[4][7][12][1] = 1;
+	patterns[4][7][13][0] = LUT_A2;
+	patterns[4][7][13][1] = 0;
+
+	patterns[4][7][14][0] = LUT_A3;
+	patterns[4][7][14][1] = 1;
+	patterns[4][7][15][0] = LUT_A3;
+	patterns[4][7][15][1] = 0;
+
+	patterns[4][8][0][0] = LUT_D3;
+	patterns[4][8][0][1] = 1;
+	patterns[4][8][1][0] = LUT_D3;
+	patterns[4][8][1][1] = 0;
+
+	patterns[4][8][2][0] = LUT_A2;
+	patterns[4][8][2][1] = 1;
+	patterns[4][8][3][0] = LUT_A2;
+	patterns[4][8][3][1] = 0;
+	patterns[4][8][4][0] = LUT_A2;
+	patterns[4][8][4][1] = 1;
+	patterns[4][8][5][0] = LUT_A2;
+	patterns[4][8][5][1] = 0;
+
+	patterns[4][8][6][0] = LUT_E2;
+	patterns[4][8][6][1] = 1;
+	patterns[4][8][7][0] = LUT_E2;
+	patterns[4][8][6][1] = 0;
+
+	patterns[4][8][8][0] = LUT_B2;
+	patterns[4][8][8][1] = 1;
+	patterns[4][8][9][0] = LUT_B2;
+	patterns[4][8][9][1] = 0;
+	patterns[4][8][10][0] = LUT_B2;
+	patterns[4][8][10][1] = 0;
+	patterns[4][8][11][0] = LUT_B2;
+	patterns[4][8][11][1] = 0;
+
+	patterns[4][8][12][1] = 0;
+	patterns[4][8][13][1] = 0;
+
+	patterns[4][8][14][0] = LUT_C3;
+	patterns[4][8][14][1] = 1;
+	patterns[4][8][15][0] = LUT_C3;
+	patterns[4][8][15][1] = 0;
+
+	
+// 	patterns[4][0][12][1] = 1;
+// 	patterns[4][0][13][1] = 0;
+// 	patterns[4][0][14][1] = 1;
+// 	patterns[4][0][15][1] = 0;
+// 
+// 	patterns[4][1][0][1] = 1;
+// 	patterns[4][1][1][1] = 0;
+// 
+// 	patterns[4][0][0][0] = 1;
+// 	patterns[4][0][1][0] = 1;
+// 	patterns[4][0][2][0] = ;
+// 	patterns[4][0][3][0] = ;
+// 	patterns[4][0][4][0] = ;
+// 	patterns[4][0][5][0] = ;
+// 	patterns[4][0][6][0] = ;
+// 	patterns[4][0][7][0] = ;
+// 	patterns[4][0][8][0] = ;
+// 	patterns[4][0][9][0] = ;
+// 	patterns[4][0][10][0] = ;
+// 	patterns[4][0][11][0] = ;
+// 	patterns[4][0][12][0] = ;
+// 	patterns[4][0][13][0] = ;
+// 	patterns[4][0][14][0] = ;
+// 	patterns[4][0][15][0] = ;
+// 
+// 	patterns[4][0][0][0] = ;
+// 	patterns[4][0][1][0] = ;
+// 	patterns[4][0][2][0] = ;
+// 	patterns[4][0][3][0] = ;
+// 	patterns[4][0][4][0] = ;
+// 	patterns[4][0][5][0] = ;
+// 	patterns[4][0][6][0] = ;
+// 	patterns[4][0][7][0] = ;
+// 	patterns[4][0][8][0] = ;
+// 	patterns[4][0][9][0] = ;
+// 	patterns[4][0][10][0] = ;
+// 	patterns[4][0][11][0] = ;
+// 	patterns[4][0][12][0] = ;
+// 	patterns[4][0][13][0] = ;
+// 	patterns[4][0][14][0] = ;
+// 	patterns[4][0][15][0] = ;
+
+// 	patterns[4][0][9][0] = 61;
+// 	patterns[4][0][10][0] = LUT_D5;
+// 	patterns[4][0][11][0] = LUT_D5;
+
+
 }
 
 
@@ -260,23 +765,23 @@ void notes_inc(uint8_t step){
 		patterns[curr_pattern][display_page][step][0]++;
 	}
 
-// 	patterns[curr_pattern][display_page][0][0] = 60; //C5
-// 	patterns[curr_pattern][display_page][1][0] = 60; //C5
-// 	patterns[curr_pattern][display_page][2][0] = 62; //D5
-// 	patterns[curr_pattern][display_page][3][0] = 64; //E5
-// 	patterns[curr_pattern][display_page][4][0] = 67; //G5
-// 	patterns[curr_pattern][display_page][5][0] = 67; //G5
-// 	patterns[curr_pattern][display_page][6][0] = 67; //G5
-// 	patterns[curr_pattern][display_page][7][0] = 64; //E5
+// 	patterns[curr_pattern][display_page][0][0] = 60;
+// 	patterns[curr_pattern][display_page][1][0] = 60;
+// 	patterns[curr_pattern][display_page][2][0] = 62;
+// 	patterns[curr_pattern][display_page][3][0] = 64;
+// 	patterns[curr_pattern][display_page][4][0] = 67;
+// 	patterns[curr_pattern][display_page][5][0] = 67;
+// 	patterns[curr_pattern][display_page][6][0] = 67;
+// 	patterns[curr_pattern][display_page][7][0] = 64;
 // 
-// 	patterns[curr_pattern][display_page][8][0] = 64; //F5
-// 	patterns[curr_pattern][display_page][9][0] = 64; //E5
-// 	patterns[curr_pattern][display_page][10][0] = 60; //C5
-// 	patterns[curr_pattern][display_page][11][0] = 55; //G4
-// 	patterns[curr_pattern][display_page][12][0] = 55; //G4
-// 	patterns[curr_pattern][display_page][13][0] = 55; //G4
-// 	patterns[curr_pattern][display_page][14][0] = 57; //A4
-// 	patterns[curr_pattern][display_page][15][0] = 59; //B4
+// 	patterns[curr_pattern][display_page][8][0] = 64; 
+// 	patterns[curr_pattern][display_page][9][0] = 64;
+// 	patterns[curr_pattern][display_page][10][0] = 60;
+// 	patterns[curr_pattern][display_page][11][0] = 55; 
+// 	patterns[curr_pattern][display_page][12][0] = 55;
+// 	patterns[curr_pattern][display_page][13][0] = 55;
+// 	patterns[curr_pattern][display_page][14][0] = 57;
+// 	patterns[curr_pattern][display_page][15][0] = 59;
 // 
 // 	patterns[curr_pattern][display_page][0][1] = 1;
 // 	patterns[curr_pattern][display_page][1][1] = 1;
@@ -296,23 +801,23 @@ void notes_inc(uint8_t step){
 // 	patterns[curr_pattern][display_page][14][1] = 1;
 // 	patterns[curr_pattern][display_page][15][1] = 1;
 // 
-// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][0] = 28; //E2
-// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][0] = 28; //E2
-// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][0] = 28; //E2
-// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][0] = 0; //REST
-// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][0] = 28; //E2
-// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][0] = 28; //E2
-// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][0] = 28; //E2
-// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][0] = 0; //REST
-// 
-// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][0] = 25; //C2_SH
-// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][0] = 0; //REST
-// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][0] = 0; //REST
-// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][0] = 25; //C2_SH
-// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][0] = 25; //C2_SH
-// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][0] = 28; //E2
-// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][0] = 0; //REST
-// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][0] = 28; //E2
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][0] = 28;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][1][0] = 28;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][2][0] = 28; 
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][3][0] = 0; 
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][4][0] = 28;
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][5][0] = 28; //
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][6][0] = 28; //
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][7][0] = 0; //
+//
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][8][0] = 25; //
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][9][0] = 0; //
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][10][0] = 0; //
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][11][0] = 25; //
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][12][0] = 25; //
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][13][0] = 28; //
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][14][0] = 0; //
+// 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][15][0] = 28; //
 // 
 // 
 // 	patterns[curr_pattern_ch[1]][curr_page_ch[1]][0][1] = 1;

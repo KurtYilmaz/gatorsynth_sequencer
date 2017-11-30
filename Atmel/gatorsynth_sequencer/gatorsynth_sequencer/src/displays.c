@@ -151,7 +151,7 @@ uint8_t curr_display = 7;
 	}
  }
 
- void display_reset(){
+ void display_reset() {
 	REG_PIOA_SODR |= disp_reset; //set high
 	delay_ms(1);
 	REG_PIOA_CODR |= disp_reset; //set low
@@ -678,6 +678,10 @@ void res_display(uint8_t res) {
 		display_number(16, 22, 2);
 		display_char('t', 22, 2);
 	}
+	else if(res == 48) {
+		display_number(32, 22, 2);
+		display_char('t', 22, 2);
+	}	
 	else {
 		display_number(res, 22, 2);
 	}
@@ -747,8 +751,6 @@ void clr_pattern_display(uint8_t pattern, bool yes) {
 	display_char('R', 22, 4);
 	display_char(':', 22, 4);
 	display_number(pattern, 22, 4);
-	display_char(' ', 22, 4);
-	display_char(' ', 22, 4);
 	display_char(' ', 22, 4);
 	display_char(' ', 22, 4);
 	if(yes) {

@@ -58,7 +58,7 @@
 		}
 		else if (aux_control == 3){
 			if(pattern_clr == 1) {
-				clr_yes = ~clr_yes;
+				clr_yes = 0;
 				if(clr_yes) {
 					clr_pattern_display(curr_pattern, 1);
 				}
@@ -114,7 +114,7 @@
 		}
 		else if (aux_control == 3){
 			if(pattern_clr == 1) {
-				clr_yes = ~clr_yes;
+				clr_yes = 1;
 				if(clr_yes) {
 					clr_pattern_display(curr_pattern, 1);
 				}
@@ -274,6 +274,12 @@ void page_loop_dec(){
 	}
 }
 
+void synch_to_page(){
+	for (int i = 0; i < 4; i++){
+		curr_page_ch[i] = 0;
+	}
+}
+
 void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 
 	switch(aux_encoders) {
@@ -342,7 +348,7 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 
 	switch(button_row) {
 		case 254 :
-			
+			synch_to_page();
 			break;
 		case 253 :
 			
@@ -460,7 +466,7 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 	REG_PIOA_PPDDR |= PIO_PPDDR_P7; //disable pull-down resistor
 	REG_PIOA_PUER |= PIO_PUER_P7;	//enable pull-up resistor
 	REG_PIOA_IFSCER |= PIO_IFSCER_P7; //turn on slow clock debounce
-	REG_PIOA_IFER |= PIO_IFER_P7;	//start debounce filter
+	REG_PIOA_IFER |= PIO_IFER_P7;	//start debounce filte3
 
 
 	

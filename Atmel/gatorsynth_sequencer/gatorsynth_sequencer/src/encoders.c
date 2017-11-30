@@ -170,12 +170,12 @@ void Encoder_init(){
 
 
 	//Set up PC12 as ENCODER 7 INPUT A
-	REG_PIOC_PER |= PIO_PER_P3; //enable PIO controller
-	REG_PIOC_ODR |= PIO_ODR_P3; //disable output
-	REG_PIOC_PPDDR |= PIO_PPDDR_P3; //disable pull-down resistor
-	REG_PIOC_PUER |= PIO_PUER_P3;	//enable pull-up resistor
-	REG_PIOC_IFSCER |= PIO_IFSCER_P3; //turn on slow clock debounce
-	REG_PIOC_IFER |= PIO_IFER_P3;	//start debounce filter
+	REG_PIOC_PER |= PIO_PER_P12; //enable PIO controller
+	REG_PIOC_ODR |= PIO_ODR_P12; //disable output
+	REG_PIOC_PPDDR |= PIO_PPDDR_P12; //disable pull-down resistor
+	REG_PIOC_PUER |= PIO_PUER_P12;	//enable pull-up resistor
+	REG_PIOC_IFSCER |= PIO_IFSCER_P12; //turn on slow clock debounce
+	REG_PIOC_IFER |= PIO_IFER_P12;	//start debounce filter
 
 	//Set up PC13 as ENCODER 7 INPUT B
 	REG_PIOC_PER |= PIO_PER_P13; //enable PIO controller
@@ -386,13 +386,13 @@ void Encoder_init(){
 
 	//Enable interrupts for Encoder 6
 	REG_PIOC_IER |= PIO_IER_P10;			//enable input rising edge interrupt
-	//REG_PIOC_REHLSR |= PIO_REHLSR_P10;
+	REG_PIOC_REHLSR |= PIO_REHLSR_P10;
 	REG_PIOC_IER |= PIO_IER_P11;			//enable input rising edge interrupt
-	//REG_PIOC_REHLSR |= PIO_REHLSR_P11;
+	REG_PIOC_REHLSR |= PIO_REHLSR_P11;
 
 	//Enable interrupts for Encoder 7
-	REG_PIOC_IER |= PIO_IER_P3;			//enable input rising edge interrupt
-	REG_PIOC_REHLSR |= PIO_REHLSR_P3;
+	REG_PIOC_IER |= PIO_IER_P12;			//enable input rising edge interrupt
+	REG_PIOC_REHLSR |= PIO_REHLSR_P12;
 	REG_PIOC_IER |= PIO_IER_P13;			//enable input rising edge interrupt
 	REG_PIOC_REHLSR |= PIO_REHLSR_P13;
 

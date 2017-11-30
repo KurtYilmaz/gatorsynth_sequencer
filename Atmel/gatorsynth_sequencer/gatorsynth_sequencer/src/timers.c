@@ -130,7 +130,7 @@
 			  DAC_write_gate_off(CHANNEL_4);
 		  }
 
-		  if(overflow_count == 0) {
+		  if(overflow_count == 20000) {
 
 			  //update the CVs for each channel
 			  //update the gates for each channel
@@ -155,10 +155,7 @@
 
 			  REG_ADC_CR |= ADC_CR_START;
 		  }
-
-		  if (overflow_count == 20000){
-
-		  
+		  if(overflow_count == 20000) {
 			  SPI_led_init();
 			  leds_update_cursor(curr_step);
 

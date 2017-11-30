@@ -44,6 +44,7 @@ void pattern_up(uint8_t channel);
 void pattern_down(uint8_t channel);
 void page_loop_inc(void);
 void page_loop_dec(void);
+void synch_to_page(void);
 
 void aux_toggle(uint8_t button_row, uint8_t aux_encoders);
 
