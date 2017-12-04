@@ -109,11 +109,13 @@ src/main.d src/main.o: ../src/main.c ../src/asf.h \
  ../src/ASF/common/services/clock/pll.h \
  ../src/ASF/common/services/clock/sam4n/pll.h \
  ../src/ASF/common/services/delay/sam/cycle_counter.h \
+ ../src/ASF/sam/drivers/efc/efc.h \
+ ../src/ASF/sam/services/flash_efc/flash_efc.h \
  ../src/ASF/sam/drivers/pmc/sleep.h \
  ../src/ASF/sam/utils/cmsis/sam4n/source/templates/exceptions.h \
  ../src/ASF/sam/drivers/twi/twi.h ../src/encoders.h ../src/timers.h \
  ../src/leds.h ../src/spi.h ../src/dac.h ../src/notes.h ../src/i2c.h \
- ../src/sequencer.h ../src/adc.h ../src/displays.h
+ ../src/sequencer.h ../src/adc.h ../src/displays.h ../src/flash_mem.h
 
 ../src/asf.h:
 
@@ -343,6 +345,10 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 
 ../src/ASF/common/services/delay/sam/cycle_counter.h:
 
+../src/ASF/sam/drivers/efc/efc.h:
+
+../src/ASF/sam/services/flash_efc/flash_efc.h:
+
 ../src/ASF/sam/drivers/pmc/sleep.h:
 
 ../src/ASF/sam/utils/cmsis/sam4n/source/templates/exceptions.h:
@@ -368,3 +374,5 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 ../src/adc.h:
 
 ../src/displays.h:
+
+../src/flash_mem.h:

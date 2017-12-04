@@ -689,26 +689,31 @@ void res_display(uint8_t res) {
 }
 
 void saving_display(uint8_t dot_number) {
-	if(dot_number == 0) {
+	/*if(dot_number == 0) {*/
 		display_char('S', 28, 2);
 		display_char(' ', 28, 2);
 		display_char('A', 28, 2);
 		display_char(' ', 28, 2);
 		display_char('V', 28, 2);
 		display_char(' ', 28, 2);
-		display_char('I', 28, 2);
+		display_char('E', 28, 2);
 		display_char(' ', 28, 2);
-		display_char('N', 28, 2);
+		display_char('D', 28, 2);
 		display_char(' ', 28, 2);
-		display_char('G', 28, 2);
-	}
-	else if(dot_number < 3) {
-		display_char('.', 28, 2);
-	}
-	else if(dot_number >= 3) {
-		display_char('.', 28, 2);
 		finish_display(2);
-	}
+// 		display_char('I', 22, 2);
+// 		display_char(' ', 22, 2);
+// 		display_char('N', 22, 2);
+// 		display_char(' ', 22, 2);
+// 		display_char('G', 22, 2);
+// 	}
+// 	else if(dot_number < 3) {
+// 		display_char('.', 22, 2);
+// 	}
+// 	else if(dot_number >= 3) {
+// 		display_char('.', 22, 2);
+// 		finish_display(2);
+// 	}
 }
 
 // Display 3

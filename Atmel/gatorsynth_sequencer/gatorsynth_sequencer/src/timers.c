@@ -130,7 +130,7 @@
 			  DAC_write_gate_off(CHANNEL_4);
 		  }
 
-		  if(overflow_count == 20000) {
+		  if(overflow_count == 0) {
 
 			  //update the CVs for each channel
 			  //update the gates for each channel
@@ -155,9 +155,17 @@
 
 			  REG_ADC_CR |= ADC_CR_START;
 		  }
-		  if(overflow_count == 20000) {
+		  if(overflow_count == 10000) {
 			  SPI_led_init();
 			  leds_update_cursor(curr_step);
+
+			  if (curr_step == 0){
+				//if cursor follow mode is on, then update the page display
+				  if (cursor_follow == 1){
+					  page_display(curr_page);
+					  page_or_loop = 0;
+				  }
+			  }
 
 			  if (curr_step == 15){
 				  //increment to next page or go back to first page
@@ -182,17 +190,23 @@
 
 				  }
 
-
 				  //return to first step on next page
 				  curr_step = 0;
 			  }
-			  else{
-				  curr_step++;
+
+			  else{ 
+				  curr_step++; 
 			  }
+
+			 //if cursor follow is on then set display page to the current page of the pattern
+			 if (cursor_follow == 1){
+					 display_page = curr_page;
+			 }
+
 		  }
 
 		  overflow_count++;
-		  if (overflow_count >= 40001){
+		  if (overflow_count >= 40000){
 			  overflow_count = 0;
 		  }
 
@@ -203,12 +217,12 @@
 // Timeout timer for note displays
 	if((REG_TC0_SR1 & TC_SR_CPCS) >= 1) {
 		note_overflow_count++;
+
+		if (note_overflow_count >= 10000){
+			note_overflow_count = 0;
+			REG_TC0_CCR1 |= TC_CCR_CLKDIS;
+			res_display(res_to_int(resolution));
+		}
 	}
 
-	if (note_overflow_count >= 10000){
-		pattern_clr = 0;
-		note_overflow_count = 0;
-		REG_TC0_CCR1 |= TC_CCR_CLKDIS;
-		pattern_display(curr_pattern);
-	}
 }

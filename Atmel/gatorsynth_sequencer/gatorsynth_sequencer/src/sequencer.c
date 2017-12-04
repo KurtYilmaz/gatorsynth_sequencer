@@ -15,6 +15,8 @@
  #include "displays.h"
  #include "notes.h"
  #include "dac.h"
+ #include "flash_mem.h"
+ #include "leds.h"
 
 
  void control_direction(uint32_t A, uint32_t B, uint8_t aux_control){
@@ -48,6 +50,7 @@
 		}
 		else if (aux_control == 2){
 			if (page_or_loop == 0){
+				cursor_follow = 0;
 				display_page_inc();
 				leds_update_cursor(curr_step);
 				page_display(display_page);
@@ -109,6 +112,7 @@
 		}
 		else if (aux_control == 2){
 			if (page_or_loop == 0){
+				cursor_follow = 0;
 				display_page_dec();
 				leds_update_cursor(curr_step);
 				page_display(display_page);
@@ -284,10 +288,34 @@ void page_loop_dec(){
 	}
 }
 
-void synch_to_page(){
-	for (int i = 0; i < 4; i++){
-		curr_page_ch[i] = 0;
+void cursor_follow_toggle(){
+	cursor_follow = !cursor_follow;
+}
+
+void pattern_octave_up(){
+	for (int i = 0; i < 16; i++){
+		for (int j = 0; j < 16; j++){
+			uint32_t temp = patterns[curr_pattern][i][j][0] + 12; //increase pattern notes by 1 octave
+
+			if (temp <= 108){
+				patterns[curr_pattern][i][j][0] += 12;
+			}
+		}
 	}
+}
+
+void pattern_octave_down(){
+	for (int i = 0; i < 16; i++){
+		for (int j = 0; j < 16; j++){
+			uint32_t temp = patterns[curr_pattern][i][j][0] - 12; //increase pattern notes by 1 octave
+
+			if ( !(temp > 108) ){
+				patterns[curr_pattern][i][j][0] -= 12;
+			}
+		}
+	}
+
+
 }
 
 void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
@@ -298,7 +326,10 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 			bpm_toggle();
 			break;
 		case 253 :
-			//toggle resolution or scale?
+			//save patterns
+			flash_write_mem(0x00490000);
+			saving_display(0);
+			REG_TC0_CCR1 |= TC_CCR_CLKEN | TC_CCR_SWTRG;		//start 2 sec timer
 			break;
 		case 251 :
 			//toggle between page & loop variables
@@ -358,10 +389,10 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 
 	switch(button_row) {
 		case 254 :
-			synch_to_page();
+			led_toggle_note();
 			break;
 		case 253 :
-			
+			led_toggle_cursor();
 			break;
 		case 251 :
 			
@@ -370,42 +401,16 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 			
 			break;
 		case 239 :
-			notes_dec(6);
-			note_display(patterns[curr_pattern][display_page][6][0]);
+			
 			break;
 		case 223 :
-			notes_inc(6);
-			note_display(patterns[curr_pattern][display_page][6][0]);
+			cursor_follow_toggle();
 			break;
 		case 191 :
-			if(pattern_clr == 1) {
-				clr_yes = !clr_yes;
-				if(clr_yes) {
-					clr_pattern_display(curr_pattern, 1);
-				}
-				else {
-					clr_pattern_display(curr_pattern, 0);
-				}
-			}
-			else {
-				pattern_dec();
-				pattern_display(curr_pattern);
-			}
+			pattern_octave_down();
 			break;
 		case 127 :
-			if(pattern_clr == 1) {
-				clr_yes = !clr_yes;
-				if(clr_yes) {
-					clr_pattern_display(curr_pattern, 1);
-				}
-				else {
-					clr_pattern_display(curr_pattern, 0);
-				}
-			}
-			else {
-				pattern_inc();
-				pattern_display(curr_pattern);
-			}
+			pattern_octave_up();
 			break;
 		default :
 			break;
@@ -422,6 +427,7 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 	page_or_loop = 0;
 	pattern_clr = 0;
 	clr_yes = 0;
+	cursor_follow = 0;
 	pause = 0;
 	pause_count = 0;
 

@@ -4,13 +4,19 @@
 
 src\adc.c
 
+src\ASF\sam\drivers\efc\efc.c
+
 src\ASF\sam\drivers\twi\twi.c
+
+src\ASF\sam\services\flash_efc\flash_efc.c
 
 src\dac.c
 
 src\displays.c
 
 src\encoders.c
+
+src\flash_mem.c
 
 src\fonts.c
 

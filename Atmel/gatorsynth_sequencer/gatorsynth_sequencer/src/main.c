@@ -11,6 +11,7 @@
 #include "sequencer.h"
 #include "adc.h"
 #include "displays.h"
+#include "flash_mem.h"
 #include <twi.h>
 
 uint8_t brightness = 0x07;
@@ -37,6 +38,7 @@ int main (void)
 
 	board_init();				//board init (currently empty)
 	
+	led_init_colors();
 	SPI_led_init();
 	i2c_init();
 	init_IO_int();
@@ -51,15 +53,20 @@ int main (void)
 	config_MAX7314();
 	read_button_MAX7314(button_port_data);
 
-	notes_default();
-
+	//notes_default();
+	//flash_write_mem(0x00490000);
+ 	
 	note_display(48);
+ 	
+
  	bpm_display(bpm);
  	res_display(res_to_int(resolution));
  	page_display(curr_page);
  	pattern_display(curr_pattern);
  	output_display_1(curr_pattern_ch[0], curr_pattern_ch[1]);
  	output_display_2(curr_pattern_ch[2], curr_pattern_ch[3]);
+
+	pattern_mem_read(0x00490000);
 
 	while (1)
 	{

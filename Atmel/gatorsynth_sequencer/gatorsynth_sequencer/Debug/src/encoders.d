@@ -109,6 +109,8 @@ src/encoders.d src/encoders.o: ../src/encoders.c ../src/asf.h \
  ../src/ASF/common/services/clock/pll.h \
  ../src/ASF/common/services/clock/sam4n/pll.h \
  ../src/ASF/common/services/delay/sam/cycle_counter.h \
+ ../src/ASF/sam/drivers/efc/efc.h \
+ ../src/ASF/sam/services/flash_efc/flash_efc.h \
  ../src/ASF/sam/drivers/pmc/sleep.h \
  ../src/ASF/sam/utils/cmsis/sam4n/source/templates/exceptions.h \
  ../src/ASF/sam/drivers/twi/twi.h ../src/notes.h ../src/timers.h \
@@ -341,6 +343,10 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 ../src/ASF/common/services/clock/sam4n/pll.h:
 
 ../src/ASF/common/services/delay/sam/cycle_counter.h:
+
+../src/ASF/sam/drivers/efc/efc.h:
+
+../src/ASF/sam/services/flash_efc/flash_efc.h:
 
 ../src/ASF/sam/drivers/pmc/sleep.h:
 

@@ -10,6 +10,7 @@
 #include "spi.h"
 #include "timers.h"
 #include "notes.h"
+#include "leds.h"
 
 
 
@@ -43,6 +44,67 @@ void leds_update_note(uint8_t led_pos);
 void leds_update_display();
 void led_toggle(uint8_t top_row, uint8_t bottom_row);
 int leds_status_get(uint8_t curr_step);
+
+
+void led_init_colors(){
+
+	cursor_led_data1 = 0xAFFF;
+	cursor_led_data2 = 0x1FFF;
+	cursor_led_data3 = 0x0000;
+
+	note_led_data1 = 0x0000;
+	note_led_data2 = 0x0000;
+	note_led_data3 = 0xF7FF;
+
+	cursor_led_color = 0;
+	note_led_color = 0;
+	
+}
+
+void led_toggle_cursor(){
+
+	if (cursor_led_color == 0){
+		cursor_led_data1 = 0x8000;
+		cursor_led_data2 = 0x8000;
+		cursor_led_data3 = 0x0000;
+		cursor_led_color = 1;
+	}
+	else if (cursor_led_color == 1){
+		cursor_led_data1 = 0x7FFF;
+		cursor_led_data2 = 0x0000;
+		cursor_led_data3 = 0x0000;
+		cursor_led_color = 2;
+	}
+	else if (cursor_led_color == 2){
+		cursor_led_data1 = 0xAFFF;
+		cursor_led_data2 = 0x1FFF;
+		cursor_led_data3 = 0x0000;
+		cursor_led_color = 0;
+	}
+}
+
+void led_toggle_note(){
+
+	if (note_led_color == 0){
+		note_led_data1 = 0x0000;
+		note_led_data2 = 0x6000;
+		note_led_data3 = 0x1000;
+		note_led_color = 1;
+	}
+	else if (note_led_color == 1){
+		note_led_data1 = 0x2000;
+		note_led_data2 = 0x0000;
+		note_led_data3 = 0x5000;
+		note_led_color = 2;
+	}
+	else if (note_led_color == 2){
+		note_led_data1 = 0x0000;
+		note_led_data2 = 0x0000;
+		note_led_data3 = 0xF7FF;
+		note_led_color = 0;
+	}
+	
+}
 
 int leds_status_get(uint8_t curr_step){
 	return leds_status[curr_step];
@@ -141,53 +203,53 @@ void leds_update_cursor(uint8_t curr_step){
 			if ( (i >= 0) && (i < 4) ){
 				toffset = (i)*3;
 				if(leds_status[i] == 1){
-					leds_data_1[toffset] = 0x0000;
-					leds_data_1[toffset+1] = 0x0000;
-					leds_data_1[toffset+2] = 0xFFFF;
+					leds_data_1[toffset] = note_led_data1;
+					leds_data_1[toffset+1] = note_led_data2;
+					leds_data_1[toffset+2] = note_led_data3;
 				}
 				else{
-					leds_data_1[toffset] = 0x0000;
-					leds_data_1[toffset+1] = 0x0000;
-					leds_data_1[toffset+2] = 0x0000;
+					leds_data_1[toffset] = off_led_data;
+					leds_data_1[toffset+1] = off_led_data;
+					leds_data_1[toffset+2] = off_led_data;
 				}
 			}
 			else if ( (i >= 4) && (i < 8) ){
 				toffset = (i % 4)*3;
 				if(leds_status[i] == 1){
-					leds_data_2[toffset] = 0x0000;
-					leds_data_2[toffset+1] = 0x0000;
-					leds_data_2[toffset+2] = 0xFFFF;
+					leds_data_2[toffset] = note_led_data1;
+					leds_data_2[toffset+1] = note_led_data2;
+					leds_data_2[toffset+2] = note_led_data3;
 				}
 				else{
-					leds_data_2[toffset] = 0x0000;
-					leds_data_2[toffset+1] = 0x0000;
-					leds_data_2[toffset+2] = 0x0000;
+					leds_data_2[toffset] = off_led_data;
+					leds_data_2[toffset+1] = off_led_data;
+					leds_data_2[toffset+2] = off_led_data;
 				}
 			}
 			else if ( (i >= 8) && (i < 12) ){
 				toffset = (i % 8)*3;
 				if(leds_status[i] == 1){
-					leds_data_3[toffset] = 0x0000;
-					leds_data_3[toffset+1] = 0x0000;
-					leds_data_3[toffset+2] = 0xFFFF;
+					leds_data_3[toffset] = note_led_data1;
+					leds_data_3[toffset+1] = note_led_data2;
+					leds_data_3[toffset+2] = note_led_data3;
 				}
 				else{
-					leds_data_3[toffset] = 0x0000;
-					leds_data_3[toffset+1] = 0x0000;
-					leds_data_3[toffset+2] = 0x0000;
+					leds_data_3[toffset] = off_led_data;
+					leds_data_3[toffset+1] = off_led_data;
+					leds_data_3[toffset+2] = off_led_data;
 				}
 			}
 			else {
 				toffset = (i % 12)*3;
 				if(leds_status[i] == 1){
-					leds_data_4[toffset] = 0x0000;
-					leds_data_4[toffset+1] = 0x0000;
-					leds_data_4[toffset+2] = 0xFFFF;
+					leds_data_4[toffset] = note_led_data1;
+					leds_data_4[toffset+1] = note_led_data2;
+					leds_data_4[toffset+2] = note_led_data3;
 				}
 				else{
-					leds_data_4[toffset] = 0x0000;
-					leds_data_4[toffset+1] = 0x0000;
-					leds_data_4[toffset+2] = 0x0000;
+					leds_data_4[toffset] = off_led_data;
+					leds_data_4[toffset+1] = off_led_data;
+					leds_data_4[toffset+2] = off_led_data;
 				}
 			}
 	}
@@ -204,9 +266,9 @@ void leds_update_cursor(uint8_t curr_step){
 // 					leds_data_4[11] = 0x0000;
 // 				}
 // 				else{
-					leds_data_1[offset] = 0xFFFF;
-					leds_data_1[offset+1] = 0x0FFF;
-					leds_data_1[offset+2] = 0x0000;
+					leds_data_1[offset] = cursor_led_data1;
+					leds_data_1[offset+1] = cursor_led_data2;
+					leds_data_1[offset+2] = cursor_led_data3;
 /*				}*/
 			}
 			else if ( (curr_step >= 4) && (curr_step < 8) ){
@@ -218,9 +280,9 @@ void leds_update_cursor(uint8_t curr_step){
 // 					leds_data_1[11] = 0x0000;
 // 				}
 // 				else{
-					leds_data_2[offset] = 0xFFFF;
-					leds_data_2[offset+1] = 0x0FFF;
-					leds_data_2[offset+2] = 0x0000;
+					leds_data_2[offset] = cursor_led_data1;
+					leds_data_2[offset+1] = cursor_led_data2;
+					leds_data_2[offset+2] = cursor_led_data3;
 /*				}*/
 			}
 			else if ( (curr_step >= 8) && (curr_step < 12) ){
@@ -232,9 +294,9 @@ void leds_update_cursor(uint8_t curr_step){
 // 					leds_data_2[11] = 0x0000;
 // 				}
 //				else{
-					leds_data_3[offset] = 0xFFFF;
-					leds_data_3[offset+1] = 0x0FFF;
-					leds_data_3[offset+2] = 0x0000;
+					leds_data_3[offset] = cursor_led_data1;
+					leds_data_3[offset+1] = cursor_led_data2;
+					leds_data_3[offset+2] = cursor_led_data3;
 /*				}*/
 			}
 			else if ( (curr_step >= 12) && (curr_step < 16) ){
@@ -246,9 +308,9 @@ void leds_update_cursor(uint8_t curr_step){
 // 					leds_data_3[11] = 0x0000;
 // 				}
 /*				else{*/
-					leds_data_4[offset] = 0xFFFF;
-					leds_data_4[offset+1] = 0x0FFF;
-					leds_data_4[offset+2] = 0x0000;
+					leds_data_4[offset] = cursor_led_data1;
+					leds_data_4[offset+1] = cursor_led_data2;
+					leds_data_4[offset+2] = cursor_led_data3;
 /*				}*/
 			}
 	}
