@@ -20,6 +20,8 @@
 
 bool clr_yes;
 bool cursor_follow;
+bool page_disable;
+uint8_t save;
 uint8_t pause;
 uint8_t pause_count;
 uint16_t bpm;
@@ -29,8 +31,6 @@ uint8_t pattern_clr;
 uint8_t patterns_out[4];
 // uint8_t button_feature[8];
 // uint8_t aux_feature[8];
-
-uint8_t patterns_loop[16];
 
 
 uint8_t res_to_int(uint8_t res);
@@ -50,6 +50,7 @@ void page_loop_dec(void);
 void cursor_follow_toggle(void);
 void pattern_octave_up(void);
 void pattern_octave_down(void);
+void synch_pages(void);
 
 void aux_toggle(uint8_t button_row, uint8_t aux_encoders);
 

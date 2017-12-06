@@ -359,6 +359,7 @@ uint32_t twi_master_write(Twi *p_twi, twi_packet_t *p_packet)
  		}
 
 		if (!(status & TWI_SR_TXRDY)) {
+			
  			continue;
  		}
 		p_twi->TWI_THR = *buffer++;

@@ -131,6 +131,11 @@
 #include "flash_mem.h"
 
 
+uint32_t ul_rc;
+uint32_t ul_idx;
+uint8_t uc_key;
+uint32_t ul_page_buffer[64*IFLASH_PAGE_SIZE / sizeof(uint32_t)];
+
 typedef unsigned long UL;
 
 /*#define TEST_PAGE_ADDRESS 0x004FF800;*/
@@ -142,25 +147,21 @@ void flash_write_mem(uint32_t TEST_PAGE_ADDRESS){
 	
 	uint32_t ul_test_page_addr = TEST_PAGE_ADDRESS;
 	uint32_t *pul_test_page = (uint32_t *) ul_test_page_addr;
-	uint32_t ul_rc;
-	uint32_t ul_idx;
-	uint8_t uc_key;
-	uint32_t ul_page_buffer[64*IFLASH_PAGE_SIZE / sizeof(uint32_t)];
 
 	/* Initialize flash: 6 wait states for flash writing. */
 	ul_rc = flash_init(FLASH_ACCESS_MODE_128, 6);
 	if (ul_rc != FLASH_RC_OK) {
 		//printf("-F- Initialization error %lu\n\r", (UL)ul_rc);
-		return 0;
+		//return 0;
 	}
 
 	/* Unlock page */
 	//printf("-I- Unlocking test page: 0x%08x\r\n", ul_test_page_addr);
 	ul_rc = flash_unlock(ul_test_page_addr,
-			ul_test_page_addr + 64*IFLASH_PAGE_SIZE - 1, 0, 0);
+			ul_test_page_addr +64*IFLASH_PAGE_SIZE - 1, 0, 0);
 	if (ul_rc != FLASH_RC_OK) {
 		//printf("-F- Unlock error %lu\n\r", (UL)ul_rc);
-		return 0;
+		//return 0;
 	}
 
 	uint32_t test = 0;
@@ -170,11 +171,12 @@ void flash_write_mem(uint32_t TEST_PAGE_ADDRESS){
 // 		ul_page_buffer[ul_idx] = test++;
 // 	}
 
+	ul_idx = 0;
 	for (int i = 0; i < 16; i++){
 		for (int j = 0; j < 16; j++){
 			for (int k = 0; k < 16; k++){
 				for (int m = 0; m < 2; m++){
-					ul_page_buffer[ul_idx] = (uint32_t) patterns[i][j][k][m];
+					ul_page_buffer[ul_idx] = patterns[i][j][k][m];
 					ul_idx++;
 				}
 			}
@@ -191,7 +193,7 @@ void flash_write_mem(uint32_t TEST_PAGE_ADDRESS){
 
 	if (ul_rc != FLASH_RC_OK) {
 		//printf("-F- Flash programming error %lu\n\r", (UL)ul_rc);
-		return 0;
+		//return 0;
 	}
 
 
@@ -203,17 +205,17 @@ void flash_write_mem(uint32_t TEST_PAGE_ADDRESS){
 #endif
 	if (ul_rc != FLASH_RC_OK) {
 		//printf("-F- Flash programming error %lu\n\r", (UL)ul_rc);
-		return 0;
+		//return 0;
 	}
 
 	/* Validate page */
-// 	for (ul_idx = 0; ul_idx < (IFLASH_PAGE_SIZE / 4); ul_idx++) {
-// 		//printf(".");
-// 		if (pul_test_page[ul_idx] != ul_page_buffer[ul_idx]) {
-// 			//printf("\n\r-F- data error\n\r");
-// 			return 0;
-// 		}
-// 	}
+	for (ul_idx = 0; ul_idx < (64*IFLASH_PAGE_SIZE / 4); ul_idx++) {
+		//printf(".");
+		if (pul_test_page[ul_idx] != ul_page_buffer[ul_idx]) {
+			//printf("\n\r-F- data error\n\r");
+			//return 0;
+		}
+	}
 // 	
 // *pul_test_page = (uint32_t *) ul_test_page_addr;
 // for (int i = 0; i < 16; i++){
@@ -228,7 +230,7 @@ void flash_write_mem(uint32_t TEST_PAGE_ADDRESS){
 			ul_test_page_addr + 64*IFLASH_PAGE_SIZE - 1, 0, 0);
 	if (ul_rc != FLASH_RC_OK) {
 		//printf("-F- Flash locking error %lu\n\r", (UL)ul_rc);
-		return 0;
+		//return 0;
 	}
 
 	
@@ -248,7 +250,7 @@ void flash_write_mem(uint32_t TEST_PAGE_ADDRESS){
 // 				//(UL)ul_rc);
 // 	}
 
-	return 1;
+	//return 1;
 
 }
 

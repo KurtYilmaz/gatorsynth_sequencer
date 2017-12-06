@@ -15,6 +15,7 @@
  #include "sequencer.h"
  #include "adc.h"
  #include "displays.h"
+ #include "flash_mem.h"
 
 
  void timers_init(void) {
@@ -170,25 +171,27 @@
 			  if (curr_step == 15){
 				  //increment to next page or go back to first page
 
-				  //update display page
-				  if (curr_page < patterns_loop[curr_pattern]){
-					  curr_page++;
-				  }
-				  else{
-					  curr_page = 0;
-				  }
-
-				  //update note / page for each channel output
-				  for (int i = 0; i < 4; i++){
-
-					  if (curr_page_ch[i] < patterns_loop[curr_pattern_ch[i]]){
-						  curr_page_ch[i]++;
+				  if (page_disable == 0){
+					  //update display page
+					  if (curr_page < patterns_loop[curr_pattern]){
+						  curr_page++;
 					  }
 					  else{
-						  curr_page_ch[i] = 0;
+						  curr_page = 0;
 					  }
 
-				  }
+					  //update note / page for each channel output
+					  for (int i = 0; i < 4; i++){
+
+						  if (curr_page_ch[i] < patterns_loop[curr_pattern_ch[i]]){
+							  curr_page_ch[i]++;
+						  }
+						  else{
+							  curr_page_ch[i] = 0;
+						  }
+
+					  }
+				}
 
 				  //return to first step on next page
 				  curr_step = 0;

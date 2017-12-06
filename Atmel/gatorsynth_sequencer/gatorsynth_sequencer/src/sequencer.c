@@ -71,31 +71,68 @@
 				}
 			}
 			else {
+				cursor_follow = 0;
 				pattern_inc();
 				leds_update_cursor(curr_step);
 				pattern_display(curr_pattern);
 				if(page_or_loop == 1) {
 					loop_display(patterns_loop[curr_pattern]);
 				}
-			}
+				if (curr_pattern == curr_pattern_ch[0]){
+					curr_page = curr_page_ch[0];
+					display_page = curr_page_ch[0];
+					page_display(display_page);
+				}
+				else if (curr_pattern == curr_pattern_ch[1]){
+					curr_page = curr_page_ch[1];
+					display_page = curr_page_ch[1];
+					page_display(display_page);
+				}
+				else if (curr_pattern == curr_pattern_ch[2]){
+					curr_page = curr_page_ch[2];
+					display_page = curr_page_ch[2];
+					page_display(display_page);
+				}
+				else if (curr_pattern == curr_pattern_ch[3]){
+					curr_page = curr_page_ch[3];
+					display_page = curr_page_ch[3];
+					page_display(display_page);
+				}
+			}	
 		}
 		else if (aux_control == 4){
+			//cursor_follow = 0;
 			pattern_up(CHANNEL_1);
 			output_display_1(curr_pattern_ch[0], curr_pattern_ch[1]);
+			if (curr_pattern_ch[0] == curr_pattern){
+				curr_page_ch[0] = curr_page;
+			}
 		}
 		else if (aux_control == 5){
+			//cursor_follow = 0;
 			pattern_up(CHANNEL_2);
 			output_display_1(curr_pattern_ch[0], curr_pattern_ch[1]);
+			if (curr_pattern_ch[1] == curr_pattern){
+				curr_page_ch[1] = curr_page;
+			}
 		}
 		else if (aux_control == 6){
+			//cursor_follow = 0;
 			pattern_up(CHANNEL_3);
 			output_display_2(curr_pattern_ch[2], curr_pattern_ch[3]);
+			if (curr_pattern_ch[2] == curr_pattern){
+				curr_page_ch[2]= curr_page;
+			}
+			
 		}
 		else if (aux_control == 7){
+			//cursor_follow = 0;
 			pattern_up(CHANNEL_4);
 			output_display_2(curr_pattern_ch[2], curr_pattern_ch[3]);
+			if (curr_pattern_ch[3] == curr_pattern){
+				curr_page_ch[3] = curr_page;
+			}
 		}
-
 	}
 
 	else if ((A_seq == 0b00000011) && (B_seq == 0b00001001)){
@@ -133,29 +170,66 @@
 				}
 			}
 			else {
+				cursor_follow = 0;
 				pattern_dec();
 				leds_update_cursor(curr_step);
 				pattern_display(curr_pattern);
 				if(page_or_loop == 1) {
 					loop_display(patterns_loop[curr_pattern]);
 				}
+				if (curr_pattern == curr_pattern_ch[0]){
+					curr_page = curr_page_ch[0];
+					display_page = curr_page_ch[0];
+					page_display(display_page);
+				}
+				else if (curr_pattern == curr_pattern_ch[1]){
+					curr_page = curr_page_ch[1];
+					display_page = curr_page_ch[1];
+					page_display(display_page);
+				}
+				else if (curr_pattern == curr_pattern_ch[2]){
+					curr_page = curr_page_ch[2];
+					display_page = curr_page_ch[2];
+					page_display(display_page);
+				}
+				else if (curr_pattern == curr_pattern_ch[3]){
+					curr_page = curr_page_ch[3];
+					display_page = curr_page_ch[3];
+					page_display(display_page);
+				}
 			}
 		}
 		else if (aux_control == 4){
+			//cursor_follow = 0;
 			pattern_down(CHANNEL_1);
 			output_display_1(curr_pattern_ch[0], curr_pattern_ch[1]);
+			if (curr_pattern_ch[0] == curr_pattern){
+				curr_page_ch[0] = curr_page;
+			}
 		}
 		else if (aux_control == 5){
+			//cursor_follow = 0;
 			pattern_down(CHANNEL_2);
 			output_display_1(curr_pattern_ch[0], curr_pattern_ch[1]);
+			if (curr_pattern_ch[1] == curr_pattern){
+				curr_page_ch[1] = curr_page;
+			}
 		}
 		else if (aux_control == 6){
+			//cursor_follow = 0;
 			pattern_down(CHANNEL_3);
 			output_display_2(curr_pattern_ch[2], curr_pattern_ch[3]);
+			if (curr_pattern_ch[2] == curr_pattern){
+				curr_page_ch[2] = curr_page;
+			}
 		}
 		else if (aux_control == 7){
+			//cursor_follow = 0;
 			pattern_down(CHANNEL_4);
 			output_display_2(curr_pattern_ch[2], curr_pattern_ch[3]);
+			if (curr_pattern_ch[3] == curr_pattern){
+				curr_page_ch[3]= curr_page;
+			}
 		}
 	}
 
@@ -318,6 +392,22 @@ void pattern_octave_down(){
 
 }
 
+void synch_pages(){
+
+	curr_page = 0;
+	display_page = 0;
+	curr_step = 0;
+
+	curr_page_ch[0]= 0;
+	curr_page_ch[1]= 0;
+	curr_page_ch[2]= 0;
+	curr_page_ch[3]= 0;
+
+	page_display(curr_page);
+
+	
+}
+
 void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 
 	switch(aux_encoders) {
@@ -327,9 +417,9 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 			break;
 		case 253 :
 			//save patterns
-			flash_write_mem(0x00490000);
 			saving_display(0);
 			REG_TC0_CCR1 |= TC_CCR_CLKEN | TC_CCR_SWTRG;		//start 2 sec timer
+			flash_write_mem(0x00490000);
 			break;
 		case 251 :
 			//toggle between page & loop variables
@@ -398,10 +488,10 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 			
 			break;
 		case 247 :
-			
+			page_disable = !page_disable;
 			break;
 		case 239 :
-			
+			synch_pages();
 			break;
 		case 223 :
 			cursor_follow_toggle();
@@ -427,6 +517,7 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 	page_or_loop = 0;
 	pattern_clr = 0;
 	clr_yes = 0;
+	page_disable = 0;
 	cursor_follow = 0;
 	pause = 0;
 	pause_count = 0;

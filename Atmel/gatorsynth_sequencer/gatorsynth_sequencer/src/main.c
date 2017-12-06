@@ -54,7 +54,6 @@ int main (void)
 	read_button_MAX7314(button_port_data);
 
 	//notes_default();
-	//flash_write_mem(0x00490000);
  	
 	note_display(48);
  	
@@ -70,7 +69,7 @@ int main (void)
 
 	while (1)
 	{
-	
+
 	}
 }
 
