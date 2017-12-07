@@ -17,6 +17,7 @@
  #include "dac.h"
  #include "flash_mem.h"
  #include "leds.h"
+ #include "spi.h"
 
 
  void control_direction(uint32_t A, uint32_t B, uint8_t aux_control){
@@ -759,6 +760,7 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 	 
 	 //check if Pause/Play button was pushed
 	 else if ( (status & PIO_ISR_P2) ){
+		delay_ms(50);
 		pause_count++;
 		if (pause_count == 2){
 			if (pause == 0){
@@ -780,6 +782,8 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 			}
 			pause_count= 0;
 		}
+		SPI_led_init();
+		leds_update_cursor(curr_step);
 	 }
 
 	 //check if Aux Encoder 2 was rotated
