@@ -53,8 +53,8 @@ int main (void)
 	config_MAX7314();
 	read_button_MAX7314(button_port_data);
 
-	notes_default();
- 	flash_write_mem(0x00490000);
+	//notes_default();
+ 	//flash_write_mem(0x00490000);
 	note_display(48);
  	
 
