@@ -640,16 +640,30 @@ void note_display(uint16_t note) {
 
 // Display 1
 void bpm_display(uint16_t bpm) {
-	display_char('B', 28, 1);
-	display_char(' ', 28, 1);
-	display_char('P', 28, 1);
-	display_char(' ', 28, 1);
-	display_char('M', 28, 1);
-	display_char(' ', 28, 1);
-	display_char(':', 28, 1);
-	display_char(' ', 28, 1);
-	display_number(bpm, 28, 1);
-	finish_display(1);
+	// Displays "Trig"
+	if(trig_mode) {
+		display_char('T', 28, 1);
+		display_char(' ', 28, 1);
+		display_char('R', 28, 1);
+		display_char(' ', 28, 1);
+		display_char('I', 28, 1);
+		display_char(' ', 28, 1);
+		display_char('G', 28, 1);
+		finish_display(1);
+	}
+	// Displays BPM
+	else {
+		display_char('B', 28, 1);
+		display_char(' ', 28, 1);
+		display_char('P', 28, 1);
+		display_char(' ', 28, 1);
+		display_char('M', 28, 1);
+		display_char(' ', 28, 1);
+		display_char(':', 28, 1);
+		display_char(' ', 28, 1);
+		display_number(bpm, 28, 1);
+		finish_display(1);
+	}
 }
 
 // Display 2

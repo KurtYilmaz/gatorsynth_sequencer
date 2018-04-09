@@ -393,6 +393,10 @@ void pattern_octave_down(){
 
 }
 
+void trig_toggle() {
+	trig_mode = !trig_mode;
+}
+
 void synch_pages(){
 
 	curr_page = 0;
@@ -408,6 +412,8 @@ void synch_pages(){
 
 	
 }
+
+void 
 
 void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 
@@ -514,6 +520,7 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 
 	bpm = 120;
 	bpm_adjust = 1;
+	trig_mode = 0;
 
 	page_or_loop = 0;
 	pattern_clr = 0;
@@ -530,7 +537,23 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 	REG_PMC_PCER0 |= PMC_PCER0_PID11;
 
 	/**************			CONFIGURE PAUSE/PLAY BUTTON				**************/
-	//set up PA2 as pause/play interrupt pin
+	//Configure PA2 as pause/play interrupt pin
+	REG_PIOA_PER |= PIO_PER_P2; //enable PIO controller
+	REG_PIOA_ODR |= PIO_ODR_P2; //disable output
+	REG_PIOA_PPDDR |= PIO_PPDDR_P2; //disable pull-down resistor
+	REG_PIOA_PUER |= PIO_PUER_P2;	//enable pull-up resistor
+	REG_PIOA_IER |= PIO_IER_P2;			//interrupt enable register
+	REG_PIOA_FELLSR |= PIO_FELLSR_P2;	//enable falling edge interrupt
+	REG_PIOA_IFSCER |= PIO_IFSCER_P2; //turn on slow clock debounce
+	REG_PIOA_IFER |= PIO_IFER_P2;	//start debounce filter
+		
+	//Configure interrupt for clock in
+	REG_PIOA_PER |= PIO_PER_P2; //enable PIO controller
+	REG_PIOA_ODR |= PIO_ODR_P2; //disable output
+	REG_PIOA_PPDDR |= PIO_PPDDR_P2; //disable pull-down resistor
+	REG_PIOA_PUER |= PIO_PUER_P2;	//enable pull-up resistor
+	
+	//Configure interrupt for jack detection
 	REG_PIOA_PER |= PIO_PER_P2; //enable PIO controller
 	REG_PIOA_ODR |= PIO_ODR_P2; //disable output
 	REG_PIOA_PPDDR |= PIO_PPDDR_P2; //disable pull-down resistor
@@ -689,12 +712,6 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 
 	uint32_t flag_clear = REG_PIOA_ISR;	//clear left over interrupt flags
 
-	//configure interrupt for pause/play button
-	REG_PIOA_IER |= PIO_IER_P2;			//enable input rising edge interrupt
-	REG_PIOA_FELLSR |= PIO_FELLSR_P2;
-	REG_PIOA_IFSCER |= PIO_IFSCER_P2; //turn on slow clock debounce
-	REG_PIOA_IFER |= PIO_IFER_P2;	//start debounce filter
-
 	//Enable interrupts for Aux Encoder 0
 	REG_PIOA_IER |= PIO_IER_P0;			//enable input rising edge interrupt
 	REG_PIOA_REHLSR |= PIO_REHLSR_P0;
@@ -795,9 +812,11 @@ void aux_toggle(uint8_t button_row, uint8_t aux_encoders){
 	 else if ( (status & PIO_ISR_P8) || (status & PIO_ISR_P9) ){
 		control_direction(PIO_ODSR_P8, PIO_ODSR_P9, 2);
 	 }
-
+	
+	// If input jack is inserted
 	 else if ( (status & PIO_ISR_P10) ){
-		/***************CLOCK IN INT***************/
+		input_inserted = 1;
+		trig_mode = 1;
 	 }
 
 	 //check if Aux Encoder 4 was rotated

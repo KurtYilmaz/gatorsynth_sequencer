@@ -21,6 +21,8 @@
 bool clr_yes;
 bool cursor_follow;
 bool page_disable;
+bool input_inserted;
+bool trig_mode;
 uint8_t save;
 uint8_t pause;
 uint8_t pause_count;
@@ -51,6 +53,7 @@ void cursor_follow_toggle(void);
 void pattern_octave_up(void);
 void pattern_octave_down(void);
 void synch_pages(void);
+void trig_toggle(void);
 
 void aux_toggle(uint8_t button_row, uint8_t aux_encoders);
 
