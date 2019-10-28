@@ -6,7 +6,7 @@ Software project and hardware design for the GatorSynth's first module.
 
 [View a video of it in operation here.](https://drive.google.com/open?id=1ZPjoR6NwfAMeYyuV_27jF_WeEawncijw)
 
-[Here is the design report.](https://drive.google.com/open?id=1F3WzjbQxD-BMqfGb53b3CRzrNy7BY8Vq)
+[Here is the design report.](https://drive.google.com/open?id=1eJ12NSKWnfY4t4MTggZmhPi7drT7B0qG)
 
 ### Hardware Design
 
