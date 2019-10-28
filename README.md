@@ -17,4 +17,4 @@ Software project and hardware design for the GatorSynth's first module.
 ### Photos
 [Solidworks panel model.](https://drive.google.com/file/d/1EWPDM9tBjqeUUxQxCqQEn75bOW4Va4it/view?usp=sharing)
 
-[Panel creation process.](https://photos.google.com/search/february%202018/photo/AF1QipNLft7BLD5mENbZJVKd0bxQMQw9ao_B4PsMAOZl)
+[Panel creation process.](https://drive.google.com/drive/folders/16HxaFxTM-GGdJvXpjxoLEPZMYT15_VRH?usp=sharing)
