@@ -1,3 +1,20 @@
 # Gatorsynth Sequencer
 
-Software project and hardware design for the GatorSynth's first module. Altium and Atmel Studio Project files will be added and updated as the project progresses.
+Software project and hardware design for the GatorSynth's first module.
+
+## Documentation
+
+[View a video of it in operation here.](https://drive.google.com/open?id=1ZPjoR6NwfAMeYyuV_27jF_WeEawncijw)
+
+[Here is the design report.](https://drive.google.com/open?id=1F3WzjbQxD-BMqfGb53b3CRzrNy7BY8Vq)
+
+### Hardware Design
+
+[Hardware overview.](https://drive.google.com/file/d/0BypmxNoK-lH0Rnp4cDNoX3ZsaG8/view?usp=sharing)
+
+[Processor pin assignments.](https://docs.google.com/document/d/1cF8xQNu-HhxwV3odrAclCwKSqIKkcs-KZhXqaSe8bZs/edit)
+
+### Photos
+[Solidworks panel model.](https://drive.google.com/file/d/1EWPDM9tBjqeUUxQxCqQEn75bOW4Va4it/view?usp=sharing)
+
+[Panel creation process.](https://photos.google.com/search/february%202018/photo/AF1QipNLft7BLD5mENbZJVKd0bxQMQw9ao_B4PsMAOZl)
